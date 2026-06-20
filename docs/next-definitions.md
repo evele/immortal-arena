@@ -1,0 +1,90 @@
+# Next Definitions
+
+This file tracks what must be defined next before or during early implementation. Keep it focused on decisions that unblock building the game.
+
+## Technical Direction To Confirm
+
+- Frontend preference: Vue, not React.
+- Runtime/backend preference: Bun instead of Node where practical.
+- Database: SQLite is acceptable for the first off-chain prototype.
+- Tests: Vitest is likely acceptable, especially for pure combat/game logic.
+- ORM/query layer is undecided; SQL-first is acceptable unless migrations/types become painful enough to justify Drizzle, Kysely, or another lightweight layer.
+- First implementation module should be the pure combat engine.
+
+## Design Definitions Needed Next
+
+### 1. Warriors And Market
+
+- Starter warrior classes per race.
+- Additional classes/tiers per race after lord level 1.
+- Base stats for every warrior class.
+- Unlock lord level for each class/tier.
+- Gold cost for each class/tier.
+- Race stat tendencies inspired by BloodArena without copying blindly.
+- Warrior naming rules and whether names are editable.
+
+Target doc: `docs/warrior-catalog.md`.
+
+### 2. Stats And Formulas
+
+- Final-ish MVP meaning of HP, Damage, Defense, Accuracy, Agility, and Speed.
+- Hit chance formula.
+- Damage formula.
+- Racial hatred bonus value.
+- Whether damage has variance.
+- Whether crits exist; default should be no unless explicitly added.
+- Level-up stat growth and stat point assignment.
+- XP curves for lords and warriors.
+
+Target doc: `docs/stats-and-formulas.md`.
+
+### 3. Items And Equipment
+
+- Whether equipment enters MVP 1 or later.
+- Item classes and slots.
+- Item subclasses or restrictions by warrior class/race.
+- Stat bonuses per item type.
+- Minimum warrior level requirements.
+- Purchase/equip/unequip rules.
+- Whether items persist, bind, break, or can be sold later.
+
+Target doc: `docs/items-and-equipment.md`.
+
+### 4. Economy And Rewards
+
+- Starting gold final MVP value.
+- Battle gold reward formula.
+- XP reward formula.
+- Salary rules.
+- Healing/recovery costs.
+- Market price curve.
+- Anti-farming constraints for attacking weak/demo/inactive lords.
+
+Target doc: `docs/economy-and-rewards.md`.
+
+### 5. Wounds, Recovery, And Daily Loop
+
+- Whether battle HP persists exactly after combat.
+- Whether defeated warriors can attack or only defend after recovery.
+- Free recovery vs paid healing vs timed healing.
+- Daily attack reset timing.
+- Attack stacking cap.
+- Whether training sessions share the same reset model.
+
+Target doc: `docs/daily-loop-and-recovery.md`.
+
+## Useful BloodArena Source Material To Mine
+
+- Warrior/race tendencies.
+- Original item classes and subclasses.
+- Example battle/training logs.
+- Original market unlock rhythm.
+- Salary, reset, and attack stacking behavior.
+- Tournament, fame, seasons, and special attributes are later inspiration, not MVP 0 requirements.
+
+## Next Session Suggested Order
+
+1. Define `docs/warrior-catalog.md`.
+2. Define `docs/stats-and-formulas.md`.
+3. Revisit `docs/mvp-0-vertical-slice.md` constants after the catalog and formulas exist.
+4. Only then create the app skeleton and combat engine tests.

@@ -13,7 +13,7 @@ At the same time, the experience should be redesigned where blockchain adds real
 - The game should remain quite close to BloodArena in core structure.
 - The experience can be redesigned where blockchain ownership makes the game better.
 - The player identity is currently best described as a lord.
-- Warriors should be owned by the player and represented as NFTs.
+- Warriors should start with clear ownership and stable IDs, with NFTs or equivalent on-chain ownership as a later integration goal.
 - The lord starts with gold and chooses the first warrior from the market.
 - Equipment may also become NFTs, but this is undecided.
 - A game token should be avoided initially.

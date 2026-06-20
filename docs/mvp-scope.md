@@ -1,17 +1,18 @@
 # MVP Scope
 
-The MVP goal is a playable web prototype with the core BloodArena-inspired mechanics working.
+The MVP goal is a playable off-chain web prototype with the core BloodArena-inspired mechanics working.
+
+`docs/mvp-0-vertical-slice.md` defines the first implementation slice.
 
 ## Must Have
 
-- Wallet login.
-- Local blockchain support through Anvil.
 - Lord identity.
 - Starting gold for each new lord.
 - Basic in-game gold.
 - Initial warrior purchase chosen by the player.
 - Basic warrior market/recruitment.
-- Warrior ownership represented on-chain as NFT or equivalent local smart contract model.
+- Stable global IDs for lords, warriors, battles, and seasons.
+- Off-chain warrior ownership separated from mutable warrior stats, so NFT or equivalent ownership can be added later.
 - MVP races: Human, Orc, Elf, Dwarf, and Goblin.
 - Original racial hatred cycle.
 - Basic warrior stats.
@@ -27,6 +28,7 @@ The MVP goal is a playable web prototype with the core BloodArena-inspired mecha
 
 ## Likely But Not Confirmed
 
+- Wallet login.
 - Training sessions.
 - Salary.
 - More warrior slots.
@@ -36,6 +38,8 @@ The MVP goal is a playable web prototype with the core BloodArena-inspired mecha
 
 ## Probably Later
 
+- Local blockchain support through Anvil or another chain-specific devnet.
+- Warrior ownership represented on-chain as NFT or equivalent smart contract model.
 - Full marketplace.
 - Equipment NFTs.
 - Weekly tournaments.

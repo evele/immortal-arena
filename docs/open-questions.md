@@ -20,13 +20,13 @@ This document tracks unresolved decisions.
 ## Blockchain Ownership
 
 - Is the lord itself an NFT, a wallet-bound profile, or an off-chain account linked to wallet?
-- Should lord creation happen automatically on first wallet connect?
+- If wallet login is included, should lord creation happen automatically on first wallet connect?
 - Are warriors fully transferable NFTs?
 - If warriors are transferable, how do we prevent pay-to-win from becoming too dominant?
 - Should warrior progression live on-chain, off-chain, or hybrid?
 - Should battle history be committed on-chain?
 - Should only important milestones be committed on-chain?
-- Which low-cost/gasless chain is the best fit: Sonic, Gnosis, Starknet, Immutable, or another option?
+- Which low-cost/gasless chain is the best fit: EVM, Sonic, Gnosis, Starknet/Cairo, Immutable, Solana, or another option?
 - How should random events be generated, verified, or committed if they interact with blockchain state?
 
 ## Economy

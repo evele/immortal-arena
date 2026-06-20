@@ -6,14 +6,15 @@ This document records decisions made during early design discussion.
 
 - Immortal Arena should be strongly inspired by BloodArena.
 - It should not be a pure clone; some experience redesign is expected to take advantage of blockchain.
-- The first implementation target is a playable web prototype.
+- The first implementation target is a playable off-chain web prototype.
 - The MVP should include all basic mechanics functioning.
+- The game should be designed web2-first but web3-ready, so a later chain integration improves ownership/settlement without driving the initial gameplay architecture.
 
 ## Player Identity
 
 - The player is currently called a lord.
 - The lord may overlap conceptually with the original BloodArena guild, but the current product language uses lord.
-- A lord can be created automatically when a wallet connects for the first time.
+- A lord can be created automatically when the player starts; if wallet login is added, first wallet connection can trigger lord creation.
 - Lord names should be globally unique.
 - Lord name changes may be allowed, but this is undecided.
 - The lord should have level and experience.
@@ -27,17 +28,36 @@ This document records decisions made during early design discussion.
 
 ## Blockchain
 
-- The account and its warriors are the main things the player should own.
-- Warriors should be NFTs.
+- The initial playable prototype should be off-chain and chain-agnostic.
+- The account and its warriors are the main things the player should eventually own through web3 integration.
+- Warriors can start as off-chain game entities with stable global IDs, with NFT or equivalent ownership added later.
 - Equipment may become NFTs, but this is undecided.
 - A token should be avoided initially.
-- In-game currency probably does not need to be on-chain initially.
-- Combat can be off-chain, especially because it needs randomness and on-chain execution may be expensive.
-- The preferred direction is still to keep as much warrior data on-chain as practical, if a sufficiently cheap or gasless chain/setup is available.
-- Local blockchain development can use Anvil.
-- Possible target chains include Sonic, Gnosis, Starknet, Immutable, or another low-cost/gasless chain.
-- Solana is not preferred for now because it would add unfamiliar implementation risk.
+- In-game currency should stay off-chain initially.
+- Combat should remain off-chain initially, especially because it needs randomness and on-chain execution may be expensive.
+- Keep ownership, identity, and settlement boundaries separate enough that a future backend can target EVM, Solana, Starknet/Cairo, or another chain.
+- Local blockchain development can use Anvil if an EVM integration is chosen later.
+- Possible future target chains include Sonic, Gnosis, Starknet, Immutable, Solana, or another low-cost/gasless chain; do not choose the chain before the gameplay prototype proves useful.
 - Whether warrior NFTs are transferable from day one is undecided.
+
+## Implementation Strategy
+
+- Build the first vertical slice as a functional web2 game: lord identity, gold, warrior purchase, market, combat, battle logs, wounds, and progression can all live in normal application storage.
+- Use `docs/mvp-0-vertical-slice.md` as the implementation target for the first playable slice.
+- Use `docs/next-definitions.md` to drive the next design pass before heavy implementation.
+- Do not build a multi-chain abstraction framework up front.
+- Do keep global IDs for lords, warriors, battles, and seasons so later on-chain ownership or commitments can reference existing game objects.
+- Keep ownership separate from mutable gameplay stats so warrior ownership can move on-chain later without rewriting combat.
+- Keep core game logic independent from storage and chain APIs.
+
+## Technical Direction
+
+- Frontend preference is Vue, not React.
+- Runtime/backend preference is Bun where practical.
+- SQLite is acceptable for the first off-chain prototype.
+- Vitest is likely acceptable for tests, especially pure game logic tests.
+- ORM/query layer is undecided; do not add one by default without explaining why SQL-first is insufficient.
+- Start implementation with the pure combat engine after the next warrior/stat definitions are written.
 
 ## Gameplay
 
@@ -82,8 +102,8 @@ This document records decisions made during early design discussion.
 ## MVP
 
 - The MVP should be playable.
-- Wallet login should exist from day one.
-- Blockchain can run locally with Anvil for initial development.
+- Wallet login is useful but no longer required for the first off-chain prototype.
+- Blockchain and Anvil are not required for the first off-chain prototype.
 - The MVP can avoid some secondary systems initially if needed.
 - The MVP should probably start with PvP asynchronous battles.
 - Whether market, equipment, training, resets, and seasons are all required in the first MVP remains open.

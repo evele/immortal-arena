@@ -12,7 +12,7 @@ The lord is conceptually close to the original BloodArena guild: it is the accou
 
 Current direction:
 
-- A lord can be created automatically when a wallet connects for the first time.
+- A lord can be created automatically when the player starts; if wallet login is added, first wallet connection can trigger lord creation.
 - The lord name should be globally unique.
 - Lord name changes may be allowed, but this is undecided.
 - The lord starts with gold, not with a free warrior.
@@ -48,7 +48,7 @@ Warriors are the main combat units.
 
 The player buys warriors, trains them, equips them, and sends them into asynchronous automatic guild-vs-guild battles.
 
-Warriors should be represented as NFTs, but the exact on-chain/off-chain data split is undecided.
+Warriors can start as off-chain game entities with stable global IDs. NFT or equivalent ownership is a later integration goal, and the exact on-chain/off-chain data split remains undecided.
 
 ## First Warrior
 
@@ -140,16 +140,18 @@ If transferability exists, the game needs rules for edge cases:
 
 If a player has no warriors, they should still be able to continue by buying a new warrior before attacking.
 
-## On-Chain Data Direction
+## Ownership Data Direction
 
 Preferred direction:
 
-- Keep warrior data on-chain if a cheap enough or gasless chain/setup allows it.
-- Avoid expensive on-chain actions for frequent gameplay if costs become a problem.
+- Build the first playable prototype off-chain and chain-agnostic.
+- Keep ownership separate from mutable gameplay stats so warrior ownership can move on-chain later without rewriting combat.
+- Keep stable IDs for lords and warriors so future NFTs, signed results, or on-chain commitments can reference existing game objects.
+- Avoid expensive on-chain actions for frequent gameplay unless a later chain choice makes them practical.
 
-Candidate ecosystems include Sonic, Gnosis, Starknet, Immutable, or another low-cost/gasless chain.
+Candidate ecosystems can include EVM chains, Sonic, Gnosis, Starknet/Cairo, Immutable, Solana, or another low-cost/gasless chain.
 
-Local development can use Anvil.
+Local development can use Anvil if an EVM integration is chosen later.
 
 ## Seasons And Immortality
 
