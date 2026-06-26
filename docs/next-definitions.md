@@ -15,6 +15,10 @@ This file tracks what must be defined next before or during early implementation
 
 ### 1. Warriors And Market
 
+- Source-derived MVP race catalog now exists in `docs/warrior-catalog.md`.
+- Undead source material is preserved separately in `docs/undead-warrior-source.md` and is not part of MVP 0.
+- Remaining decision: use the raw source scale directly, or adapt/rescale it for MVP 0 economy and combat pacing.
+
 - Starter warrior classes per race.
 - Additional classes/tiers per race after lord level 1.
 - Base stats for every warrior class.
@@ -84,7 +88,7 @@ Target doc: `docs/daily-loop-and-recovery.md`.
 
 ## Next Session Suggested Order
 
-1. Define `docs/warrior-catalog.md`.
+1. Decide whether `docs/warrior-catalog.md` uses raw source scale or an MVP-rescaled version.
 2. Define `docs/stats-and-formulas.md`.
-3. Revisit `docs/mvp-0-vertical-slice.md` constants after the catalog and formulas exist.
+3. Revisit `docs/mvp-0-vertical-slice.md` constants after the catalog scale and formulas exist.
 4. Only then create the app skeleton and combat engine tests.
