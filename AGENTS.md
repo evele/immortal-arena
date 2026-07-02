@@ -22,7 +22,7 @@
 
 ## Combat Rules To Preserve
 - Combat is automatic asynchronous lord-vs-lord PvP using all available warriors, not 1v1 and not player-controlled during battle.
-- Initiative is tick-based: each active warrior adds Speed each tick, acts at 100 initiative, subtracts 100 after acting, and keeps overflow.
+- Initiative is tick-based. In Combat Model 1, each active warrior adds Speed each tick, acts at 300 initiative, subtracts 300 after acting, keeps overflow, and can attack at most once per tick.
 - Same-tick action order is highest current initiative, then highest Speed, then random.
 - MVP target selection is random among living enemies; wounded warriors can defend; warriors do not die permanently; fatigue is not currently a mechanic.
 - Defense is flat reduction for MVP and may reduce damage to zero; there is no minimum damage floor.

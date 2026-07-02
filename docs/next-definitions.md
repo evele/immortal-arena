@@ -17,14 +17,14 @@ This file tracks what must be defined next before or during early implementation
 
 - Source-derived MVP race catalog now exists in `docs/warrior-catalog.md`.
 - Undead source material is preserved separately in `docs/undead-warrior-source.md` and is not part of MVP 0.
-- Remaining decision: use the raw source scale directly, or adapt/rescale it for MVP 0 economy and combat pacing.
+- Decision: MVP 0 uses the source-derived catalog scale directly as the balance baseline.
 
 - Starter warrior classes per race.
 - Additional classes/tiers per race after lord level 1.
 - Base stats for every warrior class.
 - Unlock lord level for each class/tier.
 - Gold cost for each class/tier.
-- Race stat tendencies inspired by BloodArena without copying blindly.
+- Race stat tendencies and asymmetric unlocks from the source catalog.
 - Warrior naming rules and whether names are editable.
 
 Target doc: `docs/warrior-catalog.md`.
@@ -36,7 +36,10 @@ Target doc: `docs/warrior-catalog.md`.
 - Damage formula.
 - Racial hatred bonus value.
 - Whether damage has variance.
+- How Defense produces reduced damage, `0 damage`, and full armor absorption log text.
+- Whether Accuracy only affects hit chance or can also create stronger/skilled hits.
 - Whether crits exist; default should be no unless explicitly added.
+- Required battle log vocabulary, including source-style `perished` as non-permanent defeat language.
 - Level-up stat growth and stat point assignment.
 - XP curves for lords and warriors.
 
@@ -88,7 +91,7 @@ Target doc: `docs/daily-loop-and-recovery.md`.
 
 ## Next Session Suggested Order
 
-1. Decide whether `docs/warrior-catalog.md` uses raw source scale or an MVP-rescaled version.
-2. Define `docs/stats-and-formulas.md`.
-3. Revisit `docs/mvp-0-vertical-slice.md` constants after the catalog scale and formulas exist.
+1. Define `docs/stats-and-formulas.md` against the source-derived catalog scale.
+2. Define MVP economy and progression values that fit the source-derived catalog.
+3. Revisit `docs/mvp-0-vertical-slice.md` after formulas and economy are defined.
 4. Only then create the app skeleton and combat engine tests.

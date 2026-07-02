@@ -28,7 +28,7 @@ MVP 0 is a playable off-chain web prototype. Its job is to prove the core loop b
 
 - Player enters a globally unique lord name.
 - The app creates an off-chain lord record.
-- New lord starts with `100` gold.
+- New lord starts with enough gold to buy one level 1 starter warrior from `docs/warrior-catalog.md`.
 - New lord has no free warrior.
 - Player buys exactly one first warrior from the market.
 - The market offers one starter class per MVP race.
@@ -51,33 +51,30 @@ MVP 0 is a playable off-chain web prototype. Its job is to prove the core loop b
 
 Keep warrior ownership separate from mutable stats even while both live in normal application storage.
 
-## Provisional Starter Market
+## Starter Market
 
-All starter warriors cost `100` gold and require lord level `1`.
+MVP 0 uses the source-derived level 1 starter warriors from `docs/warrior-catalog.md`. Earlier simplified starter numbers were mock placeholders and should not be implemented.
 
-| Race | Class | HP | Damage | Defense | Accuracy | Agility | Speed |
-|---|---|---:|---:|---:|---:|---:|---:|
-| Human | Militia | 100 | 12 | 5 | 65 | 45 | 20 |
-| Orc | Brute | 110 | 16 | 3 | 55 | 35 | 15 |
-| Elf | Archer | 85 | 10 | 3 | 75 | 60 | 25 |
-| Dwarf | Guard | 130 | 11 | 8 | 55 | 30 | 12 |
-| Goblin | Skirmisher | 80 | 8 | 2 | 60 | 65 | 35 |
-
-These numbers are MVP 0 tuning constants, not final balance.
+| Race | Class | Price | HP | Damage | Defense | Accuracy | Agility | Speed |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| Elf | Elf Slave | 630 | 12 | 4 | 2 | 4 | 4 | 4 |
+| Goblin | Scrawny Goblin | 660 | 12 | 3 | 2 | 3 | 4 | 7 |
+| Human | Human Wretch | 720 | 20 | 4 | 4 | 5 | 3 | 3 |
+| Orc | Wretched Orc | 630 | 20 | 8 | 2 | 2 | 2 | 2 |
+| Dwarf | Dwarf Slave | 630 | 16 | 4 | 5 | 3 | 3 | 2 |
 
 ## Combat Rules
 
 - Use all available warriors on both sides.
 - A warrior is available if current HP is above `0`.
 - Wounded warriors with current HP above `0` can attack and defend.
-- Combat uses tick-based initiative from `docs/combat-and-progression.md`.
-- Each action targets a random living enemy.
+- Combat uses tick-based initiative from `docs/combat-and-progression.md` and `combats/turn-frequency-overflow.md`.
+- Each action targets a random living enemy, as defined in `combats/targeting-random-uniform.md`.
 - Battle ends when one side has no living warriors or after `100` combat actions.
 - Same-tick action order: highest current initiative, then highest Speed, then seeded random.
 - Race hatred cycle: Orc -> Human -> Goblin -> Elf -> Dwarf -> Orc.
-- MVP 0 hatred bonus is `+25%` Damage before Defense, rounded up.
-- MVP 0 hit chance is `50 + attacker Accuracy - defender Agility`, clamped between `10` and `90` percent.
-- MVP 0 damage is `max(0, modified Damage - defender Defense)`.
+- Exact hit, damage, Defense, and racial hatred formulas are defined in `docs/stats-and-formulas.md`.
+- MVP 0 formulas should preserve the source-example behavior documented in `docs/combat-and-progression.md`.
 - There is no minimum damage floor.
 - Randomness must use the battle seed so a battle can be replayed deterministically.
 
@@ -91,22 +88,24 @@ Each battle should log text events for:
 - Zero-damage hits.
 - Full armor absorption.
 - Remaining HP after damage.
+- Source-style defeat language such as `perished`, without permanent warrior death.
 - Victory, defeat, and tie.
 - Rewards applied.
 
 ## Rewards And Progression
 
-- Winner receives `10` lord XP and `10` gold.
-- Each surviving warrior on the winning side receives `10` warrior XP.
-- Draw gives `3` lord XP to both lords and no gold.
+- Winner receives lord XP and gold according to the MVP economy rules.
+- Each surviving warrior on the winning side receives warrior XP according to the MVP progression rules.
+- Draw rewards are defined by the MVP economy rules.
 - Defeat gives no MVP 0 reward.
-- Lord and warrior level curves are provisional: every `100` XP grants `1` level.
+- Lord and warrior level curves are defined by the MVP progression rules.
 - Stat point assignment is out of MVP 0; level increases can be recorded without spending points.
 
 ## Wounds And Recovery
 
 - Battle damage persists to warrior current HP after combat.
 - Defeated warriors remain at `0` HP after battle.
+- Defeat may be described as `perished` in logs, but warriors do not die permanently.
 - MVP 0 includes a simple off-chain `Recover` action that restores a lord's warriors to max HP for free.
 - Paid healing, timed healing, Apothecary, and salary interaction are later design work.
 

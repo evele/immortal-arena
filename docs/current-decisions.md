@@ -58,6 +58,7 @@ This document records decisions made during early design discussion.
 - Vitest is likely acceptable for tests, especially pure game logic tests.
 - ORM/query layer is undecided; do not add one by default without explaining why SQL-first is insufficient.
 - Start implementation with the pure combat engine after the next warrior/stat definitions are written.
+- MVP 0 should use the source-derived warrior catalog scale from `docs/warrior-catalog.md` as the balance baseline, not a simplified or rescaled mock scale.
 
 ## Gameplay
 
@@ -80,6 +81,7 @@ This document records decisions made during early design discussion.
 - Warriors should not use rarity as the primary hierarchy.
 - Warrior hierarchy should come from classes/tiers available in the market as the lord level advances.
 - Example: higher lord levels unlock stronger Orc classes with better base stats.
+- The source catalog's asymmetric class unlocks are intentional and should be preserved unless a later explicit design decision changes them.
 - Combat uses all available warriors from each side, not 1v1.
 - All living warriors in the battle actively participate; they build initiative and can act while not defeated.
 - Wounded warriors can defend.
@@ -90,10 +92,11 @@ This document records decisions made during early design discussion.
 - No extra stats such as Luck, Morale, or Stamina should be added for now.
 - Accuracy affects hit chance.
 - Agility helps avoid hits.
-- Defense reduces incoming damage as flat reduction for the MVP.
-- There is no minimum damage floor for now; flat Defense can reduce an attack to zero damage.
+- Defense reduces or absorbs incoming damage for the MVP.
+- There is no minimum damage floor for now; Defense can reduce an attack to zero damage.
 - Combat should use a tick-based initiative model driven by Speed.
-- Initiative uses direct accumulation with an action threshold of 100: each tick, each active warrior adds Speed to initiative; at 100 initiative, the warrior acts and 100 is subtracted from initiative.
+- Initiative uses direct accumulation. In Model 1, each tick, each active warrior adds Speed to initiative; at `300` initiative, the warrior acts and `300` is subtracted from initiative.
+- Model 1 allows at most one attack action per warrior per tick, even if overflow remains above the threshold.
 - If multiple warriors are eligible to act after the same tick, action order is highest current initiative first, then highest Speed, then random if still tied.
 - Ticks are internal math only; combat events and battle log entries are produced by actions.
 - Battle logs should support misses, zero-damage hits, full armor absorption, remaining HP, wins, losses, and ties.

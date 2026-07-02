@@ -99,7 +99,7 @@ Current stat role direction:
 
 - HP determines survivability.
 - Damage contributes to outgoing damage.
-- Defense probably reduces incoming damage as flat reduction.
+- Defense reduces or absorbs incoming damage.
 - Accuracy increases hit chance.
 - Agility helps avoid hits.
 - Speed affects attack frequency.
