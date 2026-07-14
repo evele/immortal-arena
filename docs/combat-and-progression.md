@@ -50,6 +50,10 @@ The 100-action draw limit is provisional and may need adjustment for battles wit
 
 Original examples show ties after many unresolved combat actions, so the MVP should use a maximum action limit rather than requiring every battle to end in defeat.
 
+Current defeat-and-draw candidates are documented in `combats/defeat-and-draw-hard-stop.md` and `combats/defeat-and-draw-end-of-tick.md`.
+
+Those candidates also explore replacing the fixed `100`-action cap with a linear cap based on the combined lord levels, using lord level as a temporary proxy for likely battle size until warrior-slot progression is finalized.
+
 ## Battle Logs
 
 Battle logs should be text-based.
@@ -103,6 +107,10 @@ Current direction:
 
 Exact formulas are intentionally not finalized yet.
 
+Current hit-resolution candidates are documented in `combats/hit-resolution-linear.md` and `combats/hit-resolution-proportional.md`.
+
+A third alternative, where Accuracy also creates a second-stage skilled-hit or damage-quality roll after a successful hit, is noted as possible source-inspired future work but is not part of the current base model set because it mixes hit resolution with damage resolution.
+
 ## Damage And Defense
 
 For the MVP, Defense should reduce or absorb incoming Damage.
@@ -110,6 +118,14 @@ For the MVP, Defense should reduce or absorb incoming Damage.
 There is no minimum damage floor for now. If Defense fully absorbs the incoming Damage, the attack can deal zero damage.
 
 Original examples include both explicit `for 0 damage` results and full absorption messages such as `his armour absorbs the full blow`.
+
+Current damage-roll candidates are documented in `combats/damage-roll-band.md` and `combats/damage-roll-base-plus-bonus.md`.
+
+The current base model set for damage roll includes only those two alternatives.
+
+Current Defense resolution is documented in `combats/defense-resolution-flat.md`.
+
+The current base model set for Defense resolution includes only that flat-reduction option.
 
 ## Original Example Notes
 
@@ -165,6 +181,12 @@ The original racial hatred cycle should be preserved.
 For the MVP, racial hatred affects damage. When a warrior attacks a race it hates, the attack receives a damage bonus. Racial hatred does not affect hit chance in the current MVP direction.
 
 The exact damage bonus is not finalized yet.
+
+Current racial-hatred candidates are documented in `combats/racial-hatred-percent-bonus.md` and `combats/racial-hatred-base-additive.md`.
+
+Racial hatred is not random. If an attacker hates the defender's race, that matchup bonus applies consistently throughout the battle whenever that attacker lands a successful hit on that hated race.
+
+Source-style `viciously attacks` wording should be tied to successful hatred hits. A hatred matchup that misses should still use normal miss text.
 
 ## Formula Transparency
 
