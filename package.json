@@ -1,0 +1,14 @@
+{
+  "name": "immortal-arena",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "scenarios:list": "bun run scripts/list-scenarios.ts",
+    "simulate:one": "bun run scripts/simulate-one.ts",
+    "simulate:scenario": "bun run scripts/simulate-scenario.ts",
+    "simulate:all": "bun run scripts/simulate-all-models.ts",
+    "analyze:flags": "bun run scripts/analyze-balance-red-flags.ts",
+    "analyze:hatred": "bun run scripts/analyze-hatred-cycle.ts",
+    "analyze:speed": "bun run scripts/analyze-late-game-speed.ts"
+  }
+}

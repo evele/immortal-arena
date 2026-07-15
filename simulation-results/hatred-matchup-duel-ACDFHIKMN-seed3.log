@@ -1,0 +1,22 @@
+model: ACDFHIKMN
+seed: 3
+outcome: attacker_win
+winner: Lord Sylva
+actions: 13 / 100
+metrics: {"actions":13,"misses":3,"landedHits":10,"zeroDamageHits":2,"fullAbsorptions":0,"hatredHits":5,"preventedActions":0,"repeatedTurns":4,"attackerRemainingHp":14,"defenderRemainingHp":0}
+
+Sylva Blade viciously attacks Iron Shield for 5 damage. Iron Shield has 17 HP left.
+Iron Shield strikes Sylva Blade for 0 damage.
+Iron Shield strikes Sylva Blade for 3 damage. Sylva Blade has 19 HP left.
+Sylva Blade misses Iron Shield.
+Sylva Blade viciously attacks Iron Shield for 5 damage. Iron Shield has 12 HP left.
+Iron Shield misses Sylva Blade.
+Sylva Blade viciously attacks Iron Shield for 6 damage. Iron Shield has 6 HP left.
+Iron Shield strikes Sylva Blade for 3 damage. Sylva Blade has 16 HP left.
+Iron Shield strikes Sylva Blade for 0 damage.
+Sylva Blade misses Iron Shield.
+Iron Shield strikes Sylva Blade for 2 damage. Sylva Blade has 14 HP left.
+Sylva Blade viciously attacks Iron Shield for 4 damage. Iron Shield has 2 HP left.
+Sylva Blade viciously attacks Iron Shield for 4 damage. Iron Shield has 0 HP left.
+Iron Shield has perished.
+Lord Sylva defeats Lord Iron.

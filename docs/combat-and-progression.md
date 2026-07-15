@@ -174,6 +174,14 @@ Before implementing the combat engine, define the following in `docs/stats-and-f
 9. Log vocabulary: define required text events for miss, normal hit, zero damage, armor absorption, hatred hit, defeat, win, loss, and tie.
 10. Example validation: create a small set of expected combat scenarios based on `docs/examples/` before coding tests.
 
+Current randomness model is documented in `combats/randomness-sequential-events.md`.
+
+Current log-vocabulary model is documented in `combats/log-vocabulary-minimal-fixed.md`.
+
+Current derived full-model combinations are documented in `combats/complete-model-combinations.md`.
+
+A future alternative, where the battle seed is split into separate RNG channels for targeting, hit resolution, damage rolls, and tie-breaks, is worth keeping in mind if replay isolation becomes more important later, but it is not part of the current MVP base model.
+
 ## Racial Hatred
 
 The original racial hatred cycle should be preserved.

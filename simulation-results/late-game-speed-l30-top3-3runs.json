@@ -1,0 +1,6040 @@
+{
+  "config": {
+    "minLevel": 30,
+    "topCount": 3,
+    "seedCount": 3,
+    "seedStart": 1
+  },
+  "mirrorScenarios": [
+    {
+      "id": "generated-goblin-lord-vs-goblin-lord",
+      "description": "Generated catalog duel: Goblin Lord versus Goblin Lord.",
+      "attacker": {
+        "lordId": "generated-goblin-lord-lord",
+        "lordName": "Lord Goblin Lord",
+        "level": 45,
+        "warriors": [
+          {
+            "id": "a1",
+            "name": "Goblin Lord",
+            "race": "Goblin",
+            "stats": {
+              "hp": 188,
+              "damage": 50,
+              "defense": 44,
+              "accuracy": 67,
+              "agility": 93,
+              "speed": 162
+            }
+          }
+        ]
+      },
+      "defender": {
+        "lordId": "generated-goblin-lord-lord",
+        "lordName": "Lord Goblin Lord",
+        "level": 45,
+        "warriors": [
+          {
+            "id": "d1",
+            "name": "Goblin Lord",
+            "race": "Goblin",
+            "stats": {
+              "hp": 188,
+              "damage": 50,
+              "defense": 44,
+              "accuracy": 67,
+              "agility": 93,
+              "speed": 162
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "generated-elf-lord-vs-elf-lord",
+      "description": "Generated catalog duel: Elf Lord versus Elf Lord.",
+      "attacker": {
+        "lordId": "generated-elf-lord-lord",
+        "lordName": "Lord Elf Lord",
+        "level": 45,
+        "warriors": [
+          {
+            "id": "a1",
+            "name": "Elf Lord",
+            "race": "Elf",
+            "stats": {
+              "hp": 288,
+              "damage": 75,
+              "defense": 44,
+              "accuracy": 44,
+              "agility": 98,
+              "speed": 126
+            }
+          }
+        ]
+      },
+      "defender": {
+        "lordId": "generated-elf-lord-lord",
+        "lordName": "Lord Elf Lord",
+        "level": 45,
+        "warriors": [
+          {
+            "id": "d1",
+            "name": "Elf Lord",
+            "race": "Elf",
+            "stats": {
+              "hp": 288,
+              "damage": 75,
+              "defense": 44,
+              "accuracy": 44,
+              "agility": 98,
+              "speed": 126
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "generated-black-goblin-vs-black-goblin",
+      "description": "Generated catalog duel: Black Goblin versus Black Goblin.",
+      "attacker": {
+        "lordId": "generated-black-goblin-lord",
+        "lordName": "Lord Black Goblin",
+        "level": 30,
+        "warriors": [
+          {
+            "id": "a1",
+            "name": "Black Goblin",
+            "race": "Goblin",
+            "stats": {
+              "hp": 124,
+              "damage": 34,
+              "defense": 30,
+              "accuracy": 49,
+              "agility": 65,
+              "speed": 106
+            }
+          }
+        ]
+      },
+      "defender": {
+        "lordId": "generated-black-goblin-lord",
+        "lordName": "Lord Black Goblin",
+        "level": 30,
+        "warriors": [
+          {
+            "id": "d1",
+            "name": "Black Goblin",
+            "race": "Goblin",
+            "stats": {
+              "hp": 124,
+              "damage": 34,
+              "defense": 30,
+              "accuracy": 49,
+              "agility": 65,
+              "speed": 106
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "pressureScenarios": [
+    {
+      "id": "generated-goblin-lord-vs-dwarf-lord",
+      "description": "Generated catalog duel: Goblin Lord versus Dwarf Lord.",
+      "attacker": {
+        "lordId": "generated-goblin-lord-lord",
+        "lordName": "Lord Goblin Lord",
+        "level": 45,
+        "warriors": [
+          {
+            "id": "a1",
+            "name": "Goblin Lord",
+            "race": "Goblin",
+            "stats": {
+              "hp": 188,
+              "damage": 50,
+              "defense": 44,
+              "accuracy": 67,
+              "agility": 93,
+              "speed": 162
+            }
+          }
+        ]
+      },
+      "defender": {
+        "lordId": "generated-dwarf-lord-lord",
+        "lordName": "Lord Dwarf Lord",
+        "level": 45,
+        "warriors": [
+          {
+            "id": "d1",
+            "name": "Dwarf Lord",
+            "race": "Dwarf",
+            "stats": {
+              "hp": 380,
+              "damage": 73,
+              "defense": 73,
+              "accuracy": 51,
+              "agility": 35,
+              "speed": 33
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "generated-elf-lord-vs-dwarf-lord",
+      "description": "Generated catalog duel: Elf Lord versus Dwarf Lord.",
+      "attacker": {
+        "lordId": "generated-elf-lord-lord",
+        "lordName": "Lord Elf Lord",
+        "level": 45,
+        "warriors": [
+          {
+            "id": "a1",
+            "name": "Elf Lord",
+            "race": "Elf",
+            "stats": {
+              "hp": 288,
+              "damage": 75,
+              "defense": 44,
+              "accuracy": 44,
+              "agility": 98,
+              "speed": 126
+            }
+          }
+        ]
+      },
+      "defender": {
+        "lordId": "generated-dwarf-lord-lord",
+        "lordName": "Lord Dwarf Lord",
+        "level": 45,
+        "warriors": [
+          {
+            "id": "d1",
+            "name": "Dwarf Lord",
+            "race": "Dwarf",
+            "stats": {
+              "hp": 380,
+              "damage": 73,
+              "defense": 73,
+              "accuracy": 51,
+              "agility": 35,
+              "speed": 33
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "generated-black-goblin-vs-rune-dwarf",
+      "description": "Generated catalog duel: Black Goblin versus Rune Dwarf.",
+      "attacker": {
+        "lordId": "generated-black-goblin-lord",
+        "lordName": "Lord Black Goblin",
+        "level": 30,
+        "warriors": [
+          {
+            "id": "a1",
+            "name": "Black Goblin",
+            "race": "Goblin",
+            "stats": {
+              "hp": 124,
+              "damage": 34,
+              "defense": 30,
+              "accuracy": 49,
+              "agility": 65,
+              "speed": 106
+            }
+          }
+        ]
+      },
+      "defender": {
+        "lordId": "generated-rune-dwarf-lord",
+        "lordName": "Lord Rune Dwarf",
+        "level": 30,
+        "warriors": [
+          {
+            "id": "d1",
+            "name": "Rune Dwarf",
+            "race": "Dwarf",
+            "stats": {
+              "hp": 264,
+              "damage": 51,
+              "defense": 52,
+              "accuracy": 38,
+              "agility": 25,
+              "speed": 27
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "rows": [
+    {
+      "modelCode": "BCDFHJKMN",
+      "scenarioCount": 6,
+      "mirrorCount": 3,
+      "pressureCount": 3,
+      "averageActions": 187.2222222222222,
+      "averageDrawRate": 0.611111111111111,
+      "averageRepeatTurnRate": 0.4285399715648364,
+      "averageFullAbsorptionRate": 0.25358698309444466,
+      "mirrorAttackerBias": 0.1111111111111111,
+      "pressureAttackerWinRate": 0.3333333333333333,
+      "speedPressureScore": 78.76187330489817
+    },
+    {
+      "modelCode": "BCDFHJLMN",
+      "scenarioCount": 6,
+      "mirrorCount": 3,
+      "pressureCount": 3,
+      "averageActions": 187.2222222222222,
+      "averageDrawRate": 0.611111111111111,
+      "averageRepeatTurnRate": 0.4285399715648364,
+      "averageFullAbsorptionRate": 0.25358698309444466,
+      "mirrorAttackerBias": 0.1111111111111111,
+      "pressureAttackerWinRate": 0.3333333333333333,
+      "speedPressureScore": 78.76187330489817
+    },
+    {
+      "modelCode": "BCDFHIKMN",
+      "scenarioCount": 6,
+      "mirrorCount": 3,
+      "pressureCount": 3,
+      "averageActions": 187.1111111111111,
+      "averageDrawRate": 0.611111111111111,
+      "averageRepeatTurnRate": 0.4263118075719666,
+      "averageFullAbsorptionRate": 0.25358698309444466,
+      "mirrorAttackerBias": 0.1111111111111111,
+      "pressureAttackerWinRate": 0.3333333333333333,
+      "speedPressureScore": 78.64853402979419
+    },
+    {
+      "modelCode": "BCDFHILMN",
+      "scenarioCount": 6,
+      "mirrorCount": 3,
+      "pressureCount": 3,
+      "averageActions": 187.1111111111111,
+      "averageDrawRate": 0.611111111111111,
+      "averageRepeatTurnRate": 0.4263118075719666,
+      "averageFullAbsorptionRate": 0.25358698309444466,
+      "mirrorAttackerBias": 0.1111111111111111,
+      "pressureAttackerWinRate": 0.3333333333333333,
+      "speedPressureScore": 78.64853402979419
+    },
+    {
+      "modelCode": "ACDFHIKMN",
+      "scenarioCount": 6,
+      "mirrorCount": 3,
+      "pressureCount": 3,
+      "averageActions": 182,
+      "averageDrawRate": 0.5,
+      "averageRepeatTurnRate": 0.4373470228380261,
+      "averageFullAbsorptionRate": 0.25282865312524155,
+      "mirrorAttackerBias": 0.1111111111111111,
+      "pressureAttackerWinRate": 0.3333333333333333,
+      "speedPressureScore": 75.4929025783936
+    },
+    {
+      "modelCode": "ACDFHILMN",
+      "scenarioCount": 6,
+      "mirrorCount": 3,
+      "pressureCount": 3,
+      "averageActions": 182,
+      "averageDrawRate": 0.5,
+      "averageRepeatTurnRate": 0.4373470228380261,
+      "averageFullAbsorptionRate": 0.25282865312524155,
+      "mirrorAttackerBias": 0.1111111111111111,
+      "pressureAttackerWinRate": 0.3333333333333333,
+      "speedPressureScore": 75.4929025783936
+    },
+    {
+      "modelCode": "ACDFHJKMN",
+      "scenarioCount": 6,
+      "mirrorCount": 3,
+      "pressureCount": 3,
+      "averageActions": 182,
+      "averageDrawRate": 0.5,
+      "averageRepeatTurnRate": 0.4373470228380261,
+      "averageFullAbsorptionRate": 0.25282865312524155,
+      "mirrorAttackerBias": 0.1111111111111111,
+      "pressureAttackerWinRate": 0.3333333333333333,
+      "speedPressureScore": 75.4929025783936
+    },
+    {
+      "modelCode": "ACDFHJLMN",
+      "scenarioCount": 6,
+      "mirrorCount": 3,
+      "pressureCount": 3,
+      "averageActions": 182,
+      "averageDrawRate": 0.5,
+      "averageRepeatTurnRate": 0.4373470228380261,
+      "averageFullAbsorptionRate": 0.25282865312524155,
+      "mirrorAttackerBias": 0.1111111111111111,
+      "pressureAttackerWinRate": 0.3333333333333333,
+      "speedPressureScore": 75.4929025783936
+    },
+    {
+      "modelCode": "ACDGHJKMN",
+      "scenarioCount": 6,
+      "mirrorCount": 3,
+      "pressureCount": 3,
+      "averageActions": 125.83333333333333,
+      "averageDrawRate": 0.1111111111111111,
+      "averageRepeatTurnRate": 0.4383789948748536,
+      "averageFullAbsorptionRate": 0.23376403535112666,
+      "mirrorAttackerBias": 0.5555555555555555,
+      "pressureAttackerWinRate": 0.3333333333333333,
+      "speedPressureScore": 57.99393455043042
+    },
+    {
+      "modelCode": "ACDGHJLMN",
+      "scenarioCount": 6,
+      "mirrorCount": 3,
+      "pressureCount": 3,
+      "averageActions": 125.83333333333333,
+      "averageDrawRate": 0.1111111111111111,
+      "averageRepeatTurnRate": 0.4383789948748536,
+      "averageFullAbsorptionRate": 0.23376403535112666,
+      "mirrorAttackerBias": 0.5555555555555555,
+      "pressureAttackerWinRate": 0.3333333333333333,
+      "speedPressureScore": 57.99393455043042
+    },
+    {
+      "modelCode": "ACDGHIKMN",
+      "scenarioCount": 6,
+      "mirrorCount": 3,
+      "pressureCount": 3,
+      "averageActions": 125.5,
+      "averageDrawRate": 0.1111111111111111,
+      "averageRepeatTurnRate": 0.44622213212975553,
+      "averageFullAbsorptionRate": 0.23376403535112666,
+      "mirrorAttackerBias": 0.5555555555555555,
+      "pressureAttackerWinRate": 0.3333333333333333,
+      "speedPressureScore": 57.890666576574205
+    },
+    {
+      "modelCode": "ACDGHILMN",
+      "scenarioCount": 6,
+      "mirrorCount": 3,
+      "pressureCount": 3,
+      "averageActions": 125.5,
+      "averageDrawRate": 0.1111111111111111,
+      "averageRepeatTurnRate": 0.44622213212975553,
+      "averageFullAbsorptionRate": 0.23376403535112666,
+      "mirrorAttackerBias": 0.5555555555555555,
+      "pressureAttackerWinRate": 0.3333333333333333,
+      "speedPressureScore": 57.890666576574205
+    },
+    {
+      "modelCode": "BCDGHIKMN",
+      "scenarioCount": 6,
+      "mirrorCount": 3,
+      "pressureCount": 3,
+      "averageActions": 116.16666666666664,
+      "averageDrawRate": 0.05555555555555555,
+      "averageRepeatTurnRate": 0.43967648070730275,
+      "averageFullAbsorptionRate": 0.2345715771629567,
+      "mirrorAttackerBias": 0.5555555555555555,
+      "pressureAttackerWinRate": 0.3333333333333333,
+      "speedPressureScore": 51.99523203626285
+    },
+    {
+      "modelCode": "BCDGHILMN",
+      "scenarioCount": 6,
+      "mirrorCount": 3,
+      "pressureCount": 3,
+      "averageActions": 116.16666666666664,
+      "averageDrawRate": 0.05555555555555555,
+      "averageRepeatTurnRate": 0.43967648070730275,
+      "averageFullAbsorptionRate": 0.2345715771629567,
+      "mirrorAttackerBias": 0.5555555555555555,
+      "pressureAttackerWinRate": 0.3333333333333333,
+      "speedPressureScore": 51.99523203626285
+    },
+    {
+      "modelCode": "BCDGHJKMN",
+      "scenarioCount": 6,
+      "mirrorCount": 3,
+      "pressureCount": 3,
+      "averageActions": 116.38888888888887,
+      "averageDrawRate": 0.05555555555555555,
+      "averageRepeatTurnRate": 0.4294200704508924,
+      "averageFullAbsorptionRate": 0.2345715771629567,
+      "mirrorAttackerBias": 0.5555555555555555,
+      "pressureAttackerWinRate": 0.3333333333333333,
+      "speedPressureScore": 51.984975626006445
+    },
+    {
+      "modelCode": "BCDGHJLMN",
+      "scenarioCount": 6,
+      "mirrorCount": 3,
+      "pressureCount": 3,
+      "averageActions": 116.38888888888887,
+      "averageDrawRate": 0.05555555555555555,
+      "averageRepeatTurnRate": 0.4294200704508924,
+      "averageFullAbsorptionRate": 0.2345715771629567,
+      "mirrorAttackerBias": 0.5555555555555555,
+      "pressureAttackerWinRate": 0.3333333333333333,
+      "speedPressureScore": 51.984975626006445
+    },
+    {
+      "modelCode": "BCEFHIKMN",
+      "scenarioCount": 6,
+      "mirrorCount": 3,
+      "pressureCount": 3,
+      "averageActions": 100.66666666666667,
+      "averageDrawRate": 0,
+      "averageRepeatTurnRate": 0.4339165416708523,
+      "averageFullAbsorptionRate": 0.20712585615922993,
+      "mirrorAttackerBias": 0.3333333333333333,
+      "pressureAttackerWinRate": 0.3333333333333333,
+      "speedPressureScore": 42.65613876389307
+    },
+    {
+      "modelCode": "BCEFHILMN",
+      "scenarioCount": 6,
+      "mirrorCount": 3,
+      "pressureCount": 3,
+      "averageActions": 100.66666666666667,
+      "averageDrawRate": 0,
+      "averageRepeatTurnRate": 0.4339165416708523,
+      "averageFullAbsorptionRate": 0.20712585615922993,
+      "mirrorAttackerBias": 0.3333333333333333,
+      "pressureAttackerWinRate": 0.3333333333333333,
+      "speedPressureScore": 42.65613876389307
+    },
+    {
+      "modelCode": "BCEFHJKMN",
+      "scenarioCount": 6,
+      "mirrorCount": 3,
+      "pressureCount": 3,
+      "averageActions": 100.6111111111111,
+      "averageDrawRate": 0,
+      "averageRepeatTurnRate": 0.43336194026824737,
+      "averageFullAbsorptionRate": 0.20712585615922993,
+      "mirrorAttackerBias": 0.3333333333333333,
+      "pressureAttackerWinRate": 0.3333333333333333,
+      "speedPressureScore": 42.600028606934906
+    },
+    {
+      "modelCode": "BCEFHJLMN",
+      "scenarioCount": 6,
+      "mirrorCount": 3,
+      "pressureCount": 3,
+      "averageActions": 100.6111111111111,
+      "averageDrawRate": 0,
+      "averageRepeatTurnRate": 0.43336194026824737,
+      "averageFullAbsorptionRate": 0.20712585615922993,
+      "mirrorAttackerBias": 0.3333333333333333,
+      "pressureAttackerWinRate": 0.3333333333333333,
+      "speedPressureScore": 42.600028606934906
+    },
+    {
+      "modelCode": "ACEFHIKMN",
+      "scenarioCount": 6,
+      "mirrorCount": 3,
+      "pressureCount": 3,
+      "averageActions": 99.27777777777777,
+      "averageDrawRate": 0,
+      "averageRepeatTurnRate": 0.44121585480941167,
+      "averageFullAbsorptionRate": 0.21046065667862798,
+      "mirrorAttackerBias": 0.3333333333333333,
+      "pressureAttackerWinRate": 0.3333333333333333,
+      "speedPressureScore": 42.05232696592052
+    },
+    {
+      "modelCode": "ACEFHILMN",
+      "scenarioCount": 6,
+      "mirrorCount": 3,
+      "pressureCount": 3,
+      "averageActions": 99.27777777777777,
+      "averageDrawRate": 0,
+      "averageRepeatTurnRate": 0.44121585480941167,
+      "averageFullAbsorptionRate": 0.21046065667862798,
+      "mirrorAttackerBias": 0.3333333333333333,
+      "pressureAttackerWinRate": 0.3333333333333333,
+      "speedPressureScore": 42.05232696592052
+    },
+    {
+      "modelCode": "ACEFHJKMN",
+      "scenarioCount": 6,
+      "mirrorCount": 3,
+      "pressureCount": 3,
+      "averageActions": 99.27777777777777,
+      "averageDrawRate": 0,
+      "averageRepeatTurnRate": 0.44121585480941167,
+      "averageFullAbsorptionRate": 0.21046065667862798,
+      "mirrorAttackerBias": 0.3333333333333333,
+      "pressureAttackerWinRate": 0.3333333333333333,
+      "speedPressureScore": 42.05232696592052
+    },
+    {
+      "modelCode": "ACEFHJLMN",
+      "scenarioCount": 6,
+      "mirrorCount": 3,
+      "pressureCount": 3,
+      "averageActions": 99.27777777777777,
+      "averageDrawRate": 0,
+      "averageRepeatTurnRate": 0.44121585480941167,
+      "averageFullAbsorptionRate": 0.21046065667862798,
+      "mirrorAttackerBias": 0.3333333333333333,
+      "pressureAttackerWinRate": 0.3333333333333333,
+      "speedPressureScore": 42.05232696592052
+    },
+    {
+      "modelCode": "BCEGHJKMN",
+      "scenarioCount": 6,
+      "mirrorCount": 3,
+      "pressureCount": 3,
+      "averageActions": 48.833333333333336,
+      "averageDrawRate": 0,
+      "averageRepeatTurnRate": 0.43545336845570487,
+      "averageFullAbsorptionRate": 0.15658404607030652,
+      "mirrorAttackerBias": 0.3333333333333333,
+      "pressureAttackerWinRate": 0.3333333333333333,
+      "speedPressureScore": 23.491008924011265
+    },
+    {
+      "modelCode": "BCEGHJLMN",
+      "scenarioCount": 6,
+      "mirrorCount": 3,
+      "pressureCount": 3,
+      "averageActions": 48.833333333333336,
+      "averageDrawRate": 0,
+      "averageRepeatTurnRate": 0.43545336845570487,
+      "averageFullAbsorptionRate": 0.15658404607030652,
+      "mirrorAttackerBias": 0.3333333333333333,
+      "pressureAttackerWinRate": 0.3333333333333333,
+      "speedPressureScore": 23.491008924011265
+    },
+    {
+      "modelCode": "BCEGHIKMN",
+      "scenarioCount": 6,
+      "mirrorCount": 3,
+      "pressureCount": 3,
+      "averageActions": 47.94444444444445,
+      "averageDrawRate": 0,
+      "averageRepeatTurnRate": 0.4328271058294422,
+      "averageFullAbsorptionRate": 0.15658404607030652,
+      "mirrorAttackerBias": 0.3333333333333333,
+      "pressureAttackerWinRate": 0.3333333333333333,
+      "speedPressureScore": 22.932827105829443
+    },
+    {
+      "modelCode": "BCEGHILMN",
+      "scenarioCount": 6,
+      "mirrorCount": 3,
+      "pressureCount": 3,
+      "averageActions": 47.94444444444445,
+      "averageDrawRate": 0,
+      "averageRepeatTurnRate": 0.4328271058294422,
+      "averageFullAbsorptionRate": 0.15658404607030652,
+      "mirrorAttackerBias": 0.3333333333333333,
+      "pressureAttackerWinRate": 0.3333333333333333,
+      "speedPressureScore": 22.932827105829443
+    },
+    {
+      "modelCode": "ACEGHJKMN",
+      "scenarioCount": 6,
+      "mirrorCount": 3,
+      "pressureCount": 3,
+      "averageActions": 47.333333333333336,
+      "averageDrawRate": 0,
+      "averageRepeatTurnRate": 0.4424176486676486,
+      "averageFullAbsorptionRate": 0.1601228716868527,
+      "mirrorAttackerBias": 0.3333333333333333,
+      "pressureAttackerWinRate": 0.3333333333333333,
+      "speedPressureScore": 22.66463987088987
+    },
+    {
+      "modelCode": "ACEGHJLMN",
+      "scenarioCount": 6,
+      "mirrorCount": 3,
+      "pressureCount": 3,
+      "averageActions": 47.333333333333336,
+      "averageDrawRate": 0,
+      "averageRepeatTurnRate": 0.4424176486676486,
+      "averageFullAbsorptionRate": 0.1601228716868527,
+      "mirrorAttackerBias": 0.3333333333333333,
+      "pressureAttackerWinRate": 0.3333333333333333,
+      "speedPressureScore": 22.66463987088987
+    },
+    {
+      "modelCode": "ACEGHIKMN",
+      "scenarioCount": 6,
+      "mirrorCount": 3,
+      "pressureCount": 3,
+      "averageActions": 46.72222222222223,
+      "averageDrawRate": 0,
+      "averageRepeatTurnRate": 0.441807148057148,
+      "averageFullAbsorptionRate": 0.1601228716868527,
+      "mirrorAttackerBias": 0.3333333333333333,
+      "pressureAttackerWinRate": 0.3333333333333333,
+      "speedPressureScore": 22.27514048139048
+    },
+    {
+      "modelCode": "ACEGHILMN",
+      "scenarioCount": 6,
+      "mirrorCount": 3,
+      "pressureCount": 3,
+      "averageActions": 46.72222222222223,
+      "averageDrawRate": 0,
+      "averageRepeatTurnRate": 0.441807148057148,
+      "averageFullAbsorptionRate": 0.1601228716868527,
+      "mirrorAttackerBias": 0.3333333333333333,
+      "pressureAttackerWinRate": 0.3333333333333333,
+      "speedPressureScore": 22.27514048139048
+    }
+  ],
+  "scenarioResults": [
+    {
+      "row": {
+        "modelCode": "BCDFHJKMN",
+        "scenarioCount": 6,
+        "mirrorCount": 3,
+        "pressureCount": 3,
+        "averageActions": 187.2222222222222,
+        "averageDrawRate": 0.611111111111111,
+        "averageRepeatTurnRate": 0.4285399715648364,
+        "averageFullAbsorptionRate": 0.25358698309444466,
+        "mirrorAttackerBias": 0.1111111111111111,
+        "pressureAttackerWinRate": 0.3333333333333333,
+        "speedPressureScore": 78.76187330489817
+      },
+      "scenarioResults": [
+        {
+          "kind": "mirror",
+          "aggregate": {
+            "scenarioId": "generated-goblin-lord-vs-goblin-lord",
+            "modelCode": "BCDFHJKMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 0,
+            "defenderWins": 0,
+            "draws": 3,
+            "averageActions": 276,
+            "missRate": 0.8719806763285024,
+            "zeroDamageRate": 0.0036231884057971015,
+            "fullAbsorptionRate": 0.022946859903381644,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.24727272727272728,
+            "attackerRemainingHpAverage": 68.66666666666667,
+            "defenderRemainingHpAverage": 57.333333333333336
+          }
+        },
+        {
+          "kind": "mirror",
+          "aggregate": {
+            "scenarioId": "generated-elf-lord-vs-elf-lord",
+            "modelCode": "BCDFHJKMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 2,
+            "defenderWins": 1,
+            "draws": 0,
+            "averageActions": 129.66666666666666,
+            "missRate": 0.87146529562982,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.25129533678756477,
+            "attackerRemainingHpAverage": 59,
+            "defenderRemainingHpAverage": 5.333333333333333
+          }
+        },
+        {
+          "kind": "mirror",
+          "aggregate": {
+            "scenarioId": "generated-black-goblin-vs-black-goblin",
+            "modelCode": "BCDFHJKMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 0,
+            "defenderWins": 0,
+            "draws": 3,
+            "averageActions": 216,
+            "missRate": 0.8703703703703703,
+            "zeroDamageRate": 0.006172839506172839,
+            "fullAbsorptionRate": 0.023148148148148147,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.24806201550387597,
+            "attackerRemainingHpAverage": 51.333333333333336,
+            "defenderRemainingHpAverage": 56.666666666666664
+          }
+        },
+        {
+          "kind": "pressure",
+          "aggregate": {
+            "scenarioId": "generated-goblin-lord-vs-dwarf-lord",
+            "modelCode": "BCDFHJKMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 0,
+            "defenderWins": 0,
+            "draws": 3,
+            "averageActions": 276,
+            "missRate": 0.23792270531400966,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0.7427536231884058,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.6654545454545454,
+            "attackerRemainingHpAverage": 38,
+            "defenderRemainingHpAverage": 380
+          }
+        },
+        {
+          "kind": "pressure",
+          "aggregate": {
+            "scenarioId": "generated-elf-lord-vs-dwarf-lord",
+            "modelCode": "BCDFHJKMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 3,
+            "defenderWins": 0,
+            "draws": 0,
+            "averageActions": 23.666666666666668,
+            "missRate": 0.29577464788732394,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0,
+            "hatredHitRate": 0.6901408450704225,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.5588235294117647,
+            "attackerRemainingHpAverage": 278.6666666666667,
+            "defenderRemainingHpAverage": 0
+          }
+        },
+        {
+          "kind": "pressure",
+          "aggregate": {
+            "scenarioId": "generated-black-goblin-vs-rune-dwarf",
+            "modelCode": "BCDFHJKMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 0,
+            "defenderWins": 1,
+            "draws": 2,
+            "averageActions": 202,
+            "missRate": 0.24587458745874588,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0.7326732673267327,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.6003316749585407,
+            "attackerRemainingHpAverage": 27.666666666666668,
+            "defenderRemainingHpAverage": 264
+          }
+        }
+      ]
+    },
+    {
+      "row": {
+        "modelCode": "BCDFHJLMN",
+        "scenarioCount": 6,
+        "mirrorCount": 3,
+        "pressureCount": 3,
+        "averageActions": 187.2222222222222,
+        "averageDrawRate": 0.611111111111111,
+        "averageRepeatTurnRate": 0.4285399715648364,
+        "averageFullAbsorptionRate": 0.25358698309444466,
+        "mirrorAttackerBias": 0.1111111111111111,
+        "pressureAttackerWinRate": 0.3333333333333333,
+        "speedPressureScore": 78.76187330489817
+      },
+      "scenarioResults": [
+        {
+          "kind": "mirror",
+          "aggregate": {
+            "scenarioId": "generated-goblin-lord-vs-goblin-lord",
+            "modelCode": "BCDFHJLMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 0,
+            "defenderWins": 0,
+            "draws": 3,
+            "averageActions": 276,
+            "missRate": 0.8719806763285024,
+            "zeroDamageRate": 0.0036231884057971015,
+            "fullAbsorptionRate": 0.022946859903381644,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.24727272727272728,
+            "attackerRemainingHpAverage": 68.66666666666667,
+            "defenderRemainingHpAverage": 57.333333333333336
+          }
+        },
+        {
+          "kind": "mirror",
+          "aggregate": {
+            "scenarioId": "generated-elf-lord-vs-elf-lord",
+            "modelCode": "BCDFHJLMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 2,
+            "defenderWins": 1,
+            "draws": 0,
+            "averageActions": 129.66666666666666,
+            "missRate": 0.87146529562982,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.25129533678756477,
+            "attackerRemainingHpAverage": 59,
+            "defenderRemainingHpAverage": 5.333333333333333
+          }
+        },
+        {
+          "kind": "mirror",
+          "aggregate": {
+            "scenarioId": "generated-black-goblin-vs-black-goblin",
+            "modelCode": "BCDFHJLMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 0,
+            "defenderWins": 0,
+            "draws": 3,
+            "averageActions": 216,
+            "missRate": 0.8703703703703703,
+            "zeroDamageRate": 0.006172839506172839,
+            "fullAbsorptionRate": 0.023148148148148147,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.24806201550387597,
+            "attackerRemainingHpAverage": 51.333333333333336,
+            "defenderRemainingHpAverage": 56.666666666666664
+          }
+        },
+        {
+          "kind": "pressure",
+          "aggregate": {
+            "scenarioId": "generated-goblin-lord-vs-dwarf-lord",
+            "modelCode": "BCDFHJLMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 0,
+            "defenderWins": 0,
+            "draws": 3,
+            "averageActions": 276,
+            "missRate": 0.23792270531400966,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0.7427536231884058,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.6654545454545454,
+            "attackerRemainingHpAverage": 38,
+            "defenderRemainingHpAverage": 380
+          }
+        },
+        {
+          "kind": "pressure",
+          "aggregate": {
+            "scenarioId": "generated-elf-lord-vs-dwarf-lord",
+            "modelCode": "BCDFHJLMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 3,
+            "defenderWins": 0,
+            "draws": 0,
+            "averageActions": 23.666666666666668,
+            "missRate": 0.29577464788732394,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0,
+            "hatredHitRate": 0.6901408450704225,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.5588235294117647,
+            "attackerRemainingHpAverage": 278.6666666666667,
+            "defenderRemainingHpAverage": 0
+          }
+        },
+        {
+          "kind": "pressure",
+          "aggregate": {
+            "scenarioId": "generated-black-goblin-vs-rune-dwarf",
+            "modelCode": "BCDFHJLMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 0,
+            "defenderWins": 1,
+            "draws": 2,
+            "averageActions": 202,
+            "missRate": 0.24587458745874588,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0.7326732673267327,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.6003316749585407,
+            "attackerRemainingHpAverage": 27.666666666666668,
+            "defenderRemainingHpAverage": 264
+          }
+        }
+      ]
+    },
+    {
+      "row": {
+        "modelCode": "BCDFHIKMN",
+        "scenarioCount": 6,
+        "mirrorCount": 3,
+        "pressureCount": 3,
+        "averageActions": 187.1111111111111,
+        "averageDrawRate": 0.611111111111111,
+        "averageRepeatTurnRate": 0.4263118075719666,
+        "averageFullAbsorptionRate": 0.25358698309444466,
+        "mirrorAttackerBias": 0.1111111111111111,
+        "pressureAttackerWinRate": 0.3333333333333333,
+        "speedPressureScore": 78.64853402979419
+      },
+      "scenarioResults": [
+        {
+          "kind": "mirror",
+          "aggregate": {
+            "scenarioId": "generated-goblin-lord-vs-goblin-lord",
+            "modelCode": "BCDFHIKMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 0,
+            "defenderWins": 0,
+            "draws": 3,
+            "averageActions": 276,
+            "missRate": 0.8719806763285024,
+            "zeroDamageRate": 0.0036231884057971015,
+            "fullAbsorptionRate": 0.022946859903381644,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.24727272727272728,
+            "attackerRemainingHpAverage": 68.66666666666667,
+            "defenderRemainingHpAverage": 57.333333333333336
+          }
+        },
+        {
+          "kind": "mirror",
+          "aggregate": {
+            "scenarioId": "generated-elf-lord-vs-elf-lord",
+            "modelCode": "BCDFHIKMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 2,
+            "defenderWins": 1,
+            "draws": 0,
+            "averageActions": 129.66666666666666,
+            "missRate": 0.87146529562982,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.25129533678756477,
+            "attackerRemainingHpAverage": 59,
+            "defenderRemainingHpAverage": 5.333333333333333
+          }
+        },
+        {
+          "kind": "mirror",
+          "aggregate": {
+            "scenarioId": "generated-black-goblin-vs-black-goblin",
+            "modelCode": "BCDFHIKMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 0,
+            "defenderWins": 0,
+            "draws": 3,
+            "averageActions": 216,
+            "missRate": 0.8703703703703703,
+            "zeroDamageRate": 0.006172839506172839,
+            "fullAbsorptionRate": 0.023148148148148147,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.24806201550387597,
+            "attackerRemainingHpAverage": 51.333333333333336,
+            "defenderRemainingHpAverage": 56.666666666666664
+          }
+        },
+        {
+          "kind": "pressure",
+          "aggregate": {
+            "scenarioId": "generated-goblin-lord-vs-dwarf-lord",
+            "modelCode": "BCDFHIKMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 0,
+            "defenderWins": 0,
+            "draws": 3,
+            "averageActions": 276,
+            "missRate": 0.23792270531400966,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0.7427536231884058,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.6654545454545454,
+            "attackerRemainingHpAverage": 38,
+            "defenderRemainingHpAverage": 380
+          }
+        },
+        {
+          "kind": "pressure",
+          "aggregate": {
+            "scenarioId": "generated-elf-lord-vs-dwarf-lord",
+            "modelCode": "BCDFHIKMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 3,
+            "defenderWins": 0,
+            "draws": 0,
+            "averageActions": 23,
+            "missRate": 0.2898550724637681,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0,
+            "hatredHitRate": 0.6956521739130435,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.5454545454545454,
+            "attackerRemainingHpAverage": 278.6666666666667,
+            "defenderRemainingHpAverage": 0
+          }
+        },
+        {
+          "kind": "pressure",
+          "aggregate": {
+            "scenarioId": "generated-black-goblin-vs-rune-dwarf",
+            "modelCode": "BCDFHIKMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 0,
+            "defenderWins": 1,
+            "draws": 2,
+            "averageActions": 202,
+            "missRate": 0.24587458745874588,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0.7326732673267327,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.6003316749585407,
+            "attackerRemainingHpAverage": 27.666666666666668,
+            "defenderRemainingHpAverage": 264
+          }
+        }
+      ]
+    },
+    {
+      "row": {
+        "modelCode": "BCDFHILMN",
+        "scenarioCount": 6,
+        "mirrorCount": 3,
+        "pressureCount": 3,
+        "averageActions": 187.1111111111111,
+        "averageDrawRate": 0.611111111111111,
+        "averageRepeatTurnRate": 0.4263118075719666,
+        "averageFullAbsorptionRate": 0.25358698309444466,
+        "mirrorAttackerBias": 0.1111111111111111,
+        "pressureAttackerWinRate": 0.3333333333333333,
+        "speedPressureScore": 78.64853402979419
+      },
+      "scenarioResults": [
+        {
+          "kind": "mirror",
+          "aggregate": {
+            "scenarioId": "generated-goblin-lord-vs-goblin-lord",
+            "modelCode": "BCDFHILMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 0,
+            "defenderWins": 0,
+            "draws": 3,
+            "averageActions": 276,
+            "missRate": 0.8719806763285024,
+            "zeroDamageRate": 0.0036231884057971015,
+            "fullAbsorptionRate": 0.022946859903381644,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.24727272727272728,
+            "attackerRemainingHpAverage": 68.66666666666667,
+            "defenderRemainingHpAverage": 57.333333333333336
+          }
+        },
+        {
+          "kind": "mirror",
+          "aggregate": {
+            "scenarioId": "generated-elf-lord-vs-elf-lord",
+            "modelCode": "BCDFHILMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 2,
+            "defenderWins": 1,
+            "draws": 0,
+            "averageActions": 129.66666666666666,
+            "missRate": 0.87146529562982,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.25129533678756477,
+            "attackerRemainingHpAverage": 59,
+            "defenderRemainingHpAverage": 5.333333333333333
+          }
+        },
+        {
+          "kind": "mirror",
+          "aggregate": {
+            "scenarioId": "generated-black-goblin-vs-black-goblin",
+            "modelCode": "BCDFHILMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 0,
+            "defenderWins": 0,
+            "draws": 3,
+            "averageActions": 216,
+            "missRate": 0.8703703703703703,
+            "zeroDamageRate": 0.006172839506172839,
+            "fullAbsorptionRate": 0.023148148148148147,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.24806201550387597,
+            "attackerRemainingHpAverage": 51.333333333333336,
+            "defenderRemainingHpAverage": 56.666666666666664
+          }
+        },
+        {
+          "kind": "pressure",
+          "aggregate": {
+            "scenarioId": "generated-goblin-lord-vs-dwarf-lord",
+            "modelCode": "BCDFHILMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 0,
+            "defenderWins": 0,
+            "draws": 3,
+            "averageActions": 276,
+            "missRate": 0.23792270531400966,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0.7427536231884058,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.6654545454545454,
+            "attackerRemainingHpAverage": 38,
+            "defenderRemainingHpAverage": 380
+          }
+        },
+        {
+          "kind": "pressure",
+          "aggregate": {
+            "scenarioId": "generated-elf-lord-vs-dwarf-lord",
+            "modelCode": "BCDFHILMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 3,
+            "defenderWins": 0,
+            "draws": 0,
+            "averageActions": 23,
+            "missRate": 0.2898550724637681,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0,
+            "hatredHitRate": 0.6956521739130435,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.5454545454545454,
+            "attackerRemainingHpAverage": 278.6666666666667,
+            "defenderRemainingHpAverage": 0
+          }
+        },
+        {
+          "kind": "pressure",
+          "aggregate": {
+            "scenarioId": "generated-black-goblin-vs-rune-dwarf",
+            "modelCode": "BCDFHILMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 0,
+            "defenderWins": 1,
+            "draws": 2,
+            "averageActions": 202,
+            "missRate": 0.24587458745874588,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0.7326732673267327,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.6003316749585407,
+            "attackerRemainingHpAverage": 27.666666666666668,
+            "defenderRemainingHpAverage": 264
+          }
+        }
+      ]
+    },
+    {
+      "row": {
+        "modelCode": "ACDFHIKMN",
+        "scenarioCount": 6,
+        "mirrorCount": 3,
+        "pressureCount": 3,
+        "averageActions": 182,
+        "averageDrawRate": 0.5,
+        "averageRepeatTurnRate": 0.4373470228380261,
+        "averageFullAbsorptionRate": 0.25282865312524155,
+        "mirrorAttackerBias": 0.1111111111111111,
+        "pressureAttackerWinRate": 0.3333333333333333,
+        "speedPressureScore": 75.4929025783936
+      },
+      "scenarioResults": [
+        {
+          "kind": "mirror",
+          "aggregate": {
+            "scenarioId": "generated-goblin-lord-vs-goblin-lord",
+            "modelCode": "ACDFHIKMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 0,
+            "defenderWins": 0,
+            "draws": 3,
+            "averageActions": 276,
+            "missRate": 0.8719806763285024,
+            "zeroDamageRate": 0.0036231884057971015,
+            "fullAbsorptionRate": 0.022946859903381644,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.24727272727272728,
+            "attackerRemainingHpAverage": 68.66666666666667,
+            "defenderRemainingHpAverage": 57.333333333333336
+          }
+        },
+        {
+          "kind": "mirror",
+          "aggregate": {
+            "scenarioId": "generated-elf-lord-vs-elf-lord",
+            "modelCode": "ACDFHIKMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 2,
+            "defenderWins": 1,
+            "draws": 0,
+            "averageActions": 129.66666666666666,
+            "missRate": 0.87146529562982,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.25129533678756477,
+            "attackerRemainingHpAverage": 59,
+            "defenderRemainingHpAverage": 5.333333333333333
+          }
+        },
+        {
+          "kind": "mirror",
+          "aggregate": {
+            "scenarioId": "generated-black-goblin-vs-black-goblin",
+            "modelCode": "ACDFHIKMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 0,
+            "defenderWins": 0,
+            "draws": 3,
+            "averageActions": 216,
+            "missRate": 0.8703703703703703,
+            "zeroDamageRate": 0.006172839506172839,
+            "fullAbsorptionRate": 0.023148148148148147,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.24806201550387597,
+            "attackerRemainingHpAverage": 51.333333333333336,
+            "defenderRemainingHpAverage": 56.666666666666664
+          }
+        },
+        {
+          "kind": "pressure",
+          "aggregate": {
+            "scenarioId": "generated-goblin-lord-vs-dwarf-lord",
+            "modelCode": "ACDFHIKMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 0,
+            "defenderWins": 1,
+            "draws": 2,
+            "averageActions": 256.6666666666667,
+            "missRate": 0.24285714285714285,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0.7363636363636363,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.6649282920469362,
+            "attackerRemainingHpAverage": 56.666666666666664,
+            "defenderRemainingHpAverage": 380
+          }
+        },
+        {
+          "kind": "pressure",
+          "aggregate": {
+            "scenarioId": "generated-elf-lord-vs-dwarf-lord",
+            "modelCode": "ACDFHIKMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 3,
+            "defenderWins": 0,
+            "draws": 0,
+            "averageActions": 25.333333333333332,
+            "missRate": 0.2894736842105263,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0,
+            "hatredHitRate": 0.6842105263157895,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.6164383561643836,
+            "attackerRemainingHpAverage": 265.6666666666667,
+            "defenderRemainingHpAverage": 0
+          }
+        },
+        {
+          "kind": "pressure",
+          "aggregate": {
+            "scenarioId": "generated-black-goblin-vs-rune-dwarf",
+            "modelCode": "ACDFHIKMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 0,
+            "defenderWins": 2,
+            "draws": 1,
+            "averageActions": 188.33333333333334,
+            "missRate": 0.2424778761061947,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0.7345132743362832,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.5960854092526691,
+            "attackerRemainingHpAverage": 25.333333333333332,
+            "defenderRemainingHpAverage": 264
+          }
+        }
+      ]
+    },
+    {
+      "row": {
+        "modelCode": "ACDFHILMN",
+        "scenarioCount": 6,
+        "mirrorCount": 3,
+        "pressureCount": 3,
+        "averageActions": 182,
+        "averageDrawRate": 0.5,
+        "averageRepeatTurnRate": 0.4373470228380261,
+        "averageFullAbsorptionRate": 0.25282865312524155,
+        "mirrorAttackerBias": 0.1111111111111111,
+        "pressureAttackerWinRate": 0.3333333333333333,
+        "speedPressureScore": 75.4929025783936
+      },
+      "scenarioResults": [
+        {
+          "kind": "mirror",
+          "aggregate": {
+            "scenarioId": "generated-goblin-lord-vs-goblin-lord",
+            "modelCode": "ACDFHILMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 0,
+            "defenderWins": 0,
+            "draws": 3,
+            "averageActions": 276,
+            "missRate": 0.8719806763285024,
+            "zeroDamageRate": 0.0036231884057971015,
+            "fullAbsorptionRate": 0.022946859903381644,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.24727272727272728,
+            "attackerRemainingHpAverage": 68.66666666666667,
+            "defenderRemainingHpAverage": 57.333333333333336
+          }
+        },
+        {
+          "kind": "mirror",
+          "aggregate": {
+            "scenarioId": "generated-elf-lord-vs-elf-lord",
+            "modelCode": "ACDFHILMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 2,
+            "defenderWins": 1,
+            "draws": 0,
+            "averageActions": 129.66666666666666,
+            "missRate": 0.87146529562982,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.25129533678756477,
+            "attackerRemainingHpAverage": 59,
+            "defenderRemainingHpAverage": 5.333333333333333
+          }
+        },
+        {
+          "kind": "mirror",
+          "aggregate": {
+            "scenarioId": "generated-black-goblin-vs-black-goblin",
+            "modelCode": "ACDFHILMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 0,
+            "defenderWins": 0,
+            "draws": 3,
+            "averageActions": 216,
+            "missRate": 0.8703703703703703,
+            "zeroDamageRate": 0.006172839506172839,
+            "fullAbsorptionRate": 0.023148148148148147,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.24806201550387597,
+            "attackerRemainingHpAverage": 51.333333333333336,
+            "defenderRemainingHpAverage": 56.666666666666664
+          }
+        },
+        {
+          "kind": "pressure",
+          "aggregate": {
+            "scenarioId": "generated-goblin-lord-vs-dwarf-lord",
+            "modelCode": "ACDFHILMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 0,
+            "defenderWins": 1,
+            "draws": 2,
+            "averageActions": 256.6666666666667,
+            "missRate": 0.24285714285714285,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0.7363636363636363,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.6649282920469362,
+            "attackerRemainingHpAverage": 56.666666666666664,
+            "defenderRemainingHpAverage": 380
+          }
+        },
+        {
+          "kind": "pressure",
+          "aggregate": {
+            "scenarioId": "generated-elf-lord-vs-dwarf-lord",
+            "modelCode": "ACDFHILMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 3,
+            "defenderWins": 0,
+            "draws": 0,
+            "averageActions": 25.333333333333332,
+            "missRate": 0.2894736842105263,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0,
+            "hatredHitRate": 0.6842105263157895,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.6164383561643836,
+            "attackerRemainingHpAverage": 265.6666666666667,
+            "defenderRemainingHpAverage": 0
+          }
+        },
+        {
+          "kind": "pressure",
+          "aggregate": {
+            "scenarioId": "generated-black-goblin-vs-rune-dwarf",
+            "modelCode": "ACDFHILMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 0,
+            "defenderWins": 2,
+            "draws": 1,
+            "averageActions": 188.33333333333334,
+            "missRate": 0.2424778761061947,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0.7345132743362832,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.5960854092526691,
+            "attackerRemainingHpAverage": 25.333333333333332,
+            "defenderRemainingHpAverage": 264
+          }
+        }
+      ]
+    },
+    {
+      "row": {
+        "modelCode": "ACDFHJKMN",
+        "scenarioCount": 6,
+        "mirrorCount": 3,
+        "pressureCount": 3,
+        "averageActions": 182,
+        "averageDrawRate": 0.5,
+        "averageRepeatTurnRate": 0.4373470228380261,
+        "averageFullAbsorptionRate": 0.25282865312524155,
+        "mirrorAttackerBias": 0.1111111111111111,
+        "pressureAttackerWinRate": 0.3333333333333333,
+        "speedPressureScore": 75.4929025783936
+      },
+      "scenarioResults": [
+        {
+          "kind": "mirror",
+          "aggregate": {
+            "scenarioId": "generated-goblin-lord-vs-goblin-lord",
+            "modelCode": "ACDFHJKMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 0,
+            "defenderWins": 0,
+            "draws": 3,
+            "averageActions": 276,
+            "missRate": 0.8719806763285024,
+            "zeroDamageRate": 0.0036231884057971015,
+            "fullAbsorptionRate": 0.022946859903381644,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.24727272727272728,
+            "attackerRemainingHpAverage": 68.66666666666667,
+            "defenderRemainingHpAverage": 57.333333333333336
+          }
+        },
+        {
+          "kind": "mirror",
+          "aggregate": {
+            "scenarioId": "generated-elf-lord-vs-elf-lord",
+            "modelCode": "ACDFHJKMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 2,
+            "defenderWins": 1,
+            "draws": 0,
+            "averageActions": 129.66666666666666,
+            "missRate": 0.87146529562982,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.25129533678756477,
+            "attackerRemainingHpAverage": 59,
+            "defenderRemainingHpAverage": 5.333333333333333
+          }
+        },
+        {
+          "kind": "mirror",
+          "aggregate": {
+            "scenarioId": "generated-black-goblin-vs-black-goblin",
+            "modelCode": "ACDFHJKMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 0,
+            "defenderWins": 0,
+            "draws": 3,
+            "averageActions": 216,
+            "missRate": 0.8703703703703703,
+            "zeroDamageRate": 0.006172839506172839,
+            "fullAbsorptionRate": 0.023148148148148147,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.24806201550387597,
+            "attackerRemainingHpAverage": 51.333333333333336,
+            "defenderRemainingHpAverage": 56.666666666666664
+          }
+        },
+        {
+          "kind": "pressure",
+          "aggregate": {
+            "scenarioId": "generated-goblin-lord-vs-dwarf-lord",
+            "modelCode": "ACDFHJKMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 0,
+            "defenderWins": 1,
+            "draws": 2,
+            "averageActions": 256.6666666666667,
+            "missRate": 0.24285714285714285,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0.7363636363636363,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.6649282920469362,
+            "attackerRemainingHpAverage": 56.666666666666664,
+            "defenderRemainingHpAverage": 380
+          }
+        },
+        {
+          "kind": "pressure",
+          "aggregate": {
+            "scenarioId": "generated-elf-lord-vs-dwarf-lord",
+            "modelCode": "ACDFHJKMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 3,
+            "defenderWins": 0,
+            "draws": 0,
+            "averageActions": 25.333333333333332,
+            "missRate": 0.2894736842105263,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0,
+            "hatredHitRate": 0.6842105263157895,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.6164383561643836,
+            "attackerRemainingHpAverage": 265.6666666666667,
+            "defenderRemainingHpAverage": 0
+          }
+        },
+        {
+          "kind": "pressure",
+          "aggregate": {
+            "scenarioId": "generated-black-goblin-vs-rune-dwarf",
+            "modelCode": "ACDFHJKMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 0,
+            "defenderWins": 2,
+            "draws": 1,
+            "averageActions": 188.33333333333334,
+            "missRate": 0.2424778761061947,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0.7345132743362832,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.5960854092526691,
+            "attackerRemainingHpAverage": 25.333333333333332,
+            "defenderRemainingHpAverage": 264
+          }
+        }
+      ]
+    },
+    {
+      "row": {
+        "modelCode": "ACDFHJLMN",
+        "scenarioCount": 6,
+        "mirrorCount": 3,
+        "pressureCount": 3,
+        "averageActions": 182,
+        "averageDrawRate": 0.5,
+        "averageRepeatTurnRate": 0.4373470228380261,
+        "averageFullAbsorptionRate": 0.25282865312524155,
+        "mirrorAttackerBias": 0.1111111111111111,
+        "pressureAttackerWinRate": 0.3333333333333333,
+        "speedPressureScore": 75.4929025783936
+      },
+      "scenarioResults": [
+        {
+          "kind": "mirror",
+          "aggregate": {
+            "scenarioId": "generated-goblin-lord-vs-goblin-lord",
+            "modelCode": "ACDFHJLMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 0,
+            "defenderWins": 0,
+            "draws": 3,
+            "averageActions": 276,
+            "missRate": 0.8719806763285024,
+            "zeroDamageRate": 0.0036231884057971015,
+            "fullAbsorptionRate": 0.022946859903381644,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.24727272727272728,
+            "attackerRemainingHpAverage": 68.66666666666667,
+            "defenderRemainingHpAverage": 57.333333333333336
+          }
+        },
+        {
+          "kind": "mirror",
+          "aggregate": {
+            "scenarioId": "generated-elf-lord-vs-elf-lord",
+            "modelCode": "ACDFHJLMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 2,
+            "defenderWins": 1,
+            "draws": 0,
+            "averageActions": 129.66666666666666,
+            "missRate": 0.87146529562982,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.25129533678756477,
+            "attackerRemainingHpAverage": 59,
+            "defenderRemainingHpAverage": 5.333333333333333
+          }
+        },
+        {
+          "kind": "mirror",
+          "aggregate": {
+            "scenarioId": "generated-black-goblin-vs-black-goblin",
+            "modelCode": "ACDFHJLMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 0,
+            "defenderWins": 0,
+            "draws": 3,
+            "averageActions": 216,
+            "missRate": 0.8703703703703703,
+            "zeroDamageRate": 0.006172839506172839,
+            "fullAbsorptionRate": 0.023148148148148147,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.24806201550387597,
+            "attackerRemainingHpAverage": 51.333333333333336,
+            "defenderRemainingHpAverage": 56.666666666666664
+          }
+        },
+        {
+          "kind": "pressure",
+          "aggregate": {
+            "scenarioId": "generated-goblin-lord-vs-dwarf-lord",
+            "modelCode": "ACDFHJLMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 0,
+            "defenderWins": 1,
+            "draws": 2,
+            "averageActions": 256.6666666666667,
+            "missRate": 0.24285714285714285,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0.7363636363636363,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.6649282920469362,
+            "attackerRemainingHpAverage": 56.666666666666664,
+            "defenderRemainingHpAverage": 380
+          }
+        },
+        {
+          "kind": "pressure",
+          "aggregate": {
+            "scenarioId": "generated-elf-lord-vs-dwarf-lord",
+            "modelCode": "ACDFHJLMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 3,
+            "defenderWins": 0,
+            "draws": 0,
+            "averageActions": 25.333333333333332,
+            "missRate": 0.2894736842105263,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0,
+            "hatredHitRate": 0.6842105263157895,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.6164383561643836,
+            "attackerRemainingHpAverage": 265.6666666666667,
+            "defenderRemainingHpAverage": 0
+          }
+        },
+        {
+          "kind": "pressure",
+          "aggregate": {
+            "scenarioId": "generated-black-goblin-vs-rune-dwarf",
+            "modelCode": "ACDFHJLMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 0,
+            "defenderWins": 2,
+            "draws": 1,
+            "averageActions": 188.33333333333334,
+            "missRate": 0.2424778761061947,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0.7345132743362832,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.5960854092526691,
+            "attackerRemainingHpAverage": 25.333333333333332,
+            "defenderRemainingHpAverage": 264
+          }
+        }
+      ]
+    },
+    {
+      "row": {
+        "modelCode": "ACDGHJKMN",
+        "scenarioCount": 6,
+        "mirrorCount": 3,
+        "pressureCount": 3,
+        "averageActions": 125.83333333333333,
+        "averageDrawRate": 0.1111111111111111,
+        "averageRepeatTurnRate": 0.4383789948748536,
+        "averageFullAbsorptionRate": 0.23376403535112666,
+        "mirrorAttackerBias": 0.5555555555555555,
+        "pressureAttackerWinRate": 0.3333333333333333,
+        "speedPressureScore": 57.99393455043042
+      },
+      "scenarioResults": [
+        {
+          "kind": "mirror",
+          "aggregate": {
+            "scenarioId": "generated-goblin-lord-vs-goblin-lord",
+            "modelCode": "ACDGHJKMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 2,
+            "defenderWins": 1,
+            "draws": 0,
+            "averageActions": 134.66666666666666,
+            "missRate": 0.8712871287128713,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.2593516209476309,
+            "attackerRemainingHpAverage": 42.666666666666664,
+            "defenderRemainingHpAverage": 6.333333333333333
+          }
+        },
+        {
+          "kind": "mirror",
+          "aggregate": {
+            "scenarioId": "generated-elf-lord-vs-elf-lord",
+            "modelCode": "ACDGHJKMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 3,
+            "defenderWins": 0,
+            "draws": 0,
+            "averageActions": 78.33333333333333,
+            "missRate": 0.8680851063829788,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.25,
+            "attackerRemainingHpAverage": 52.333333333333336,
+            "defenderRemainingHpAverage": 0
+          }
+        },
+        {
+          "kind": "mirror",
+          "aggregate": {
+            "scenarioId": "generated-black-goblin-vs-black-goblin",
+            "modelCode": "ACDGHJKMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 2,
+            "defenderWins": 1,
+            "draws": 0,
+            "averageActions": 134.66666666666666,
+            "missRate": 0.8712871287128713,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.2593516209476309,
+            "attackerRemainingHpAverage": 27,
+            "defenderRemainingHpAverage": 3
+          }
+        },
+        {
+          "kind": "pressure",
+          "aggregate": {
+            "scenarioId": "generated-goblin-lord-vs-dwarf-lord",
+            "modelCode": "ACDGHJKMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 0,
+            "defenderWins": 2,
+            "draws": 1,
+            "averageActions": 226,
+            "missRate": 0.24926253687315633,
+            "zeroDamageRate": 0.017699115044247787,
+            "fullAbsorptionRate": 0.6740412979351033,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.6651851851851852,
+            "attackerRemainingHpAverage": 11,
+            "defenderRemainingHpAverage": 366.3333333333333
+          }
+        },
+        {
+          "kind": "pressure",
+          "aggregate": {
+            "scenarioId": "generated-elf-lord-vs-dwarf-lord",
+            "modelCode": "ACDGHJKMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 3,
+            "defenderWins": 0,
+            "draws": 0,
+            "averageActions": 14.333333333333334,
+            "missRate": 0.27906976744186046,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0,
+            "hatredHitRate": 0.6976744186046512,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.6,
+            "attackerRemainingHpAverage": 273,
+            "defenderRemainingHpAverage": 0
+          }
+        },
+        {
+          "kind": "pressure",
+          "aggregate": {
+            "scenarioId": "generated-black-goblin-vs-rune-dwarf",
+            "modelCode": "ACDGHJKMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 0,
+            "defenderWins": 2,
+            "draws": 1,
+            "averageActions": 167,
+            "missRate": 0.25149700598802394,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0.7285429141716567,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.5963855421686747,
+            "attackerRemainingHpAverage": 16,
+            "defenderRemainingHpAverage": 264
+          }
+        }
+      ]
+    },
+    {
+      "row": {
+        "modelCode": "ACDGHJLMN",
+        "scenarioCount": 6,
+        "mirrorCount": 3,
+        "pressureCount": 3,
+        "averageActions": 125.83333333333333,
+        "averageDrawRate": 0.1111111111111111,
+        "averageRepeatTurnRate": 0.4383789948748536,
+        "averageFullAbsorptionRate": 0.23376403535112666,
+        "mirrorAttackerBias": 0.5555555555555555,
+        "pressureAttackerWinRate": 0.3333333333333333,
+        "speedPressureScore": 57.99393455043042
+      },
+      "scenarioResults": [
+        {
+          "kind": "mirror",
+          "aggregate": {
+            "scenarioId": "generated-goblin-lord-vs-goblin-lord",
+            "modelCode": "ACDGHJLMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 2,
+            "defenderWins": 1,
+            "draws": 0,
+            "averageActions": 134.66666666666666,
+            "missRate": 0.8712871287128713,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.2593516209476309,
+            "attackerRemainingHpAverage": 42.666666666666664,
+            "defenderRemainingHpAverage": 6.333333333333333
+          }
+        },
+        {
+          "kind": "mirror",
+          "aggregate": {
+            "scenarioId": "generated-elf-lord-vs-elf-lord",
+            "modelCode": "ACDGHJLMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 3,
+            "defenderWins": 0,
+            "draws": 0,
+            "averageActions": 78.33333333333333,
+            "missRate": 0.8680851063829788,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.25,
+            "attackerRemainingHpAverage": 52.333333333333336,
+            "defenderRemainingHpAverage": 0
+          }
+        },
+        {
+          "kind": "mirror",
+          "aggregate": {
+            "scenarioId": "generated-black-goblin-vs-black-goblin",
+            "modelCode": "ACDGHJLMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 2,
+            "defenderWins": 1,
+            "draws": 0,
+            "averageActions": 134.66666666666666,
+            "missRate": 0.8712871287128713,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.2593516209476309,
+            "attackerRemainingHpAverage": 27,
+            "defenderRemainingHpAverage": 3
+          }
+        },
+        {
+          "kind": "pressure",
+          "aggregate": {
+            "scenarioId": "generated-goblin-lord-vs-dwarf-lord",
+            "modelCode": "ACDGHJLMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 0,
+            "defenderWins": 2,
+            "draws": 1,
+            "averageActions": 226,
+            "missRate": 0.24926253687315633,
+            "zeroDamageRate": 0.017699115044247787,
+            "fullAbsorptionRate": 0.6740412979351033,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.6651851851851852,
+            "attackerRemainingHpAverage": 11,
+            "defenderRemainingHpAverage": 366.3333333333333
+          }
+        },
+        {
+          "kind": "pressure",
+          "aggregate": {
+            "scenarioId": "generated-elf-lord-vs-dwarf-lord",
+            "modelCode": "ACDGHJLMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 3,
+            "defenderWins": 0,
+            "draws": 0,
+            "averageActions": 14.333333333333334,
+            "missRate": 0.27906976744186046,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0,
+            "hatredHitRate": 0.6976744186046512,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.6,
+            "attackerRemainingHpAverage": 273,
+            "defenderRemainingHpAverage": 0
+          }
+        },
+        {
+          "kind": "pressure",
+          "aggregate": {
+            "scenarioId": "generated-black-goblin-vs-rune-dwarf",
+            "modelCode": "ACDGHJLMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 0,
+            "defenderWins": 2,
+            "draws": 1,
+            "averageActions": 167,
+            "missRate": 0.25149700598802394,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0.7285429141716567,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.5963855421686747,
+            "attackerRemainingHpAverage": 16,
+            "defenderRemainingHpAverage": 264
+          }
+        }
+      ]
+    },
+    {
+      "row": {
+        "modelCode": "ACDGHIKMN",
+        "scenarioCount": 6,
+        "mirrorCount": 3,
+        "pressureCount": 3,
+        "averageActions": 125.5,
+        "averageDrawRate": 0.1111111111111111,
+        "averageRepeatTurnRate": 0.44622213212975553,
+        "averageFullAbsorptionRate": 0.23376403535112666,
+        "mirrorAttackerBias": 0.5555555555555555,
+        "pressureAttackerWinRate": 0.3333333333333333,
+        "speedPressureScore": 57.890666576574205
+      },
+      "scenarioResults": [
+        {
+          "kind": "mirror",
+          "aggregate": {
+            "scenarioId": "generated-goblin-lord-vs-goblin-lord",
+            "modelCode": "ACDGHIKMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 2,
+            "defenderWins": 1,
+            "draws": 0,
+            "averageActions": 134.66666666666666,
+            "missRate": 0.8712871287128713,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.2593516209476309,
+            "attackerRemainingHpAverage": 42.666666666666664,
+            "defenderRemainingHpAverage": 6.333333333333333
+          }
+        },
+        {
+          "kind": "mirror",
+          "aggregate": {
+            "scenarioId": "generated-elf-lord-vs-elf-lord",
+            "modelCode": "ACDGHIKMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 3,
+            "defenderWins": 0,
+            "draws": 0,
+            "averageActions": 78.33333333333333,
+            "missRate": 0.8680851063829788,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.25,
+            "attackerRemainingHpAverage": 52.333333333333336,
+            "defenderRemainingHpAverage": 0
+          }
+        },
+        {
+          "kind": "mirror",
+          "aggregate": {
+            "scenarioId": "generated-black-goblin-vs-black-goblin",
+            "modelCode": "ACDGHIKMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 2,
+            "defenderWins": 1,
+            "draws": 0,
+            "averageActions": 134.66666666666666,
+            "missRate": 0.8712871287128713,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.2593516209476309,
+            "attackerRemainingHpAverage": 27,
+            "defenderRemainingHpAverage": 3
+          }
+        },
+        {
+          "kind": "pressure",
+          "aggregate": {
+            "scenarioId": "generated-goblin-lord-vs-dwarf-lord",
+            "modelCode": "ACDGHIKMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 0,
+            "defenderWins": 2,
+            "draws": 1,
+            "averageActions": 226,
+            "missRate": 0.24926253687315633,
+            "zeroDamageRate": 0.017699115044247787,
+            "fullAbsorptionRate": 0.6740412979351033,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.6651851851851852,
+            "attackerRemainingHpAverage": 11,
+            "defenderRemainingHpAverage": 366.3333333333333
+          }
+        },
+        {
+          "kind": "pressure",
+          "aggregate": {
+            "scenarioId": "generated-elf-lord-vs-dwarf-lord",
+            "modelCode": "ACDGHIKMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 3,
+            "defenderWins": 0,
+            "draws": 0,
+            "averageActions": 12.333333333333334,
+            "missRate": 0.2702702702702703,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0,
+            "hatredHitRate": 0.7027027027027027,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.6470588235294118,
+            "attackerRemainingHpAverage": 273,
+            "defenderRemainingHpAverage": 0
+          }
+        },
+        {
+          "kind": "pressure",
+          "aggregate": {
+            "scenarioId": "generated-black-goblin-vs-rune-dwarf",
+            "modelCode": "ACDGHIKMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 0,
+            "defenderWins": 2,
+            "draws": 1,
+            "averageActions": 167,
+            "missRate": 0.25149700598802394,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0.7285429141716567,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.5963855421686747,
+            "attackerRemainingHpAverage": 16,
+            "defenderRemainingHpAverage": 264
+          }
+        }
+      ]
+    },
+    {
+      "row": {
+        "modelCode": "ACDGHILMN",
+        "scenarioCount": 6,
+        "mirrorCount": 3,
+        "pressureCount": 3,
+        "averageActions": 125.5,
+        "averageDrawRate": 0.1111111111111111,
+        "averageRepeatTurnRate": 0.44622213212975553,
+        "averageFullAbsorptionRate": 0.23376403535112666,
+        "mirrorAttackerBias": 0.5555555555555555,
+        "pressureAttackerWinRate": 0.3333333333333333,
+        "speedPressureScore": 57.890666576574205
+      },
+      "scenarioResults": [
+        {
+          "kind": "mirror",
+          "aggregate": {
+            "scenarioId": "generated-goblin-lord-vs-goblin-lord",
+            "modelCode": "ACDGHILMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 2,
+            "defenderWins": 1,
+            "draws": 0,
+            "averageActions": 134.66666666666666,
+            "missRate": 0.8712871287128713,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.2593516209476309,
+            "attackerRemainingHpAverage": 42.666666666666664,
+            "defenderRemainingHpAverage": 6.333333333333333
+          }
+        },
+        {
+          "kind": "mirror",
+          "aggregate": {
+            "scenarioId": "generated-elf-lord-vs-elf-lord",
+            "modelCode": "ACDGHILMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 3,
+            "defenderWins": 0,
+            "draws": 0,
+            "averageActions": 78.33333333333333,
+            "missRate": 0.8680851063829788,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.25,
+            "attackerRemainingHpAverage": 52.333333333333336,
+            "defenderRemainingHpAverage": 0
+          }
+        },
+        {
+          "kind": "mirror",
+          "aggregate": {
+            "scenarioId": "generated-black-goblin-vs-black-goblin",
+            "modelCode": "ACDGHILMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 2,
+            "defenderWins": 1,
+            "draws": 0,
+            "averageActions": 134.66666666666666,
+            "missRate": 0.8712871287128713,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.2593516209476309,
+            "attackerRemainingHpAverage": 27,
+            "defenderRemainingHpAverage": 3
+          }
+        },
+        {
+          "kind": "pressure",
+          "aggregate": {
+            "scenarioId": "generated-goblin-lord-vs-dwarf-lord",
+            "modelCode": "ACDGHILMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 0,
+            "defenderWins": 2,
+            "draws": 1,
+            "averageActions": 226,
+            "missRate": 0.24926253687315633,
+            "zeroDamageRate": 0.017699115044247787,
+            "fullAbsorptionRate": 0.6740412979351033,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.6651851851851852,
+            "attackerRemainingHpAverage": 11,
+            "defenderRemainingHpAverage": 366.3333333333333
+          }
+        },
+        {
+          "kind": "pressure",
+          "aggregate": {
+            "scenarioId": "generated-elf-lord-vs-dwarf-lord",
+            "modelCode": "ACDGHILMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 3,
+            "defenderWins": 0,
+            "draws": 0,
+            "averageActions": 12.333333333333334,
+            "missRate": 0.2702702702702703,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0,
+            "hatredHitRate": 0.7027027027027027,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.6470588235294118,
+            "attackerRemainingHpAverage": 273,
+            "defenderRemainingHpAverage": 0
+          }
+        },
+        {
+          "kind": "pressure",
+          "aggregate": {
+            "scenarioId": "generated-black-goblin-vs-rune-dwarf",
+            "modelCode": "ACDGHILMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 0,
+            "defenderWins": 2,
+            "draws": 1,
+            "averageActions": 167,
+            "missRate": 0.25149700598802394,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0.7285429141716567,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.5963855421686747,
+            "attackerRemainingHpAverage": 16,
+            "defenderRemainingHpAverage": 264
+          }
+        }
+      ]
+    },
+    {
+      "row": {
+        "modelCode": "BCDGHIKMN",
+        "scenarioCount": 6,
+        "mirrorCount": 3,
+        "pressureCount": 3,
+        "averageActions": 116.16666666666664,
+        "averageDrawRate": 0.05555555555555555,
+        "averageRepeatTurnRate": 0.43967648070730275,
+        "averageFullAbsorptionRate": 0.2345715771629567,
+        "mirrorAttackerBias": 0.5555555555555555,
+        "pressureAttackerWinRate": 0.3333333333333333,
+        "speedPressureScore": 51.99523203626285
+      },
+      "scenarioResults": [
+        {
+          "kind": "mirror",
+          "aggregate": {
+            "scenarioId": "generated-goblin-lord-vs-goblin-lord",
+            "modelCode": "BCDGHIKMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 2,
+            "defenderWins": 1,
+            "draws": 0,
+            "averageActions": 134.66666666666666,
+            "missRate": 0.8712871287128713,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.2593516209476309,
+            "attackerRemainingHpAverage": 42.666666666666664,
+            "defenderRemainingHpAverage": 6.333333333333333
+          }
+        },
+        {
+          "kind": "mirror",
+          "aggregate": {
+            "scenarioId": "generated-elf-lord-vs-elf-lord",
+            "modelCode": "BCDGHIKMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 3,
+            "defenderWins": 0,
+            "draws": 0,
+            "averageActions": 78.33333333333333,
+            "missRate": 0.8680851063829788,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.25,
+            "attackerRemainingHpAverage": 52.333333333333336,
+            "defenderRemainingHpAverage": 0
+          }
+        },
+        {
+          "kind": "mirror",
+          "aggregate": {
+            "scenarioId": "generated-black-goblin-vs-black-goblin",
+            "modelCode": "BCDGHIKMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 2,
+            "defenderWins": 1,
+            "draws": 0,
+            "averageActions": 134.66666666666666,
+            "missRate": 0.8712871287128713,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.2593516209476309,
+            "attackerRemainingHpAverage": 27,
+            "defenderRemainingHpAverage": 3
+          }
+        },
+        {
+          "kind": "pressure",
+          "aggregate": {
+            "scenarioId": "generated-goblin-lord-vs-dwarf-lord",
+            "modelCode": "BCDGHIKMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 0,
+            "defenderWins": 3,
+            "draws": 0,
+            "averageActions": 187,
+            "missRate": 0.23529411764705882,
+            "zeroDamageRate": 0.0196078431372549,
+            "fullAbsorptionRate": 0.679144385026738,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.6684587813620072,
+            "attackerRemainingHpAverage": 0,
+            "defenderRemainingHpAverage": 369
+          }
+        },
+        {
+          "kind": "pressure",
+          "aggregate": {
+            "scenarioId": "generated-elf-lord-vs-dwarf-lord",
+            "modelCode": "BCDGHIKMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 3,
+            "defenderWins": 0,
+            "draws": 0,
+            "averageActions": 12.666666666666666,
+            "missRate": 0.2894736842105263,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0,
+            "hatredHitRate": 0.7105263157894737,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.6,
+            "attackerRemainingHpAverage": 288,
+            "defenderRemainingHpAverage": 0
+          }
+        },
+        {
+          "kind": "pressure",
+          "aggregate": {
+            "scenarioId": "generated-black-goblin-vs-rune-dwarf",
+            "modelCode": "BCDGHIKMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 0,
+            "defenderWins": 2,
+            "draws": 1,
+            "averageActions": 149.66666666666666,
+            "missRate": 0.24721603563474387,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0.7282850779510023,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.600896860986547,
+            "attackerRemainingHpAverage": 1.3333333333333333,
+            "defenderRemainingHpAverage": 264
+          }
+        }
+      ]
+    },
+    {
+      "row": {
+        "modelCode": "BCDGHILMN",
+        "scenarioCount": 6,
+        "mirrorCount": 3,
+        "pressureCount": 3,
+        "averageActions": 116.16666666666664,
+        "averageDrawRate": 0.05555555555555555,
+        "averageRepeatTurnRate": 0.43967648070730275,
+        "averageFullAbsorptionRate": 0.2345715771629567,
+        "mirrorAttackerBias": 0.5555555555555555,
+        "pressureAttackerWinRate": 0.3333333333333333,
+        "speedPressureScore": 51.99523203626285
+      },
+      "scenarioResults": [
+        {
+          "kind": "mirror",
+          "aggregate": {
+            "scenarioId": "generated-goblin-lord-vs-goblin-lord",
+            "modelCode": "BCDGHILMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 2,
+            "defenderWins": 1,
+            "draws": 0,
+            "averageActions": 134.66666666666666,
+            "missRate": 0.8712871287128713,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.2593516209476309,
+            "attackerRemainingHpAverage": 42.666666666666664,
+            "defenderRemainingHpAverage": 6.333333333333333
+          }
+        },
+        {
+          "kind": "mirror",
+          "aggregate": {
+            "scenarioId": "generated-elf-lord-vs-elf-lord",
+            "modelCode": "BCDGHILMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 3,
+            "defenderWins": 0,
+            "draws": 0,
+            "averageActions": 78.33333333333333,
+            "missRate": 0.8680851063829788,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.25,
+            "attackerRemainingHpAverage": 52.333333333333336,
+            "defenderRemainingHpAverage": 0
+          }
+        },
+        {
+          "kind": "mirror",
+          "aggregate": {
+            "scenarioId": "generated-black-goblin-vs-black-goblin",
+            "modelCode": "BCDGHILMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 2,
+            "defenderWins": 1,
+            "draws": 0,
+            "averageActions": 134.66666666666666,
+            "missRate": 0.8712871287128713,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.2593516209476309,
+            "attackerRemainingHpAverage": 27,
+            "defenderRemainingHpAverage": 3
+          }
+        },
+        {
+          "kind": "pressure",
+          "aggregate": {
+            "scenarioId": "generated-goblin-lord-vs-dwarf-lord",
+            "modelCode": "BCDGHILMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 0,
+            "defenderWins": 3,
+            "draws": 0,
+            "averageActions": 187,
+            "missRate": 0.23529411764705882,
+            "zeroDamageRate": 0.0196078431372549,
+            "fullAbsorptionRate": 0.679144385026738,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.6684587813620072,
+            "attackerRemainingHpAverage": 0,
+            "defenderRemainingHpAverage": 369
+          }
+        },
+        {
+          "kind": "pressure",
+          "aggregate": {
+            "scenarioId": "generated-elf-lord-vs-dwarf-lord",
+            "modelCode": "BCDGHILMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 3,
+            "defenderWins": 0,
+            "draws": 0,
+            "averageActions": 12.666666666666666,
+            "missRate": 0.2894736842105263,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0,
+            "hatredHitRate": 0.7105263157894737,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.6,
+            "attackerRemainingHpAverage": 288,
+            "defenderRemainingHpAverage": 0
+          }
+        },
+        {
+          "kind": "pressure",
+          "aggregate": {
+            "scenarioId": "generated-black-goblin-vs-rune-dwarf",
+            "modelCode": "BCDGHILMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 0,
+            "defenderWins": 2,
+            "draws": 1,
+            "averageActions": 149.66666666666666,
+            "missRate": 0.24721603563474387,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0.7282850779510023,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.600896860986547,
+            "attackerRemainingHpAverage": 1.3333333333333333,
+            "defenderRemainingHpAverage": 264
+          }
+        }
+      ]
+    },
+    {
+      "row": {
+        "modelCode": "BCDGHJKMN",
+        "scenarioCount": 6,
+        "mirrorCount": 3,
+        "pressureCount": 3,
+        "averageActions": 116.38888888888887,
+        "averageDrawRate": 0.05555555555555555,
+        "averageRepeatTurnRate": 0.4294200704508924,
+        "averageFullAbsorptionRate": 0.2345715771629567,
+        "mirrorAttackerBias": 0.5555555555555555,
+        "pressureAttackerWinRate": 0.3333333333333333,
+        "speedPressureScore": 51.984975626006445
+      },
+      "scenarioResults": [
+        {
+          "kind": "mirror",
+          "aggregate": {
+            "scenarioId": "generated-goblin-lord-vs-goblin-lord",
+            "modelCode": "BCDGHJKMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 2,
+            "defenderWins": 1,
+            "draws": 0,
+            "averageActions": 134.66666666666666,
+            "missRate": 0.8712871287128713,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.2593516209476309,
+            "attackerRemainingHpAverage": 42.666666666666664,
+            "defenderRemainingHpAverage": 6.333333333333333
+          }
+        },
+        {
+          "kind": "mirror",
+          "aggregate": {
+            "scenarioId": "generated-elf-lord-vs-elf-lord",
+            "modelCode": "BCDGHJKMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 3,
+            "defenderWins": 0,
+            "draws": 0,
+            "averageActions": 78.33333333333333,
+            "missRate": 0.8680851063829788,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.25,
+            "attackerRemainingHpAverage": 52.333333333333336,
+            "defenderRemainingHpAverage": 0
+          }
+        },
+        {
+          "kind": "mirror",
+          "aggregate": {
+            "scenarioId": "generated-black-goblin-vs-black-goblin",
+            "modelCode": "BCDGHJKMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 2,
+            "defenderWins": 1,
+            "draws": 0,
+            "averageActions": 134.66666666666666,
+            "missRate": 0.8712871287128713,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.2593516209476309,
+            "attackerRemainingHpAverage": 27,
+            "defenderRemainingHpAverage": 3
+          }
+        },
+        {
+          "kind": "pressure",
+          "aggregate": {
+            "scenarioId": "generated-goblin-lord-vs-dwarf-lord",
+            "modelCode": "BCDGHJKMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 0,
+            "defenderWins": 3,
+            "draws": 0,
+            "averageActions": 187,
+            "missRate": 0.23529411764705882,
+            "zeroDamageRate": 0.0196078431372549,
+            "fullAbsorptionRate": 0.679144385026738,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.6684587813620072,
+            "attackerRemainingHpAverage": 0,
+            "defenderRemainingHpAverage": 369
+          }
+        },
+        {
+          "kind": "pressure",
+          "aggregate": {
+            "scenarioId": "generated-elf-lord-vs-dwarf-lord",
+            "modelCode": "BCDGHJKMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 3,
+            "defenderWins": 0,
+            "draws": 0,
+            "averageActions": 14,
+            "missRate": 0.2857142857142857,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0,
+            "hatredHitRate": 0.6904761904761905,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.5384615384615384,
+            "attackerRemainingHpAverage": 272.3333333333333,
+            "defenderRemainingHpAverage": 0
+          }
+        },
+        {
+          "kind": "pressure",
+          "aggregate": {
+            "scenarioId": "generated-black-goblin-vs-rune-dwarf",
+            "modelCode": "BCDGHJKMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 0,
+            "defenderWins": 2,
+            "draws": 1,
+            "averageActions": 149.66666666666666,
+            "missRate": 0.24721603563474387,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0.7282850779510023,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.600896860986547,
+            "attackerRemainingHpAverage": 1.3333333333333333,
+            "defenderRemainingHpAverage": 264
+          }
+        }
+      ]
+    },
+    {
+      "row": {
+        "modelCode": "BCDGHJLMN",
+        "scenarioCount": 6,
+        "mirrorCount": 3,
+        "pressureCount": 3,
+        "averageActions": 116.38888888888887,
+        "averageDrawRate": 0.05555555555555555,
+        "averageRepeatTurnRate": 0.4294200704508924,
+        "averageFullAbsorptionRate": 0.2345715771629567,
+        "mirrorAttackerBias": 0.5555555555555555,
+        "pressureAttackerWinRate": 0.3333333333333333,
+        "speedPressureScore": 51.984975626006445
+      },
+      "scenarioResults": [
+        {
+          "kind": "mirror",
+          "aggregate": {
+            "scenarioId": "generated-goblin-lord-vs-goblin-lord",
+            "modelCode": "BCDGHJLMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 2,
+            "defenderWins": 1,
+            "draws": 0,
+            "averageActions": 134.66666666666666,
+            "missRate": 0.8712871287128713,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.2593516209476309,
+            "attackerRemainingHpAverage": 42.666666666666664,
+            "defenderRemainingHpAverage": 6.333333333333333
+          }
+        },
+        {
+          "kind": "mirror",
+          "aggregate": {
+            "scenarioId": "generated-elf-lord-vs-elf-lord",
+            "modelCode": "BCDGHJLMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 3,
+            "defenderWins": 0,
+            "draws": 0,
+            "averageActions": 78.33333333333333,
+            "missRate": 0.8680851063829788,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.25,
+            "attackerRemainingHpAverage": 52.333333333333336,
+            "defenderRemainingHpAverage": 0
+          }
+        },
+        {
+          "kind": "mirror",
+          "aggregate": {
+            "scenarioId": "generated-black-goblin-vs-black-goblin",
+            "modelCode": "BCDGHJLMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 2,
+            "defenderWins": 1,
+            "draws": 0,
+            "averageActions": 134.66666666666666,
+            "missRate": 0.8712871287128713,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.2593516209476309,
+            "attackerRemainingHpAverage": 27,
+            "defenderRemainingHpAverage": 3
+          }
+        },
+        {
+          "kind": "pressure",
+          "aggregate": {
+            "scenarioId": "generated-goblin-lord-vs-dwarf-lord",
+            "modelCode": "BCDGHJLMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 0,
+            "defenderWins": 3,
+            "draws": 0,
+            "averageActions": 187,
+            "missRate": 0.23529411764705882,
+            "zeroDamageRate": 0.0196078431372549,
+            "fullAbsorptionRate": 0.679144385026738,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.6684587813620072,
+            "attackerRemainingHpAverage": 0,
+            "defenderRemainingHpAverage": 369
+          }
+        },
+        {
+          "kind": "pressure",
+          "aggregate": {
+            "scenarioId": "generated-elf-lord-vs-dwarf-lord",
+            "modelCode": "BCDGHJLMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 3,
+            "defenderWins": 0,
+            "draws": 0,
+            "averageActions": 14,
+            "missRate": 0.2857142857142857,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0,
+            "hatredHitRate": 0.6904761904761905,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.5384615384615384,
+            "attackerRemainingHpAverage": 272.3333333333333,
+            "defenderRemainingHpAverage": 0
+          }
+        },
+        {
+          "kind": "pressure",
+          "aggregate": {
+            "scenarioId": "generated-black-goblin-vs-rune-dwarf",
+            "modelCode": "BCDGHJLMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 0,
+            "defenderWins": 2,
+            "draws": 1,
+            "averageActions": 149.66666666666666,
+            "missRate": 0.24721603563474387,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0.7282850779510023,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.600896860986547,
+            "attackerRemainingHpAverage": 1.3333333333333333,
+            "defenderRemainingHpAverage": 264
+          }
+        }
+      ]
+    },
+    {
+      "row": {
+        "modelCode": "BCEFHIKMN",
+        "scenarioCount": 6,
+        "mirrorCount": 3,
+        "pressureCount": 3,
+        "averageActions": 100.66666666666667,
+        "averageDrawRate": 0,
+        "averageRepeatTurnRate": 0.4339165416708523,
+        "averageFullAbsorptionRate": 0.20712585615922993,
+        "mirrorAttackerBias": 0.3333333333333333,
+        "pressureAttackerWinRate": 0.3333333333333333,
+        "speedPressureScore": 42.65613876389307
+      },
+      "scenarioResults": [
+        {
+          "kind": "mirror",
+          "aggregate": {
+            "scenarioId": "generated-goblin-lord-vs-goblin-lord",
+            "modelCode": "BCEFHIKMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 2,
+            "defenderWins": 1,
+            "draws": 0,
+            "averageActions": 157.66666666666666,
+            "missRate": 0.5983086680761099,
+            "zeroDamageRate": 0.02536997885835095,
+            "fullAbsorptionRate": 0.09302325581395349,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.2574468085106383,
+            "attackerRemainingHpAverage": 0.6666666666666666,
+            "defenderRemainingHpAverage": 1.3333333333333333
+          }
+        },
+        {
+          "kind": "mirror",
+          "aggregate": {
+            "scenarioId": "generated-elf-lord-vs-elf-lord",
+            "modelCode": "BCEFHIKMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 2,
+            "defenderWins": 1,
+            "draws": 0,
+            "averageActions": 53,
+            "missRate": 0.660377358490566,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.25,
+            "attackerRemainingHpAverage": 21.666666666666668,
+            "defenderRemainingHpAverage": 26.333333333333332
+          }
+        },
+        {
+          "kind": "mirror",
+          "aggregate": {
+            "scenarioId": "generated-black-goblin-vs-black-goblin",
+            "modelCode": "BCEFHIKMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 1,
+            "defenderWins": 2,
+            "draws": 0,
+            "averageActions": 123.66666666666667,
+            "missRate": 0.5822102425876011,
+            "zeroDamageRate": 0.016172506738544475,
+            "fullAbsorptionRate": 0.11590296495956873,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.27717391304347827,
+            "attackerRemainingHpAverage": 15.333333333333334,
+            "defenderRemainingHpAverage": 18
+          }
+        },
+        {
+          "kind": "pressure",
+          "aggregate": {
+            "scenarioId": "generated-goblin-lord-vs-dwarf-lord",
+            "modelCode": "BCEFHIKMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 0,
+            "defenderWins": 3,
+            "draws": 0,
+            "averageActions": 119,
+            "missRate": 0.4173669467787115,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0.5210084033613446,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.6694915254237288,
+            "attackerRemainingHpAverage": 0,
+            "defenderRemainingHpAverage": 380
+          }
+        },
+        {
+          "kind": "pressure",
+          "aggregate": {
+            "scenarioId": "generated-elf-lord-vs-dwarf-lord",
+            "modelCode": "BCEFHIKMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 3,
+            "defenderWins": 0,
+            "draws": 0,
+            "averageActions": 46.666666666666664,
+            "missRate": 0.5071428571428571,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0,
+            "hatredHitRate": 0.4142857142857143,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.5474452554744526,
+            "attackerRemainingHpAverage": 159.66666666666666,
+            "defenderRemainingHpAverage": 0
+          }
+        },
+        {
+          "kind": "pressure",
+          "aggregate": {
+            "scenarioId": "generated-black-goblin-vs-rune-dwarf",
+            "modelCode": "BCEFHIKMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 0,
+            "defenderWins": 3,
+            "draws": 0,
+            "averageActions": 104,
+            "missRate": 0.4230769230769231,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0.5128205128205128,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.6019417475728155,
+            "attackerRemainingHpAverage": 0,
+            "defenderRemainingHpAverage": 264
+          }
+        }
+      ]
+    },
+    {
+      "row": {
+        "modelCode": "BCEFHILMN",
+        "scenarioCount": 6,
+        "mirrorCount": 3,
+        "pressureCount": 3,
+        "averageActions": 100.66666666666667,
+        "averageDrawRate": 0,
+        "averageRepeatTurnRate": 0.4339165416708523,
+        "averageFullAbsorptionRate": 0.20712585615922993,
+        "mirrorAttackerBias": 0.3333333333333333,
+        "pressureAttackerWinRate": 0.3333333333333333,
+        "speedPressureScore": 42.65613876389307
+      },
+      "scenarioResults": [
+        {
+          "kind": "mirror",
+          "aggregate": {
+            "scenarioId": "generated-goblin-lord-vs-goblin-lord",
+            "modelCode": "BCEFHILMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 2,
+            "defenderWins": 1,
+            "draws": 0,
+            "averageActions": 157.66666666666666,
+            "missRate": 0.5983086680761099,
+            "zeroDamageRate": 0.02536997885835095,
+            "fullAbsorptionRate": 0.09302325581395349,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.2574468085106383,
+            "attackerRemainingHpAverage": 0.6666666666666666,
+            "defenderRemainingHpAverage": 1.3333333333333333
+          }
+        },
+        {
+          "kind": "mirror",
+          "aggregate": {
+            "scenarioId": "generated-elf-lord-vs-elf-lord",
+            "modelCode": "BCEFHILMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 2,
+            "defenderWins": 1,
+            "draws": 0,
+            "averageActions": 53,
+            "missRate": 0.660377358490566,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.25,
+            "attackerRemainingHpAverage": 21.666666666666668,
+            "defenderRemainingHpAverage": 26.333333333333332
+          }
+        },
+        {
+          "kind": "mirror",
+          "aggregate": {
+            "scenarioId": "generated-black-goblin-vs-black-goblin",
+            "modelCode": "BCEFHILMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 1,
+            "defenderWins": 2,
+            "draws": 0,
+            "averageActions": 123.66666666666667,
+            "missRate": 0.5822102425876011,
+            "zeroDamageRate": 0.016172506738544475,
+            "fullAbsorptionRate": 0.11590296495956873,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.27717391304347827,
+            "attackerRemainingHpAverage": 15.333333333333334,
+            "defenderRemainingHpAverage": 18
+          }
+        },
+        {
+          "kind": "pressure",
+          "aggregate": {
+            "scenarioId": "generated-goblin-lord-vs-dwarf-lord",
+            "modelCode": "BCEFHILMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 0,
+            "defenderWins": 3,
+            "draws": 0,
+            "averageActions": 119,
+            "missRate": 0.4173669467787115,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0.5210084033613446,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.6694915254237288,
+            "attackerRemainingHpAverage": 0,
+            "defenderRemainingHpAverage": 380
+          }
+        },
+        {
+          "kind": "pressure",
+          "aggregate": {
+            "scenarioId": "generated-elf-lord-vs-dwarf-lord",
+            "modelCode": "BCEFHILMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 3,
+            "defenderWins": 0,
+            "draws": 0,
+            "averageActions": 46.666666666666664,
+            "missRate": 0.5071428571428571,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0,
+            "hatredHitRate": 0.4142857142857143,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.5474452554744526,
+            "attackerRemainingHpAverage": 159.66666666666666,
+            "defenderRemainingHpAverage": 0
+          }
+        },
+        {
+          "kind": "pressure",
+          "aggregate": {
+            "scenarioId": "generated-black-goblin-vs-rune-dwarf",
+            "modelCode": "BCEFHILMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 0,
+            "defenderWins": 3,
+            "draws": 0,
+            "averageActions": 104,
+            "missRate": 0.4230769230769231,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0.5128205128205128,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.6019417475728155,
+            "attackerRemainingHpAverage": 0,
+            "defenderRemainingHpAverage": 264
+          }
+        }
+      ]
+    },
+    {
+      "row": {
+        "modelCode": "BCEFHJKMN",
+        "scenarioCount": 6,
+        "mirrorCount": 3,
+        "pressureCount": 3,
+        "averageActions": 100.6111111111111,
+        "averageDrawRate": 0,
+        "averageRepeatTurnRate": 0.43336194026824737,
+        "averageFullAbsorptionRate": 0.20712585615922993,
+        "mirrorAttackerBias": 0.3333333333333333,
+        "pressureAttackerWinRate": 0.3333333333333333,
+        "speedPressureScore": 42.600028606934906
+      },
+      "scenarioResults": [
+        {
+          "kind": "mirror",
+          "aggregate": {
+            "scenarioId": "generated-goblin-lord-vs-goblin-lord",
+            "modelCode": "BCEFHJKMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 2,
+            "defenderWins": 1,
+            "draws": 0,
+            "averageActions": 157.66666666666666,
+            "missRate": 0.5983086680761099,
+            "zeroDamageRate": 0.02536997885835095,
+            "fullAbsorptionRate": 0.09302325581395349,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.2574468085106383,
+            "attackerRemainingHpAverage": 0.6666666666666666,
+            "defenderRemainingHpAverage": 1.3333333333333333
+          }
+        },
+        {
+          "kind": "mirror",
+          "aggregate": {
+            "scenarioId": "generated-elf-lord-vs-elf-lord",
+            "modelCode": "BCEFHJKMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 2,
+            "defenderWins": 1,
+            "draws": 0,
+            "averageActions": 53,
+            "missRate": 0.660377358490566,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.25,
+            "attackerRemainingHpAverage": 21.666666666666668,
+            "defenderRemainingHpAverage": 26.333333333333332
+          }
+        },
+        {
+          "kind": "mirror",
+          "aggregate": {
+            "scenarioId": "generated-black-goblin-vs-black-goblin",
+            "modelCode": "BCEFHJKMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 1,
+            "defenderWins": 2,
+            "draws": 0,
+            "averageActions": 123.66666666666667,
+            "missRate": 0.5822102425876011,
+            "zeroDamageRate": 0.016172506738544475,
+            "fullAbsorptionRate": 0.11590296495956873,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.27717391304347827,
+            "attackerRemainingHpAverage": 15.333333333333334,
+            "defenderRemainingHpAverage": 18
+          }
+        },
+        {
+          "kind": "pressure",
+          "aggregate": {
+            "scenarioId": "generated-goblin-lord-vs-dwarf-lord",
+            "modelCode": "BCEFHJKMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 0,
+            "defenderWins": 3,
+            "draws": 0,
+            "averageActions": 119,
+            "missRate": 0.4173669467787115,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0.5210084033613446,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.6694915254237288,
+            "attackerRemainingHpAverage": 0,
+            "defenderRemainingHpAverage": 380
+          }
+        },
+        {
+          "kind": "pressure",
+          "aggregate": {
+            "scenarioId": "generated-elf-lord-vs-dwarf-lord",
+            "modelCode": "BCEFHJKMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 3,
+            "defenderWins": 0,
+            "draws": 0,
+            "averageActions": 46.333333333333336,
+            "missRate": 0.5107913669064749,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0,
+            "hatredHitRate": 0.41007194244604317,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.5441176470588235,
+            "attackerRemainingHpAverage": 159.66666666666666,
+            "defenderRemainingHpAverage": 0
+          }
+        },
+        {
+          "kind": "pressure",
+          "aggregate": {
+            "scenarioId": "generated-black-goblin-vs-rune-dwarf",
+            "modelCode": "BCEFHJKMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 0,
+            "defenderWins": 3,
+            "draws": 0,
+            "averageActions": 104,
+            "missRate": 0.4230769230769231,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0.5128205128205128,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.6019417475728155,
+            "attackerRemainingHpAverage": 0,
+            "defenderRemainingHpAverage": 264
+          }
+        }
+      ]
+    },
+    {
+      "row": {
+        "modelCode": "BCEFHJLMN",
+        "scenarioCount": 6,
+        "mirrorCount": 3,
+        "pressureCount": 3,
+        "averageActions": 100.6111111111111,
+        "averageDrawRate": 0,
+        "averageRepeatTurnRate": 0.43336194026824737,
+        "averageFullAbsorptionRate": 0.20712585615922993,
+        "mirrorAttackerBias": 0.3333333333333333,
+        "pressureAttackerWinRate": 0.3333333333333333,
+        "speedPressureScore": 42.600028606934906
+      },
+      "scenarioResults": [
+        {
+          "kind": "mirror",
+          "aggregate": {
+            "scenarioId": "generated-goblin-lord-vs-goblin-lord",
+            "modelCode": "BCEFHJLMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 2,
+            "defenderWins": 1,
+            "draws": 0,
+            "averageActions": 157.66666666666666,
+            "missRate": 0.5983086680761099,
+            "zeroDamageRate": 0.02536997885835095,
+            "fullAbsorptionRate": 0.09302325581395349,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.2574468085106383,
+            "attackerRemainingHpAverage": 0.6666666666666666,
+            "defenderRemainingHpAverage": 1.3333333333333333
+          }
+        },
+        {
+          "kind": "mirror",
+          "aggregate": {
+            "scenarioId": "generated-elf-lord-vs-elf-lord",
+            "modelCode": "BCEFHJLMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 2,
+            "defenderWins": 1,
+            "draws": 0,
+            "averageActions": 53,
+            "missRate": 0.660377358490566,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.25,
+            "attackerRemainingHpAverage": 21.666666666666668,
+            "defenderRemainingHpAverage": 26.333333333333332
+          }
+        },
+        {
+          "kind": "mirror",
+          "aggregate": {
+            "scenarioId": "generated-black-goblin-vs-black-goblin",
+            "modelCode": "BCEFHJLMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 1,
+            "defenderWins": 2,
+            "draws": 0,
+            "averageActions": 123.66666666666667,
+            "missRate": 0.5822102425876011,
+            "zeroDamageRate": 0.016172506738544475,
+            "fullAbsorptionRate": 0.11590296495956873,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.27717391304347827,
+            "attackerRemainingHpAverage": 15.333333333333334,
+            "defenderRemainingHpAverage": 18
+          }
+        },
+        {
+          "kind": "pressure",
+          "aggregate": {
+            "scenarioId": "generated-goblin-lord-vs-dwarf-lord",
+            "modelCode": "BCEFHJLMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 0,
+            "defenderWins": 3,
+            "draws": 0,
+            "averageActions": 119,
+            "missRate": 0.4173669467787115,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0.5210084033613446,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.6694915254237288,
+            "attackerRemainingHpAverage": 0,
+            "defenderRemainingHpAverage": 380
+          }
+        },
+        {
+          "kind": "pressure",
+          "aggregate": {
+            "scenarioId": "generated-elf-lord-vs-dwarf-lord",
+            "modelCode": "BCEFHJLMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 3,
+            "defenderWins": 0,
+            "draws": 0,
+            "averageActions": 46.333333333333336,
+            "missRate": 0.5107913669064749,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0,
+            "hatredHitRate": 0.41007194244604317,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.5441176470588235,
+            "attackerRemainingHpAverage": 159.66666666666666,
+            "defenderRemainingHpAverage": 0
+          }
+        },
+        {
+          "kind": "pressure",
+          "aggregate": {
+            "scenarioId": "generated-black-goblin-vs-rune-dwarf",
+            "modelCode": "BCEFHJLMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 0,
+            "defenderWins": 3,
+            "draws": 0,
+            "averageActions": 104,
+            "missRate": 0.4230769230769231,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0.5128205128205128,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.6019417475728155,
+            "attackerRemainingHpAverage": 0,
+            "defenderRemainingHpAverage": 264
+          }
+        }
+      ]
+    },
+    {
+      "row": {
+        "modelCode": "ACEFHIKMN",
+        "scenarioCount": 6,
+        "mirrorCount": 3,
+        "pressureCount": 3,
+        "averageActions": 99.27777777777777,
+        "averageDrawRate": 0,
+        "averageRepeatTurnRate": 0.44121585480941167,
+        "averageFullAbsorptionRate": 0.21046065667862798,
+        "mirrorAttackerBias": 0.3333333333333333,
+        "pressureAttackerWinRate": 0.3333333333333333,
+        "speedPressureScore": 42.05232696592052
+      },
+      "scenarioResults": [
+        {
+          "kind": "mirror",
+          "aggregate": {
+            "scenarioId": "generated-goblin-lord-vs-goblin-lord",
+            "modelCode": "ACEFHIKMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 2,
+            "defenderWins": 1,
+            "draws": 0,
+            "averageActions": 157.66666666666666,
+            "missRate": 0.5983086680761099,
+            "zeroDamageRate": 0.02536997885835095,
+            "fullAbsorptionRate": 0.09302325581395349,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.2574468085106383,
+            "attackerRemainingHpAverage": 0.6666666666666666,
+            "defenderRemainingHpAverage": 1.3333333333333333
+          }
+        },
+        {
+          "kind": "mirror",
+          "aggregate": {
+            "scenarioId": "generated-elf-lord-vs-elf-lord",
+            "modelCode": "ACEFHIKMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 2,
+            "defenderWins": 1,
+            "draws": 0,
+            "averageActions": 53,
+            "missRate": 0.660377358490566,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.25,
+            "attackerRemainingHpAverage": 21.666666666666668,
+            "defenderRemainingHpAverage": 26.333333333333332
+          }
+        },
+        {
+          "kind": "mirror",
+          "aggregate": {
+            "scenarioId": "generated-black-goblin-vs-black-goblin",
+            "modelCode": "ACEFHIKMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 1,
+            "defenderWins": 2,
+            "draws": 0,
+            "averageActions": 123.66666666666667,
+            "missRate": 0.5822102425876011,
+            "zeroDamageRate": 0.016172506738544475,
+            "fullAbsorptionRate": 0.11590296495956873,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.27717391304347827,
+            "attackerRemainingHpAverage": 15.333333333333334,
+            "defenderRemainingHpAverage": 18
+          }
+        },
+        {
+          "kind": "pressure",
+          "aggregate": {
+            "scenarioId": "generated-goblin-lord-vs-dwarf-lord",
+            "modelCode": "ACEFHIKMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 0,
+            "defenderWins": 3,
+            "draws": 0,
+            "averageActions": 114,
+            "missRate": 0.40350877192982454,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0.5350877192982456,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.6666666666666666,
+            "attackerRemainingHpAverage": 0,
+            "defenderRemainingHpAverage": 380
+          }
+        },
+        {
+          "kind": "pressure",
+          "aggregate": {
+            "scenarioId": "generated-elf-lord-vs-dwarf-lord",
+            "modelCode": "ACEFHIKMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 3,
+            "defenderWins": 0,
+            "draws": 0,
+            "averageActions": 40.666666666666664,
+            "missRate": 0.4918032786885246,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0,
+            "hatredHitRate": 0.45081967213114754,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.5966386554621849,
+            "attackerRemainingHpAverage": 219.33333333333334,
+            "defenderRemainingHpAverage": 0
+          }
+        },
+        {
+          "kind": "pressure",
+          "aggregate": {
+            "scenarioId": "generated-black-goblin-vs-rune-dwarf",
+            "modelCode": "ACEFHIKMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 0,
+            "defenderWins": 3,
+            "draws": 0,
+            "averageActions": 106.66666666666667,
+            "missRate": 0.41875,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0.51875,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.5993690851735016,
+            "attackerRemainingHpAverage": 0,
+            "defenderRemainingHpAverage": 264
+          }
+        }
+      ]
+    },
+    {
+      "row": {
+        "modelCode": "ACEFHILMN",
+        "scenarioCount": 6,
+        "mirrorCount": 3,
+        "pressureCount": 3,
+        "averageActions": 99.27777777777777,
+        "averageDrawRate": 0,
+        "averageRepeatTurnRate": 0.44121585480941167,
+        "averageFullAbsorptionRate": 0.21046065667862798,
+        "mirrorAttackerBias": 0.3333333333333333,
+        "pressureAttackerWinRate": 0.3333333333333333,
+        "speedPressureScore": 42.05232696592052
+      },
+      "scenarioResults": [
+        {
+          "kind": "mirror",
+          "aggregate": {
+            "scenarioId": "generated-goblin-lord-vs-goblin-lord",
+            "modelCode": "ACEFHILMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 2,
+            "defenderWins": 1,
+            "draws": 0,
+            "averageActions": 157.66666666666666,
+            "missRate": 0.5983086680761099,
+            "zeroDamageRate": 0.02536997885835095,
+            "fullAbsorptionRate": 0.09302325581395349,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.2574468085106383,
+            "attackerRemainingHpAverage": 0.6666666666666666,
+            "defenderRemainingHpAverage": 1.3333333333333333
+          }
+        },
+        {
+          "kind": "mirror",
+          "aggregate": {
+            "scenarioId": "generated-elf-lord-vs-elf-lord",
+            "modelCode": "ACEFHILMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 2,
+            "defenderWins": 1,
+            "draws": 0,
+            "averageActions": 53,
+            "missRate": 0.660377358490566,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.25,
+            "attackerRemainingHpAverage": 21.666666666666668,
+            "defenderRemainingHpAverage": 26.333333333333332
+          }
+        },
+        {
+          "kind": "mirror",
+          "aggregate": {
+            "scenarioId": "generated-black-goblin-vs-black-goblin",
+            "modelCode": "ACEFHILMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 1,
+            "defenderWins": 2,
+            "draws": 0,
+            "averageActions": 123.66666666666667,
+            "missRate": 0.5822102425876011,
+            "zeroDamageRate": 0.016172506738544475,
+            "fullAbsorptionRate": 0.11590296495956873,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.27717391304347827,
+            "attackerRemainingHpAverage": 15.333333333333334,
+            "defenderRemainingHpAverage": 18
+          }
+        },
+        {
+          "kind": "pressure",
+          "aggregate": {
+            "scenarioId": "generated-goblin-lord-vs-dwarf-lord",
+            "modelCode": "ACEFHILMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 0,
+            "defenderWins": 3,
+            "draws": 0,
+            "averageActions": 114,
+            "missRate": 0.40350877192982454,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0.5350877192982456,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.6666666666666666,
+            "attackerRemainingHpAverage": 0,
+            "defenderRemainingHpAverage": 380
+          }
+        },
+        {
+          "kind": "pressure",
+          "aggregate": {
+            "scenarioId": "generated-elf-lord-vs-dwarf-lord",
+            "modelCode": "ACEFHILMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 3,
+            "defenderWins": 0,
+            "draws": 0,
+            "averageActions": 40.666666666666664,
+            "missRate": 0.4918032786885246,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0,
+            "hatredHitRate": 0.45081967213114754,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.5966386554621849,
+            "attackerRemainingHpAverage": 219.33333333333334,
+            "defenderRemainingHpAverage": 0
+          }
+        },
+        {
+          "kind": "pressure",
+          "aggregate": {
+            "scenarioId": "generated-black-goblin-vs-rune-dwarf",
+            "modelCode": "ACEFHILMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 0,
+            "defenderWins": 3,
+            "draws": 0,
+            "averageActions": 106.66666666666667,
+            "missRate": 0.41875,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0.51875,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.5993690851735016,
+            "attackerRemainingHpAverage": 0,
+            "defenderRemainingHpAverage": 264
+          }
+        }
+      ]
+    },
+    {
+      "row": {
+        "modelCode": "ACEFHJKMN",
+        "scenarioCount": 6,
+        "mirrorCount": 3,
+        "pressureCount": 3,
+        "averageActions": 99.27777777777777,
+        "averageDrawRate": 0,
+        "averageRepeatTurnRate": 0.44121585480941167,
+        "averageFullAbsorptionRate": 0.21046065667862798,
+        "mirrorAttackerBias": 0.3333333333333333,
+        "pressureAttackerWinRate": 0.3333333333333333,
+        "speedPressureScore": 42.05232696592052
+      },
+      "scenarioResults": [
+        {
+          "kind": "mirror",
+          "aggregate": {
+            "scenarioId": "generated-goblin-lord-vs-goblin-lord",
+            "modelCode": "ACEFHJKMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 2,
+            "defenderWins": 1,
+            "draws": 0,
+            "averageActions": 157.66666666666666,
+            "missRate": 0.5983086680761099,
+            "zeroDamageRate": 0.02536997885835095,
+            "fullAbsorptionRate": 0.09302325581395349,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.2574468085106383,
+            "attackerRemainingHpAverage": 0.6666666666666666,
+            "defenderRemainingHpAverage": 1.3333333333333333
+          }
+        },
+        {
+          "kind": "mirror",
+          "aggregate": {
+            "scenarioId": "generated-elf-lord-vs-elf-lord",
+            "modelCode": "ACEFHJKMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 2,
+            "defenderWins": 1,
+            "draws": 0,
+            "averageActions": 53,
+            "missRate": 0.660377358490566,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.25,
+            "attackerRemainingHpAverage": 21.666666666666668,
+            "defenderRemainingHpAverage": 26.333333333333332
+          }
+        },
+        {
+          "kind": "mirror",
+          "aggregate": {
+            "scenarioId": "generated-black-goblin-vs-black-goblin",
+            "modelCode": "ACEFHJKMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 1,
+            "defenderWins": 2,
+            "draws": 0,
+            "averageActions": 123.66666666666667,
+            "missRate": 0.5822102425876011,
+            "zeroDamageRate": 0.016172506738544475,
+            "fullAbsorptionRate": 0.11590296495956873,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.27717391304347827,
+            "attackerRemainingHpAverage": 15.333333333333334,
+            "defenderRemainingHpAverage": 18
+          }
+        },
+        {
+          "kind": "pressure",
+          "aggregate": {
+            "scenarioId": "generated-goblin-lord-vs-dwarf-lord",
+            "modelCode": "ACEFHJKMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 0,
+            "defenderWins": 3,
+            "draws": 0,
+            "averageActions": 114,
+            "missRate": 0.40350877192982454,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0.5350877192982456,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.6666666666666666,
+            "attackerRemainingHpAverage": 0,
+            "defenderRemainingHpAverage": 380
+          }
+        },
+        {
+          "kind": "pressure",
+          "aggregate": {
+            "scenarioId": "generated-elf-lord-vs-dwarf-lord",
+            "modelCode": "ACEFHJKMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 3,
+            "defenderWins": 0,
+            "draws": 0,
+            "averageActions": 40.666666666666664,
+            "missRate": 0.4918032786885246,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0,
+            "hatredHitRate": 0.45081967213114754,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.5966386554621849,
+            "attackerRemainingHpAverage": 219.33333333333334,
+            "defenderRemainingHpAverage": 0
+          }
+        },
+        {
+          "kind": "pressure",
+          "aggregate": {
+            "scenarioId": "generated-black-goblin-vs-rune-dwarf",
+            "modelCode": "ACEFHJKMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 0,
+            "defenderWins": 3,
+            "draws": 0,
+            "averageActions": 106.66666666666667,
+            "missRate": 0.41875,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0.51875,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.5993690851735016,
+            "attackerRemainingHpAverage": 0,
+            "defenderRemainingHpAverage": 264
+          }
+        }
+      ]
+    },
+    {
+      "row": {
+        "modelCode": "ACEFHJLMN",
+        "scenarioCount": 6,
+        "mirrorCount": 3,
+        "pressureCount": 3,
+        "averageActions": 99.27777777777777,
+        "averageDrawRate": 0,
+        "averageRepeatTurnRate": 0.44121585480941167,
+        "averageFullAbsorptionRate": 0.21046065667862798,
+        "mirrorAttackerBias": 0.3333333333333333,
+        "pressureAttackerWinRate": 0.3333333333333333,
+        "speedPressureScore": 42.05232696592052
+      },
+      "scenarioResults": [
+        {
+          "kind": "mirror",
+          "aggregate": {
+            "scenarioId": "generated-goblin-lord-vs-goblin-lord",
+            "modelCode": "ACEFHJLMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 2,
+            "defenderWins": 1,
+            "draws": 0,
+            "averageActions": 157.66666666666666,
+            "missRate": 0.5983086680761099,
+            "zeroDamageRate": 0.02536997885835095,
+            "fullAbsorptionRate": 0.09302325581395349,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.2574468085106383,
+            "attackerRemainingHpAverage": 0.6666666666666666,
+            "defenderRemainingHpAverage": 1.3333333333333333
+          }
+        },
+        {
+          "kind": "mirror",
+          "aggregate": {
+            "scenarioId": "generated-elf-lord-vs-elf-lord",
+            "modelCode": "ACEFHJLMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 2,
+            "defenderWins": 1,
+            "draws": 0,
+            "averageActions": 53,
+            "missRate": 0.660377358490566,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.25,
+            "attackerRemainingHpAverage": 21.666666666666668,
+            "defenderRemainingHpAverage": 26.333333333333332
+          }
+        },
+        {
+          "kind": "mirror",
+          "aggregate": {
+            "scenarioId": "generated-black-goblin-vs-black-goblin",
+            "modelCode": "ACEFHJLMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 1,
+            "defenderWins": 2,
+            "draws": 0,
+            "averageActions": 123.66666666666667,
+            "missRate": 0.5822102425876011,
+            "zeroDamageRate": 0.016172506738544475,
+            "fullAbsorptionRate": 0.11590296495956873,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.27717391304347827,
+            "attackerRemainingHpAverage": 15.333333333333334,
+            "defenderRemainingHpAverage": 18
+          }
+        },
+        {
+          "kind": "pressure",
+          "aggregate": {
+            "scenarioId": "generated-goblin-lord-vs-dwarf-lord",
+            "modelCode": "ACEFHJLMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 0,
+            "defenderWins": 3,
+            "draws": 0,
+            "averageActions": 114,
+            "missRate": 0.40350877192982454,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0.5350877192982456,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.6666666666666666,
+            "attackerRemainingHpAverage": 0,
+            "defenderRemainingHpAverage": 380
+          }
+        },
+        {
+          "kind": "pressure",
+          "aggregate": {
+            "scenarioId": "generated-elf-lord-vs-dwarf-lord",
+            "modelCode": "ACEFHJLMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 3,
+            "defenderWins": 0,
+            "draws": 0,
+            "averageActions": 40.666666666666664,
+            "missRate": 0.4918032786885246,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0,
+            "hatredHitRate": 0.45081967213114754,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.5966386554621849,
+            "attackerRemainingHpAverage": 219.33333333333334,
+            "defenderRemainingHpAverage": 0
+          }
+        },
+        {
+          "kind": "pressure",
+          "aggregate": {
+            "scenarioId": "generated-black-goblin-vs-rune-dwarf",
+            "modelCode": "ACEFHJLMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 0,
+            "defenderWins": 3,
+            "draws": 0,
+            "averageActions": 106.66666666666667,
+            "missRate": 0.41875,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0.51875,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.5993690851735016,
+            "attackerRemainingHpAverage": 0,
+            "defenderRemainingHpAverage": 264
+          }
+        }
+      ]
+    },
+    {
+      "row": {
+        "modelCode": "BCEGHJKMN",
+        "scenarioCount": 6,
+        "mirrorCount": 3,
+        "pressureCount": 3,
+        "averageActions": 48.833333333333336,
+        "averageDrawRate": 0,
+        "averageRepeatTurnRate": 0.43545336845570487,
+        "averageFullAbsorptionRate": 0.15658404607030652,
+        "mirrorAttackerBias": 0.3333333333333333,
+        "pressureAttackerWinRate": 0.3333333333333333,
+        "speedPressureScore": 23.491008924011265
+      },
+      "scenarioResults": [
+        {
+          "kind": "mirror",
+          "aggregate": {
+            "scenarioId": "generated-goblin-lord-vs-goblin-lord",
+            "modelCode": "BCEGHJKMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 1,
+            "defenderWins": 2,
+            "draws": 0,
+            "averageActions": 44.333333333333336,
+            "missRate": 0.5639097744360902,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.24615384615384617,
+            "attackerRemainingHpAverage": 9.666666666666666,
+            "defenderRemainingHpAverage": 33
+          }
+        },
+        {
+          "kind": "mirror",
+          "aggregate": {
+            "scenarioId": "generated-elf-lord-vs-elf-lord",
+            "modelCode": "BCEGHJKMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 1,
+            "defenderWins": 2,
+            "draws": 0,
+            "averageActions": 31,
+            "missRate": 0.6559139784946236,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.24444444444444444,
+            "attackerRemainingHpAverage": 0.3333333333333333,
+            "defenderRemainingHpAverage": 73
+          }
+        },
+        {
+          "kind": "mirror",
+          "aggregate": {
+            "scenarioId": "generated-black-goblin-vs-black-goblin",
+            "modelCode": "BCEGHJKMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 1,
+            "defenderWins": 2,
+            "draws": 0,
+            "averageActions": 41.333333333333336,
+            "missRate": 0.5645161290322581,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.2727272727272727,
+            "attackerRemainingHpAverage": 3.6666666666666665,
+            "defenderRemainingHpAverage": 21.666666666666668
+          }
+        },
+        {
+          "kind": "pressure",
+          "aggregate": {
+            "scenarioId": "generated-goblin-lord-vs-dwarf-lord",
+            "modelCode": "BCEGHJKMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 0,
+            "defenderWins": 3,
+            "draws": 0,
+            "averageActions": 81,
+            "missRate": 0.4691358024691358,
+            "zeroDamageRate": 0.01646090534979424,
+            "fullAbsorptionRate": 0.4279835390946502,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.6708333333333333,
+            "attackerRemainingHpAverage": 0,
+            "defenderRemainingHpAverage": 375.6666666666667
+          }
+        },
+        {
+          "kind": "pressure",
+          "aggregate": {
+            "scenarioId": "generated-elf-lord-vs-dwarf-lord",
+            "modelCode": "BCEGHJKMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 3,
+            "defenderWins": 0,
+            "draws": 0,
+            "averageActions": 23,
+            "missRate": 0.4927536231884058,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0,
+            "hatredHitRate": 0.4492753623188406,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.5757575757575758,
+            "attackerRemainingHpAverage": 216,
+            "defenderRemainingHpAverage": 0
+          }
+        },
+        {
+          "kind": "pressure",
+          "aggregate": {
+            "scenarioId": "generated-black-goblin-vs-rune-dwarf",
+            "modelCode": "BCEGHJKMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 0,
+            "defenderWins": 3,
+            "draws": 0,
+            "averageActions": 72.33333333333333,
+            "missRate": 0.42857142857142855,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0.511520737327189,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.602803738317757,
+            "attackerRemainingHpAverage": 0,
+            "defenderRemainingHpAverage": 264
+          }
+        }
+      ]
+    },
+    {
+      "row": {
+        "modelCode": "BCEGHJLMN",
+        "scenarioCount": 6,
+        "mirrorCount": 3,
+        "pressureCount": 3,
+        "averageActions": 48.833333333333336,
+        "averageDrawRate": 0,
+        "averageRepeatTurnRate": 0.43545336845570487,
+        "averageFullAbsorptionRate": 0.15658404607030652,
+        "mirrorAttackerBias": 0.3333333333333333,
+        "pressureAttackerWinRate": 0.3333333333333333,
+        "speedPressureScore": 23.491008924011265
+      },
+      "scenarioResults": [
+        {
+          "kind": "mirror",
+          "aggregate": {
+            "scenarioId": "generated-goblin-lord-vs-goblin-lord",
+            "modelCode": "BCEGHJLMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 1,
+            "defenderWins": 2,
+            "draws": 0,
+            "averageActions": 44.333333333333336,
+            "missRate": 0.5639097744360902,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.24615384615384617,
+            "attackerRemainingHpAverage": 9.666666666666666,
+            "defenderRemainingHpAverage": 33
+          }
+        },
+        {
+          "kind": "mirror",
+          "aggregate": {
+            "scenarioId": "generated-elf-lord-vs-elf-lord",
+            "modelCode": "BCEGHJLMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 1,
+            "defenderWins": 2,
+            "draws": 0,
+            "averageActions": 31,
+            "missRate": 0.6559139784946236,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.24444444444444444,
+            "attackerRemainingHpAverage": 0.3333333333333333,
+            "defenderRemainingHpAverage": 73
+          }
+        },
+        {
+          "kind": "mirror",
+          "aggregate": {
+            "scenarioId": "generated-black-goblin-vs-black-goblin",
+            "modelCode": "BCEGHJLMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 1,
+            "defenderWins": 2,
+            "draws": 0,
+            "averageActions": 41.333333333333336,
+            "missRate": 0.5645161290322581,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.2727272727272727,
+            "attackerRemainingHpAverage": 3.6666666666666665,
+            "defenderRemainingHpAverage": 21.666666666666668
+          }
+        },
+        {
+          "kind": "pressure",
+          "aggregate": {
+            "scenarioId": "generated-goblin-lord-vs-dwarf-lord",
+            "modelCode": "BCEGHJLMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 0,
+            "defenderWins": 3,
+            "draws": 0,
+            "averageActions": 81,
+            "missRate": 0.4691358024691358,
+            "zeroDamageRate": 0.01646090534979424,
+            "fullAbsorptionRate": 0.4279835390946502,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.6708333333333333,
+            "attackerRemainingHpAverage": 0,
+            "defenderRemainingHpAverage": 375.6666666666667
+          }
+        },
+        {
+          "kind": "pressure",
+          "aggregate": {
+            "scenarioId": "generated-elf-lord-vs-dwarf-lord",
+            "modelCode": "BCEGHJLMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 3,
+            "defenderWins": 0,
+            "draws": 0,
+            "averageActions": 23,
+            "missRate": 0.4927536231884058,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0,
+            "hatredHitRate": 0.4492753623188406,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.5757575757575758,
+            "attackerRemainingHpAverage": 216,
+            "defenderRemainingHpAverage": 0
+          }
+        },
+        {
+          "kind": "pressure",
+          "aggregate": {
+            "scenarioId": "generated-black-goblin-vs-rune-dwarf",
+            "modelCode": "BCEGHJLMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 0,
+            "defenderWins": 3,
+            "draws": 0,
+            "averageActions": 72.33333333333333,
+            "missRate": 0.42857142857142855,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0.511520737327189,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.602803738317757,
+            "attackerRemainingHpAverage": 0,
+            "defenderRemainingHpAverage": 264
+          }
+        }
+      ]
+    },
+    {
+      "row": {
+        "modelCode": "BCEGHIKMN",
+        "scenarioCount": 6,
+        "mirrorCount": 3,
+        "pressureCount": 3,
+        "averageActions": 47.94444444444445,
+        "averageDrawRate": 0,
+        "averageRepeatTurnRate": 0.4328271058294422,
+        "averageFullAbsorptionRate": 0.15658404607030652,
+        "mirrorAttackerBias": 0.3333333333333333,
+        "pressureAttackerWinRate": 0.3333333333333333,
+        "speedPressureScore": 22.932827105829443
+      },
+      "scenarioResults": [
+        {
+          "kind": "mirror",
+          "aggregate": {
+            "scenarioId": "generated-goblin-lord-vs-goblin-lord",
+            "modelCode": "BCEGHIKMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 1,
+            "defenderWins": 2,
+            "draws": 0,
+            "averageActions": 44.333333333333336,
+            "missRate": 0.5639097744360902,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.24615384615384617,
+            "attackerRemainingHpAverage": 9.666666666666666,
+            "defenderRemainingHpAverage": 33
+          }
+        },
+        {
+          "kind": "mirror",
+          "aggregate": {
+            "scenarioId": "generated-elf-lord-vs-elf-lord",
+            "modelCode": "BCEGHIKMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 1,
+            "defenderWins": 2,
+            "draws": 0,
+            "averageActions": 31,
+            "missRate": 0.6559139784946236,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.24444444444444444,
+            "attackerRemainingHpAverage": 0.3333333333333333,
+            "defenderRemainingHpAverage": 73
+          }
+        },
+        {
+          "kind": "mirror",
+          "aggregate": {
+            "scenarioId": "generated-black-goblin-vs-black-goblin",
+            "modelCode": "BCEGHIKMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 1,
+            "defenderWins": 2,
+            "draws": 0,
+            "averageActions": 41.333333333333336,
+            "missRate": 0.5645161290322581,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.2727272727272727,
+            "attackerRemainingHpAverage": 3.6666666666666665,
+            "defenderRemainingHpAverage": 21.666666666666668
+          }
+        },
+        {
+          "kind": "pressure",
+          "aggregate": {
+            "scenarioId": "generated-goblin-lord-vs-dwarf-lord",
+            "modelCode": "BCEGHIKMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 0,
+            "defenderWins": 3,
+            "draws": 0,
+            "averageActions": 81,
+            "missRate": 0.4691358024691358,
+            "zeroDamageRate": 0.01646090534979424,
+            "fullAbsorptionRate": 0.4279835390946502,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.6708333333333333,
+            "attackerRemainingHpAverage": 0,
+            "defenderRemainingHpAverage": 375.6666666666667
+          }
+        },
+        {
+          "kind": "pressure",
+          "aggregate": {
+            "scenarioId": "generated-elf-lord-vs-dwarf-lord",
+            "modelCode": "BCEGHIKMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 3,
+            "defenderWins": 0,
+            "draws": 0,
+            "averageActions": 17.666666666666668,
+            "missRate": 0.4339622641509434,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0,
+            "hatredHitRate": 0.5094339622641509,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.56,
+            "attackerRemainingHpAverage": 234,
+            "defenderRemainingHpAverage": 0
+          }
+        },
+        {
+          "kind": "pressure",
+          "aggregate": {
+            "scenarioId": "generated-black-goblin-vs-rune-dwarf",
+            "modelCode": "BCEGHIKMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 0,
+            "defenderWins": 3,
+            "draws": 0,
+            "averageActions": 72.33333333333333,
+            "missRate": 0.42857142857142855,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0.511520737327189,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.602803738317757,
+            "attackerRemainingHpAverage": 0,
+            "defenderRemainingHpAverage": 264
+          }
+        }
+      ]
+    },
+    {
+      "row": {
+        "modelCode": "BCEGHILMN",
+        "scenarioCount": 6,
+        "mirrorCount": 3,
+        "pressureCount": 3,
+        "averageActions": 47.94444444444445,
+        "averageDrawRate": 0,
+        "averageRepeatTurnRate": 0.4328271058294422,
+        "averageFullAbsorptionRate": 0.15658404607030652,
+        "mirrorAttackerBias": 0.3333333333333333,
+        "pressureAttackerWinRate": 0.3333333333333333,
+        "speedPressureScore": 22.932827105829443
+      },
+      "scenarioResults": [
+        {
+          "kind": "mirror",
+          "aggregate": {
+            "scenarioId": "generated-goblin-lord-vs-goblin-lord",
+            "modelCode": "BCEGHILMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 1,
+            "defenderWins": 2,
+            "draws": 0,
+            "averageActions": 44.333333333333336,
+            "missRate": 0.5639097744360902,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.24615384615384617,
+            "attackerRemainingHpAverage": 9.666666666666666,
+            "defenderRemainingHpAverage": 33
+          }
+        },
+        {
+          "kind": "mirror",
+          "aggregate": {
+            "scenarioId": "generated-elf-lord-vs-elf-lord",
+            "modelCode": "BCEGHILMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 1,
+            "defenderWins": 2,
+            "draws": 0,
+            "averageActions": 31,
+            "missRate": 0.6559139784946236,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.24444444444444444,
+            "attackerRemainingHpAverage": 0.3333333333333333,
+            "defenderRemainingHpAverage": 73
+          }
+        },
+        {
+          "kind": "mirror",
+          "aggregate": {
+            "scenarioId": "generated-black-goblin-vs-black-goblin",
+            "modelCode": "BCEGHILMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 1,
+            "defenderWins": 2,
+            "draws": 0,
+            "averageActions": 41.333333333333336,
+            "missRate": 0.5645161290322581,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.2727272727272727,
+            "attackerRemainingHpAverage": 3.6666666666666665,
+            "defenderRemainingHpAverage": 21.666666666666668
+          }
+        },
+        {
+          "kind": "pressure",
+          "aggregate": {
+            "scenarioId": "generated-goblin-lord-vs-dwarf-lord",
+            "modelCode": "BCEGHILMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 0,
+            "defenderWins": 3,
+            "draws": 0,
+            "averageActions": 81,
+            "missRate": 0.4691358024691358,
+            "zeroDamageRate": 0.01646090534979424,
+            "fullAbsorptionRate": 0.4279835390946502,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.6708333333333333,
+            "attackerRemainingHpAverage": 0,
+            "defenderRemainingHpAverage": 375.6666666666667
+          }
+        },
+        {
+          "kind": "pressure",
+          "aggregate": {
+            "scenarioId": "generated-elf-lord-vs-dwarf-lord",
+            "modelCode": "BCEGHILMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 3,
+            "defenderWins": 0,
+            "draws": 0,
+            "averageActions": 17.666666666666668,
+            "missRate": 0.4339622641509434,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0,
+            "hatredHitRate": 0.5094339622641509,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.56,
+            "attackerRemainingHpAverage": 234,
+            "defenderRemainingHpAverage": 0
+          }
+        },
+        {
+          "kind": "pressure",
+          "aggregate": {
+            "scenarioId": "generated-black-goblin-vs-rune-dwarf",
+            "modelCode": "BCEGHILMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 0,
+            "defenderWins": 3,
+            "draws": 0,
+            "averageActions": 72.33333333333333,
+            "missRate": 0.42857142857142855,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0.511520737327189,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.602803738317757,
+            "attackerRemainingHpAverage": 0,
+            "defenderRemainingHpAverage": 264
+          }
+        }
+      ]
+    },
+    {
+      "row": {
+        "modelCode": "ACEGHJKMN",
+        "scenarioCount": 6,
+        "mirrorCount": 3,
+        "pressureCount": 3,
+        "averageActions": 47.333333333333336,
+        "averageDrawRate": 0,
+        "averageRepeatTurnRate": 0.4424176486676486,
+        "averageFullAbsorptionRate": 0.1601228716868527,
+        "mirrorAttackerBias": 0.3333333333333333,
+        "pressureAttackerWinRate": 0.3333333333333333,
+        "speedPressureScore": 22.66463987088987
+      },
+      "scenarioResults": [
+        {
+          "kind": "mirror",
+          "aggregate": {
+            "scenarioId": "generated-goblin-lord-vs-goblin-lord",
+            "modelCode": "ACEGHJKMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 1,
+            "defenderWins": 2,
+            "draws": 0,
+            "averageActions": 44.333333333333336,
+            "missRate": 0.5639097744360902,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.24615384615384617,
+            "attackerRemainingHpAverage": 9.666666666666666,
+            "defenderRemainingHpAverage": 33
+          }
+        },
+        {
+          "kind": "mirror",
+          "aggregate": {
+            "scenarioId": "generated-elf-lord-vs-elf-lord",
+            "modelCode": "ACEGHJKMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 1,
+            "defenderWins": 2,
+            "draws": 0,
+            "averageActions": 31,
+            "missRate": 0.6559139784946236,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.24444444444444444,
+            "attackerRemainingHpAverage": 0.3333333333333333,
+            "defenderRemainingHpAverage": 73
+          }
+        },
+        {
+          "kind": "mirror",
+          "aggregate": {
+            "scenarioId": "generated-black-goblin-vs-black-goblin",
+            "modelCode": "ACEGHJKMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 1,
+            "defenderWins": 2,
+            "draws": 0,
+            "averageActions": 41.333333333333336,
+            "missRate": 0.5645161290322581,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.2727272727272727,
+            "attackerRemainingHpAverage": 3.6666666666666665,
+            "defenderRemainingHpAverage": 21.666666666666668
+          }
+        },
+        {
+          "kind": "pressure",
+          "aggregate": {
+            "scenarioId": "generated-goblin-lord-vs-dwarf-lord",
+            "modelCode": "ACEGHJKMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 0,
+            "defenderWins": 3,
+            "draws": 0,
+            "averageActions": 75,
+            "missRate": 0.4177777777777778,
+            "zeroDamageRate": 0.017777777777777778,
+            "fullAbsorptionRate": 0.4488888888888889,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.6711711711711712,
+            "attackerRemainingHpAverage": 0,
+            "defenderRemainingHpAverage": 372.6666666666667
+          }
+        },
+        {
+          "kind": "pressure",
+          "aggregate": {
+            "scenarioId": "generated-elf-lord-vs-dwarf-lord",
+            "modelCode": "ACEGHJKMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 3,
+            "defenderWins": 0,
+            "draws": 0,
+            "averageActions": 22,
+            "missRate": 0.5151515151515151,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0,
+            "hatredHitRate": 0.4393939393939394,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.6190476190476191,
+            "attackerRemainingHpAverage": 246.33333333333334,
+            "defenderRemainingHpAverage": 0
+          }
+        },
+        {
+          "kind": "pressure",
+          "aggregate": {
+            "scenarioId": "generated-black-goblin-vs-rune-dwarf",
+            "modelCode": "ACEGHJKMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 0,
+            "defenderWins": 3,
+            "draws": 0,
+            "averageActions": 70.33333333333333,
+            "missRate": 0.4312796208530806,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0.5118483412322274,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.6009615384615384,
+            "attackerRemainingHpAverage": 0,
+            "defenderRemainingHpAverage": 264
+          }
+        }
+      ]
+    },
+    {
+      "row": {
+        "modelCode": "ACEGHJLMN",
+        "scenarioCount": 6,
+        "mirrorCount": 3,
+        "pressureCount": 3,
+        "averageActions": 47.333333333333336,
+        "averageDrawRate": 0,
+        "averageRepeatTurnRate": 0.4424176486676486,
+        "averageFullAbsorptionRate": 0.1601228716868527,
+        "mirrorAttackerBias": 0.3333333333333333,
+        "pressureAttackerWinRate": 0.3333333333333333,
+        "speedPressureScore": 22.66463987088987
+      },
+      "scenarioResults": [
+        {
+          "kind": "mirror",
+          "aggregate": {
+            "scenarioId": "generated-goblin-lord-vs-goblin-lord",
+            "modelCode": "ACEGHJLMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 1,
+            "defenderWins": 2,
+            "draws": 0,
+            "averageActions": 44.333333333333336,
+            "missRate": 0.5639097744360902,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.24615384615384617,
+            "attackerRemainingHpAverage": 9.666666666666666,
+            "defenderRemainingHpAverage": 33
+          }
+        },
+        {
+          "kind": "mirror",
+          "aggregate": {
+            "scenarioId": "generated-elf-lord-vs-elf-lord",
+            "modelCode": "ACEGHJLMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 1,
+            "defenderWins": 2,
+            "draws": 0,
+            "averageActions": 31,
+            "missRate": 0.6559139784946236,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.24444444444444444,
+            "attackerRemainingHpAverage": 0.3333333333333333,
+            "defenderRemainingHpAverage": 73
+          }
+        },
+        {
+          "kind": "mirror",
+          "aggregate": {
+            "scenarioId": "generated-black-goblin-vs-black-goblin",
+            "modelCode": "ACEGHJLMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 1,
+            "defenderWins": 2,
+            "draws": 0,
+            "averageActions": 41.333333333333336,
+            "missRate": 0.5645161290322581,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.2727272727272727,
+            "attackerRemainingHpAverage": 3.6666666666666665,
+            "defenderRemainingHpAverage": 21.666666666666668
+          }
+        },
+        {
+          "kind": "pressure",
+          "aggregate": {
+            "scenarioId": "generated-goblin-lord-vs-dwarf-lord",
+            "modelCode": "ACEGHJLMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 0,
+            "defenderWins": 3,
+            "draws": 0,
+            "averageActions": 75,
+            "missRate": 0.4177777777777778,
+            "zeroDamageRate": 0.017777777777777778,
+            "fullAbsorptionRate": 0.4488888888888889,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.6711711711711712,
+            "attackerRemainingHpAverage": 0,
+            "defenderRemainingHpAverage": 372.6666666666667
+          }
+        },
+        {
+          "kind": "pressure",
+          "aggregate": {
+            "scenarioId": "generated-elf-lord-vs-dwarf-lord",
+            "modelCode": "ACEGHJLMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 3,
+            "defenderWins": 0,
+            "draws": 0,
+            "averageActions": 22,
+            "missRate": 0.5151515151515151,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0,
+            "hatredHitRate": 0.4393939393939394,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.6190476190476191,
+            "attackerRemainingHpAverage": 246.33333333333334,
+            "defenderRemainingHpAverage": 0
+          }
+        },
+        {
+          "kind": "pressure",
+          "aggregate": {
+            "scenarioId": "generated-black-goblin-vs-rune-dwarf",
+            "modelCode": "ACEGHJLMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 0,
+            "defenderWins": 3,
+            "draws": 0,
+            "averageActions": 70.33333333333333,
+            "missRate": 0.4312796208530806,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0.5118483412322274,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.6009615384615384,
+            "attackerRemainingHpAverage": 0,
+            "defenderRemainingHpAverage": 264
+          }
+        }
+      ]
+    },
+    {
+      "row": {
+        "modelCode": "ACEGHIKMN",
+        "scenarioCount": 6,
+        "mirrorCount": 3,
+        "pressureCount": 3,
+        "averageActions": 46.72222222222223,
+        "averageDrawRate": 0,
+        "averageRepeatTurnRate": 0.441807148057148,
+        "averageFullAbsorptionRate": 0.1601228716868527,
+        "mirrorAttackerBias": 0.3333333333333333,
+        "pressureAttackerWinRate": 0.3333333333333333,
+        "speedPressureScore": 22.27514048139048
+      },
+      "scenarioResults": [
+        {
+          "kind": "mirror",
+          "aggregate": {
+            "scenarioId": "generated-goblin-lord-vs-goblin-lord",
+            "modelCode": "ACEGHIKMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 1,
+            "defenderWins": 2,
+            "draws": 0,
+            "averageActions": 44.333333333333336,
+            "missRate": 0.5639097744360902,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.24615384615384617,
+            "attackerRemainingHpAverage": 9.666666666666666,
+            "defenderRemainingHpAverage": 33
+          }
+        },
+        {
+          "kind": "mirror",
+          "aggregate": {
+            "scenarioId": "generated-elf-lord-vs-elf-lord",
+            "modelCode": "ACEGHIKMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 1,
+            "defenderWins": 2,
+            "draws": 0,
+            "averageActions": 31,
+            "missRate": 0.6559139784946236,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.24444444444444444,
+            "attackerRemainingHpAverage": 0.3333333333333333,
+            "defenderRemainingHpAverage": 73
+          }
+        },
+        {
+          "kind": "mirror",
+          "aggregate": {
+            "scenarioId": "generated-black-goblin-vs-black-goblin",
+            "modelCode": "ACEGHIKMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 1,
+            "defenderWins": 2,
+            "draws": 0,
+            "averageActions": 41.333333333333336,
+            "missRate": 0.5645161290322581,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.2727272727272727,
+            "attackerRemainingHpAverage": 3.6666666666666665,
+            "defenderRemainingHpAverage": 21.666666666666668
+          }
+        },
+        {
+          "kind": "pressure",
+          "aggregate": {
+            "scenarioId": "generated-goblin-lord-vs-dwarf-lord",
+            "modelCode": "ACEGHIKMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 0,
+            "defenderWins": 3,
+            "draws": 0,
+            "averageActions": 75,
+            "missRate": 0.4177777777777778,
+            "zeroDamageRate": 0.017777777777777778,
+            "fullAbsorptionRate": 0.4488888888888889,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.6711711711711712,
+            "attackerRemainingHpAverage": 0,
+            "defenderRemainingHpAverage": 372.6666666666667
+          }
+        },
+        {
+          "kind": "pressure",
+          "aggregate": {
+            "scenarioId": "generated-elf-lord-vs-dwarf-lord",
+            "modelCode": "ACEGHIKMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 3,
+            "defenderWins": 0,
+            "draws": 0,
+            "averageActions": 18.333333333333332,
+            "missRate": 0.4727272727272727,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0,
+            "hatredHitRate": 0.4727272727272727,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.6153846153846154,
+            "attackerRemainingHpAverage": 246.33333333333334,
+            "defenderRemainingHpAverage": 0
+          }
+        },
+        {
+          "kind": "pressure",
+          "aggregate": {
+            "scenarioId": "generated-black-goblin-vs-rune-dwarf",
+            "modelCode": "ACEGHIKMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 0,
+            "defenderWins": 3,
+            "draws": 0,
+            "averageActions": 70.33333333333333,
+            "missRate": 0.4312796208530806,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0.5118483412322274,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.6009615384615384,
+            "attackerRemainingHpAverage": 0,
+            "defenderRemainingHpAverage": 264
+          }
+        }
+      ]
+    },
+    {
+      "row": {
+        "modelCode": "ACEGHILMN",
+        "scenarioCount": 6,
+        "mirrorCount": 3,
+        "pressureCount": 3,
+        "averageActions": 46.72222222222223,
+        "averageDrawRate": 0,
+        "averageRepeatTurnRate": 0.441807148057148,
+        "averageFullAbsorptionRate": 0.1601228716868527,
+        "mirrorAttackerBias": 0.3333333333333333,
+        "pressureAttackerWinRate": 0.3333333333333333,
+        "speedPressureScore": 22.27514048139048
+      },
+      "scenarioResults": [
+        {
+          "kind": "mirror",
+          "aggregate": {
+            "scenarioId": "generated-goblin-lord-vs-goblin-lord",
+            "modelCode": "ACEGHILMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 1,
+            "defenderWins": 2,
+            "draws": 0,
+            "averageActions": 44.333333333333336,
+            "missRate": 0.5639097744360902,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.24615384615384617,
+            "attackerRemainingHpAverage": 9.666666666666666,
+            "defenderRemainingHpAverage": 33
+          }
+        },
+        {
+          "kind": "mirror",
+          "aggregate": {
+            "scenarioId": "generated-elf-lord-vs-elf-lord",
+            "modelCode": "ACEGHILMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 1,
+            "defenderWins": 2,
+            "draws": 0,
+            "averageActions": 31,
+            "missRate": 0.6559139784946236,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.24444444444444444,
+            "attackerRemainingHpAverage": 0.3333333333333333,
+            "defenderRemainingHpAverage": 73
+          }
+        },
+        {
+          "kind": "mirror",
+          "aggregate": {
+            "scenarioId": "generated-black-goblin-vs-black-goblin",
+            "modelCode": "ACEGHILMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 1,
+            "defenderWins": 2,
+            "draws": 0,
+            "averageActions": 41.333333333333336,
+            "missRate": 0.5645161290322581,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.2727272727272727,
+            "attackerRemainingHpAverage": 3.6666666666666665,
+            "defenderRemainingHpAverage": 21.666666666666668
+          }
+        },
+        {
+          "kind": "pressure",
+          "aggregate": {
+            "scenarioId": "generated-goblin-lord-vs-dwarf-lord",
+            "modelCode": "ACEGHILMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 0,
+            "defenderWins": 3,
+            "draws": 0,
+            "averageActions": 75,
+            "missRate": 0.4177777777777778,
+            "zeroDamageRate": 0.017777777777777778,
+            "fullAbsorptionRate": 0.4488888888888889,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.6711711711711712,
+            "attackerRemainingHpAverage": 0,
+            "defenderRemainingHpAverage": 372.6666666666667
+          }
+        },
+        {
+          "kind": "pressure",
+          "aggregate": {
+            "scenarioId": "generated-elf-lord-vs-dwarf-lord",
+            "modelCode": "ACEGHILMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 3,
+            "defenderWins": 0,
+            "draws": 0,
+            "averageActions": 18.333333333333332,
+            "missRate": 0.4727272727272727,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0,
+            "hatredHitRate": 0.4727272727272727,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.6153846153846154,
+            "attackerRemainingHpAverage": 246.33333333333334,
+            "defenderRemainingHpAverage": 0
+          }
+        },
+        {
+          "kind": "pressure",
+          "aggregate": {
+            "scenarioId": "generated-black-goblin-vs-rune-dwarf",
+            "modelCode": "ACEGHILMN",
+            "seeds": [
+              1,
+              2,
+              3
+            ],
+            "runs": 3,
+            "attackerWins": 0,
+            "defenderWins": 3,
+            "draws": 0,
+            "averageActions": 70.33333333333333,
+            "missRate": 0.4312796208530806,
+            "zeroDamageRate": 0,
+            "fullAbsorptionRate": 0.5118483412322274,
+            "hatredHitRate": 0,
+            "preventedActionsPerBattle": 0,
+            "repeatTurnRate": 0.6009615384615384,
+            "attackerRemainingHpAverage": 0,
+            "defenderRemainingHpAverage": 264
+          }
+        }
+      ]
+    }
+  ]
+}

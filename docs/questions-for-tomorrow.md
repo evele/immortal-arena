@@ -7,6 +7,7 @@ These are pending design questions to continue later. Do not ask all at once; us
 - Should the 100-action draw limit scale with the number of warriors in battle?
 - What happens to rewards on a draw?
 - How strong is the racial hatred damage bonus?
+- Follow-up from combat simulations: should we first tune the `hatred-cycle-broken` thresholds, or first isolate whether the broken hatred ring comes mainly from the hatred bonus, the hit model, or the damage model?
 
 ## Guild Vs Guild Resolution
 

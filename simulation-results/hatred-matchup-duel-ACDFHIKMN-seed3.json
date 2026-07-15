@@ -1,0 +1,175 @@
+{
+  "scenario": {
+    "id": "hatred-matchup-duel",
+    "description": "1v1 Elf versus Dwarf duel to isolate racial-hatred damage behavior.",
+    "attacker": {
+      "lordId": "lord-a",
+      "lordName": "Lord Sylva",
+      "level": 1,
+      "warriors": [
+        {
+          "id": "a1",
+          "name": "Sylva Blade",
+          "race": "Elf",
+          "stats": {
+            "hp": 22,
+            "damage": 6,
+            "defense": 4,
+            "accuracy": 5,
+            "agility": 5,
+            "speed": 5
+          }
+        }
+      ]
+    },
+    "defender": {
+      "lordId": "lord-b",
+      "lordName": "Lord Iron",
+      "level": 1,
+      "warriors": [
+        {
+          "id": "d1",
+          "name": "Iron Shield",
+          "race": "Dwarf",
+          "stats": {
+            "hp": 22,
+            "damage": 6,
+            "defense": 4,
+            "accuracy": 5,
+            "agility": 5,
+            "speed": 5
+          }
+        }
+      ]
+    }
+  },
+  "result": {
+    "modelCode": "ACDFHIKMN",
+    "seed": 3,
+    "outcome": "attacker_win",
+    "actionLimit": 100,
+    "actionCount": 13,
+    "metrics": {
+      "actions": 13,
+      "misses": 3,
+      "landedHits": 10,
+      "zeroDamageHits": 2,
+      "fullAbsorptions": 0,
+      "hatredHits": 5,
+      "preventedActions": 0,
+      "repeatedTurns": 4,
+      "attackerRemainingHp": 14,
+      "defenderRemainingHp": 0
+    },
+    "logEvents": [
+      {
+        "type": "hatred_hit",
+        "attackerName": "Sylva Blade",
+        "defenderName": "Iron Shield",
+        "damage": 5,
+        "defenderHpLeft": 17
+      },
+      {
+        "type": "zero_damage",
+        "attackerName": "Iron Shield",
+        "defenderName": "Sylva Blade"
+      },
+      {
+        "type": "normal_hit",
+        "attackerName": "Iron Shield",
+        "defenderName": "Sylva Blade",
+        "damage": 3,
+        "defenderHpLeft": 19
+      },
+      {
+        "type": "miss",
+        "attackerName": "Sylva Blade",
+        "defenderName": "Iron Shield"
+      },
+      {
+        "type": "hatred_hit",
+        "attackerName": "Sylva Blade",
+        "defenderName": "Iron Shield",
+        "damage": 5,
+        "defenderHpLeft": 12
+      },
+      {
+        "type": "miss",
+        "attackerName": "Iron Shield",
+        "defenderName": "Sylva Blade"
+      },
+      {
+        "type": "hatred_hit",
+        "attackerName": "Sylva Blade",
+        "defenderName": "Iron Shield",
+        "damage": 6,
+        "defenderHpLeft": 6
+      },
+      {
+        "type": "normal_hit",
+        "attackerName": "Iron Shield",
+        "defenderName": "Sylva Blade",
+        "damage": 3,
+        "defenderHpLeft": 16
+      },
+      {
+        "type": "zero_damage",
+        "attackerName": "Iron Shield",
+        "defenderName": "Sylva Blade"
+      },
+      {
+        "type": "miss",
+        "attackerName": "Sylva Blade",
+        "defenderName": "Iron Shield"
+      },
+      {
+        "type": "normal_hit",
+        "attackerName": "Iron Shield",
+        "defenderName": "Sylva Blade",
+        "damage": 2,
+        "defenderHpLeft": 14
+      },
+      {
+        "type": "hatred_hit",
+        "attackerName": "Sylva Blade",
+        "defenderName": "Iron Shield",
+        "damage": 4,
+        "defenderHpLeft": 2
+      },
+      {
+        "type": "hatred_hit",
+        "attackerName": "Sylva Blade",
+        "defenderName": "Iron Shield",
+        "damage": 4,
+        "defenderHpLeft": 0
+      },
+      {
+        "type": "warrior_defeat",
+        "warriorName": "Iron Shield"
+      },
+      {
+        "type": "battle_victory",
+        "winnerLordName": "Lord Sylva",
+        "loserLordName": "Lord Iron"
+      }
+    ],
+    "logLines": [
+      "Sylva Blade viciously attacks Iron Shield for 5 damage. Iron Shield has 17 HP left.",
+      "Iron Shield strikes Sylva Blade for 0 damage.",
+      "Iron Shield strikes Sylva Blade for 3 damage. Sylva Blade has 19 HP left.",
+      "Sylva Blade misses Iron Shield.",
+      "Sylva Blade viciously attacks Iron Shield for 5 damage. Iron Shield has 12 HP left.",
+      "Iron Shield misses Sylva Blade.",
+      "Sylva Blade viciously attacks Iron Shield for 6 damage. Iron Shield has 6 HP left.",
+      "Iron Shield strikes Sylva Blade for 3 damage. Sylva Blade has 16 HP left.",
+      "Iron Shield strikes Sylva Blade for 0 damage.",
+      "Sylva Blade misses Iron Shield.",
+      "Iron Shield strikes Sylva Blade for 2 damage. Sylva Blade has 14 HP left.",
+      "Sylva Blade viciously attacks Iron Shield for 4 damage. Iron Shield has 2 HP left.",
+      "Sylva Blade viciously attacks Iron Shield for 4 damage. Iron Shield has 0 HP left.",
+      "Iron Shield has perished.",
+      "Lord Sylva defeats Lord Iron."
+    ],
+    "winnerLordName": "Lord Sylva"
+  }
+}

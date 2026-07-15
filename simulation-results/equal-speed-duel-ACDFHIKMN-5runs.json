@@ -1,0 +1,24 @@
+{
+  "scenarioId": "equal-speed-duel",
+  "modelCode": "ACDFHIKMN",
+  "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "runs": 5,
+  "attackerWins": 4,
+  "defenderWins": 1,
+  "draws": 0,
+  "averageActions": 25,
+  "missRate": 0.368,
+  "zeroDamageRate": 0.12,
+  "fullAbsorptionRate": 0,
+  "hatredHitRate": 0,
+  "preventedActionsPerBattle": 0,
+  "repeatTurnRate": 0.25,
+  "attackerRemainingHpAverage": 6.4,
+  "defenderRemainingHpAverage": 2
+}
