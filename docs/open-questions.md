@@ -50,7 +50,6 @@ This document tracks unresolved decisions.
 - Is defense represented by the current roster automatically?
 - Should the 100-action draw limit scale with the number of warriors in battle?
 - What exact damage bonus should racial hatred grant?
-- Should Stamina be added as a universal combat stat, with per-warrior differences in amount, consumption, or recovery?
 - What formula change can improve Goblin performance and reduce Dwarf dominance without directly changing warrior catalog stats?
 
 ## Warriors

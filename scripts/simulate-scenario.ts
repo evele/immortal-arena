@@ -61,6 +61,8 @@ if (json) {
       landedHitRate: Number(aggregate.landedHitRate.toFixed(3)),
       zeroDamageRate: Number(aggregate.zeroDamageRate.toFixed(3)),
       fullAbsorptionRate: Number(aggregate.fullAbsorptionRate.toFixed(3)),
+      armorChipRate: Number(aggregate.armorChipRate.toFixed(3)),
+      averageArmorChipDamage: Number(aggregate.averageArmorChipDamage.toFixed(2)),
       hatredHitRate: Number(aggregate.hatredHitRate.toFixed(3)),
       averageDamagePerAction: Number(aggregate.averageDamagePerAction.toFixed(2)),
       averageDamagePerLandedHit: Number(aggregate.averageDamagePerLandedHit.toFixed(2)),

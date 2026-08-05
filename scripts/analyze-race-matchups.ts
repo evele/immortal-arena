@@ -5,7 +5,7 @@ import {
 } from "../src/combat/catalog.ts";
 import { aggregateScenarioRuns, buildSeedList } from "../src/combat/metrics.ts";
 import { ALL_MODEL_CODES } from "../src/combat/models.ts";
-import type { ModelCode, Race, ScenarioDefinition } from "../src/combat/types.ts";
+import type { ModelCode, Race, ScenarioDefinition, WarriorTemplate } from "../src/combat/types.ts";
 
 const RACES: Race[] = ["Elf", "Dwarf", "Orc", "Human", "Goblin"];
 const LORD_LEVELS = [1, 2, 4];
@@ -46,6 +46,19 @@ function parseArgs(argv: string[]): Record<string, string | boolean> {
 
 function average(values: number[]): number {
   return values.length === 0 ? 0 : values.reduce((sum, value) => sum + value, 0) / values.length;
+}
+
+function getTemplateForBucket(race: Race, bucket: number | (typeof LEVEL_GROUPS)[number], mode: "level" | "tier" | "group"): WarriorTemplate {
+  if (mode === "tier") {
+    return getWarriorTemplateForRaceAtTierIndex(race, bucket as number);
+  }
+
+  if (mode === "group") {
+    const group = bucket as (typeof LEVEL_GROUPS)[number];
+    return getWarriorTemplateForRaceAtExactLordLevel(race, group.levels[race]);
+  }
+
+  return getWarriorTemplateForRaceAtExactLordLevel(race, bucket as number);
 }
 
 function buildExactLevelDuelScenario(attackerRace: Race, defenderRace: Race, lordLevel: number): ScenarioDefinition {
@@ -111,6 +124,9 @@ const seedStart = Number(args.start ?? 1);
 const modelFilter = typeof args.model === "string" ? args.model : undefined;
 const mode = args.mode === "tier" ? "tier" : args.mode === "group" ? "group" : "level";
 const summaryOnly = Boolean(args["summary-only"]);
+const allMatchups = Boolean(args["all-matchups"]);
+const compact = Boolean(args.compact);
+const costAdjusted = Boolean(args["cost-adjusted"]);
 const limit = Number(args.limit ?? (modelFilter ? 1 : 8));
 const seeds = buildSeedList(seedCount, seedStart);
 const modelCodes = modelFilter ? [modelFilter as ModelCode] : ALL_MODEL_CODES;
@@ -119,10 +135,24 @@ const bucketLabel = mode === "tier" ? "tier" : mode === "group" ? "group" : "lev
 
 const summaries = modelCodes.map((modelCode) => {
   const racePointRates = new Map<Race, number[]>();
-  const matchupRows: Array<{ bucket: string | number; race: Race; opponent: Race; pointRate: number }> = [];
+  const raceCostAdjustedPointRates = new Map<Race, number[]>();
+  const raceValueIndexes = new Map<Race, number[]>();
+  const matchupRows: Array<{
+    bucket: string | number;
+    race: Race;
+    opponent: Race;
+    cost: number;
+    opponentCost: number;
+    expectedPointRateByCost: number;
+    pointRate: number;
+    costAdjustedPointRate: number;
+    valueIndex: number;
+  }> = [];
 
   for (const race of RACES) {
     racePointRates.set(race, []);
+    raceCostAdjustedPointRates.set(race, []);
+    raceValueIndexes.set(race, []);
   }
 
   for (const bucket of buckets) {
@@ -131,32 +161,48 @@ const summaries = modelCodes.map((modelCode) => {
       for (let rightIndex = leftIndex + 1; rightIndex < RACES.length; rightIndex += 1) {
         const leftRace = RACES[leftIndex]!;
         const rightRace = RACES[rightIndex]!;
-        const leftForward = aggregateScenarioRuns(
-          mode === "tier"
-            ? buildTierDuelScenario(leftRace, rightRace, bucket as number)
-            : mode === "group"
-              ? buildGroupedDuelScenario(leftRace, rightRace, bucket as (typeof LEVEL_GROUPS)[number])
-              : buildExactLevelDuelScenario(leftRace, rightRace, bucket as number),
-          modelCode,
-          seeds,
-        );
-        const rightForward = aggregateScenarioRuns(
-          mode === "tier"
-            ? buildTierDuelScenario(rightRace, leftRace, bucket as number)
-            : mode === "group"
-              ? buildGroupedDuelScenario(rightRace, leftRace, bucket as (typeof LEVEL_GROUPS)[number])
-              : buildExactLevelDuelScenario(rightRace, leftRace, bucket as number),
-          modelCode,
-          seeds,
-        );
+        const leftTemplate = getTemplateForBucket(leftRace, bucket as never, mode);
+        const rightTemplate = getTemplateForBucket(rightRace, bucket as never, mode);
+        const leftForward = aggregateScenarioRuns(buildDuelScenario(leftRace, rightRace, String(bucketId), leftTemplate, rightTemplate), modelCode, seeds);
+        const rightForward = aggregateScenarioRuns(buildDuelScenario(rightRace, leftRace, String(bucketId), rightTemplate, leftTemplate), modelCode, seeds);
         const leftPoints = leftForward.attackerWins + rightForward.defenderWins + 0.5 * (leftForward.draws + rightForward.draws);
         const leftPointRate = leftPoints / (leftForward.runs + rightForward.runs);
         const rightPointRate = 1 - leftPointRate;
+        const leftExpectedPointRateByCost = leftTemplate.cost / (leftTemplate.cost + rightTemplate.cost);
+        const rightExpectedPointRateByCost = 1 - leftExpectedPointRateByCost;
+        const leftCostAdjustedPointRate = leftPointRate - leftExpectedPointRateByCost;
+        const rightCostAdjustedPointRate = rightPointRate - rightExpectedPointRateByCost;
+        const leftValueIndex = leftPointRate / leftExpectedPointRateByCost;
+        const rightValueIndex = rightPointRate / rightExpectedPointRateByCost;
 
         racePointRates.get(leftRace)!.push(leftPointRate);
         racePointRates.get(rightRace)!.push(rightPointRate);
-        matchupRows.push({ bucket: bucketId, race: leftRace, opponent: rightRace, pointRate: leftPointRate });
-        matchupRows.push({ bucket: bucketId, race: rightRace, opponent: leftRace, pointRate: rightPointRate });
+        raceCostAdjustedPointRates.get(leftRace)!.push(leftCostAdjustedPointRate);
+        raceCostAdjustedPointRates.get(rightRace)!.push(rightCostAdjustedPointRate);
+        raceValueIndexes.get(leftRace)!.push(leftValueIndex);
+        raceValueIndexes.get(rightRace)!.push(rightValueIndex);
+        matchupRows.push({
+          bucket: bucketId,
+          race: leftRace,
+          opponent: rightRace,
+          cost: leftTemplate.cost,
+          opponentCost: rightTemplate.cost,
+          expectedPointRateByCost: leftExpectedPointRateByCost,
+          pointRate: leftPointRate,
+          costAdjustedPointRate: leftCostAdjustedPointRate,
+          valueIndex: leftValueIndex,
+        });
+        matchupRows.push({
+          bucket: bucketId,
+          race: rightRace,
+          opponent: leftRace,
+          cost: rightTemplate.cost,
+          opponentCost: leftTemplate.cost,
+          expectedPointRateByCost: rightExpectedPointRateByCost,
+          pointRate: rightPointRate,
+          costAdjustedPointRate: rightCostAdjustedPointRate,
+          valueIndex: rightValueIndex,
+        });
       }
     }
   }
@@ -166,6 +212,8 @@ const summaries = modelCodes.map((modelCode) => {
     return {
       race,
       averagePointRate: average(rates),
+      averageCostAdjustedPointRate: average(raceCostAdjustedPointRates.get(race)!),
+      averageValueIndex: average(raceValueIndexes.get(race)!),
       minPointRate: Math.min(...rates),
       maxPointRate: Math.max(...rates),
     };
@@ -176,32 +224,91 @@ const summaries = modelCodes.map((modelCode) => {
     raceSummaries,
     matchupRows,
     dominanceSpread: raceSummaries[0]!.averagePointRate - raceSummaries[raceSummaries.length - 1]!.averagePointRate,
+    costAdjustedSpread:
+      Math.max(...raceSummaries.map((entry) => entry.averageCostAdjustedPointRate)) -
+      Math.min(...raceSummaries.map((entry) => entry.averageCostAdjustedPointRate)),
+    valueSpread:
+      Math.max(...raceSummaries.map((entry) => entry.averageValueIndex)) -
+      Math.min(...raceSummaries.map((entry) => entry.averageValueIndex)),
   };
-}).sort((left, right) => left.dominanceSpread - right.dominanceSpread);
+}).sort((left, right) => {
+  if (costAdjusted) {
+    return left.costAdjustedSpread - right.costAdjustedSpread;
+  }
+
+  return left.dominanceSpread - right.dominanceSpread;
+});
 
 console.log(`Race all-vs-all analysis`);
 console.log(`${bucketLabel}s=${buckets.map((bucket) => (typeof bucket === "number" ? bucket : bucket.id)).join(", ")} seeds=${seedCount} start=${seedStart}`);
+if (costAdjusted) {
+  console.log("costAdjusted=true: expectedPointRateByCost = ownCost / (ownCost + opponentCost); valueIndex = pointRate / expectedPointRateByCost");
+}
 
-for (const summary of summaries.slice(0, limit)) {
-  console.log(`\nModel: ${summary.modelCode} dominanceSpread=${summary.dominanceSpread.toFixed(3)}`);
+if (compact) {
   console.table(
-    summary.raceSummaries.map((entry) => ({
-      race: entry.race,
-      avgPointRate: Number(entry.averagePointRate.toFixed(3)),
-      minPointRate: Number(entry.minPointRate.toFixed(3)),
-      maxPointRate: Number(entry.maxPointRate.toFixed(3)),
-    })),
+    summaries.slice(0, limit).map((summary) => {
+      const raceRates = Object.fromEntries(
+        summary.raceSummaries.map((entry) => [entry.race, Number(entry.averagePointRate.toFixed(3))]),
+      );
+
+      return {
+        model: summary.modelCode,
+        spread: Number(summary.dominanceSpread.toFixed(3)),
+        ...(costAdjusted
+          ? {
+              costSpread: Number(summary.costAdjustedSpread.toFixed(3)),
+              valueSpread: Number(summary.valueSpread.toFixed(3)),
+              Elf: raceRates.Elf,
+              Dwarf: raceRates.Dwarf,
+              Orc: raceRates.Orc,
+              Human: raceRates.Human,
+              Goblin: raceRates.Goblin,
+              elfValue: Number(summary.raceSummaries.find((entry) => entry.race === "Elf")!.averageValueIndex.toFixed(3)),
+              dwarfValue: Number(summary.raceSummaries.find((entry) => entry.race === "Dwarf")!.averageValueIndex.toFixed(3)),
+              orcValue: Number(summary.raceSummaries.find((entry) => entry.race === "Orc")!.averageValueIndex.toFixed(3)),
+              humanValue: Number(summary.raceSummaries.find((entry) => entry.race === "Human")!.averageValueIndex.toFixed(3)),
+              goblinValue: Number(summary.raceSummaries.find((entry) => entry.race === "Goblin")!.averageValueIndex.toFixed(3)),
+            }
+          : {
+              Elf: raceRates.Elf,
+              Dwarf: raceRates.Dwarf,
+              Orc: raceRates.Orc,
+              Human: raceRates.Human,
+              Goblin: raceRates.Goblin,
+            }),
+      };
+    }),
   );
-  if (!summaryOnly) {
+} else {
+  for (const summary of summaries.slice(0, limit)) {
+    console.log(`\nModel: ${summary.modelCode} dominanceSpread=${summary.dominanceSpread.toFixed(3)}`);
     console.table(
-      summary.matchupRows
-        .filter((entry) => entry.pointRate < 0.25 || entry.pointRate > 0.75)
-        .sort((left, right) => String(left.bucket).localeCompare(String(right.bucket)) || left.race.localeCompare(right.race))
-        .map((entry) => ({
-          [bucketLabel]: entry.bucket,
-          matchup: `${entry.race} vs ${entry.opponent}`,
-          pointRate: Number(entry.pointRate.toFixed(3)),
-        })),
+      summary.raceSummaries.map((entry) => ({
+        race: entry.race,
+        avgPointRate: Number(entry.averagePointRate.toFixed(3)),
+        avgCostAdjustedPointRate: Number(entry.averageCostAdjustedPointRate.toFixed(3)),
+        avgValueIndex: Number(entry.averageValueIndex.toFixed(3)),
+        minPointRate: Number(entry.minPointRate.toFixed(3)),
+        maxPointRate: Number(entry.maxPointRate.toFixed(3)),
+      })),
     );
+    if (!summaryOnly) {
+      console.table(
+        summary.matchupRows
+          .filter((entry) => allMatchups || entry.pointRate < 0.25 || entry.pointRate > 0.75)
+          .sort((left, right) => String(left.bucket).localeCompare(String(right.bucket)) || left.race.localeCompare(right.race))
+          .map((entry) => ({
+            [bucketLabel]: entry.bucket,
+            matchup: `${entry.race} vs ${entry.opponent}`,
+            cost: entry.cost,
+            opponentCost: entry.opponentCost,
+            pointRate: Number(entry.pointRate.toFixed(3)),
+            expectedByCost: Number(entry.expectedPointRateByCost.toFixed(3)),
+            costAdjusted: Number(entry.costAdjustedPointRate.toFixed(3)),
+            valueIndex: Number(entry.valueIndex.toFixed(3)),
+          })),
+      );
+    }
   }
 }

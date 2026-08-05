@@ -76,7 +76,7 @@ Thorin blocks part of the blow and takes 6 damage.
 
 Wounded warriors can still defend.
 
-Fatigue is not currently part of the game design and should not be treated as an existing mechanic.
+Fatigue is not part of the current game design and should not be treated as an existing mechanic.
 
 Warriors do not die permanently. During a battle they can be defeated, reduced to `0` HP, or described as having `perished`; after the battle they remain owned by the lord and can recover or revive through the recovery system.
 
@@ -91,9 +91,9 @@ The game should use the original six warrior stats:
 - Agility.
 - Speed.
 
-No extra stats such as Luck or Morale should be added for now.
+No extra stats such as Luck, Morale, or Stamina should be added for the MVP balance pass.
 
-Stamina is an open candidate stat for a later balance pass. If added, it should apply universally to all warriors rather than as a race-specific exception. Different warrior classes or races may have different Stamina values, consumption rates, or recovery rates, but the mechanic itself should be common and formula-driven.
+Stamina was considered as a possible later lever, but it is not a good fit for the current Goblin/Dwarf balance problem. The goal is to help high-Speed, low-Damage Goblins remain relevant against high-Defense Dwarves while reducing Dwarf dominance. A stamina or fatigue system would naturally punish warriors that act often, which would likely nerf Goblins more than Dwarves and would also create awkward race expectations for Orcs and Dwarves. Balance work should first use the existing six stats and formulas.
 
 ## Stat Roles
 
@@ -101,25 +101,28 @@ Current direction:
 
 - HP determines how much damage a warrior can take before being defeated.
 - Damage contributes to how hard a warrior hits.
-- Defense reduces or absorbs incoming damage for the MVP.
-- There is no minimum damage floor for now; Defense can reduce an attack to zero damage.
+- Defense reduces or absorbs incoming damage for the MVP. Current tuning applies Defense at `95%` effectiveness.
+- There is no per-hit minimum damage floor; Defense can reduce an attack to zero damage.
+- To reward sustained pressure and avoid permanent armor locks, every third landed hit against the same defender deals `1` armor-chip damage. Misses do not count.
 - Accuracy increases chance to hit.
 - Agility reduces the chance of being hit.
 - Speed drives tick-based initiative and determines how often a warrior acts.
 
 Exact formulas are intentionally not finalized yet.
 
-The next combat-balance question is how to compensate Goblins and reduce Dwarf dominance without directly editing warrior catalog stats. Current simulations show Goblins remain weak in all-race grouped comparisons, while Dwarves overperform strongly in higher grouped unlock bands. Candidate fixes should preserve source race identity, avoid ad hoc race-only patches where possible, and be validated with exact-level and grouped-race simulation tables.
+The next combat-balance question is how to compensate Goblins and reduce Dwarf dominance without directly editing warrior catalog stats or adding a seventh stat. Current simulations show Goblins remain weak in all-race grouped comparisons, while Dwarves overperform strongly in higher grouped unlock bands. Candidate fixes should preserve source race identity, avoid ad hoc race-only patches where possible, and be validated with exact-level and grouped-race simulation tables.
 
 Current hit-resolution candidates are documented in `combats/hit-resolution-linear.md` and `combats/hit-resolution-proportional.md`.
 
-A third alternative, where Accuracy also creates a second-stage skilled-hit or damage-quality roll after a successful hit, is noted as possible source-inspired future work but is not part of the current base model set because it mixes hit resolution with damage resolution.
+Accuracy-based Defense penetration and armor-piercing critical hits were tested as Goblin/Dwarf tuning levers, but are not currently active. Those tests either did not help Goblins enough or pushed Orcs too low.
 
 ## Damage And Defense
 
 For the MVP, Defense should reduce or absorb incoming Damage.
 
-There is no minimum damage floor for now. If Defense fully absorbs the incoming Damage, the attack can deal zero damage.
+There is no per-hit minimum damage floor. If Defense fully absorbs the incoming Damage, the attack can deal zero damage.
+
+Landed hits are tracked per defender. Every third landed hit against the same defender deals `1` armor-chip damage. Misses do not count. Attacks that already deal normal damage still count and receive the extra chip damage when they are the third landed hit. This gives high-Speed, low-Damage warriors a way to slowly wear down high-Defense warriors without removing armor absorption from the log vocabulary.
 
 Original examples include both explicit `for 0 damage` results and full absorption messages such as `his armour absorbs the full blow`.
 
@@ -157,7 +160,7 @@ From these examples, Immortal Arena should preserve the following source-feel co
 - Speed must be able to create non-alternating action order and repeated actions by the faster combatant.
 - Accuracy and Agility should drive hit/miss behavior.
 - Damage should have some variability or roll component.
-- Defense should be able to reduce damage to zero and produce armor absorption text.
+- Defense should be able to reduce damage to zero and produce armor absorption text, with armor chip only after repeated full absorptions.
 - Racial hatred should affect damage and log text.
 - Defeat can be described with source-style death language, while recovery/revive prevents permanent loss.
 

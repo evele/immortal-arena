@@ -43,6 +43,8 @@ export function summarizeScenarioResults(
   let landedHits = 0;
   let zeroDamageHits = 0;
   let fullAbsorptions = 0;
+  let armorChipHits = 0;
+  let armorChipDamage = 0;
   let hatredHits = 0;
   let attackerDamageDealt = 0;
   let defenderDamageDealt = 0;
@@ -74,6 +76,8 @@ export function summarizeScenarioResults(
     landedHits += result.metrics.landedHits;
     zeroDamageHits += result.metrics.zeroDamageHits;
     fullAbsorptions += result.metrics.fullAbsorptions;
+    armorChipHits += result.metrics.armorChipHits;
+    armorChipDamage += result.metrics.armorChipDamage;
     hatredHits += result.metrics.hatredHits;
     attackerDamageDealt += result.metrics.attackerDamageDealt;
     defenderDamageDealt += result.metrics.defenderDamageDealt;
@@ -107,6 +111,8 @@ export function summarizeScenarioResults(
     landedHitRate: actions === 0 ? 0 : landedHits / actions,
     zeroDamageRate: actions === 0 ? 0 : zeroDamageHits / actions,
     fullAbsorptionRate: actions === 0 ? 0 : fullAbsorptions / actions,
+    armorChipRate: actions === 0 ? 0 : armorChipHits / actions,
+    averageArmorChipDamage: runs === 0 ? 0 : armorChipDamage / runs,
     hatredHitRate: actions === 0 ? 0 : hatredHits / actions,
     averageDamagePerAction: actions === 0 ? 0 : (attackerDamageDealt + defenderDamageDealt) / actions,
     averageDamagePerLandedHit: landedHits === 0 ? 0 : (attackerDamageDealt + defenderDamageDealt) / landedHits,

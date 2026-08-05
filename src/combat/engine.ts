@@ -18,6 +18,9 @@ const HATRED_HIT_CHANCE_BONUS = 25;
 const HATRED_DAMAGE_MULTIPLIER = 1.25;
 const HATRED_ADDITIVE_DAMAGE_RATE = 0.25;
 const DEFENDER_SPEED_EVASION_RATE = 0.25;
+const DEFENSE_EFFECTIVE_RATE = 0.95;
+const ARMOR_CHIP_LANDED_HITS = 3;
+const ARMOR_CHIP_DAMAGE = 1;
 
 function clamp(value: number, min: number, max: number): number {
   return Math.max(min, Math.min(max, value));
@@ -148,7 +151,7 @@ function applyHatred(rolledDamage: number, attacker: BattleStateWarrior, defende
 }
 
 function applyDefense(adjustedDamage: number, defender: BattleStateWarrior): number {
-  return Math.max(0, adjustedDamage - defender.stats.defense);
+  return Math.max(0, adjustedDamage - defender.stats.defense * DEFENSE_EFFECTIVE_RATE);
 }
 
 function buildOutcome(
@@ -199,6 +202,7 @@ export function simulateBattle(input: BattleInput, model: CombatModel): BattleRe
   const actionLimit = buildActionLimit(input);
   const events: LogEvent[] = [];
   const actionActors: string[] = [];
+  const landedHitCounts = new Map<string, number>();
   let actionCount = 0;
   let preventedActions = 0;
   let drawPendingAtEndOfTick = false;
@@ -298,7 +302,15 @@ export function simulateBattle(input: BattleInput, model: CombatModel): BattleRe
       } else {
         const rolledDamage = rollDamage(actor, model, rng);
         const { adjustedDamage, hatredApplied } = applyHatred(rolledDamage, actor, target, model);
-        const finalDamage = applyDefense(adjustedDamage, target);
+        const defendedDamage = applyDefense(adjustedDamage, target);
+        let finalDamage = defendedDamage;
+        const fullyAbsorbed = defendedDamage === 0 && adjustedDamage < target.stats.defense;
+        const armorChipApplied = incrementLandedHitCount(landedHitCounts, target.id) >= ARMOR_CHIP_LANDED_HITS;
+
+        if (armorChipApplied) {
+          landedHitCounts.set(target.id, 0);
+          finalDamage += ARMOR_CHIP_DAMAGE;
+        }
 
         if (finalDamage > highestSingleHit) {
           highestSingleHit = finalDamage;
@@ -311,8 +323,17 @@ export function simulateBattle(input: BattleInput, model: CombatModel): BattleRe
 
         target.currentHp = Math.max(0, target.currentHp - finalDamage);
 
-        if (finalDamage === 0) {
-          if (adjustedDamage < target.stats.defense) {
+        if (defendedDamage === 0 && armorChipApplied) {
+          events.push({
+            type: "armor_chip",
+            attackerName: actor.name,
+            defenderName: target.name,
+            damage: finalDamage,
+            defenderHpLeft: target.currentHp,
+            wasFullAbsorption: fullyAbsorbed,
+          });
+        } else if (finalDamage === 0) {
+          if (fullyAbsorbed) {
             events.push({ type: "full_absorption", attackerName: actor.name, defenderName: target.name });
           } else {
             events.push({ type: "zero_damage", attackerName: actor.name, defenderName: target.name });
@@ -324,6 +345,7 @@ export function simulateBattle(input: BattleInput, model: CombatModel): BattleRe
             defenderName: target.name,
             damage: finalDamage,
             defenderHpLeft: target.currentHp,
+            ...(armorChipApplied ? { armorChipDamage: ARMOR_CHIP_DAMAGE } : {}),
           });
         } else {
           events.push({
@@ -332,6 +354,7 @@ export function simulateBattle(input: BattleInput, model: CombatModel): BattleRe
             defenderName: target.name,
             damage: finalDamage,
             defenderHpLeft: target.currentHp,
+            ...(armorChipApplied ? { armorChipDamage: ARMOR_CHIP_DAMAGE } : {}),
           });
         }
 
@@ -459,6 +482,8 @@ function buildMetrics(
   let landedHits = 0;
   let zeroDamageHits = 0;
   let fullAbsorptions = 0;
+  let armorChipHits = 0;
+  let armorChipDamage = 0;
   let hatredHits = 0;
   let repeatedTurns = 0;
   let maxActorStreak = 0;
@@ -472,6 +497,10 @@ function buildMetrics(
         break;
       case "normal_hit":
         landedHits += 1;
+        if (event.armorChipDamage !== undefined) {
+          armorChipHits += 1;
+          armorChipDamage += event.armorChipDamage;
+        }
         break;
       case "zero_damage":
         landedHits += 1;
@@ -481,9 +510,23 @@ function buildMetrics(
         landedHits += 1;
         fullAbsorptions += 1;
         break;
+      case "armor_chip":
+        landedHits += 1;
+        if (event.wasFullAbsorption) {
+          fullAbsorptions += 1;
+        } else {
+          zeroDamageHits += 1;
+        }
+        armorChipHits += 1;
+        armorChipDamage += event.damage;
+        break;
       case "hatred_hit":
         landedHits += 1;
         hatredHits += 1;
+        if (event.armorChipDamage !== undefined) {
+          armorChipHits += 1;
+          armorChipDamage += event.armorChipDamage;
+        }
         break;
       default:
         break;
@@ -517,6 +560,8 @@ function buildMetrics(
     landedHits,
     zeroDamageHits,
     fullAbsorptions,
+    armorChipHits,
+    armorChipDamage,
     hatredHits,
     preventedActions,
     repeatedTurns,
@@ -536,6 +581,12 @@ function buildMetrics(
 
 function incrementSelectionCount(counts: Map<string, number>, targetId: string): void {
   counts.set(targetId, (counts.get(targetId) ?? 0) + 1);
+}
+
+function incrementLandedHitCount(counts: Map<string, number>, targetId: string): number {
+  const nextCount = (counts.get(targetId) ?? 0) + 1;
+  counts.set(targetId, nextCount);
+  return nextCount;
 }
 
 function computeTargetFocus(counts: Map<string, number>): number {

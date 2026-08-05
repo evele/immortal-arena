@@ -1,0 +1,2402 @@
+Race all-vs-all analysis
+levels=1, 2, 4 seeds=100 start=1
+
+Model: ACEGHIKMN dominanceSpread=0.349
+┌───┬────────┬──────────────┬──────────────┬──────────────┐
+│   │ race   │ avgPointRate │ minPointRate │ maxPointRate │
+├───┼────────┼──────────────┼──────────────┼──────────────┤
+│ 0 │ Dwarf  │ 0.664        │ 0.06         │ 1            │
+│ 1 │ Human  │ 0.517        │ 0            │ 1            │
+│ 2 │ Elf    │ 0.515        │ 0.02         │ 0.94         │
+│ 3 │ Orc    │ 0.489        │ 0.05         │ 0.99         │
+│ 4 │ Goblin │ 0.315        │ 0            │ 0.97         │
+└───┴────────┴──────────────┴──────────────┴──────────────┘
+┌────┬───────┬─────────────────┬───────────┐
+│    │ level │ matchup         │ pointRate │
+├────┼───────┼─────────────────┼───────────┤
+│  0 │ 1     │ Dwarf vs Elf    │ 0.1       │
+│  1 │ 1     │ Dwarf vs Orc    │ 0.81      │
+│  2 │ 1     │ Dwarf vs Human  │ 0.2       │
+│  3 │ 1     │ Dwarf vs Goblin │ 0.98      │
+│  4 │ 1     │ Elf vs Dwarf    │ 0.9       │
+│  5 │ 1     │ Elf vs Orc      │ 0.59      │
+│  6 │ 1     │ Elf vs Human    │ 0.02      │
+│  7 │ 1     │ Elf vs Goblin   │ 0.03      │
+│  8 │ 1     │ Goblin vs Elf   │ 0.97      │
+│  9 │ 1     │ Goblin vs Dwarf │ 0.02      │
+│ 10 │ 1     │ Goblin vs Orc   │ 0.7       │
+│ 11 │ 1     │ Goblin vs Human │ 0         │
+│ 12 │ 1     │ Human vs Elf    │ 0.98      │
+│ 13 │ 1     │ Human vs Dwarf  │ 0.8       │
+│ 14 │ 1     │ Human vs Orc    │ 0.33      │
+│ 15 │ 1     │ Human vs Goblin │ 1         │
+│ 16 │ 1     │ Orc vs Elf      │ 0.41      │
+│ 17 │ 1     │ Orc vs Dwarf    │ 0.19      │
+│ 18 │ 1     │ Orc vs Human    │ 0.67      │
+│ 19 │ 1     │ Orc vs Goblin   │ 0.3       │
+│ 20 │ 2     │ Dwarf vs Elf    │ 0.06      │
+│ 21 │ 2     │ Dwarf vs Orc    │ 0.825     │
+│ 22 │ 2     │ Dwarf vs Human  │ 0.99      │
+│ 23 │ 2     │ Dwarf vs Goblin │ 0.985     │
+│ 24 │ 2     │ Elf vs Dwarf    │ 0.94      │
+│ 25 │ 2     │ Elf vs Orc      │ 0.66      │
+│ 26 │ 2     │ Elf vs Human    │ 0.59      │
+│ 27 │ 2     │ Elf vs Goblin   │ 0.03      │
+│ 28 │ 2     │ Goblin vs Elf   │ 0.97      │
+│ 29 │ 2     │ Goblin vs Dwarf │ 0.015     │
+│ 30 │ 2     │ Goblin vs Orc   │ 0.41      │
+│ 31 │ 2     │ Goblin vs Human │ 0         │
+│ 32 │ 2     │ Human vs Elf    │ 0.41      │
+│ 33 │ 2     │ Human vs Dwarf  │ 0.01      │
+│ 34 │ 2     │ Human vs Orc    │ 0.01      │
+│ 35 │ 2     │ Human vs Goblin │ 1         │
+│ 36 │ 2     │ Orc vs Elf      │ 0.34      │
+│ 37 │ 2     │ Orc vs Dwarf    │ 0.175     │
+│ 38 │ 2     │ Orc vs Human    │ 0.99      │
+│ 39 │ 2     │ Orc vs Goblin   │ 0.59      │
+│ 40 │ 4     │ Dwarf vs Elf    │ 0.07      │
+│ 41 │ 4     │ Dwarf vs Orc    │ 0.95      │
+│ 42 │ 4     │ Dwarf vs Human  │ 1         │
+│ 43 │ 4     │ Dwarf vs Goblin │ 1         │
+│ 44 │ 4     │ Elf vs Dwarf    │ 0.93      │
+│ 45 │ 4     │ Elf vs Orc      │ 0.67      │
+│ 46 │ 4     │ Elf vs Human    │ 0.4       │
+│ 47 │ 4     │ Elf vs Goblin   │ 0.42      │
+│ 48 │ 4     │ Goblin vs Elf   │ 0.58      │
+│ 49 │ 4     │ Goblin vs Dwarf │ 0         │
+│ 50 │ 4     │ Goblin vs Orc   │ 0.12      │
+│ 51 │ 4     │ Goblin vs Human │ 0         │
+│ 52 │ 4     │ Human vs Elf    │ 0.6       │
+│ 53 │ 4     │ Human vs Dwarf  │ 0         │
+│ 54 │ 4     │ Human vs Orc    │ 0.06      │
+│ 55 │ 4     │ Human vs Goblin │ 1         │
+│ 56 │ 4     │ Orc vs Elf      │ 0.33      │
+│ 57 │ 4     │ Orc vs Dwarf    │ 0.05      │
+│ 58 │ 4     │ Orc vs Human    │ 0.94      │
+│ 59 │ 4     │ Orc vs Goblin   │ 0.88      │
+└────┴───────┴─────────────────┴───────────┘
+
+Model: ACEGHILMN dominanceSpread=0.349
+┌───┬────────┬──────────────┬──────────────┬──────────────┐
+│   │ race   │ avgPointRate │ minPointRate │ maxPointRate │
+├───┼────────┼──────────────┼──────────────┼──────────────┤
+│ 0 │ Dwarf  │ 0.664        │ 0.06         │ 1            │
+│ 1 │ Human  │ 0.517        │ 0            │ 1            │
+│ 2 │ Elf    │ 0.515        │ 0.02         │ 0.94         │
+│ 3 │ Orc    │ 0.489        │ 0.05         │ 0.99         │
+│ 4 │ Goblin │ 0.315        │ 0            │ 0.97         │
+└───┴────────┴──────────────┴──────────────┴──────────────┘
+┌────┬───────┬─────────────────┬───────────┐
+│    │ level │ matchup         │ pointRate │
+├────┼───────┼─────────────────┼───────────┤
+│  0 │ 1     │ Dwarf vs Elf    │ 0.1       │
+│  1 │ 1     │ Dwarf vs Orc    │ 0.81      │
+│  2 │ 1     │ Dwarf vs Human  │ 0.2       │
+│  3 │ 1     │ Dwarf vs Goblin │ 0.98      │
+│  4 │ 1     │ Elf vs Dwarf    │ 0.9       │
+│  5 │ 1     │ Elf vs Orc      │ 0.59      │
+│  6 │ 1     │ Elf vs Human    │ 0.02      │
+│  7 │ 1     │ Elf vs Goblin   │ 0.03      │
+│  8 │ 1     │ Goblin vs Elf   │ 0.97      │
+│  9 │ 1     │ Goblin vs Dwarf │ 0.02      │
+│ 10 │ 1     │ Goblin vs Orc   │ 0.7       │
+│ 11 │ 1     │ Goblin vs Human │ 0         │
+│ 12 │ 1     │ Human vs Elf    │ 0.98      │
+│ 13 │ 1     │ Human vs Dwarf  │ 0.8       │
+│ 14 │ 1     │ Human vs Orc    │ 0.33      │
+│ 15 │ 1     │ Human vs Goblin │ 1         │
+│ 16 │ 1     │ Orc vs Elf      │ 0.41      │
+│ 17 │ 1     │ Orc vs Dwarf    │ 0.19      │
+│ 18 │ 1     │ Orc vs Human    │ 0.67      │
+│ 19 │ 1     │ Orc vs Goblin   │ 0.3       │
+│ 20 │ 2     │ Dwarf vs Elf    │ 0.06      │
+│ 21 │ 2     │ Dwarf vs Orc    │ 0.825     │
+│ 22 │ 2     │ Dwarf vs Human  │ 0.99      │
+│ 23 │ 2     │ Dwarf vs Goblin │ 0.985     │
+│ 24 │ 2     │ Elf vs Dwarf    │ 0.94      │
+│ 25 │ 2     │ Elf vs Orc      │ 0.66      │
+│ 26 │ 2     │ Elf vs Human    │ 0.59      │
+│ 27 │ 2     │ Elf vs Goblin   │ 0.03      │
+│ 28 │ 2     │ Goblin vs Elf   │ 0.97      │
+│ 29 │ 2     │ Goblin vs Dwarf │ 0.015     │
+│ 30 │ 2     │ Goblin vs Orc   │ 0.41      │
+│ 31 │ 2     │ Goblin vs Human │ 0         │
+│ 32 │ 2     │ Human vs Elf    │ 0.41      │
+│ 33 │ 2     │ Human vs Dwarf  │ 0.01      │
+│ 34 │ 2     │ Human vs Orc    │ 0.01      │
+│ 35 │ 2     │ Human vs Goblin │ 1         │
+│ 36 │ 2     │ Orc vs Elf      │ 0.34      │
+│ 37 │ 2     │ Orc vs Dwarf    │ 0.175     │
+│ 38 │ 2     │ Orc vs Human    │ 0.99      │
+│ 39 │ 2     │ Orc vs Goblin   │ 0.59      │
+│ 40 │ 4     │ Dwarf vs Elf    │ 0.07      │
+│ 41 │ 4     │ Dwarf vs Orc    │ 0.95      │
+│ 42 │ 4     │ Dwarf vs Human  │ 1         │
+│ 43 │ 4     │ Dwarf vs Goblin │ 1         │
+│ 44 │ 4     │ Elf vs Dwarf    │ 0.93      │
+│ 45 │ 4     │ Elf vs Orc      │ 0.67      │
+│ 46 │ 4     │ Elf vs Human    │ 0.4       │
+│ 47 │ 4     │ Elf vs Goblin   │ 0.42      │
+│ 48 │ 4     │ Goblin vs Elf   │ 0.58      │
+│ 49 │ 4     │ Goblin vs Dwarf │ 0         │
+│ 50 │ 4     │ Goblin vs Orc   │ 0.12      │
+│ 51 │ 4     │ Goblin vs Human │ 0         │
+│ 52 │ 4     │ Human vs Elf    │ 0.6       │
+│ 53 │ 4     │ Human vs Dwarf  │ 0         │
+│ 54 │ 4     │ Human vs Orc    │ 0.06      │
+│ 55 │ 4     │ Human vs Goblin │ 1         │
+│ 56 │ 4     │ Orc vs Elf      │ 0.33      │
+│ 57 │ 4     │ Orc vs Dwarf    │ 0.05      │
+│ 58 │ 4     │ Orc vs Human    │ 0.94      │
+│ 59 │ 4     │ Orc vs Goblin   │ 0.88      │
+└────┴───────┴─────────────────┴───────────┘
+
+Model: BCEGHIKMN dominanceSpread=0.352
+┌───┬────────┬──────────────┬──────────────┬──────────────┐
+│   │ race   │ avgPointRate │ minPointRate │ maxPointRate │
+├───┼────────┼──────────────┼──────────────┼──────────────┤
+│ 0 │ Dwarf  │ 0.664        │ 0.06         │ 1            │
+│ 1 │ Elf    │ 0.517        │ 0.02         │ 0.94         │
+│ 2 │ Human  │ 0.513        │ 0            │ 1            │
+│ 3 │ Orc    │ 0.494        │ 0.05         │ 0.99         │
+│ 4 │ Goblin │ 0.312        │ 0            │ 0.97         │
+└───┴────────┴──────────────┴──────────────┴──────────────┘
+┌────┬───────┬─────────────────┬───────────┐
+│    │ level │ matchup         │ pointRate │
+├────┼───────┼─────────────────┼───────────┤
+│  0 │ 1     │ Dwarf vs Elf    │ 0.1       │
+│  1 │ 1     │ Dwarf vs Orc    │ 0.81      │
+│  2 │ 1     │ Dwarf vs Human  │ 0.2       │
+│  3 │ 1     │ Dwarf vs Goblin │ 0.98      │
+│  4 │ 1     │ Elf vs Dwarf    │ 0.9       │
+│  5 │ 1     │ Elf vs Orc      │ 0.59      │
+│  6 │ 1     │ Elf vs Human    │ 0.02      │
+│  7 │ 1     │ Elf vs Goblin   │ 0.04      │
+│  8 │ 1     │ Goblin vs Elf   │ 0.96      │
+│  9 │ 1     │ Goblin vs Dwarf │ 0.02      │
+│ 10 │ 1     │ Goblin vs Orc   │ 0.67      │
+│ 11 │ 1     │ Goblin vs Human │ 0         │
+│ 12 │ 1     │ Human vs Elf    │ 0.98      │
+│ 13 │ 1     │ Human vs Dwarf  │ 0.8       │
+│ 14 │ 1     │ Human vs Orc    │ 0.33      │
+│ 15 │ 1     │ Human vs Goblin │ 1         │
+│ 16 │ 1     │ Orc vs Elf      │ 0.41      │
+│ 17 │ 1     │ Orc vs Dwarf    │ 0.19      │
+│ 18 │ 1     │ Orc vs Human    │ 0.67      │
+│ 19 │ 1     │ Orc vs Goblin   │ 0.33      │
+│ 20 │ 2     │ Dwarf vs Elf    │ 0.06      │
+│ 21 │ 2     │ Dwarf vs Orc    │ 0.825     │
+│ 22 │ 2     │ Dwarf vs Human  │ 0.99      │
+│ 23 │ 2     │ Dwarf vs Goblin │ 0.985     │
+│ 24 │ 2     │ Elf vs Dwarf    │ 0.94      │
+│ 25 │ 2     │ Elf vs Orc      │ 0.66      │
+│ 26 │ 2     │ Elf vs Human    │ 0.59      │
+│ 27 │ 2     │ Elf vs Goblin   │ 0.03      │
+│ 28 │ 2     │ Goblin vs Elf   │ 0.97      │
+│ 29 │ 2     │ Goblin vs Dwarf │ 0.015     │
+│ 30 │ 2     │ Goblin vs Orc   │ 0.41      │
+│ 31 │ 2     │ Goblin vs Human │ 0         │
+│ 32 │ 2     │ Human vs Elf    │ 0.41      │
+│ 33 │ 2     │ Human vs Dwarf  │ 0.01      │
+│ 34 │ 2     │ Human vs Orc    │ 0.01      │
+│ 35 │ 2     │ Human vs Goblin │ 1         │
+│ 36 │ 2     │ Orc vs Elf      │ 0.34      │
+│ 37 │ 2     │ Orc vs Dwarf    │ 0.175     │
+│ 38 │ 2     │ Orc vs Human    │ 0.99      │
+│ 39 │ 2     │ Orc vs Goblin   │ 0.59      │
+│ 40 │ 4     │ Dwarf vs Elf    │ 0.07      │
+│ 41 │ 4     │ Dwarf vs Orc    │ 0.95      │
+│ 42 │ 4     │ Dwarf vs Human  │ 1         │
+│ 43 │ 4     │ Dwarf vs Goblin │ 1         │
+│ 44 │ 4     │ Elf vs Dwarf    │ 0.93      │
+│ 45 │ 4     │ Elf vs Orc      │ 0.67      │
+│ 46 │ 4     │ Elf vs Human    │ 0.41      │
+│ 47 │ 4     │ Elf vs Goblin   │ 0.42      │
+│ 48 │ 4     │ Goblin vs Elf   │ 0.58      │
+│ 49 │ 4     │ Goblin vs Dwarf │ 0         │
+│ 50 │ 4     │ Goblin vs Orc   │ 0.12      │
+│ 51 │ 4     │ Goblin vs Human │ 0         │
+│ 52 │ 4     │ Human vs Elf    │ 0.59      │
+│ 53 │ 4     │ Human vs Dwarf  │ 0         │
+│ 54 │ 4     │ Human vs Orc    │ 0.03      │
+│ 55 │ 4     │ Human vs Goblin │ 1         │
+│ 56 │ 4     │ Orc vs Elf      │ 0.33      │
+│ 57 │ 4     │ Orc vs Dwarf    │ 0.05      │
+│ 58 │ 4     │ Orc vs Human    │ 0.97      │
+│ 59 │ 4     │ Orc vs Goblin   │ 0.88      │
+└────┴───────┴─────────────────┴───────────┘
+
+Model: BCEGHILMN dominanceSpread=0.352
+┌───┬────────┬──────────────┬──────────────┬──────────────┐
+│   │ race   │ avgPointRate │ minPointRate │ maxPointRate │
+├───┼────────┼──────────────┼──────────────┼──────────────┤
+│ 0 │ Dwarf  │ 0.664        │ 0.06         │ 1            │
+│ 1 │ Elf    │ 0.517        │ 0.02         │ 0.94         │
+│ 2 │ Human  │ 0.513        │ 0            │ 1            │
+│ 3 │ Orc    │ 0.494        │ 0.05         │ 0.99         │
+│ 4 │ Goblin │ 0.312        │ 0            │ 0.97         │
+└───┴────────┴──────────────┴──────────────┴──────────────┘
+┌────┬───────┬─────────────────┬───────────┐
+│    │ level │ matchup         │ pointRate │
+├────┼───────┼─────────────────┼───────────┤
+│  0 │ 1     │ Dwarf vs Elf    │ 0.1       │
+│  1 │ 1     │ Dwarf vs Orc    │ 0.81      │
+│  2 │ 1     │ Dwarf vs Human  │ 0.2       │
+│  3 │ 1     │ Dwarf vs Goblin │ 0.98      │
+│  4 │ 1     │ Elf vs Dwarf    │ 0.9       │
+│  5 │ 1     │ Elf vs Orc      │ 0.59      │
+│  6 │ 1     │ Elf vs Human    │ 0.02      │
+│  7 │ 1     │ Elf vs Goblin   │ 0.04      │
+│  8 │ 1     │ Goblin vs Elf   │ 0.96      │
+│  9 │ 1     │ Goblin vs Dwarf │ 0.02      │
+│ 10 │ 1     │ Goblin vs Orc   │ 0.67      │
+│ 11 │ 1     │ Goblin vs Human │ 0         │
+│ 12 │ 1     │ Human vs Elf    │ 0.98      │
+│ 13 │ 1     │ Human vs Dwarf  │ 0.8       │
+│ 14 │ 1     │ Human vs Orc    │ 0.33      │
+│ 15 │ 1     │ Human vs Goblin │ 1         │
+│ 16 │ 1     │ Orc vs Elf      │ 0.41      │
+│ 17 │ 1     │ Orc vs Dwarf    │ 0.19      │
+│ 18 │ 1     │ Orc vs Human    │ 0.67      │
+│ 19 │ 1     │ Orc vs Goblin   │ 0.33      │
+│ 20 │ 2     │ Dwarf vs Elf    │ 0.06      │
+│ 21 │ 2     │ Dwarf vs Orc    │ 0.825     │
+│ 22 │ 2     │ Dwarf vs Human  │ 0.99      │
+│ 23 │ 2     │ Dwarf vs Goblin │ 0.985     │
+│ 24 │ 2     │ Elf vs Dwarf    │ 0.94      │
+│ 25 │ 2     │ Elf vs Orc      │ 0.66      │
+│ 26 │ 2     │ Elf vs Human    │ 0.59      │
+│ 27 │ 2     │ Elf vs Goblin   │ 0.03      │
+│ 28 │ 2     │ Goblin vs Elf   │ 0.97      │
+│ 29 │ 2     │ Goblin vs Dwarf │ 0.015     │
+│ 30 │ 2     │ Goblin vs Orc   │ 0.41      │
+│ 31 │ 2     │ Goblin vs Human │ 0         │
+│ 32 │ 2     │ Human vs Elf    │ 0.41      │
+│ 33 │ 2     │ Human vs Dwarf  │ 0.01      │
+│ 34 │ 2     │ Human vs Orc    │ 0.01      │
+│ 35 │ 2     │ Human vs Goblin │ 1         │
+│ 36 │ 2     │ Orc vs Elf      │ 0.34      │
+│ 37 │ 2     │ Orc vs Dwarf    │ 0.175     │
+│ 38 │ 2     │ Orc vs Human    │ 0.99      │
+│ 39 │ 2     │ Orc vs Goblin   │ 0.59      │
+│ 40 │ 4     │ Dwarf vs Elf    │ 0.07      │
+│ 41 │ 4     │ Dwarf vs Orc    │ 0.95      │
+│ 42 │ 4     │ Dwarf vs Human  │ 1         │
+│ 43 │ 4     │ Dwarf vs Goblin │ 1         │
+│ 44 │ 4     │ Elf vs Dwarf    │ 0.93      │
+│ 45 │ 4     │ Elf vs Orc      │ 0.67      │
+│ 46 │ 4     │ Elf vs Human    │ 0.41      │
+│ 47 │ 4     │ Elf vs Goblin   │ 0.42      │
+│ 48 │ 4     │ Goblin vs Elf   │ 0.58      │
+│ 49 │ 4     │ Goblin vs Dwarf │ 0         │
+│ 50 │ 4     │ Goblin vs Orc   │ 0.12      │
+│ 51 │ 4     │ Goblin vs Human │ 0         │
+│ 52 │ 4     │ Human vs Elf    │ 0.59      │
+│ 53 │ 4     │ Human vs Dwarf  │ 0         │
+│ 54 │ 4     │ Human vs Orc    │ 0.03      │
+│ 55 │ 4     │ Human vs Goblin │ 1         │
+│ 56 │ 4     │ Orc vs Elf      │ 0.33      │
+│ 57 │ 4     │ Orc vs Dwarf    │ 0.05      │
+│ 58 │ 4     │ Orc vs Human    │ 0.97      │
+│ 59 │ 4     │ Orc vs Goblin   │ 0.88      │
+└────┴───────┴─────────────────┴───────────┘
+
+Model: ACEGHJKMN dominanceSpread=0.368
+┌───┬────────┬──────────────┬──────────────┬──────────────┐
+│   │ race   │ avgPointRate │ minPointRate │ maxPointRate │
+├───┼────────┼──────────────┼──────────────┼──────────────┤
+│ 0 │ Dwarf  │ 0.678        │ 0.08         │ 1            │
+│ 1 │ Human  │ 0.522        │ 0            │ 1            │
+│ 2 │ Elf    │ 0.498        │ 0.02         │ 0.92         │
+│ 3 │ Orc    │ 0.492        │ 0.07         │ 0.98         │
+│ 4 │ Goblin │ 0.31         │ 0            │ 0.97         │
+└───┴────────┴──────────────┴──────────────┴──────────────┘
+┌────┬───────┬─────────────────┬───────────┐
+│    │ level │ matchup         │ pointRate │
+├────┼───────┼─────────────────┼───────────┤
+│  0 │ 1     │ Dwarf vs Elf    │ 0.32      │
+│  1 │ 1     │ Dwarf vs Orc    │ 0.74      │
+│  2 │ 1     │ Dwarf vs Human  │ 0.2       │
+│  3 │ 1     │ Dwarf vs Goblin │ 0.98      │
+│  4 │ 1     │ Elf vs Dwarf    │ 0.68      │
+│  5 │ 1     │ Elf vs Orc      │ 0.59      │
+│  6 │ 1     │ Elf vs Human    │ 0.02      │
+│  7 │ 1     │ Elf vs Goblin   │ 0.03      │
+│  8 │ 1     │ Goblin vs Elf   │ 0.97      │
+│  9 │ 1     │ Goblin vs Dwarf │ 0.02      │
+│ 10 │ 1     │ Goblin vs Orc   │ 0.7       │
+│ 11 │ 1     │ Goblin vs Human │ 0         │
+│ 12 │ 1     │ Human vs Elf    │ 0.98      │
+│ 13 │ 1     │ Human vs Dwarf  │ 0.8       │
+│ 14 │ 1     │ Human vs Orc    │ 0.38      │
+│ 15 │ 1     │ Human vs Goblin │ 1         │
+│ 16 │ 1     │ Orc vs Elf      │ 0.41      │
+│ 17 │ 1     │ Orc vs Dwarf    │ 0.26      │
+│ 18 │ 1     │ Orc vs Human    │ 0.62      │
+│ 19 │ 1     │ Orc vs Goblin   │ 0.3       │
+│ 20 │ 2     │ Dwarf vs Elf    │ 0.08      │
+│ 21 │ 2     │ Dwarf vs Orc    │ 0.81      │
+│ 22 │ 2     │ Dwarf vs Human  │ 0.99      │
+│ 23 │ 2     │ Dwarf vs Goblin │ 0.985     │
+│ 24 │ 2     │ Elf vs Dwarf    │ 0.92      │
+│ 25 │ 2     │ Elf vs Orc      │ 0.66      │
+│ 26 │ 2     │ Elf vs Human    │ 0.59      │
+│ 27 │ 2     │ Elf vs Goblin   │ 0.05      │
+│ 28 │ 2     │ Goblin vs Elf   │ 0.95      │
+│ 29 │ 2     │ Goblin vs Dwarf │ 0.015     │
+│ 30 │ 2     │ Goblin vs Orc   │ 0.41      │
+│ 31 │ 2     │ Goblin vs Human │ 0         │
+│ 32 │ 2     │ Human vs Elf    │ 0.41      │
+│ 33 │ 2     │ Human vs Dwarf  │ 0.01      │
+│ 34 │ 2     │ Human vs Orc    │ 0.02      │
+│ 35 │ 2     │ Human vs Goblin │ 1         │
+│ 36 │ 2     │ Orc vs Elf      │ 0.34      │
+│ 37 │ 2     │ Orc vs Dwarf    │ 0.19      │
+│ 38 │ 2     │ Orc vs Human    │ 0.98      │
+│ 39 │ 2     │ Orc vs Goblin   │ 0.59      │
+│ 40 │ 4     │ Dwarf vs Elf    │ 0.1       │
+│ 41 │ 4     │ Dwarf vs Orc    │ 0.93      │
+│ 42 │ 4     │ Dwarf vs Human  │ 1         │
+│ 43 │ 4     │ Dwarf vs Goblin │ 1         │
+│ 44 │ 4     │ Elf vs Dwarf    │ 0.9       │
+│ 45 │ 4     │ Elf vs Orc      │ 0.67      │
+│ 46 │ 4     │ Elf vs Human    │ 0.4       │
+│ 47 │ 4     │ Elf vs Goblin   │ 0.47      │
+│ 48 │ 4     │ Goblin vs Elf   │ 0.53      │
+│ 49 │ 4     │ Goblin vs Dwarf │ 0         │
+│ 50 │ 4     │ Goblin vs Orc   │ 0.12      │
+│ 51 │ 4     │ Goblin vs Human │ 0         │
+│ 52 │ 4     │ Human vs Elf    │ 0.6       │
+│ 53 │ 4     │ Human vs Dwarf  │ 0         │
+│ 54 │ 4     │ Human vs Orc    │ 0.07      │
+│ 55 │ 4     │ Human vs Goblin │ 1         │
+│ 56 │ 4     │ Orc vs Elf      │ 0.33      │
+│ 57 │ 4     │ Orc vs Dwarf    │ 0.07      │
+│ 58 │ 4     │ Orc vs Human    │ 0.93      │
+│ 59 │ 4     │ Orc vs Goblin   │ 0.88      │
+└────┴───────┴─────────────────┴───────────┘
+
+Model: ACEGHJLMN dominanceSpread=0.368
+┌───┬────────┬──────────────┬──────────────┬──────────────┐
+│   │ race   │ avgPointRate │ minPointRate │ maxPointRate │
+├───┼────────┼──────────────┼──────────────┼──────────────┤
+│ 0 │ Dwarf  │ 0.678        │ 0.08         │ 1            │
+│ 1 │ Human  │ 0.522        │ 0            │ 1            │
+│ 2 │ Elf    │ 0.498        │ 0.02         │ 0.92         │
+│ 3 │ Orc    │ 0.492        │ 0.07         │ 0.98         │
+│ 4 │ Goblin │ 0.31         │ 0            │ 0.97         │
+└───┴────────┴──────────────┴──────────────┴──────────────┘
+┌────┬───────┬─────────────────┬───────────┐
+│    │ level │ matchup         │ pointRate │
+├────┼───────┼─────────────────┼───────────┤
+│  0 │ 1     │ Dwarf vs Elf    │ 0.32      │
+│  1 │ 1     │ Dwarf vs Orc    │ 0.74      │
+│  2 │ 1     │ Dwarf vs Human  │ 0.2       │
+│  3 │ 1     │ Dwarf vs Goblin │ 0.98      │
+│  4 │ 1     │ Elf vs Dwarf    │ 0.68      │
+│  5 │ 1     │ Elf vs Orc      │ 0.59      │
+│  6 │ 1     │ Elf vs Human    │ 0.02      │
+│  7 │ 1     │ Elf vs Goblin   │ 0.03      │
+│  8 │ 1     │ Goblin vs Elf   │ 0.97      │
+│  9 │ 1     │ Goblin vs Dwarf │ 0.02      │
+│ 10 │ 1     │ Goblin vs Orc   │ 0.7       │
+│ 11 │ 1     │ Goblin vs Human │ 0         │
+│ 12 │ 1     │ Human vs Elf    │ 0.98      │
+│ 13 │ 1     │ Human vs Dwarf  │ 0.8       │
+│ 14 │ 1     │ Human vs Orc    │ 0.38      │
+│ 15 │ 1     │ Human vs Goblin │ 1         │
+│ 16 │ 1     │ Orc vs Elf      │ 0.41      │
+│ 17 │ 1     │ Orc vs Dwarf    │ 0.26      │
+│ 18 │ 1     │ Orc vs Human    │ 0.62      │
+│ 19 │ 1     │ Orc vs Goblin   │ 0.3       │
+│ 20 │ 2     │ Dwarf vs Elf    │ 0.08      │
+│ 21 │ 2     │ Dwarf vs Orc    │ 0.81      │
+│ 22 │ 2     │ Dwarf vs Human  │ 0.99      │
+│ 23 │ 2     │ Dwarf vs Goblin │ 0.985     │
+│ 24 │ 2     │ Elf vs Dwarf    │ 0.92      │
+│ 25 │ 2     │ Elf vs Orc      │ 0.66      │
+│ 26 │ 2     │ Elf vs Human    │ 0.59      │
+│ 27 │ 2     │ Elf vs Goblin   │ 0.05      │
+│ 28 │ 2     │ Goblin vs Elf   │ 0.95      │
+│ 29 │ 2     │ Goblin vs Dwarf │ 0.015     │
+│ 30 │ 2     │ Goblin vs Orc   │ 0.41      │
+│ 31 │ 2     │ Goblin vs Human │ 0         │
+│ 32 │ 2     │ Human vs Elf    │ 0.41      │
+│ 33 │ 2     │ Human vs Dwarf  │ 0.01      │
+│ 34 │ 2     │ Human vs Orc    │ 0.02      │
+│ 35 │ 2     │ Human vs Goblin │ 1         │
+│ 36 │ 2     │ Orc vs Elf      │ 0.34      │
+│ 37 │ 2     │ Orc vs Dwarf    │ 0.19      │
+│ 38 │ 2     │ Orc vs Human    │ 0.98      │
+│ 39 │ 2     │ Orc vs Goblin   │ 0.59      │
+│ 40 │ 4     │ Dwarf vs Elf    │ 0.1       │
+│ 41 │ 4     │ Dwarf vs Orc    │ 0.93      │
+│ 42 │ 4     │ Dwarf vs Human  │ 1         │
+│ 43 │ 4     │ Dwarf vs Goblin │ 1         │
+│ 44 │ 4     │ Elf vs Dwarf    │ 0.9       │
+│ 45 │ 4     │ Elf vs Orc      │ 0.67      │
+│ 46 │ 4     │ Elf vs Human    │ 0.4       │
+│ 47 │ 4     │ Elf vs Goblin   │ 0.47      │
+│ 48 │ 4     │ Goblin vs Elf   │ 0.53      │
+│ 49 │ 4     │ Goblin vs Dwarf │ 0         │
+│ 50 │ 4     │ Goblin vs Orc   │ 0.12      │
+│ 51 │ 4     │ Goblin vs Human │ 0         │
+│ 52 │ 4     │ Human vs Elf    │ 0.6       │
+│ 53 │ 4     │ Human vs Dwarf  │ 0         │
+│ 54 │ 4     │ Human vs Orc    │ 0.07      │
+│ 55 │ 4     │ Human vs Goblin │ 1         │
+│ 56 │ 4     │ Orc vs Elf      │ 0.33      │
+│ 57 │ 4     │ Orc vs Dwarf    │ 0.07      │
+│ 58 │ 4     │ Orc vs Human    │ 0.93      │
+│ 59 │ 4     │ Orc vs Goblin   │ 0.88      │
+└────┴───────┴─────────────────┴───────────┘
+
+Model: BCEGHJKMN dominanceSpread=0.373
+┌───┬────────┬──────────────┬──────────────┬──────────────┐
+│   │ race   │ avgPointRate │ minPointRate │ maxPointRate │
+├───┼────────┼──────────────┼──────────────┼──────────────┤
+│ 0 │ Dwarf  │ 0.678        │ 0.08         │ 1            │
+│ 1 │ Human  │ 0.518        │ 0            │ 1            │
+│ 2 │ Elf    │ 0.502        │ 0.02         │ 0.92         │
+│ 3 │ Orc    │ 0.497        │ 0.07         │ 0.98         │
+│ 4 │ Goblin │ 0.305        │ 0            │ 0.95         │
+└───┴────────┴──────────────┴──────────────┴──────────────┘
+┌────┬───────┬─────────────────┬───────────┐
+│    │ level │ matchup         │ pointRate │
+├────┼───────┼─────────────────┼───────────┤
+│  0 │ 1     │ Dwarf vs Elf    │ 0.32      │
+│  1 │ 1     │ Dwarf vs Orc    │ 0.74      │
+│  2 │ 1     │ Dwarf vs Human  │ 0.2       │
+│  3 │ 1     │ Dwarf vs Goblin │ 0.98      │
+│  4 │ 1     │ Elf vs Dwarf    │ 0.68      │
+│  5 │ 1     │ Elf vs Orc      │ 0.59      │
+│  6 │ 1     │ Elf vs Human    │ 0.02      │
+│  7 │ 1     │ Elf vs Goblin   │ 0.06      │
+│  8 │ 1     │ Goblin vs Elf   │ 0.94      │
+│  9 │ 1     │ Goblin vs Dwarf │ 0.02      │
+│ 10 │ 1     │ Goblin vs Orc   │ 0.67      │
+│ 11 │ 1     │ Goblin vs Human │ 0         │
+│ 12 │ 1     │ Human vs Elf    │ 0.98      │
+│ 13 │ 1     │ Human vs Dwarf  │ 0.8       │
+│ 14 │ 1     │ Human vs Orc    │ 0.38      │
+│ 15 │ 1     │ Human vs Goblin │ 1         │
+│ 16 │ 1     │ Orc vs Elf      │ 0.41      │
+│ 17 │ 1     │ Orc vs Dwarf    │ 0.26      │
+│ 18 │ 1     │ Orc vs Human    │ 0.62      │
+│ 19 │ 1     │ Orc vs Goblin   │ 0.33      │
+│ 20 │ 2     │ Dwarf vs Elf    │ 0.08      │
+│ 21 │ 2     │ Dwarf vs Orc    │ 0.81      │
+│ 22 │ 2     │ Dwarf vs Human  │ 0.99      │
+│ 23 │ 2     │ Dwarf vs Goblin │ 0.985     │
+│ 24 │ 2     │ Elf vs Dwarf    │ 0.92      │
+│ 25 │ 2     │ Elf vs Orc      │ 0.66      │
+│ 26 │ 2     │ Elf vs Human    │ 0.59      │
+│ 27 │ 2     │ Elf vs Goblin   │ 0.05      │
+│ 28 │ 2     │ Goblin vs Elf   │ 0.95      │
+│ 29 │ 2     │ Goblin vs Dwarf │ 0.015     │
+│ 30 │ 2     │ Goblin vs Orc   │ 0.41      │
+│ 31 │ 2     │ Goblin vs Human │ 0         │
+│ 32 │ 2     │ Human vs Elf    │ 0.41      │
+│ 33 │ 2     │ Human vs Dwarf  │ 0.01      │
+│ 34 │ 2     │ Human vs Orc    │ 0.02      │
+│ 35 │ 2     │ Human vs Goblin │ 1         │
+│ 36 │ 2     │ Orc vs Elf      │ 0.34      │
+│ 37 │ 2     │ Orc vs Dwarf    │ 0.19      │
+│ 38 │ 2     │ Orc vs Human    │ 0.98      │
+│ 39 │ 2     │ Orc vs Goblin   │ 0.59      │
+│ 40 │ 4     │ Dwarf vs Elf    │ 0.1       │
+│ 41 │ 4     │ Dwarf vs Orc    │ 0.93      │
+│ 42 │ 4     │ Dwarf vs Human  │ 1         │
+│ 43 │ 4     │ Dwarf vs Goblin │ 1         │
+│ 44 │ 4     │ Elf vs Dwarf    │ 0.9       │
+│ 45 │ 4     │ Elf vs Orc      │ 0.67      │
+│ 46 │ 4     │ Elf vs Human    │ 0.41      │
+│ 47 │ 4     │ Elf vs Goblin   │ 0.47      │
+│ 48 │ 4     │ Goblin vs Elf   │ 0.53      │
+│ 49 │ 4     │ Goblin vs Dwarf │ 0         │
+│ 50 │ 4     │ Goblin vs Orc   │ 0.12      │
+│ 51 │ 4     │ Goblin vs Human │ 0         │
+│ 52 │ 4     │ Human vs Elf    │ 0.59      │
+│ 53 │ 4     │ Human vs Dwarf  │ 0         │
+│ 54 │ 4     │ Human vs Orc    │ 0.03      │
+│ 55 │ 4     │ Human vs Goblin │ 1         │
+│ 56 │ 4     │ Orc vs Elf      │ 0.33      │
+│ 57 │ 4     │ Orc vs Dwarf    │ 0.07      │
+│ 58 │ 4     │ Orc vs Human    │ 0.97      │
+│ 59 │ 4     │ Orc vs Goblin   │ 0.88      │
+└────┴───────┴─────────────────┴───────────┘
+
+Model: BCEGHJLMN dominanceSpread=0.373
+┌───┬────────┬──────────────┬──────────────┬──────────────┐
+│   │ race   │ avgPointRate │ minPointRate │ maxPointRate │
+├───┼────────┼──────────────┼──────────────┼──────────────┤
+│ 0 │ Dwarf  │ 0.678        │ 0.08         │ 1            │
+│ 1 │ Human  │ 0.518        │ 0            │ 1            │
+│ 2 │ Elf    │ 0.502        │ 0.02         │ 0.92         │
+│ 3 │ Orc    │ 0.497        │ 0.07         │ 0.98         │
+│ 4 │ Goblin │ 0.305        │ 0            │ 0.95         │
+└───┴────────┴──────────────┴──────────────┴──────────────┘
+┌────┬───────┬─────────────────┬───────────┐
+│    │ level │ matchup         │ pointRate │
+├────┼───────┼─────────────────┼───────────┤
+│  0 │ 1     │ Dwarf vs Elf    │ 0.32      │
+│  1 │ 1     │ Dwarf vs Orc    │ 0.74      │
+│  2 │ 1     │ Dwarf vs Human  │ 0.2       │
+│  3 │ 1     │ Dwarf vs Goblin │ 0.98      │
+│  4 │ 1     │ Elf vs Dwarf    │ 0.68      │
+│  5 │ 1     │ Elf vs Orc      │ 0.59      │
+│  6 │ 1     │ Elf vs Human    │ 0.02      │
+│  7 │ 1     │ Elf vs Goblin   │ 0.06      │
+│  8 │ 1     │ Goblin vs Elf   │ 0.94      │
+│  9 │ 1     │ Goblin vs Dwarf │ 0.02      │
+│ 10 │ 1     │ Goblin vs Orc   │ 0.67      │
+│ 11 │ 1     │ Goblin vs Human │ 0         │
+│ 12 │ 1     │ Human vs Elf    │ 0.98      │
+│ 13 │ 1     │ Human vs Dwarf  │ 0.8       │
+│ 14 │ 1     │ Human vs Orc    │ 0.38      │
+│ 15 │ 1     │ Human vs Goblin │ 1         │
+│ 16 │ 1     │ Orc vs Elf      │ 0.41      │
+│ 17 │ 1     │ Orc vs Dwarf    │ 0.26      │
+│ 18 │ 1     │ Orc vs Human    │ 0.62      │
+│ 19 │ 1     │ Orc vs Goblin   │ 0.33      │
+│ 20 │ 2     │ Dwarf vs Elf    │ 0.08      │
+│ 21 │ 2     │ Dwarf vs Orc    │ 0.81      │
+│ 22 │ 2     │ Dwarf vs Human  │ 0.99      │
+│ 23 │ 2     │ Dwarf vs Goblin │ 0.985     │
+│ 24 │ 2     │ Elf vs Dwarf    │ 0.92      │
+│ 25 │ 2     │ Elf vs Orc      │ 0.66      │
+│ 26 │ 2     │ Elf vs Human    │ 0.59      │
+│ 27 │ 2     │ Elf vs Goblin   │ 0.05      │
+│ 28 │ 2     │ Goblin vs Elf   │ 0.95      │
+│ 29 │ 2     │ Goblin vs Dwarf │ 0.015     │
+│ 30 │ 2     │ Goblin vs Orc   │ 0.41      │
+│ 31 │ 2     │ Goblin vs Human │ 0         │
+│ 32 │ 2     │ Human vs Elf    │ 0.41      │
+│ 33 │ 2     │ Human vs Dwarf  │ 0.01      │
+│ 34 │ 2     │ Human vs Orc    │ 0.02      │
+│ 35 │ 2     │ Human vs Goblin │ 1         │
+│ 36 │ 2     │ Orc vs Elf      │ 0.34      │
+│ 37 │ 2     │ Orc vs Dwarf    │ 0.19      │
+│ 38 │ 2     │ Orc vs Human    │ 0.98      │
+│ 39 │ 2     │ Orc vs Goblin   │ 0.59      │
+│ 40 │ 4     │ Dwarf vs Elf    │ 0.1       │
+│ 41 │ 4     │ Dwarf vs Orc    │ 0.93      │
+│ 42 │ 4     │ Dwarf vs Human  │ 1         │
+│ 43 │ 4     │ Dwarf vs Goblin │ 1         │
+│ 44 │ 4     │ Elf vs Dwarf    │ 0.9       │
+│ 45 │ 4     │ Elf vs Orc      │ 0.67      │
+│ 46 │ 4     │ Elf vs Human    │ 0.41      │
+│ 47 │ 4     │ Elf vs Goblin   │ 0.47      │
+│ 48 │ 4     │ Goblin vs Elf   │ 0.53      │
+│ 49 │ 4     │ Goblin vs Dwarf │ 0         │
+│ 50 │ 4     │ Goblin vs Orc   │ 0.12      │
+│ 51 │ 4     │ Goblin vs Human │ 0         │
+│ 52 │ 4     │ Human vs Elf    │ 0.59      │
+│ 53 │ 4     │ Human vs Dwarf  │ 0         │
+│ 54 │ 4     │ Human vs Orc    │ 0.03      │
+│ 55 │ 4     │ Human vs Goblin │ 1         │
+│ 56 │ 4     │ Orc vs Elf      │ 0.33      │
+│ 57 │ 4     │ Orc vs Dwarf    │ 0.07      │
+│ 58 │ 4     │ Orc vs Human    │ 0.97      │
+│ 59 │ 4     │ Orc vs Goblin   │ 0.88      │
+└────┴───────┴─────────────────┴───────────┘
+
+Model: ACDGHIKMN dominanceSpread=0.380
+┌───┬────────┬──────────────┬──────────────┬──────────────┐
+│   │ race   │ avgPointRate │ minPointRate │ maxPointRate │
+├───┼────────┼──────────────┼──────────────┼──────────────┤
+│ 0 │ Dwarf  │ 0.675        │ 0.01         │ 1            │
+│ 1 │ Orc    │ 0.555        │ 0.03         │ 0.99         │
+│ 2 │ Elf    │ 0.524        │ 0            │ 0.99         │
+│ 3 │ Human  │ 0.451        │ 0            │ 1            │
+│ 4 │ Goblin │ 0.295        │ 0            │ 0.98         │
+└───┴────────┴──────────────┴──────────────┴──────────────┘
+┌────┬───────┬─────────────────┬───────────┐
+│    │ level │ matchup         │ pointRate │
+├────┼───────┼─────────────────┼───────────┤
+│  0 │ 1     │ Dwarf vs Elf    │ 0.2       │
+│  1 │ 1     │ Dwarf vs Orc    │ 0.655     │
+│  2 │ 1     │ Dwarf vs Human  │ 0.36      │
+│  3 │ 1     │ Dwarf vs Goblin │ 1         │
+│  4 │ 1     │ Elf vs Dwarf    │ 0.8       │
+│  5 │ 1     │ Elf vs Orc      │ 0.35      │
+│  6 │ 1     │ Elf vs Human    │ 0         │
+│  7 │ 1     │ Elf vs Goblin   │ 0.02      │
+│  8 │ 1     │ Goblin vs Elf   │ 0.98      │
+│  9 │ 1     │ Goblin vs Dwarf │ 0         │
+│ 10 │ 1     │ Goblin vs Orc   │ 0.42      │
+│ 11 │ 1     │ Goblin vs Human │ 0         │
+│ 12 │ 1     │ Human vs Elf    │ 1         │
+│ 13 │ 1     │ Human vs Dwarf  │ 0.64      │
+│ 14 │ 1     │ Human vs Orc    │ 0.13      │
+│ 15 │ 1     │ Human vs Goblin │ 1         │
+│ 16 │ 1     │ Orc vs Elf      │ 0.65      │
+│ 17 │ 1     │ Orc vs Dwarf    │ 0.345     │
+│ 18 │ 1     │ Orc vs Human    │ 0.87      │
+│ 19 │ 1     │ Orc vs Goblin   │ 0.58      │
+│ 20 │ 2     │ Dwarf vs Elf    │ 0.12      │
+│ 21 │ 2     │ Dwarf vs Orc    │ 0.79      │
+│ 22 │ 2     │ Dwarf vs Human  │ 1         │
+│ 23 │ 2     │ Dwarf vs Goblin │ 1         │
+│ 24 │ 2     │ Elf vs Dwarf    │ 0.88      │
+│ 25 │ 2     │ Elf vs Orc      │ 0.56      │
+│ 26 │ 2     │ Elf vs Human    │ 0.64      │
+│ 27 │ 2     │ Elf vs Goblin   │ 0.04      │
+│ 28 │ 2     │ Goblin vs Elf   │ 0.96      │
+│ 29 │ 2     │ Goblin vs Dwarf │ 0         │
+│ 30 │ 2     │ Goblin vs Orc   │ 0.34      │
+│ 31 │ 2     │ Goblin vs Human │ 0         │
+│ 32 │ 2     │ Human vs Elf    │ 0.36      │
+│ 33 │ 2     │ Human vs Dwarf  │ 0         │
+│ 34 │ 2     │ Human vs Orc    │ 0.01      │
+│ 35 │ 2     │ Human vs Goblin │ 1         │
+│ 36 │ 2     │ Orc vs Elf      │ 0.44      │
+│ 37 │ 2     │ Orc vs Dwarf    │ 0.21      │
+│ 38 │ 2     │ Orc vs Human    │ 0.99      │
+│ 39 │ 2     │ Orc vs Goblin   │ 0.66      │
+│ 40 │ 4     │ Dwarf vs Elf    │ 0.01      │
+│ 41 │ 4     │ Dwarf vs Orc    │ 0.97      │
+│ 42 │ 4     │ Dwarf vs Human  │ 1         │
+│ 43 │ 4     │ Dwarf vs Goblin │ 1         │
+│ 44 │ 4     │ Elf vs Dwarf    │ 0.99      │
+│ 45 │ 4     │ Elf vs Orc      │ 0.87      │
+│ 46 │ 4     │ Elf vs Human    │ 0.76      │
+│ 47 │ 4     │ Elf vs Goblin   │ 0.38      │
+│ 48 │ 4     │ Goblin vs Elf   │ 0.62      │
+│ 49 │ 4     │ Goblin vs Dwarf │ 0         │
+│ 50 │ 4     │ Goblin vs Orc   │ 0.22      │
+│ 51 │ 4     │ Goblin vs Human │ 0         │
+│ 52 │ 4     │ Human vs Elf    │ 0.24      │
+│ 53 │ 4     │ Human vs Dwarf  │ 0         │
+│ 54 │ 4     │ Human vs Orc    │ 0.03      │
+│ 55 │ 4     │ Human vs Goblin │ 1         │
+│ 56 │ 4     │ Orc vs Elf      │ 0.13      │
+│ 57 │ 4     │ Orc vs Dwarf    │ 0.03      │
+│ 58 │ 4     │ Orc vs Human    │ 0.97      │
+│ 59 │ 4     │ Orc vs Goblin   │ 0.78      │
+└────┴───────┴─────────────────┴───────────┘
+
+Model: ACDGHILMN dominanceSpread=0.380
+┌───┬────────┬──────────────┬──────────────┬──────────────┐
+│   │ race   │ avgPointRate │ minPointRate │ maxPointRate │
+├───┼────────┼──────────────┼──────────────┼──────────────┤
+│ 0 │ Dwarf  │ 0.675        │ 0.01         │ 1            │
+│ 1 │ Orc    │ 0.555        │ 0.03         │ 0.99         │
+│ 2 │ Elf    │ 0.524        │ 0            │ 0.99         │
+│ 3 │ Human  │ 0.451        │ 0            │ 1            │
+│ 4 │ Goblin │ 0.295        │ 0            │ 0.98         │
+└───┴────────┴──────────────┴──────────────┴──────────────┘
+┌────┬───────┬─────────────────┬───────────┐
+│    │ level │ matchup         │ pointRate │
+├────┼───────┼─────────────────┼───────────┤
+│  0 │ 1     │ Dwarf vs Elf    │ 0.2       │
+│  1 │ 1     │ Dwarf vs Orc    │ 0.655     │
+│  2 │ 1     │ Dwarf vs Human  │ 0.36      │
+│  3 │ 1     │ Dwarf vs Goblin │ 1         │
+│  4 │ 1     │ Elf vs Dwarf    │ 0.8       │
+│  5 │ 1     │ Elf vs Orc      │ 0.35      │
+│  6 │ 1     │ Elf vs Human    │ 0         │
+│  7 │ 1     │ Elf vs Goblin   │ 0.02      │
+│  8 │ 1     │ Goblin vs Elf   │ 0.98      │
+│  9 │ 1     │ Goblin vs Dwarf │ 0         │
+│ 10 │ 1     │ Goblin vs Orc   │ 0.42      │
+│ 11 │ 1     │ Goblin vs Human │ 0         │
+│ 12 │ 1     │ Human vs Elf    │ 1         │
+│ 13 │ 1     │ Human vs Dwarf  │ 0.64      │
+│ 14 │ 1     │ Human vs Orc    │ 0.13      │
+│ 15 │ 1     │ Human vs Goblin │ 1         │
+│ 16 │ 1     │ Orc vs Elf      │ 0.65      │
+│ 17 │ 1     │ Orc vs Dwarf    │ 0.345     │
+│ 18 │ 1     │ Orc vs Human    │ 0.87      │
+│ 19 │ 1     │ Orc vs Goblin   │ 0.58      │
+│ 20 │ 2     │ Dwarf vs Elf    │ 0.12      │
+│ 21 │ 2     │ Dwarf vs Orc    │ 0.79      │
+│ 22 │ 2     │ Dwarf vs Human  │ 1         │
+│ 23 │ 2     │ Dwarf vs Goblin │ 1         │
+│ 24 │ 2     │ Elf vs Dwarf    │ 0.88      │
+│ 25 │ 2     │ Elf vs Orc      │ 0.56      │
+│ 26 │ 2     │ Elf vs Human    │ 0.64      │
+│ 27 │ 2     │ Elf vs Goblin   │ 0.04      │
+│ 28 │ 2     │ Goblin vs Elf   │ 0.96      │
+│ 29 │ 2     │ Goblin vs Dwarf │ 0         │
+│ 30 │ 2     │ Goblin vs Orc   │ 0.34      │
+│ 31 │ 2     │ Goblin vs Human │ 0         │
+│ 32 │ 2     │ Human vs Elf    │ 0.36      │
+│ 33 │ 2     │ Human vs Dwarf  │ 0         │
+│ 34 │ 2     │ Human vs Orc    │ 0.01      │
+│ 35 │ 2     │ Human vs Goblin │ 1         │
+│ 36 │ 2     │ Orc vs Elf      │ 0.44      │
+│ 37 │ 2     │ Orc vs Dwarf    │ 0.21      │
+│ 38 │ 2     │ Orc vs Human    │ 0.99      │
+│ 39 │ 2     │ Orc vs Goblin   │ 0.66      │
+│ 40 │ 4     │ Dwarf vs Elf    │ 0.01      │
+│ 41 │ 4     │ Dwarf vs Orc    │ 0.97      │
+│ 42 │ 4     │ Dwarf vs Human  │ 1         │
+│ 43 │ 4     │ Dwarf vs Goblin │ 1         │
+│ 44 │ 4     │ Elf vs Dwarf    │ 0.99      │
+│ 45 │ 4     │ Elf vs Orc      │ 0.87      │
+│ 46 │ 4     │ Elf vs Human    │ 0.76      │
+│ 47 │ 4     │ Elf vs Goblin   │ 0.38      │
+│ 48 │ 4     │ Goblin vs Elf   │ 0.62      │
+│ 49 │ 4     │ Goblin vs Dwarf │ 0         │
+│ 50 │ 4     │ Goblin vs Orc   │ 0.22      │
+│ 51 │ 4     │ Goblin vs Human │ 0         │
+│ 52 │ 4     │ Human vs Elf    │ 0.24      │
+│ 53 │ 4     │ Human vs Dwarf  │ 0         │
+│ 54 │ 4     │ Human vs Orc    │ 0.03      │
+│ 55 │ 4     │ Human vs Goblin │ 1         │
+│ 56 │ 4     │ Orc vs Elf      │ 0.13      │
+│ 57 │ 4     │ Orc vs Dwarf    │ 0.03      │
+│ 58 │ 4     │ Orc vs Human    │ 0.97      │
+│ 59 │ 4     │ Orc vs Goblin   │ 0.78      │
+└────┴───────┴─────────────────┴───────────┘
+
+Model: BCDGHIKMN dominanceSpread=0.386
+┌───┬────────┬──────────────┬──────────────┬──────────────┐
+│   │ race   │ avgPointRate │ minPointRate │ maxPointRate │
+├───┼────────┼──────────────┼──────────────┼──────────────┤
+│ 0 │ Dwarf  │ 0.675        │ 0.01         │ 1            │
+│ 1 │ Orc    │ 0.562        │ 0.03         │ 0.99         │
+│ 2 │ Elf    │ 0.521        │ 0            │ 0.99         │
+│ 3 │ Human  │ 0.454        │ 0            │ 1            │
+│ 4 │ Goblin │ 0.288        │ 0            │ 0.97         │
+└───┴────────┴──────────────┴──────────────┴──────────────┘
+┌────┬───────┬─────────────────┬───────────┐
+│    │ level │ matchup         │ pointRate │
+├────┼───────┼─────────────────┼───────────┤
+│  0 │ 1     │ Dwarf vs Elf    │ 0.2       │
+│  1 │ 1     │ Dwarf vs Orc    │ 0.655     │
+│  2 │ 1     │ Dwarf vs Human  │ 0.36      │
+│  3 │ 1     │ Dwarf vs Goblin │ 1         │
+│  4 │ 1     │ Elf vs Dwarf    │ 0.8       │
+│  5 │ 1     │ Elf vs Orc      │ 0.35      │
+│  6 │ 1     │ Elf vs Human    │ 0         │
+│  7 │ 1     │ Elf vs Goblin   │ 0.03      │
+│  8 │ 1     │ Goblin vs Elf   │ 0.97      │
+│  9 │ 1     │ Goblin vs Dwarf │ 0         │
+│ 10 │ 1     │ Goblin vs Orc   │ 0.35      │
+│ 11 │ 1     │ Goblin vs Human │ 0         │
+│ 12 │ 1     │ Human vs Elf    │ 1         │
+│ 13 │ 1     │ Human vs Dwarf  │ 0.64      │
+│ 14 │ 1     │ Human vs Orc    │ 0.13      │
+│ 15 │ 1     │ Human vs Goblin │ 1         │
+│ 16 │ 1     │ Orc vs Elf      │ 0.65      │
+│ 17 │ 1     │ Orc vs Dwarf    │ 0.345     │
+│ 18 │ 1     │ Orc vs Human    │ 0.87      │
+│ 19 │ 1     │ Orc vs Goblin   │ 0.65      │
+│ 20 │ 2     │ Dwarf vs Elf    │ 0.12      │
+│ 21 │ 2     │ Dwarf vs Orc    │ 0.79      │
+│ 22 │ 2     │ Dwarf vs Human  │ 1         │
+│ 23 │ 2     │ Dwarf vs Goblin │ 1         │
+│ 24 │ 2     │ Elf vs Dwarf    │ 0.88      │
+│ 25 │ 2     │ Elf vs Orc      │ 0.56      │
+│ 26 │ 2     │ Elf vs Human    │ 0.64      │
+│ 27 │ 2     │ Elf vs Goblin   │ 0.04      │
+│ 28 │ 2     │ Goblin vs Elf   │ 0.96      │
+│ 29 │ 2     │ Goblin vs Dwarf │ 0         │
+│ 30 │ 2     │ Goblin vs Orc   │ 0.34      │
+│ 31 │ 2     │ Goblin vs Human │ 0         │
+│ 32 │ 2     │ Human vs Elf    │ 0.36      │
+│ 33 │ 2     │ Human vs Dwarf  │ 0         │
+│ 34 │ 2     │ Human vs Orc    │ 0.01      │
+│ 35 │ 2     │ Human vs Goblin │ 1         │
+│ 36 │ 2     │ Orc vs Elf      │ 0.44      │
+│ 37 │ 2     │ Orc vs Dwarf    │ 0.21      │
+│ 38 │ 2     │ Orc vs Human    │ 0.99      │
+│ 39 │ 2     │ Orc vs Goblin   │ 0.66      │
+│ 40 │ 4     │ Dwarf vs Elf    │ 0.01      │
+│ 41 │ 4     │ Dwarf vs Orc    │ 0.97      │
+│ 42 │ 4     │ Dwarf vs Human  │ 0.99      │
+│ 43 │ 4     │ Dwarf vs Goblin │ 1         │
+│ 44 │ 4     │ Elf vs Dwarf    │ 0.99      │
+│ 45 │ 4     │ Elf vs Orc      │ 0.87      │
+│ 46 │ 4     │ Elf vs Human    │ 0.71      │
+│ 47 │ 4     │ Elf vs Goblin   │ 0.38      │
+│ 48 │ 4     │ Goblin vs Elf   │ 0.62      │
+│ 49 │ 4     │ Goblin vs Dwarf │ 0         │
+│ 50 │ 4     │ Goblin vs Orc   │ 0.22      │
+│ 51 │ 4     │ Goblin vs Human │ 0         │
+│ 52 │ 4     │ Human vs Elf    │ 0.29      │
+│ 53 │ 4     │ Human vs Dwarf  │ 0.01      │
+│ 54 │ 4     │ Human vs Orc    │ 0.01      │
+│ 55 │ 4     │ Human vs Goblin │ 1         │
+│ 56 │ 4     │ Orc vs Elf      │ 0.13      │
+│ 57 │ 4     │ Orc vs Dwarf    │ 0.03      │
+│ 58 │ 4     │ Orc vs Human    │ 0.99      │
+│ 59 │ 4     │ Orc vs Goblin   │ 0.78      │
+└────┴───────┴─────────────────┴───────────┘
+
+Model: BCDGHILMN dominanceSpread=0.386
+┌───┬────────┬──────────────┬──────────────┬──────────────┐
+│   │ race   │ avgPointRate │ minPointRate │ maxPointRate │
+├───┼────────┼──────────────┼──────────────┼──────────────┤
+│ 0 │ Dwarf  │ 0.675        │ 0.01         │ 1            │
+│ 1 │ Orc    │ 0.562        │ 0.03         │ 0.99         │
+│ 2 │ Elf    │ 0.521        │ 0            │ 0.99         │
+│ 3 │ Human  │ 0.454        │ 0            │ 1            │
+│ 4 │ Goblin │ 0.288        │ 0            │ 0.97         │
+└───┴────────┴──────────────┴──────────────┴──────────────┘
+┌────┬───────┬─────────────────┬───────────┐
+│    │ level │ matchup         │ pointRate │
+├────┼───────┼─────────────────┼───────────┤
+│  0 │ 1     │ Dwarf vs Elf    │ 0.2       │
+│  1 │ 1     │ Dwarf vs Orc    │ 0.655     │
+│  2 │ 1     │ Dwarf vs Human  │ 0.36      │
+│  3 │ 1     │ Dwarf vs Goblin │ 1         │
+│  4 │ 1     │ Elf vs Dwarf    │ 0.8       │
+│  5 │ 1     │ Elf vs Orc      │ 0.35      │
+│  6 │ 1     │ Elf vs Human    │ 0         │
+│  7 │ 1     │ Elf vs Goblin   │ 0.03      │
+│  8 │ 1     │ Goblin vs Elf   │ 0.97      │
+│  9 │ 1     │ Goblin vs Dwarf │ 0         │
+│ 10 │ 1     │ Goblin vs Orc   │ 0.35      │
+│ 11 │ 1     │ Goblin vs Human │ 0         │
+│ 12 │ 1     │ Human vs Elf    │ 1         │
+│ 13 │ 1     │ Human vs Dwarf  │ 0.64      │
+│ 14 │ 1     │ Human vs Orc    │ 0.13      │
+│ 15 │ 1     │ Human vs Goblin │ 1         │
+│ 16 │ 1     │ Orc vs Elf      │ 0.65      │
+│ 17 │ 1     │ Orc vs Dwarf    │ 0.345     │
+│ 18 │ 1     │ Orc vs Human    │ 0.87      │
+│ 19 │ 1     │ Orc vs Goblin   │ 0.65      │
+│ 20 │ 2     │ Dwarf vs Elf    │ 0.12      │
+│ 21 │ 2     │ Dwarf vs Orc    │ 0.79      │
+│ 22 │ 2     │ Dwarf vs Human  │ 1         │
+│ 23 │ 2     │ Dwarf vs Goblin │ 1         │
+│ 24 │ 2     │ Elf vs Dwarf    │ 0.88      │
+│ 25 │ 2     │ Elf vs Orc      │ 0.56      │
+│ 26 │ 2     │ Elf vs Human    │ 0.64      │
+│ 27 │ 2     │ Elf vs Goblin   │ 0.04      │
+│ 28 │ 2     │ Goblin vs Elf   │ 0.96      │
+│ 29 │ 2     │ Goblin vs Dwarf │ 0         │
+│ 30 │ 2     │ Goblin vs Orc   │ 0.34      │
+│ 31 │ 2     │ Goblin vs Human │ 0         │
+│ 32 │ 2     │ Human vs Elf    │ 0.36      │
+│ 33 │ 2     │ Human vs Dwarf  │ 0         │
+│ 34 │ 2     │ Human vs Orc    │ 0.01      │
+│ 35 │ 2     │ Human vs Goblin │ 1         │
+│ 36 │ 2     │ Orc vs Elf      │ 0.44      │
+│ 37 │ 2     │ Orc vs Dwarf    │ 0.21      │
+│ 38 │ 2     │ Orc vs Human    │ 0.99      │
+│ 39 │ 2     │ Orc vs Goblin   │ 0.66      │
+│ 40 │ 4     │ Dwarf vs Elf    │ 0.01      │
+│ 41 │ 4     │ Dwarf vs Orc    │ 0.97      │
+│ 42 │ 4     │ Dwarf vs Human  │ 0.99      │
+│ 43 │ 4     │ Dwarf vs Goblin │ 1         │
+│ 44 │ 4     │ Elf vs Dwarf    │ 0.99      │
+│ 45 │ 4     │ Elf vs Orc      │ 0.87      │
+│ 46 │ 4     │ Elf vs Human    │ 0.71      │
+│ 47 │ 4     │ Elf vs Goblin   │ 0.38      │
+│ 48 │ 4     │ Goblin vs Elf   │ 0.62      │
+│ 49 │ 4     │ Goblin vs Dwarf │ 0         │
+│ 50 │ 4     │ Goblin vs Orc   │ 0.22      │
+│ 51 │ 4     │ Goblin vs Human │ 0         │
+│ 52 │ 4     │ Human vs Elf    │ 0.29      │
+│ 53 │ 4     │ Human vs Dwarf  │ 0.01      │
+│ 54 │ 4     │ Human vs Orc    │ 0.01      │
+│ 55 │ 4     │ Human vs Goblin │ 1         │
+│ 56 │ 4     │ Orc vs Elf      │ 0.13      │
+│ 57 │ 4     │ Orc vs Dwarf    │ 0.03      │
+│ 58 │ 4     │ Orc vs Human    │ 0.99      │
+│ 59 │ 4     │ Orc vs Goblin   │ 0.78      │
+└────┴───────┴─────────────────┴───────────┘
+
+Model: ACDGHJKMN dominanceSpread=0.402
+┌───┬────────┬──────────────┬──────────────┬──────────────┐
+│   │ race   │ avgPointRate │ minPointRate │ maxPointRate │
+├───┼────────┼──────────────┼──────────────┼──────────────┤
+│ 0 │ Dwarf  │ 0.689        │ 0.02         │ 1            │
+│ 1 │ Orc    │ 0.564        │ 0.03         │ 0.99         │
+│ 2 │ Elf    │ 0.506        │ 0            │ 0.98         │
+│ 3 │ Human  │ 0.453        │ 0            │ 1            │
+│ 4 │ Goblin │ 0.288        │ 0            │ 0.97         │
+└───┴────────┴──────────────┴──────────────┴──────────────┘
+┌────┬───────┬─────────────────┬───────────┐
+│    │ level │ matchup         │ pointRate │
+├────┼───────┼─────────────────┼───────────┤
+│  0 │ 1     │ Dwarf vs Elf    │ 0.49      │
+│  1 │ 1     │ Dwarf vs Orc    │ 0.525     │
+│  2 │ 1     │ Dwarf vs Human  │ 0.36      │
+│  3 │ 1     │ Dwarf vs Goblin │ 1         │
+│  4 │ 1     │ Elf vs Dwarf    │ 0.51      │
+│  5 │ 1     │ Elf vs Orc      │ 0.35      │
+│  6 │ 1     │ Elf vs Human    │ 0         │
+│  7 │ 1     │ Elf vs Goblin   │ 0.03      │
+│  8 │ 1     │ Goblin vs Elf   │ 0.97      │
+│  9 │ 1     │ Goblin vs Dwarf │ 0         │
+│ 10 │ 1     │ Goblin vs Orc   │ 0.42      │
+│ 11 │ 1     │ Goblin vs Human │ 0         │
+│ 12 │ 1     │ Human vs Elf    │ 1         │
+│ 13 │ 1     │ Human vs Dwarf  │ 0.64      │
+│ 14 │ 1     │ Human vs Orc    │ 0.15      │
+│ 15 │ 1     │ Human vs Goblin │ 1         │
+│ 16 │ 1     │ Orc vs Elf      │ 0.65      │
+│ 17 │ 1     │ Orc vs Dwarf    │ 0.475     │
+│ 18 │ 1     │ Orc vs Human    │ 0.85      │
+│ 19 │ 1     │ Orc vs Goblin   │ 0.58      │
+│ 20 │ 2     │ Dwarf vs Elf    │ 0.13      │
+│ 21 │ 2     │ Dwarf vs Orc    │ 0.775     │
+│ 22 │ 2     │ Dwarf vs Human  │ 1         │
+│ 23 │ 2     │ Dwarf vs Goblin │ 1         │
+│ 24 │ 2     │ Elf vs Dwarf    │ 0.87      │
+│ 25 │ 2     │ Elf vs Orc      │ 0.56      │
+│ 26 │ 2     │ Elf vs Human    │ 0.64      │
+│ 27 │ 2     │ Elf vs Goblin   │ 0.06      │
+│ 28 │ 2     │ Goblin vs Elf   │ 0.94      │
+│ 29 │ 2     │ Goblin vs Dwarf │ 0         │
+│ 30 │ 2     │ Goblin vs Orc   │ 0.34      │
+│ 31 │ 2     │ Goblin vs Human │ 0         │
+│ 32 │ 2     │ Human vs Elf    │ 0.36      │
+│ 33 │ 2     │ Human vs Dwarf  │ 0         │
+│ 34 │ 2     │ Human vs Orc    │ 0.01      │
+│ 35 │ 2     │ Human vs Goblin │ 1         │
+│ 36 │ 2     │ Orc vs Elf      │ 0.44      │
+│ 37 │ 2     │ Orc vs Dwarf    │ 0.225     │
+│ 38 │ 2     │ Orc vs Human    │ 0.99      │
+│ 39 │ 2     │ Orc vs Goblin   │ 0.66      │
+│ 40 │ 4     │ Dwarf vs Elf    │ 0.02      │
+│ 41 │ 4     │ Dwarf vs Orc    │ 0.97      │
+│ 42 │ 4     │ Dwarf vs Human  │ 1         │
+│ 43 │ 4     │ Dwarf vs Goblin │ 1         │
+│ 44 │ 4     │ Elf vs Dwarf    │ 0.98      │
+│ 45 │ 4     │ Elf vs Orc      │ 0.87      │
+│ 46 │ 4     │ Elf vs Human    │ 0.76      │
+│ 47 │ 4     │ Elf vs Goblin   │ 0.44      │
+│ 48 │ 4     │ Goblin vs Elf   │ 0.56      │
+│ 49 │ 4     │ Goblin vs Dwarf │ 0         │
+│ 50 │ 4     │ Goblin vs Orc   │ 0.22      │
+│ 51 │ 4     │ Goblin vs Human │ 0         │
+│ 52 │ 4     │ Human vs Elf    │ 0.24      │
+│ 53 │ 4     │ Human vs Dwarf  │ 0         │
+│ 54 │ 4     │ Human vs Orc    │ 0.04      │
+│ 55 │ 4     │ Human vs Goblin │ 1         │
+│ 56 │ 4     │ Orc vs Elf      │ 0.13      │
+│ 57 │ 4     │ Orc vs Dwarf    │ 0.03      │
+│ 58 │ 4     │ Orc vs Human    │ 0.96      │
+│ 59 │ 4     │ Orc vs Goblin   │ 0.78      │
+└────┴───────┴─────────────────┴───────────┘
+
+Model: ACDGHJLMN dominanceSpread=0.402
+┌───┬────────┬──────────────┬──────────────┬──────────────┐
+│   │ race   │ avgPointRate │ minPointRate │ maxPointRate │
+├───┼────────┼──────────────┼──────────────┼──────────────┤
+│ 0 │ Dwarf  │ 0.689        │ 0.02         │ 1            │
+│ 1 │ Orc    │ 0.564        │ 0.03         │ 0.99         │
+│ 2 │ Elf    │ 0.506        │ 0            │ 0.98         │
+│ 3 │ Human  │ 0.453        │ 0            │ 1            │
+│ 4 │ Goblin │ 0.288        │ 0            │ 0.97         │
+└───┴────────┴──────────────┴──────────────┴──────────────┘
+┌────┬───────┬─────────────────┬───────────┐
+│    │ level │ matchup         │ pointRate │
+├────┼───────┼─────────────────┼───────────┤
+│  0 │ 1     │ Dwarf vs Elf    │ 0.49      │
+│  1 │ 1     │ Dwarf vs Orc    │ 0.525     │
+│  2 │ 1     │ Dwarf vs Human  │ 0.36      │
+│  3 │ 1     │ Dwarf vs Goblin │ 1         │
+│  4 │ 1     │ Elf vs Dwarf    │ 0.51      │
+│  5 │ 1     │ Elf vs Orc      │ 0.35      │
+│  6 │ 1     │ Elf vs Human    │ 0         │
+│  7 │ 1     │ Elf vs Goblin   │ 0.03      │
+│  8 │ 1     │ Goblin vs Elf   │ 0.97      │
+│  9 │ 1     │ Goblin vs Dwarf │ 0         │
+│ 10 │ 1     │ Goblin vs Orc   │ 0.42      │
+│ 11 │ 1     │ Goblin vs Human │ 0         │
+│ 12 │ 1     │ Human vs Elf    │ 1         │
+│ 13 │ 1     │ Human vs Dwarf  │ 0.64      │
+│ 14 │ 1     │ Human vs Orc    │ 0.15      │
+│ 15 │ 1     │ Human vs Goblin │ 1         │
+│ 16 │ 1     │ Orc vs Elf      │ 0.65      │
+│ 17 │ 1     │ Orc vs Dwarf    │ 0.475     │
+│ 18 │ 1     │ Orc vs Human    │ 0.85      │
+│ 19 │ 1     │ Orc vs Goblin   │ 0.58      │
+│ 20 │ 2     │ Dwarf vs Elf    │ 0.13      │
+│ 21 │ 2     │ Dwarf vs Orc    │ 0.775     │
+│ 22 │ 2     │ Dwarf vs Human  │ 1         │
+│ 23 │ 2     │ Dwarf vs Goblin │ 1         │
+│ 24 │ 2     │ Elf vs Dwarf    │ 0.87      │
+│ 25 │ 2     │ Elf vs Orc      │ 0.56      │
+│ 26 │ 2     │ Elf vs Human    │ 0.64      │
+│ 27 │ 2     │ Elf vs Goblin   │ 0.06      │
+│ 28 │ 2     │ Goblin vs Elf   │ 0.94      │
+│ 29 │ 2     │ Goblin vs Dwarf │ 0         │
+│ 30 │ 2     │ Goblin vs Orc   │ 0.34      │
+│ 31 │ 2     │ Goblin vs Human │ 0         │
+│ 32 │ 2     │ Human vs Elf    │ 0.36      │
+│ 33 │ 2     │ Human vs Dwarf  │ 0         │
+│ 34 │ 2     │ Human vs Orc    │ 0.01      │
+│ 35 │ 2     │ Human vs Goblin │ 1         │
+│ 36 │ 2     │ Orc vs Elf      │ 0.44      │
+│ 37 │ 2     │ Orc vs Dwarf    │ 0.225     │
+│ 38 │ 2     │ Orc vs Human    │ 0.99      │
+│ 39 │ 2     │ Orc vs Goblin   │ 0.66      │
+│ 40 │ 4     │ Dwarf vs Elf    │ 0.02      │
+│ 41 │ 4     │ Dwarf vs Orc    │ 0.97      │
+│ 42 │ 4     │ Dwarf vs Human  │ 1         │
+│ 43 │ 4     │ Dwarf vs Goblin │ 1         │
+│ 44 │ 4     │ Elf vs Dwarf    │ 0.98      │
+│ 45 │ 4     │ Elf vs Orc      │ 0.87      │
+│ 46 │ 4     │ Elf vs Human    │ 0.76      │
+│ 47 │ 4     │ Elf vs Goblin   │ 0.44      │
+│ 48 │ 4     │ Goblin vs Elf   │ 0.56      │
+│ 49 │ 4     │ Goblin vs Dwarf │ 0         │
+│ 50 │ 4     │ Goblin vs Orc   │ 0.22      │
+│ 51 │ 4     │ Goblin vs Human │ 0         │
+│ 52 │ 4     │ Human vs Elf    │ 0.24      │
+│ 53 │ 4     │ Human vs Dwarf  │ 0         │
+│ 54 │ 4     │ Human vs Orc    │ 0.04      │
+│ 55 │ 4     │ Human vs Goblin │ 1         │
+│ 56 │ 4     │ Orc vs Elf      │ 0.13      │
+│ 57 │ 4     │ Orc vs Dwarf    │ 0.03      │
+│ 58 │ 4     │ Orc vs Human    │ 0.96      │
+│ 59 │ 4     │ Orc vs Goblin   │ 0.78      │
+└────┴───────┴─────────────────┴───────────┘
+
+Model: BCDGHJKMN dominanceSpread=0.407
+┌───┬────────┬──────────────┬──────────────┬──────────────┐
+│   │ race   │ avgPointRate │ minPointRate │ maxPointRate │
+├───┼────────┼──────────────┼──────────────┼──────────────┤
+│ 0 │ Dwarf  │ 0.688        │ 0.02         │ 1            │
+│ 1 │ Orc    │ 0.573        │ 0.03         │ 0.99         │
+│ 2 │ Elf    │ 0.503        │ 0            │ 0.98         │
+│ 3 │ Human  │ 0.456        │ 0            │ 1            │
+│ 4 │ Goblin │ 0.281        │ 0            │ 0.96         │
+└───┴────────┴──────────────┴──────────────┴──────────────┘
+┌────┬───────┬─────────────────┬───────────┐
+│    │ level │ matchup         │ pointRate │
+├────┼───────┼─────────────────┼───────────┤
+│  0 │ 1     │ Dwarf vs Elf    │ 0.49      │
+│  1 │ 1     │ Dwarf vs Orc    │ 0.525     │
+│  2 │ 1     │ Dwarf vs Human  │ 0.36      │
+│  3 │ 1     │ Dwarf vs Goblin │ 1         │
+│  4 │ 1     │ Elf vs Dwarf    │ 0.51      │
+│  5 │ 1     │ Elf vs Orc      │ 0.35      │
+│  6 │ 1     │ Elf vs Human    │ 0         │
+│  7 │ 1     │ Elf vs Goblin   │ 0.04      │
+│  8 │ 1     │ Goblin vs Elf   │ 0.96      │
+│  9 │ 1     │ Goblin vs Dwarf │ 0         │
+│ 10 │ 1     │ Goblin vs Orc   │ 0.35      │
+│ 11 │ 1     │ Goblin vs Human │ 0         │
+│ 12 │ 1     │ Human vs Elf    │ 1         │
+│ 13 │ 1     │ Human vs Dwarf  │ 0.64      │
+│ 14 │ 1     │ Human vs Orc    │ 0.15      │
+│ 15 │ 1     │ Human vs Goblin │ 1         │
+│ 16 │ 1     │ Orc vs Elf      │ 0.65      │
+│ 17 │ 1     │ Orc vs Dwarf    │ 0.475     │
+│ 18 │ 1     │ Orc vs Human    │ 0.85      │
+│ 19 │ 1     │ Orc vs Goblin   │ 0.65      │
+│ 20 │ 2     │ Dwarf vs Elf    │ 0.13      │
+│ 21 │ 2     │ Dwarf vs Orc    │ 0.775     │
+│ 22 │ 2     │ Dwarf vs Human  │ 1         │
+│ 23 │ 2     │ Dwarf vs Goblin │ 1         │
+│ 24 │ 2     │ Elf vs Dwarf    │ 0.87      │
+│ 25 │ 2     │ Elf vs Orc      │ 0.56      │
+│ 26 │ 2     │ Elf vs Human    │ 0.64      │
+│ 27 │ 2     │ Elf vs Goblin   │ 0.06      │
+│ 28 │ 2     │ Goblin vs Elf   │ 0.94      │
+│ 29 │ 2     │ Goblin vs Dwarf │ 0         │
+│ 30 │ 2     │ Goblin vs Orc   │ 0.34      │
+│ 31 │ 2     │ Goblin vs Human │ 0         │
+│ 32 │ 2     │ Human vs Elf    │ 0.36      │
+│ 33 │ 2     │ Human vs Dwarf  │ 0         │
+│ 34 │ 2     │ Human vs Orc    │ 0.01      │
+│ 35 │ 2     │ Human vs Goblin │ 1         │
+│ 36 │ 2     │ Orc vs Elf      │ 0.44      │
+│ 37 │ 2     │ Orc vs Dwarf    │ 0.225     │
+│ 38 │ 2     │ Orc vs Human    │ 0.99      │
+│ 39 │ 2     │ Orc vs Goblin   │ 0.66      │
+│ 40 │ 4     │ Dwarf vs Elf    │ 0.02      │
+│ 41 │ 4     │ Dwarf vs Orc    │ 0.97      │
+│ 42 │ 4     │ Dwarf vs Human  │ 0.99      │
+│ 43 │ 4     │ Dwarf vs Goblin │ 1         │
+│ 44 │ 4     │ Elf vs Dwarf    │ 0.98      │
+│ 45 │ 4     │ Elf vs Orc      │ 0.87      │
+│ 46 │ 4     │ Elf vs Human    │ 0.71      │
+│ 47 │ 4     │ Elf vs Goblin   │ 0.44      │
+│ 48 │ 4     │ Goblin vs Elf   │ 0.56      │
+│ 49 │ 4     │ Goblin vs Dwarf │ 0         │
+│ 50 │ 4     │ Goblin vs Orc   │ 0.22      │
+│ 51 │ 4     │ Goblin vs Human │ 0         │
+│ 52 │ 4     │ Human vs Elf    │ 0.29      │
+│ 53 │ 4     │ Human vs Dwarf  │ 0.01      │
+│ 54 │ 4     │ Human vs Orc    │ 0.01      │
+│ 55 │ 4     │ Human vs Goblin │ 1         │
+│ 56 │ 4     │ Orc vs Elf      │ 0.13      │
+│ 57 │ 4     │ Orc vs Dwarf    │ 0.03      │
+│ 58 │ 4     │ Orc vs Human    │ 0.99      │
+│ 59 │ 4     │ Orc vs Goblin   │ 0.78      │
+└────┴───────┴─────────────────┴───────────┘
+
+Model: BCDGHJLMN dominanceSpread=0.407
+┌───┬────────┬──────────────┬──────────────┬──────────────┐
+│   │ race   │ avgPointRate │ minPointRate │ maxPointRate │
+├───┼────────┼──────────────┼──────────────┼──────────────┤
+│ 0 │ Dwarf  │ 0.688        │ 0.02         │ 1            │
+│ 1 │ Orc    │ 0.573        │ 0.03         │ 0.99         │
+│ 2 │ Elf    │ 0.503        │ 0            │ 0.98         │
+│ 3 │ Human  │ 0.456        │ 0            │ 1            │
+│ 4 │ Goblin │ 0.281        │ 0            │ 0.96         │
+└───┴────────┴──────────────┴──────────────┴──────────────┘
+┌────┬───────┬─────────────────┬───────────┐
+│    │ level │ matchup         │ pointRate │
+├────┼───────┼─────────────────┼───────────┤
+│  0 │ 1     │ Dwarf vs Elf    │ 0.49      │
+│  1 │ 1     │ Dwarf vs Orc    │ 0.525     │
+│  2 │ 1     │ Dwarf vs Human  │ 0.36      │
+│  3 │ 1     │ Dwarf vs Goblin │ 1         │
+│  4 │ 1     │ Elf vs Dwarf    │ 0.51      │
+│  5 │ 1     │ Elf vs Orc      │ 0.35      │
+│  6 │ 1     │ Elf vs Human    │ 0         │
+│  7 │ 1     │ Elf vs Goblin   │ 0.04      │
+│  8 │ 1     │ Goblin vs Elf   │ 0.96      │
+│  9 │ 1     │ Goblin vs Dwarf │ 0         │
+│ 10 │ 1     │ Goblin vs Orc   │ 0.35      │
+│ 11 │ 1     │ Goblin vs Human │ 0         │
+│ 12 │ 1     │ Human vs Elf    │ 1         │
+│ 13 │ 1     │ Human vs Dwarf  │ 0.64      │
+│ 14 │ 1     │ Human vs Orc    │ 0.15      │
+│ 15 │ 1     │ Human vs Goblin │ 1         │
+│ 16 │ 1     │ Orc vs Elf      │ 0.65      │
+│ 17 │ 1     │ Orc vs Dwarf    │ 0.475     │
+│ 18 │ 1     │ Orc vs Human    │ 0.85      │
+│ 19 │ 1     │ Orc vs Goblin   │ 0.65      │
+│ 20 │ 2     │ Dwarf vs Elf    │ 0.13      │
+│ 21 │ 2     │ Dwarf vs Orc    │ 0.775     │
+│ 22 │ 2     │ Dwarf vs Human  │ 1         │
+│ 23 │ 2     │ Dwarf vs Goblin │ 1         │
+│ 24 │ 2     │ Elf vs Dwarf    │ 0.87      │
+│ 25 │ 2     │ Elf vs Orc      │ 0.56      │
+│ 26 │ 2     │ Elf vs Human    │ 0.64      │
+│ 27 │ 2     │ Elf vs Goblin   │ 0.06      │
+│ 28 │ 2     │ Goblin vs Elf   │ 0.94      │
+│ 29 │ 2     │ Goblin vs Dwarf │ 0         │
+│ 30 │ 2     │ Goblin vs Orc   │ 0.34      │
+│ 31 │ 2     │ Goblin vs Human │ 0         │
+│ 32 │ 2     │ Human vs Elf    │ 0.36      │
+│ 33 │ 2     │ Human vs Dwarf  │ 0         │
+│ 34 │ 2     │ Human vs Orc    │ 0.01      │
+│ 35 │ 2     │ Human vs Goblin │ 1         │
+│ 36 │ 2     │ Orc vs Elf      │ 0.44      │
+│ 37 │ 2     │ Orc vs Dwarf    │ 0.225     │
+│ 38 │ 2     │ Orc vs Human    │ 0.99      │
+│ 39 │ 2     │ Orc vs Goblin   │ 0.66      │
+│ 40 │ 4     │ Dwarf vs Elf    │ 0.02      │
+│ 41 │ 4     │ Dwarf vs Orc    │ 0.97      │
+│ 42 │ 4     │ Dwarf vs Human  │ 0.99      │
+│ 43 │ 4     │ Dwarf vs Goblin │ 1         │
+│ 44 │ 4     │ Elf vs Dwarf    │ 0.98      │
+│ 45 │ 4     │ Elf vs Orc      │ 0.87      │
+│ 46 │ 4     │ Elf vs Human    │ 0.71      │
+│ 47 │ 4     │ Elf vs Goblin   │ 0.44      │
+│ 48 │ 4     │ Goblin vs Elf   │ 0.56      │
+│ 49 │ 4     │ Goblin vs Dwarf │ 0         │
+│ 50 │ 4     │ Goblin vs Orc   │ 0.22      │
+│ 51 │ 4     │ Goblin vs Human │ 0         │
+│ 52 │ 4     │ Human vs Elf    │ 0.29      │
+│ 53 │ 4     │ Human vs Dwarf  │ 0.01      │
+│ 54 │ 4     │ Human vs Orc    │ 0.01      │
+│ 55 │ 4     │ Human vs Goblin │ 1         │
+│ 56 │ 4     │ Orc vs Elf      │ 0.13      │
+│ 57 │ 4     │ Orc vs Dwarf    │ 0.03      │
+│ 58 │ 4     │ Orc vs Human    │ 0.99      │
+│ 59 │ 4     │ Orc vs Goblin   │ 0.78      │
+└────┴───────┴─────────────────┴───────────┘
+
+Model: BCEFHIKMN dominanceSpread=0.433
+┌───┬────────┬──────────────┬──────────────┬──────────────┐
+│   │ race   │ avgPointRate │ minPointRate │ maxPointRate │
+├───┼────────┼──────────────┼──────────────┼──────────────┤
+│ 0 │ Dwarf  │ 0.705        │ 0.08         │ 1            │
+│ 1 │ Orc    │ 0.572        │ 0.01         │ 1            │
+│ 2 │ Human  │ 0.496        │ 0            │ 1            │
+│ 3 │ Elf    │ 0.454        │ 0            │ 0.92         │
+│ 4 │ Goblin │ 0.273        │ 0            │ 1            │
+└───┴────────┴──────────────┴──────────────┴──────────────┘
+┌────┬───────┬─────────────────┬───────────┐
+│    │ level │ matchup         │ pointRate │
+├────┼───────┼─────────────────┼───────────┤
+│  0 │ 1     │ Dwarf vs Elf    │ 0.21      │
+│  1 │ 1     │ Dwarf vs Orc    │ 0.915     │
+│  2 │ 1     │ Dwarf vs Human  │ 0.49      │
+│  3 │ 1     │ Dwarf vs Goblin │ 0.9       │
+│  4 │ 1     │ Elf vs Dwarf    │ 0.79      │
+│  5 │ 1     │ Elf vs Orc      │ 0.5       │
+│  6 │ 1     │ Elf vs Human    │ 0         │
+│  7 │ 1     │ Elf vs Goblin   │ 0         │
+│  8 │ 1     │ Goblin vs Elf   │ 1         │
+│  9 │ 1     │ Goblin vs Dwarf │ 0.1       │
+│ 10 │ 1     │ Goblin vs Orc   │ 0.5       │
+│ 11 │ 1     │ Goblin vs Human │ 0         │
+│ 12 │ 1     │ Human vs Elf    │ 1         │
+│ 13 │ 1     │ Human vs Dwarf  │ 0.51      │
+│ 14 │ 1     │ Human vs Orc    │ 0.14      │
+│ 15 │ 1     │ Human vs Goblin │ 1         │
+│ 16 │ 1     │ Orc vs Elf      │ 0.5       │
+│ 17 │ 1     │ Orc vs Dwarf    │ 0.085     │
+│ 18 │ 1     │ Orc vs Human    │ 0.86      │
+│ 19 │ 1     │ Orc vs Goblin   │ 0.5       │
+│ 20 │ 2     │ Dwarf vs Elf    │ 0.08      │
+│ 21 │ 2     │ Dwarf vs Orc    │ 0.865     │
+│ 22 │ 2     │ Dwarf vs Human  │ 0.995     │
+│ 23 │ 2     │ Dwarf vs Goblin │ 0.875     │
+│ 24 │ 2     │ Elf vs Dwarf    │ 0.92      │
+│ 25 │ 2     │ Elf vs Orc      │ 0.51      │
+│ 26 │ 2     │ Elf vs Human    │ 0.55      │
+│ 27 │ 2     │ Elf vs Goblin   │ 0.02      │
+│ 28 │ 2     │ Goblin vs Elf   │ 0.98      │
+│ 29 │ 2     │ Goblin vs Dwarf │ 0.125     │
+│ 30 │ 2     │ Goblin vs Orc   │ 0.2       │
+│ 31 │ 2     │ Goblin vs Human │ 0         │
+│ 32 │ 2     │ Human vs Elf    │ 0.45      │
+│ 33 │ 2     │ Human vs Dwarf  │ 0.005     │
+│ 34 │ 2     │ Human vs Orc    │ 0         │
+│ 35 │ 2     │ Human vs Goblin │ 1         │
+│ 36 │ 2     │ Orc vs Elf      │ 0.49      │
+│ 37 │ 2     │ Orc vs Dwarf    │ 0.135     │
+│ 38 │ 2     │ Orc vs Human    │ 1         │
+│ 39 │ 2     │ Orc vs Goblin   │ 0.8       │
+│ 40 │ 4     │ Dwarf vs Elf    │ 0.16      │
+│ 41 │ 4     │ Dwarf vs Orc    │ 0.99      │
+│ 42 │ 4     │ Dwarf vs Human  │ 0.985     │
+│ 43 │ 4     │ Dwarf vs Goblin │ 1         │
+│ 44 │ 4     │ Elf vs Dwarf    │ 0.84      │
+│ 45 │ 4     │ Elf vs Orc      │ 0.51      │
+│ 46 │ 4     │ Elf vs Human    │ 0.165     │
+│ 47 │ 4     │ Elf vs Goblin   │ 0.64      │
+│ 48 │ 4     │ Goblin vs Elf   │ 0.36      │
+│ 49 │ 4     │ Goblin vs Dwarf │ 0         │
+│ 50 │ 4     │ Goblin vs Orc   │ 0.005     │
+│ 51 │ 4     │ Goblin vs Human │ 0         │
+│ 52 │ 4     │ Human vs Elf    │ 0.835     │
+│ 53 │ 4     │ Human vs Dwarf  │ 0.015     │
+│ 54 │ 4     │ Human vs Orc    │ 0         │
+│ 55 │ 4     │ Human vs Goblin │ 1         │
+│ 56 │ 4     │ Orc vs Elf      │ 0.49      │
+│ 57 │ 4     │ Orc vs Dwarf    │ 0.01      │
+│ 58 │ 4     │ Orc vs Human    │ 1         │
+│ 59 │ 4     │ Orc vs Goblin   │ 0.995     │
+└────┴───────┴─────────────────┴───────────┘
+
+Model: BCEFHILMN dominanceSpread=0.433
+┌───┬────────┬──────────────┬──────────────┬──────────────┐
+│   │ race   │ avgPointRate │ minPointRate │ maxPointRate │
+├───┼────────┼──────────────┼──────────────┼──────────────┤
+│ 0 │ Dwarf  │ 0.705        │ 0.08         │ 1            │
+│ 1 │ Orc    │ 0.572        │ 0.01         │ 1            │
+│ 2 │ Human  │ 0.496        │ 0            │ 1            │
+│ 3 │ Elf    │ 0.454        │ 0            │ 0.92         │
+│ 4 │ Goblin │ 0.273        │ 0            │ 1            │
+└───┴────────┴──────────────┴──────────────┴──────────────┘
+┌────┬───────┬─────────────────┬───────────┐
+│    │ level │ matchup         │ pointRate │
+├────┼───────┼─────────────────┼───────────┤
+│  0 │ 1     │ Dwarf vs Elf    │ 0.21      │
+│  1 │ 1     │ Dwarf vs Orc    │ 0.915     │
+│  2 │ 1     │ Dwarf vs Human  │ 0.49      │
+│  3 │ 1     │ Dwarf vs Goblin │ 0.9       │
+│  4 │ 1     │ Elf vs Dwarf    │ 0.79      │
+│  5 │ 1     │ Elf vs Orc      │ 0.5       │
+│  6 │ 1     │ Elf vs Human    │ 0         │
+│  7 │ 1     │ Elf vs Goblin   │ 0         │
+│  8 │ 1     │ Goblin vs Elf   │ 1         │
+│  9 │ 1     │ Goblin vs Dwarf │ 0.1       │
+│ 10 │ 1     │ Goblin vs Orc   │ 0.5       │
+│ 11 │ 1     │ Goblin vs Human │ 0         │
+│ 12 │ 1     │ Human vs Elf    │ 1         │
+│ 13 │ 1     │ Human vs Dwarf  │ 0.51      │
+│ 14 │ 1     │ Human vs Orc    │ 0.14      │
+│ 15 │ 1     │ Human vs Goblin │ 1         │
+│ 16 │ 1     │ Orc vs Elf      │ 0.5       │
+│ 17 │ 1     │ Orc vs Dwarf    │ 0.085     │
+│ 18 │ 1     │ Orc vs Human    │ 0.86      │
+│ 19 │ 1     │ Orc vs Goblin   │ 0.5       │
+│ 20 │ 2     │ Dwarf vs Elf    │ 0.08      │
+│ 21 │ 2     │ Dwarf vs Orc    │ 0.865     │
+│ 22 │ 2     │ Dwarf vs Human  │ 0.995     │
+│ 23 │ 2     │ Dwarf vs Goblin │ 0.875     │
+│ 24 │ 2     │ Elf vs Dwarf    │ 0.92      │
+│ 25 │ 2     │ Elf vs Orc      │ 0.51      │
+│ 26 │ 2     │ Elf vs Human    │ 0.55      │
+│ 27 │ 2     │ Elf vs Goblin   │ 0.02      │
+│ 28 │ 2     │ Goblin vs Elf   │ 0.98      │
+│ 29 │ 2     │ Goblin vs Dwarf │ 0.125     │
+│ 30 │ 2     │ Goblin vs Orc   │ 0.2       │
+│ 31 │ 2     │ Goblin vs Human │ 0         │
+│ 32 │ 2     │ Human vs Elf    │ 0.45      │
+│ 33 │ 2     │ Human vs Dwarf  │ 0.005     │
+│ 34 │ 2     │ Human vs Orc    │ 0         │
+│ 35 │ 2     │ Human vs Goblin │ 1         │
+│ 36 │ 2     │ Orc vs Elf      │ 0.49      │
+│ 37 │ 2     │ Orc vs Dwarf    │ 0.135     │
+│ 38 │ 2     │ Orc vs Human    │ 1         │
+│ 39 │ 2     │ Orc vs Goblin   │ 0.8       │
+│ 40 │ 4     │ Dwarf vs Elf    │ 0.16      │
+│ 41 │ 4     │ Dwarf vs Orc    │ 0.99      │
+│ 42 │ 4     │ Dwarf vs Human  │ 0.985     │
+│ 43 │ 4     │ Dwarf vs Goblin │ 1         │
+│ 44 │ 4     │ Elf vs Dwarf    │ 0.84      │
+│ 45 │ 4     │ Elf vs Orc      │ 0.51      │
+│ 46 │ 4     │ Elf vs Human    │ 0.165     │
+│ 47 │ 4     │ Elf vs Goblin   │ 0.64      │
+│ 48 │ 4     │ Goblin vs Elf   │ 0.36      │
+│ 49 │ 4     │ Goblin vs Dwarf │ 0         │
+│ 50 │ 4     │ Goblin vs Orc   │ 0.005     │
+│ 51 │ 4     │ Goblin vs Human │ 0         │
+│ 52 │ 4     │ Human vs Elf    │ 0.835     │
+│ 53 │ 4     │ Human vs Dwarf  │ 0.015     │
+│ 54 │ 4     │ Human vs Orc    │ 0         │
+│ 55 │ 4     │ Human vs Goblin │ 1         │
+│ 56 │ 4     │ Orc vs Elf      │ 0.49      │
+│ 57 │ 4     │ Orc vs Dwarf    │ 0.01      │
+│ 58 │ 4     │ Orc vs Human    │ 1         │
+│ 59 │ 4     │ Orc vs Goblin   │ 0.995     │
+└────┴───────┴─────────────────┴───────────┘
+
+Model: ACEFHIKMN dominanceSpread=0.439
+┌───┬────────┬──────────────┬──────────────┬──────────────┐
+│   │ race   │ avgPointRate │ minPointRate │ maxPointRate │
+├───┼────────┼──────────────┼──────────────┼──────────────┤
+│ 0 │ Dwarf  │ 0.708        │ 0.08         │ 1            │
+│ 1 │ Orc    │ 0.573        │ 0.01         │ 1            │
+│ 2 │ Human  │ 0.497        │ 0            │ 1            │
+│ 3 │ Elf    │ 0.453        │ 0            │ 0.92         │
+│ 4 │ Goblin │ 0.269        │ 0            │ 0.98         │
+└───┴────────┴──────────────┴──────────────┴──────────────┘
+┌────┬───────┬─────────────────┬───────────┐
+│    │ level │ matchup         │ pointRate │
+├────┼───────┼─────────────────┼───────────┤
+│  0 │ 1     │ Dwarf vs Elf    │ 0.21      │
+│  1 │ 1     │ Dwarf vs Orc    │ 0.915     │
+│  2 │ 1     │ Dwarf vs Human  │ 0.49      │
+│  3 │ 1     │ Dwarf vs Goblin │ 0.915     │
+│  4 │ 1     │ Elf vs Dwarf    │ 0.79      │
+│  5 │ 1     │ Elf vs Orc      │ 0.5       │
+│  6 │ 1     │ Elf vs Human    │ 0         │
+│  7 │ 1     │ Elf vs Goblin   │ 0.02      │
+│  8 │ 1     │ Goblin vs Elf   │ 0.98      │
+│  9 │ 1     │ Goblin vs Dwarf │ 0.085     │
+│ 10 │ 1     │ Goblin vs Orc   │ 0.49      │
+│ 11 │ 1     │ Goblin vs Human │ 0         │
+│ 12 │ 1     │ Human vs Elf    │ 1         │
+│ 13 │ 1     │ Human vs Dwarf  │ 0.51      │
+│ 14 │ 1     │ Human vs Orc    │ 0.14      │
+│ 15 │ 1     │ Human vs Goblin │ 1         │
+│ 16 │ 1     │ Orc vs Elf      │ 0.5       │
+│ 17 │ 1     │ Orc vs Dwarf    │ 0.085     │
+│ 18 │ 1     │ Orc vs Human    │ 0.86      │
+│ 19 │ 1     │ Orc vs Goblin   │ 0.51      │
+│ 20 │ 2     │ Dwarf vs Elf    │ 0.08      │
+│ 21 │ 2     │ Dwarf vs Orc    │ 0.865     │
+│ 22 │ 2     │ Dwarf vs Human  │ 0.995     │
+│ 23 │ 2     │ Dwarf vs Goblin │ 0.875     │
+│ 24 │ 2     │ Elf vs Dwarf    │ 0.92      │
+│ 25 │ 2     │ Elf vs Orc      │ 0.51      │
+│ 26 │ 2     │ Elf vs Human    │ 0.55      │
+│ 27 │ 2     │ Elf vs Goblin   │ 0.02      │
+│ 28 │ 2     │ Goblin vs Elf   │ 0.98      │
+│ 29 │ 2     │ Goblin vs Dwarf │ 0.125     │
+│ 30 │ 2     │ Goblin vs Orc   │ 0.2       │
+│ 31 │ 2     │ Goblin vs Human │ 0         │
+│ 32 │ 2     │ Human vs Elf    │ 0.45      │
+│ 33 │ 2     │ Human vs Dwarf  │ 0.005     │
+│ 34 │ 2     │ Human vs Orc    │ 0         │
+│ 35 │ 2     │ Human vs Goblin │ 1         │
+│ 36 │ 2     │ Orc vs Elf      │ 0.49      │
+│ 37 │ 2     │ Orc vs Dwarf    │ 0.135     │
+│ 38 │ 2     │ Orc vs Human    │ 1         │
+│ 39 │ 2     │ Orc vs Goblin   │ 0.8       │
+│ 40 │ 4     │ Dwarf vs Elf    │ 0.16      │
+│ 41 │ 4     │ Dwarf vs Orc    │ 0.99      │
+│ 42 │ 4     │ Dwarf vs Human  │ 1         │
+│ 43 │ 4     │ Dwarf vs Goblin │ 1         │
+│ 44 │ 4     │ Elf vs Dwarf    │ 0.84      │
+│ 45 │ 4     │ Elf vs Orc      │ 0.51      │
+│ 46 │ 4     │ Elf vs Human    │ 0.135     │
+│ 47 │ 4     │ Elf vs Goblin   │ 0.64      │
+│ 48 │ 4     │ Goblin vs Elf   │ 0.36      │
+│ 49 │ 4     │ Goblin vs Dwarf │ 0         │
+│ 50 │ 4     │ Goblin vs Orc   │ 0.005     │
+│ 51 │ 4     │ Goblin vs Human │ 0         │
+│ 52 │ 4     │ Human vs Elf    │ 0.865     │
+│ 53 │ 4     │ Human vs Dwarf  │ 0         │
+│ 54 │ 4     │ Human vs Orc    │ 0         │
+│ 55 │ 4     │ Human vs Goblin │ 1         │
+│ 56 │ 4     │ Orc vs Elf      │ 0.49      │
+│ 57 │ 4     │ Orc vs Dwarf    │ 0.01      │
+│ 58 │ 4     │ Orc vs Human    │ 1         │
+│ 59 │ 4     │ Orc vs Goblin   │ 0.995     │
+└────┴───────┴─────────────────┴───────────┘
+
+Model: ACEFHILMN dominanceSpread=0.439
+┌───┬────────┬──────────────┬──────────────┬──────────────┐
+│   │ race   │ avgPointRate │ minPointRate │ maxPointRate │
+├───┼────────┼──────────────┼──────────────┼──────────────┤
+│ 0 │ Dwarf  │ 0.708        │ 0.08         │ 1            │
+│ 1 │ Orc    │ 0.573        │ 0.01         │ 1            │
+│ 2 │ Human  │ 0.497        │ 0            │ 1            │
+│ 3 │ Elf    │ 0.453        │ 0            │ 0.92         │
+│ 4 │ Goblin │ 0.269        │ 0            │ 0.98         │
+└───┴────────┴──────────────┴──────────────┴──────────────┘
+┌────┬───────┬─────────────────┬───────────┐
+│    │ level │ matchup         │ pointRate │
+├────┼───────┼─────────────────┼───────────┤
+│  0 │ 1     │ Dwarf vs Elf    │ 0.21      │
+│  1 │ 1     │ Dwarf vs Orc    │ 0.915     │
+│  2 │ 1     │ Dwarf vs Human  │ 0.49      │
+│  3 │ 1     │ Dwarf vs Goblin │ 0.915     │
+│  4 │ 1     │ Elf vs Dwarf    │ 0.79      │
+│  5 │ 1     │ Elf vs Orc      │ 0.5       │
+│  6 │ 1     │ Elf vs Human    │ 0         │
+│  7 │ 1     │ Elf vs Goblin   │ 0.02      │
+│  8 │ 1     │ Goblin vs Elf   │ 0.98      │
+│  9 │ 1     │ Goblin vs Dwarf │ 0.085     │
+│ 10 │ 1     │ Goblin vs Orc   │ 0.49      │
+│ 11 │ 1     │ Goblin vs Human │ 0         │
+│ 12 │ 1     │ Human vs Elf    │ 1         │
+│ 13 │ 1     │ Human vs Dwarf  │ 0.51      │
+│ 14 │ 1     │ Human vs Orc    │ 0.14      │
+│ 15 │ 1     │ Human vs Goblin │ 1         │
+│ 16 │ 1     │ Orc vs Elf      │ 0.5       │
+│ 17 │ 1     │ Orc vs Dwarf    │ 0.085     │
+│ 18 │ 1     │ Orc vs Human    │ 0.86      │
+│ 19 │ 1     │ Orc vs Goblin   │ 0.51      │
+│ 20 │ 2     │ Dwarf vs Elf    │ 0.08      │
+│ 21 │ 2     │ Dwarf vs Orc    │ 0.865     │
+│ 22 │ 2     │ Dwarf vs Human  │ 0.995     │
+│ 23 │ 2     │ Dwarf vs Goblin │ 0.875     │
+│ 24 │ 2     │ Elf vs Dwarf    │ 0.92      │
+│ 25 │ 2     │ Elf vs Orc      │ 0.51      │
+│ 26 │ 2     │ Elf vs Human    │ 0.55      │
+│ 27 │ 2     │ Elf vs Goblin   │ 0.02      │
+│ 28 │ 2     │ Goblin vs Elf   │ 0.98      │
+│ 29 │ 2     │ Goblin vs Dwarf │ 0.125     │
+│ 30 │ 2     │ Goblin vs Orc   │ 0.2       │
+│ 31 │ 2     │ Goblin vs Human │ 0         │
+│ 32 │ 2     │ Human vs Elf    │ 0.45      │
+│ 33 │ 2     │ Human vs Dwarf  │ 0.005     │
+│ 34 │ 2     │ Human vs Orc    │ 0         │
+│ 35 │ 2     │ Human vs Goblin │ 1         │
+│ 36 │ 2     │ Orc vs Elf      │ 0.49      │
+│ 37 │ 2     │ Orc vs Dwarf    │ 0.135     │
+│ 38 │ 2     │ Orc vs Human    │ 1         │
+│ 39 │ 2     │ Orc vs Goblin   │ 0.8       │
+│ 40 │ 4     │ Dwarf vs Elf    │ 0.16      │
+│ 41 │ 4     │ Dwarf vs Orc    │ 0.99      │
+│ 42 │ 4     │ Dwarf vs Human  │ 1         │
+│ 43 │ 4     │ Dwarf vs Goblin │ 1         │
+│ 44 │ 4     │ Elf vs Dwarf    │ 0.84      │
+│ 45 │ 4     │ Elf vs Orc      │ 0.51      │
+│ 46 │ 4     │ Elf vs Human    │ 0.135     │
+│ 47 │ 4     │ Elf vs Goblin   │ 0.64      │
+│ 48 │ 4     │ Goblin vs Elf   │ 0.36      │
+│ 49 │ 4     │ Goblin vs Dwarf │ 0         │
+│ 50 │ 4     │ Goblin vs Orc   │ 0.005     │
+│ 51 │ 4     │ Goblin vs Human │ 0         │
+│ 52 │ 4     │ Human vs Elf    │ 0.865     │
+│ 53 │ 4     │ Human vs Dwarf  │ 0         │
+│ 54 │ 4     │ Human vs Orc    │ 0         │
+│ 55 │ 4     │ Human vs Goblin │ 1         │
+│ 56 │ 4     │ Orc vs Elf      │ 0.49      │
+│ 57 │ 4     │ Orc vs Dwarf    │ 0.01      │
+│ 58 │ 4     │ Orc vs Human    │ 1         │
+│ 59 │ 4     │ Orc vs Goblin   │ 0.995     │
+└────┴───────┴─────────────────┴───────────┘
+
+Model: BCEFHJKMN dominanceSpread=0.452
+┌───┬────────┬──────────────┬──────────────┬──────────────┐
+│   │ race   │ avgPointRate │ minPointRate │ maxPointRate │
+├───┼────────┼──────────────┼──────────────┼──────────────┤
+│ 0 │ Dwarf  │ 0.724        │ 0.08         │ 1            │
+│ 1 │ Orc    │ 0.572        │ 0.01         │ 1            │
+│ 2 │ Human  │ 0.497        │ 0            │ 1            │
+│ 3 │ Elf    │ 0.435        │ 0            │ 0.92         │
+│ 4 │ Goblin │ 0.273        │ 0            │ 1            │
+└───┴────────┴──────────────┴──────────────┴──────────────┘
+┌────┬───────┬─────────────────┬───────────┐
+│    │ level │ matchup         │ pointRate │
+├────┼───────┼─────────────────┼───────────┤
+│  0 │ 1     │ Dwarf vs Elf    │ 0.47      │
+│  1 │ 1     │ Dwarf vs Orc    │ 0.885     │
+│  2 │ 1     │ Dwarf vs Human  │ 0.49      │
+│  3 │ 1     │ Dwarf vs Goblin │ 0.9       │
+│  4 │ 1     │ Elf vs Dwarf    │ 0.53      │
+│  5 │ 1     │ Elf vs Orc      │ 0.5       │
+│  6 │ 1     │ Elf vs Human    │ 0         │
+│  7 │ 1     │ Elf vs Goblin   │ 0         │
+│  8 │ 1     │ Goblin vs Elf   │ 1         │
+│  9 │ 1     │ Goblin vs Dwarf │ 0.1       │
+│ 10 │ 1     │ Goblin vs Orc   │ 0.5       │
+│ 11 │ 1     │ Goblin vs Human │ 0         │
+│ 12 │ 1     │ Human vs Elf    │ 1         │
+│ 13 │ 1     │ Human vs Dwarf  │ 0.51      │
+│ 14 │ 1     │ Human vs Orc    │ 0.15      │
+│ 15 │ 1     │ Human vs Goblin │ 1         │
+│ 16 │ 1     │ Orc vs Elf      │ 0.5       │
+│ 17 │ 1     │ Orc vs Dwarf    │ 0.115     │
+│ 18 │ 1     │ Orc vs Human    │ 0.85      │
+│ 19 │ 1     │ Orc vs Goblin   │ 0.5       │
+│ 20 │ 2     │ Dwarf vs Elf    │ 0.08      │
+│ 21 │ 2     │ Dwarf vs Orc    │ 0.89      │
+│ 22 │ 2     │ Dwarf vs Human  │ 0.995     │
+│ 23 │ 2     │ Dwarf vs Goblin │ 0.875     │
+│ 24 │ 2     │ Elf vs Dwarf    │ 0.92      │
+│ 25 │ 2     │ Elf vs Orc      │ 0.51      │
+│ 26 │ 2     │ Elf vs Human    │ 0.55      │
+│ 27 │ 2     │ Elf vs Goblin   │ 0.02      │
+│ 28 │ 2     │ Goblin vs Elf   │ 0.98      │
+│ 29 │ 2     │ Goblin vs Dwarf │ 0.125     │
+│ 30 │ 2     │ Goblin vs Orc   │ 0.2       │
+│ 31 │ 2     │ Goblin vs Human │ 0         │
+│ 32 │ 2     │ Human vs Elf    │ 0.45      │
+│ 33 │ 2     │ Human vs Dwarf  │ 0.005     │
+│ 34 │ 2     │ Human vs Orc    │ 0         │
+│ 35 │ 2     │ Human vs Goblin │ 1         │
+│ 36 │ 2     │ Orc vs Elf      │ 0.49      │
+│ 37 │ 2     │ Orc vs Dwarf    │ 0.11      │
+│ 38 │ 2     │ Orc vs Human    │ 1         │
+│ 39 │ 2     │ Orc vs Goblin   │ 0.8       │
+│ 40 │ 4     │ Dwarf vs Elf    │ 0.13      │
+│ 41 │ 4     │ Dwarf vs Orc    │ 0.99      │
+│ 42 │ 4     │ Dwarf vs Human  │ 0.985     │
+│ 43 │ 4     │ Dwarf vs Goblin │ 1         │
+│ 44 │ 4     │ Elf vs Dwarf    │ 0.87      │
+│ 45 │ 4     │ Elf vs Orc      │ 0.51      │
+│ 46 │ 4     │ Elf vs Human    │ 0.165     │
+│ 47 │ 4     │ Elf vs Goblin   │ 0.64      │
+│ 48 │ 4     │ Goblin vs Elf   │ 0.36      │
+│ 49 │ 4     │ Goblin vs Dwarf │ 0         │
+│ 50 │ 4     │ Goblin vs Orc   │ 0.005     │
+│ 51 │ 4     │ Goblin vs Human │ 0         │
+│ 52 │ 4     │ Human vs Elf    │ 0.835     │
+│ 53 │ 4     │ Human vs Dwarf  │ 0.015     │
+│ 54 │ 4     │ Human vs Orc    │ 0         │
+│ 55 │ 4     │ Human vs Goblin │ 1         │
+│ 56 │ 4     │ Orc vs Elf      │ 0.49      │
+│ 57 │ 4     │ Orc vs Dwarf    │ 0.01      │
+│ 58 │ 4     │ Orc vs Human    │ 1         │
+│ 59 │ 4     │ Orc vs Goblin   │ 0.995     │
+└────┴───────┴─────────────────┴───────────┘
+
+Model: BCEFHJLMN dominanceSpread=0.452
+┌───┬────────┬──────────────┬──────────────┬──────────────┐
+│   │ race   │ avgPointRate │ minPointRate │ maxPointRate │
+├───┼────────┼──────────────┼──────────────┼──────────────┤
+│ 0 │ Dwarf  │ 0.724        │ 0.08         │ 1            │
+│ 1 │ Orc    │ 0.572        │ 0.01         │ 1            │
+│ 2 │ Human  │ 0.497        │ 0            │ 1            │
+│ 3 │ Elf    │ 0.435        │ 0            │ 0.92         │
+│ 4 │ Goblin │ 0.273        │ 0            │ 1            │
+└───┴────────┴──────────────┴──────────────┴──────────────┘
+┌────┬───────┬─────────────────┬───────────┐
+│    │ level │ matchup         │ pointRate │
+├────┼───────┼─────────────────┼───────────┤
+│  0 │ 1     │ Dwarf vs Elf    │ 0.47      │
+│  1 │ 1     │ Dwarf vs Orc    │ 0.885     │
+│  2 │ 1     │ Dwarf vs Human  │ 0.49      │
+│  3 │ 1     │ Dwarf vs Goblin │ 0.9       │
+│  4 │ 1     │ Elf vs Dwarf    │ 0.53      │
+│  5 │ 1     │ Elf vs Orc      │ 0.5       │
+│  6 │ 1     │ Elf vs Human    │ 0         │
+│  7 │ 1     │ Elf vs Goblin   │ 0         │
+│  8 │ 1     │ Goblin vs Elf   │ 1         │
+│  9 │ 1     │ Goblin vs Dwarf │ 0.1       │
+│ 10 │ 1     │ Goblin vs Orc   │ 0.5       │
+│ 11 │ 1     │ Goblin vs Human │ 0         │
+│ 12 │ 1     │ Human vs Elf    │ 1         │
+│ 13 │ 1     │ Human vs Dwarf  │ 0.51      │
+│ 14 │ 1     │ Human vs Orc    │ 0.15      │
+│ 15 │ 1     │ Human vs Goblin │ 1         │
+│ 16 │ 1     │ Orc vs Elf      │ 0.5       │
+│ 17 │ 1     │ Orc vs Dwarf    │ 0.115     │
+│ 18 │ 1     │ Orc vs Human    │ 0.85      │
+│ 19 │ 1     │ Orc vs Goblin   │ 0.5       │
+│ 20 │ 2     │ Dwarf vs Elf    │ 0.08      │
+│ 21 │ 2     │ Dwarf vs Orc    │ 0.89      │
+│ 22 │ 2     │ Dwarf vs Human  │ 0.995     │
+│ 23 │ 2     │ Dwarf vs Goblin │ 0.875     │
+│ 24 │ 2     │ Elf vs Dwarf    │ 0.92      │
+│ 25 │ 2     │ Elf vs Orc      │ 0.51      │
+│ 26 │ 2     │ Elf vs Human    │ 0.55      │
+│ 27 │ 2     │ Elf vs Goblin   │ 0.02      │
+│ 28 │ 2     │ Goblin vs Elf   │ 0.98      │
+│ 29 │ 2     │ Goblin vs Dwarf │ 0.125     │
+│ 30 │ 2     │ Goblin vs Orc   │ 0.2       │
+│ 31 │ 2     │ Goblin vs Human │ 0         │
+│ 32 │ 2     │ Human vs Elf    │ 0.45      │
+│ 33 │ 2     │ Human vs Dwarf  │ 0.005     │
+│ 34 │ 2     │ Human vs Orc    │ 0         │
+│ 35 │ 2     │ Human vs Goblin │ 1         │
+│ 36 │ 2     │ Orc vs Elf      │ 0.49      │
+│ 37 │ 2     │ Orc vs Dwarf    │ 0.11      │
+│ 38 │ 2     │ Orc vs Human    │ 1         │
+│ 39 │ 2     │ Orc vs Goblin   │ 0.8       │
+│ 40 │ 4     │ Dwarf vs Elf    │ 0.13      │
+│ 41 │ 4     │ Dwarf vs Orc    │ 0.99      │
+│ 42 │ 4     │ Dwarf vs Human  │ 0.985     │
+│ 43 │ 4     │ Dwarf vs Goblin │ 1         │
+│ 44 │ 4     │ Elf vs Dwarf    │ 0.87      │
+│ 45 │ 4     │ Elf vs Orc      │ 0.51      │
+│ 46 │ 4     │ Elf vs Human    │ 0.165     │
+│ 47 │ 4     │ Elf vs Goblin   │ 0.64      │
+│ 48 │ 4     │ Goblin vs Elf   │ 0.36      │
+│ 49 │ 4     │ Goblin vs Dwarf │ 0         │
+│ 50 │ 4     │ Goblin vs Orc   │ 0.005     │
+│ 51 │ 4     │ Goblin vs Human │ 0         │
+│ 52 │ 4     │ Human vs Elf    │ 0.835     │
+│ 53 │ 4     │ Human vs Dwarf  │ 0.015     │
+│ 54 │ 4     │ Human vs Orc    │ 0         │
+│ 55 │ 4     │ Human vs Goblin │ 1         │
+│ 56 │ 4     │ Orc vs Elf      │ 0.49      │
+│ 57 │ 4     │ Orc vs Dwarf    │ 0.01      │
+│ 58 │ 4     │ Orc vs Human    │ 1         │
+│ 59 │ 4     │ Orc vs Goblin   │ 0.995     │
+└────┴───────┴─────────────────┴───────────┘
+
+Model: ACEFHJKMN dominanceSpread=0.458
+┌───┬────────┬──────────────┬──────────────┬──────────────┐
+│   │ race   │ avgPointRate │ minPointRate │ maxPointRate │
+├───┼────────┼──────────────┼──────────────┼──────────────┤
+│ 0 │ Dwarf  │ 0.727        │ 0.08         │ 1            │
+│ 1 │ Orc    │ 0.573        │ 0.01         │ 1            │
+│ 2 │ Human  │ 0.498        │ 0            │ 1            │
+│ 3 │ Elf    │ 0.434        │ 0            │ 0.92         │
+│ 4 │ Goblin │ 0.269        │ 0            │ 0.98         │
+└───┴────────┴──────────────┴──────────────┴──────────────┘
+┌────┬───────┬─────────────────┬───────────┐
+│    │ level │ matchup         │ pointRate │
+├────┼───────┼─────────────────┼───────────┤
+│  0 │ 1     │ Dwarf vs Elf    │ 0.47      │
+│  1 │ 1     │ Dwarf vs Orc    │ 0.885     │
+│  2 │ 1     │ Dwarf vs Human  │ 0.49      │
+│  3 │ 1     │ Dwarf vs Goblin │ 0.915     │
+│  4 │ 1     │ Elf vs Dwarf    │ 0.53      │
+│  5 │ 1     │ Elf vs Orc      │ 0.5       │
+│  6 │ 1     │ Elf vs Human    │ 0         │
+│  7 │ 1     │ Elf vs Goblin   │ 0.02      │
+│  8 │ 1     │ Goblin vs Elf   │ 0.98      │
+│  9 │ 1     │ Goblin vs Dwarf │ 0.085     │
+│ 10 │ 1     │ Goblin vs Orc   │ 0.49      │
+│ 11 │ 1     │ Goblin vs Human │ 0         │
+│ 12 │ 1     │ Human vs Elf    │ 1         │
+│ 13 │ 1     │ Human vs Dwarf  │ 0.51      │
+│ 14 │ 1     │ Human vs Orc    │ 0.15      │
+│ 15 │ 1     │ Human vs Goblin │ 1         │
+│ 16 │ 1     │ Orc vs Elf      │ 0.5       │
+│ 17 │ 1     │ Orc vs Dwarf    │ 0.115     │
+│ 18 │ 1     │ Orc vs Human    │ 0.85      │
+│ 19 │ 1     │ Orc vs Goblin   │ 0.51      │
+│ 20 │ 2     │ Dwarf vs Elf    │ 0.08      │
+│ 21 │ 2     │ Dwarf vs Orc    │ 0.89      │
+│ 22 │ 2     │ Dwarf vs Human  │ 0.995     │
+│ 23 │ 2     │ Dwarf vs Goblin │ 0.875     │
+│ 24 │ 2     │ Elf vs Dwarf    │ 0.92      │
+│ 25 │ 2     │ Elf vs Orc      │ 0.51      │
+│ 26 │ 2     │ Elf vs Human    │ 0.55      │
+│ 27 │ 2     │ Elf vs Goblin   │ 0.02      │
+│ 28 │ 2     │ Goblin vs Elf   │ 0.98      │
+│ 29 │ 2     │ Goblin vs Dwarf │ 0.125     │
+│ 30 │ 2     │ Goblin vs Orc   │ 0.2       │
+│ 31 │ 2     │ Goblin vs Human │ 0         │
+│ 32 │ 2     │ Human vs Elf    │ 0.45      │
+│ 33 │ 2     │ Human vs Dwarf  │ 0.005     │
+│ 34 │ 2     │ Human vs Orc    │ 0         │
+│ 35 │ 2     │ Human vs Goblin │ 1         │
+│ 36 │ 2     │ Orc vs Elf      │ 0.49      │
+│ 37 │ 2     │ Orc vs Dwarf    │ 0.11      │
+│ 38 │ 2     │ Orc vs Human    │ 1         │
+│ 39 │ 2     │ Orc vs Goblin   │ 0.8       │
+│ 40 │ 4     │ Dwarf vs Elf    │ 0.13      │
+│ 41 │ 4     │ Dwarf vs Orc    │ 0.99      │
+│ 42 │ 4     │ Dwarf vs Human  │ 1         │
+│ 43 │ 4     │ Dwarf vs Goblin │ 1         │
+│ 44 │ 4     │ Elf vs Dwarf    │ 0.87      │
+│ 45 │ 4     │ Elf vs Orc      │ 0.51      │
+│ 46 │ 4     │ Elf vs Human    │ 0.135     │
+│ 47 │ 4     │ Elf vs Goblin   │ 0.64      │
+│ 48 │ 4     │ Goblin vs Elf   │ 0.36      │
+│ 49 │ 4     │ Goblin vs Dwarf │ 0         │
+│ 50 │ 4     │ Goblin vs Orc   │ 0.005     │
+│ 51 │ 4     │ Goblin vs Human │ 0         │
+│ 52 │ 4     │ Human vs Elf    │ 0.865     │
+│ 53 │ 4     │ Human vs Dwarf  │ 0         │
+│ 54 │ 4     │ Human vs Orc    │ 0         │
+│ 55 │ 4     │ Human vs Goblin │ 1         │
+│ 56 │ 4     │ Orc vs Elf      │ 0.49      │
+│ 57 │ 4     │ Orc vs Dwarf    │ 0.01      │
+│ 58 │ 4     │ Orc vs Human    │ 1         │
+│ 59 │ 4     │ Orc vs Goblin   │ 0.995     │
+└────┴───────┴─────────────────┴───────────┘
+
+Model: ACEFHJLMN dominanceSpread=0.458
+┌───┬────────┬──────────────┬──────────────┬──────────────┐
+│   │ race   │ avgPointRate │ minPointRate │ maxPointRate │
+├───┼────────┼──────────────┼──────────────┼──────────────┤
+│ 0 │ Dwarf  │ 0.727        │ 0.08         │ 1            │
+│ 1 │ Orc    │ 0.573        │ 0.01         │ 1            │
+│ 2 │ Human  │ 0.498        │ 0            │ 1            │
+│ 3 │ Elf    │ 0.434        │ 0            │ 0.92         │
+│ 4 │ Goblin │ 0.269        │ 0            │ 0.98         │
+└───┴────────┴──────────────┴──────────────┴──────────────┘
+┌────┬───────┬─────────────────┬───────────┐
+│    │ level │ matchup         │ pointRate │
+├────┼───────┼─────────────────┼───────────┤
+│  0 │ 1     │ Dwarf vs Elf    │ 0.47      │
+│  1 │ 1     │ Dwarf vs Orc    │ 0.885     │
+│  2 │ 1     │ Dwarf vs Human  │ 0.49      │
+│  3 │ 1     │ Dwarf vs Goblin │ 0.915     │
+│  4 │ 1     │ Elf vs Dwarf    │ 0.53      │
+│  5 │ 1     │ Elf vs Orc      │ 0.5       │
+│  6 │ 1     │ Elf vs Human    │ 0         │
+│  7 │ 1     │ Elf vs Goblin   │ 0.02      │
+│  8 │ 1     │ Goblin vs Elf   │ 0.98      │
+│  9 │ 1     │ Goblin vs Dwarf │ 0.085     │
+│ 10 │ 1     │ Goblin vs Orc   │ 0.49      │
+│ 11 │ 1     │ Goblin vs Human │ 0         │
+│ 12 │ 1     │ Human vs Elf    │ 1         │
+│ 13 │ 1     │ Human vs Dwarf  │ 0.51      │
+│ 14 │ 1     │ Human vs Orc    │ 0.15      │
+│ 15 │ 1     │ Human vs Goblin │ 1         │
+│ 16 │ 1     │ Orc vs Elf      │ 0.5       │
+│ 17 │ 1     │ Orc vs Dwarf    │ 0.115     │
+│ 18 │ 1     │ Orc vs Human    │ 0.85      │
+│ 19 │ 1     │ Orc vs Goblin   │ 0.51      │
+│ 20 │ 2     │ Dwarf vs Elf    │ 0.08      │
+│ 21 │ 2     │ Dwarf vs Orc    │ 0.89      │
+│ 22 │ 2     │ Dwarf vs Human  │ 0.995     │
+│ 23 │ 2     │ Dwarf vs Goblin │ 0.875     │
+│ 24 │ 2     │ Elf vs Dwarf    │ 0.92      │
+│ 25 │ 2     │ Elf vs Orc      │ 0.51      │
+│ 26 │ 2     │ Elf vs Human    │ 0.55      │
+│ 27 │ 2     │ Elf vs Goblin   │ 0.02      │
+│ 28 │ 2     │ Goblin vs Elf   │ 0.98      │
+│ 29 │ 2     │ Goblin vs Dwarf │ 0.125     │
+│ 30 │ 2     │ Goblin vs Orc   │ 0.2       │
+│ 31 │ 2     │ Goblin vs Human │ 0         │
+│ 32 │ 2     │ Human vs Elf    │ 0.45      │
+│ 33 │ 2     │ Human vs Dwarf  │ 0.005     │
+│ 34 │ 2     │ Human vs Orc    │ 0         │
+│ 35 │ 2     │ Human vs Goblin │ 1         │
+│ 36 │ 2     │ Orc vs Elf      │ 0.49      │
+│ 37 │ 2     │ Orc vs Dwarf    │ 0.11      │
+│ 38 │ 2     │ Orc vs Human    │ 1         │
+│ 39 │ 2     │ Orc vs Goblin   │ 0.8       │
+│ 40 │ 4     │ Dwarf vs Elf    │ 0.13      │
+│ 41 │ 4     │ Dwarf vs Orc    │ 0.99      │
+│ 42 │ 4     │ Dwarf vs Human  │ 1         │
+│ 43 │ 4     │ Dwarf vs Goblin │ 1         │
+│ 44 │ 4     │ Elf vs Dwarf    │ 0.87      │
+│ 45 │ 4     │ Elf vs Orc      │ 0.51      │
+│ 46 │ 4     │ Elf vs Human    │ 0.135     │
+│ 47 │ 4     │ Elf vs Goblin   │ 0.64      │
+│ 48 │ 4     │ Goblin vs Elf   │ 0.36      │
+│ 49 │ 4     │ Goblin vs Dwarf │ 0         │
+│ 50 │ 4     │ Goblin vs Orc   │ 0.005     │
+│ 51 │ 4     │ Goblin vs Human │ 0         │
+│ 52 │ 4     │ Human vs Elf    │ 0.865     │
+│ 53 │ 4     │ Human vs Dwarf  │ 0         │
+│ 54 │ 4     │ Human vs Orc    │ 0         │
+│ 55 │ 4     │ Human vs Goblin │ 1         │
+│ 56 │ 4     │ Orc vs Elf      │ 0.49      │
+│ 57 │ 4     │ Orc vs Dwarf    │ 0.01      │
+│ 58 │ 4     │ Orc vs Human    │ 1         │
+│ 59 │ 4     │ Orc vs Goblin   │ 0.995     │
+└────┴───────┴─────────────────┴───────────┘
+
+Model: BCDFHIKMN dominanceSpread=0.503
+┌───┬────────┬──────────────┬──────────────┬──────────────┐
+│   │ race   │ avgPointRate │ minPointRate │ maxPointRate │
+├───┼────────┼──────────────┼──────────────┼──────────────┤
+│ 0 │ Dwarf  │ 0.744        │ 0.08         │ 1            │
+│ 1 │ Orc    │ 0.606        │ 0            │ 1            │
+│ 2 │ Elf    │ 0.463        │ 0            │ 0.92         │
+│ 3 │ Human  │ 0.447        │ 0            │ 1            │
+│ 4 │ Goblin │ 0.241        │ 0            │ 0.98         │
+└───┴────────┴──────────────┴──────────────┴──────────────┘
+┌────┬───────┬─────────────────┬───────────┐
+│    │ level │ matchup         │ pointRate │
+├────┼───────┼─────────────────┼───────────┤
+│  0 │ 1     │ Dwarf vs Elf    │ 0.48      │
+│  1 │ 1     │ Dwarf vs Orc    │ 0.825     │
+│  2 │ 1     │ Dwarf vs Human  │ 0.535     │
+│  3 │ 1     │ Dwarf vs Goblin │ 0.99      │
+│  4 │ 1     │ Elf vs Dwarf    │ 0.52      │
+│  5 │ 1     │ Elf vs Orc      │ 0.21      │
+│  6 │ 1     │ Elf vs Human    │ 0         │
+│  7 │ 1     │ Elf vs Goblin   │ 0.02      │
+│  8 │ 1     │ Goblin vs Elf   │ 0.98      │
+│  9 │ 1     │ Goblin vs Dwarf │ 0.01      │
+│ 10 │ 1     │ Goblin vs Orc   │ 0.22      │
+│ 11 │ 1     │ Goblin vs Human │ 0         │
+│ 12 │ 1     │ Human vs Elf    │ 1         │
+│ 13 │ 1     │ Human vs Dwarf  │ 0.465     │
+│ 14 │ 1     │ Human vs Orc    │ 0.04      │
+│ 15 │ 1     │ Human vs Goblin │ 1         │
+│ 16 │ 1     │ Orc vs Elf      │ 0.79      │
+│ 17 │ 1     │ Orc vs Dwarf    │ 0.175     │
+│ 18 │ 1     │ Orc vs Human    │ 0.96      │
+│ 19 │ 1     │ Orc vs Goblin   │ 0.78      │
+│ 20 │ 2     │ Dwarf vs Elf    │ 0.2       │
+│ 21 │ 2     │ Dwarf vs Orc    │ 0.855     │
+│ 22 │ 2     │ Dwarf vs Human  │ 1         │
+│ 23 │ 2     │ Dwarf vs Goblin │ 0.965     │
+│ 24 │ 2     │ Elf vs Dwarf    │ 0.8       │
+│ 25 │ 2     │ Elf vs Orc      │ 0.46      │
+│ 26 │ 2     │ Elf vs Human    │ 0.66      │
+│ 27 │ 2     │ Elf vs Goblin   │ 0.03      │
+│ 28 │ 2     │ Goblin vs Elf   │ 0.97      │
+│ 29 │ 2     │ Goblin vs Dwarf │ 0.035     │
+│ 30 │ 2     │ Goblin vs Orc   │ 0.17      │
+│ 31 │ 2     │ Goblin vs Human │ 0         │
+│ 32 │ 2     │ Human vs Elf    │ 0.34      │
+│ 33 │ 2     │ Human vs Dwarf  │ 0         │
+│ 34 │ 2     │ Human vs Orc    │ 0         │
+│ 35 │ 2     │ Human vs Goblin │ 1         │
+│ 36 │ 2     │ Orc vs Elf      │ 0.54      │
+│ 37 │ 2     │ Orc vs Dwarf    │ 0.145     │
+│ 38 │ 2     │ Orc vs Human    │ 1         │
+│ 39 │ 2     │ Orc vs Goblin   │ 0.83      │
+│ 40 │ 4     │ Dwarf vs Elf    │ 0.08      │
+│ 41 │ 4     │ Dwarf vs Orc    │ 1         │
+│ 42 │ 4     │ Dwarf vs Human  │ 1         │
+│ 43 │ 4     │ Dwarf vs Goblin │ 0.995     │
+│ 44 │ 4     │ Elf vs Dwarf    │ 0.92      │
+│ 45 │ 4     │ Elf vs Orc      │ 0.85      │
+│ 46 │ 4     │ Elf vs Human    │ 0.485     │
+│ 47 │ 4     │ Elf vs Goblin   │ 0.6       │
+│ 48 │ 4     │ Goblin vs Elf   │ 0.4       │
+│ 49 │ 4     │ Goblin vs Dwarf │ 0.005     │
+│ 50 │ 4     │ Goblin vs Orc   │ 0.1       │
+│ 51 │ 4     │ Goblin vs Human │ 0         │
+│ 52 │ 4     │ Human vs Elf    │ 0.515     │
+│ 53 │ 4     │ Human vs Dwarf  │ 0         │
+│ 54 │ 4     │ Human vs Orc    │ 0         │
+│ 55 │ 4     │ Human vs Goblin │ 1         │
+│ 56 │ 4     │ Orc vs Elf      │ 0.15      │
+│ 57 │ 4     │ Orc vs Dwarf    │ 0         │
+│ 58 │ 4     │ Orc vs Human    │ 1         │
+│ 59 │ 4     │ Orc vs Goblin   │ 0.9       │
+└────┴───────┴─────────────────┴───────────┘
+
+Model: BCDFHILMN dominanceSpread=0.503
+┌───┬────────┬──────────────┬──────────────┬──────────────┐
+│   │ race   │ avgPointRate │ minPointRate │ maxPointRate │
+├───┼────────┼──────────────┼──────────────┼──────────────┤
+│ 0 │ Dwarf  │ 0.744        │ 0.08         │ 1            │
+│ 1 │ Orc    │ 0.606        │ 0            │ 1            │
+│ 2 │ Elf    │ 0.463        │ 0            │ 0.92         │
+│ 3 │ Human  │ 0.447        │ 0            │ 1            │
+│ 4 │ Goblin │ 0.241        │ 0            │ 0.98         │
+└───┴────────┴──────────────┴──────────────┴──────────────┘
+┌────┬───────┬─────────────────┬───────────┐
+│    │ level │ matchup         │ pointRate │
+├────┼───────┼─────────────────┼───────────┤
+│  0 │ 1     │ Dwarf vs Elf    │ 0.48      │
+│  1 │ 1     │ Dwarf vs Orc    │ 0.825     │
+│  2 │ 1     │ Dwarf vs Human  │ 0.535     │
+│  3 │ 1     │ Dwarf vs Goblin │ 0.99      │
+│  4 │ 1     │ Elf vs Dwarf    │ 0.52      │
+│  5 │ 1     │ Elf vs Orc      │ 0.21      │
+│  6 │ 1     │ Elf vs Human    │ 0         │
+│  7 │ 1     │ Elf vs Goblin   │ 0.02      │
+│  8 │ 1     │ Goblin vs Elf   │ 0.98      │
+│  9 │ 1     │ Goblin vs Dwarf │ 0.01      │
+│ 10 │ 1     │ Goblin vs Orc   │ 0.22      │
+│ 11 │ 1     │ Goblin vs Human │ 0         │
+│ 12 │ 1     │ Human vs Elf    │ 1         │
+│ 13 │ 1     │ Human vs Dwarf  │ 0.465     │
+│ 14 │ 1     │ Human vs Orc    │ 0.04      │
+│ 15 │ 1     │ Human vs Goblin │ 1         │
+│ 16 │ 1     │ Orc vs Elf      │ 0.79      │
+│ 17 │ 1     │ Orc vs Dwarf    │ 0.175     │
+│ 18 │ 1     │ Orc vs Human    │ 0.96      │
+│ 19 │ 1     │ Orc vs Goblin   │ 0.78      │
+│ 20 │ 2     │ Dwarf vs Elf    │ 0.2       │
+│ 21 │ 2     │ Dwarf vs Orc    │ 0.855     │
+│ 22 │ 2     │ Dwarf vs Human  │ 1         │
+│ 23 │ 2     │ Dwarf vs Goblin │ 0.965     │
+│ 24 │ 2     │ Elf vs Dwarf    │ 0.8       │
+│ 25 │ 2     │ Elf vs Orc      │ 0.46      │
+│ 26 │ 2     │ Elf vs Human    │ 0.66      │
+│ 27 │ 2     │ Elf vs Goblin   │ 0.03      │
+│ 28 │ 2     │ Goblin vs Elf   │ 0.97      │
+│ 29 │ 2     │ Goblin vs Dwarf │ 0.035     │
+│ 30 │ 2     │ Goblin vs Orc   │ 0.17      │
+│ 31 │ 2     │ Goblin vs Human │ 0         │
+│ 32 │ 2     │ Human vs Elf    │ 0.34      │
+│ 33 │ 2     │ Human vs Dwarf  │ 0         │
+│ 34 │ 2     │ Human vs Orc    │ 0         │
+│ 35 │ 2     │ Human vs Goblin │ 1         │
+│ 36 │ 2     │ Orc vs Elf      │ 0.54      │
+│ 37 │ 2     │ Orc vs Dwarf    │ 0.145     │
+│ 38 │ 2     │ Orc vs Human    │ 1         │
+│ 39 │ 2     │ Orc vs Goblin   │ 0.83      │
+│ 40 │ 4     │ Dwarf vs Elf    │ 0.08      │
+│ 41 │ 4     │ Dwarf vs Orc    │ 1         │
+│ 42 │ 4     │ Dwarf vs Human  │ 1         │
+│ 43 │ 4     │ Dwarf vs Goblin │ 0.995     │
+│ 44 │ 4     │ Elf vs Dwarf    │ 0.92      │
+│ 45 │ 4     │ Elf vs Orc      │ 0.85      │
+│ 46 │ 4     │ Elf vs Human    │ 0.485     │
+│ 47 │ 4     │ Elf vs Goblin   │ 0.6       │
+│ 48 │ 4     │ Goblin vs Elf   │ 0.4       │
+│ 49 │ 4     │ Goblin vs Dwarf │ 0.005     │
+│ 50 │ 4     │ Goblin vs Orc   │ 0.1       │
+│ 51 │ 4     │ Goblin vs Human │ 0         │
+│ 52 │ 4     │ Human vs Elf    │ 0.515     │
+│ 53 │ 4     │ Human vs Dwarf  │ 0         │
+│ 54 │ 4     │ Human vs Orc    │ 0         │
+│ 55 │ 4     │ Human vs Goblin │ 1         │
+│ 56 │ 4     │ Orc vs Elf      │ 0.15      │
+│ 57 │ 4     │ Orc vs Dwarf    │ 0         │
+│ 58 │ 4     │ Orc vs Human    │ 1         │
+│ 59 │ 4     │ Orc vs Goblin   │ 0.9       │
+└────┴───────┴─────────────────┴───────────┘
+
+Model: ACDFHIKMN dominanceSpread=0.504
+┌───┬────────┬──────────────┬──────────────┬──────────────┐
+│   │ race   │ avgPointRate │ minPointRate │ maxPointRate │
+├───┼────────┼──────────────┼──────────────┼──────────────┤
+│ 0 │ Dwarf  │ 0.745        │ 0.08         │ 1            │
+│ 1 │ Orc    │ 0.605        │ 0            │ 1            │
+│ 2 │ Elf    │ 0.457        │ 0            │ 0.92         │
+│ 3 │ Human  │ 0.453        │ 0            │ 1            │
+│ 4 │ Goblin │ 0.241        │ 0            │ 0.98         │
+└───┴────────┴──────────────┴──────────────┴──────────────┘
+┌────┬───────┬─────────────────┬───────────┐
+│    │ level │ matchup         │ pointRate │
+├────┼───────┼─────────────────┼───────────┤
+│  0 │ 1     │ Dwarf vs Elf    │ 0.48      │
+│  1 │ 1     │ Dwarf vs Orc    │ 0.825     │
+│  2 │ 1     │ Dwarf vs Human  │ 0.535     │
+│  3 │ 1     │ Dwarf vs Goblin │ 1         │
+│  4 │ 1     │ Elf vs Dwarf    │ 0.52      │
+│  5 │ 1     │ Elf vs Orc      │ 0.21      │
+│  6 │ 1     │ Elf vs Human    │ 0         │
+│  7 │ 1     │ Elf vs Goblin   │ 0.02      │
+│  8 │ 1     │ Goblin vs Elf   │ 0.98      │
+│  9 │ 1     │ Goblin vs Dwarf │ 0         │
+│ 10 │ 1     │ Goblin vs Orc   │ 0.23      │
+│ 11 │ 1     │ Goblin vs Human │ 0         │
+│ 12 │ 1     │ Human vs Elf    │ 1         │
+│ 13 │ 1     │ Human vs Dwarf  │ 0.465     │
+│ 14 │ 1     │ Human vs Orc    │ 0.04      │
+│ 15 │ 1     │ Human vs Goblin │ 1         │
+│ 16 │ 1     │ Orc vs Elf      │ 0.79      │
+│ 17 │ 1     │ Orc vs Dwarf    │ 0.175     │
+│ 18 │ 1     │ Orc vs Human    │ 0.96      │
+│ 19 │ 1     │ Orc vs Goblin   │ 0.77      │
+│ 20 │ 2     │ Dwarf vs Elf    │ 0.2       │
+│ 21 │ 2     │ Dwarf vs Orc    │ 0.855     │
+│ 22 │ 2     │ Dwarf vs Human  │ 1         │
+│ 23 │ 2     │ Dwarf vs Goblin │ 0.965     │
+│ 24 │ 2     │ Elf vs Dwarf    │ 0.8       │
+│ 25 │ 2     │ Elf vs Orc      │ 0.46      │
+│ 26 │ 2     │ Elf vs Human    │ 0.66      │
+│ 27 │ 2     │ Elf vs Goblin   │ 0.03      │
+│ 28 │ 2     │ Goblin vs Elf   │ 0.97      │
+│ 29 │ 2     │ Goblin vs Dwarf │ 0.035     │
+│ 30 │ 2     │ Goblin vs Orc   │ 0.17      │
+│ 31 │ 2     │ Goblin vs Human │ 0         │
+│ 32 │ 2     │ Human vs Elf    │ 0.34      │
+│ 33 │ 2     │ Human vs Dwarf  │ 0         │
+│ 34 │ 2     │ Human vs Orc    │ 0         │
+│ 35 │ 2     │ Human vs Goblin │ 1         │
+│ 36 │ 2     │ Orc vs Elf      │ 0.54      │
+│ 37 │ 2     │ Orc vs Dwarf    │ 0.145     │
+│ 38 │ 2     │ Orc vs Human    │ 1         │
+│ 39 │ 2     │ Orc vs Goblin   │ 0.83      │
+│ 40 │ 4     │ Dwarf vs Elf    │ 0.08      │
+│ 41 │ 4     │ Dwarf vs Orc    │ 1         │
+│ 42 │ 4     │ Dwarf vs Human  │ 1         │
+│ 43 │ 4     │ Dwarf vs Goblin │ 0.995     │
+│ 44 │ 4     │ Elf vs Dwarf    │ 0.92      │
+│ 45 │ 4     │ Elf vs Orc      │ 0.85      │
+│ 46 │ 4     │ Elf vs Human    │ 0.41      │
+│ 47 │ 4     │ Elf vs Goblin   │ 0.6       │
+│ 48 │ 4     │ Goblin vs Elf   │ 0.4       │
+│ 49 │ 4     │ Goblin vs Dwarf │ 0.005     │
+│ 50 │ 4     │ Goblin vs Orc   │ 0.1       │
+│ 51 │ 4     │ Goblin vs Human │ 0         │
+│ 52 │ 4     │ Human vs Elf    │ 0.59      │
+│ 53 │ 4     │ Human vs Dwarf  │ 0         │
+│ 54 │ 4     │ Human vs Orc    │ 0         │
+│ 55 │ 4     │ Human vs Goblin │ 1         │
+│ 56 │ 4     │ Orc vs Elf      │ 0.15      │
+│ 57 │ 4     │ Orc vs Dwarf    │ 0         │
+│ 58 │ 4     │ Orc vs Human    │ 1         │
+│ 59 │ 4     │ Orc vs Goblin   │ 0.9       │
+└────┴───────┴─────────────────┴───────────┘
+
+Model: ACDFHILMN dominanceSpread=0.504
+┌───┬────────┬──────────────┬──────────────┬──────────────┐
+│   │ race   │ avgPointRate │ minPointRate │ maxPointRate │
+├───┼────────┼──────────────┼──────────────┼──────────────┤
+│ 0 │ Dwarf  │ 0.745        │ 0.08         │ 1            │
+│ 1 │ Orc    │ 0.605        │ 0            │ 1            │
+│ 2 │ Elf    │ 0.457        │ 0            │ 0.92         │
+│ 3 │ Human  │ 0.453        │ 0            │ 1            │
+│ 4 │ Goblin │ 0.241        │ 0            │ 0.98         │
+└───┴────────┴──────────────┴──────────────┴──────────────┘
+┌────┬───────┬─────────────────┬───────────┐
+│    │ level │ matchup         │ pointRate │
+├────┼───────┼─────────────────┼───────────┤
+│  0 │ 1     │ Dwarf vs Elf    │ 0.48      │
+│  1 │ 1     │ Dwarf vs Orc    │ 0.825     │
+│  2 │ 1     │ Dwarf vs Human  │ 0.535     │
+│  3 │ 1     │ Dwarf vs Goblin │ 1         │
+│  4 │ 1     │ Elf vs Dwarf    │ 0.52      │
+│  5 │ 1     │ Elf vs Orc      │ 0.21      │
+│  6 │ 1     │ Elf vs Human    │ 0         │
+│  7 │ 1     │ Elf vs Goblin   │ 0.02      │
+│  8 │ 1     │ Goblin vs Elf   │ 0.98      │
+│  9 │ 1     │ Goblin vs Dwarf │ 0         │
+│ 10 │ 1     │ Goblin vs Orc   │ 0.23      │
+│ 11 │ 1     │ Goblin vs Human │ 0         │
+│ 12 │ 1     │ Human vs Elf    │ 1         │
+│ 13 │ 1     │ Human vs Dwarf  │ 0.465     │
+│ 14 │ 1     │ Human vs Orc    │ 0.04      │
+│ 15 │ 1     │ Human vs Goblin │ 1         │
+│ 16 │ 1     │ Orc vs Elf      │ 0.79      │
+│ 17 │ 1     │ Orc vs Dwarf    │ 0.175     │
+│ 18 │ 1     │ Orc vs Human    │ 0.96      │
+│ 19 │ 1     │ Orc vs Goblin   │ 0.77      │
+│ 20 │ 2     │ Dwarf vs Elf    │ 0.2       │
+│ 21 │ 2     │ Dwarf vs Orc    │ 0.855     │
+│ 22 │ 2     │ Dwarf vs Human  │ 1         │
+│ 23 │ 2     │ Dwarf vs Goblin │ 0.965     │
+│ 24 │ 2     │ Elf vs Dwarf    │ 0.8       │
+│ 25 │ 2     │ Elf vs Orc      │ 0.46      │
+│ 26 │ 2     │ Elf vs Human    │ 0.66      │
+│ 27 │ 2     │ Elf vs Goblin   │ 0.03      │
+│ 28 │ 2     │ Goblin vs Elf   │ 0.97      │
+│ 29 │ 2     │ Goblin vs Dwarf │ 0.035     │
+│ 30 │ 2     │ Goblin vs Orc   │ 0.17      │
+│ 31 │ 2     │ Goblin vs Human │ 0         │
+│ 32 │ 2     │ Human vs Elf    │ 0.34      │
+│ 33 │ 2     │ Human vs Dwarf  │ 0         │
+│ 34 │ 2     │ Human vs Orc    │ 0         │
+│ 35 │ 2     │ Human vs Goblin │ 1         │
+│ 36 │ 2     │ Orc vs Elf      │ 0.54      │
+│ 37 │ 2     │ Orc vs Dwarf    │ 0.145     │
+│ 38 │ 2     │ Orc vs Human    │ 1         │
+│ 39 │ 2     │ Orc vs Goblin   │ 0.83      │
+│ 40 │ 4     │ Dwarf vs Elf    │ 0.08      │
+│ 41 │ 4     │ Dwarf vs Orc    │ 1         │
+│ 42 │ 4     │ Dwarf vs Human  │ 1         │
+│ 43 │ 4     │ Dwarf vs Goblin │ 0.995     │
+│ 44 │ 4     │ Elf vs Dwarf    │ 0.92      │
+│ 45 │ 4     │ Elf vs Orc      │ 0.85      │
+│ 46 │ 4     │ Elf vs Human    │ 0.41      │
+│ 47 │ 4     │ Elf vs Goblin   │ 0.6       │
+│ 48 │ 4     │ Goblin vs Elf   │ 0.4       │
+│ 49 │ 4     │ Goblin vs Dwarf │ 0.005     │
+│ 50 │ 4     │ Goblin vs Orc   │ 0.1       │
+│ 51 │ 4     │ Goblin vs Human │ 0         │
+│ 52 │ 4     │ Human vs Elf    │ 0.59      │
+│ 53 │ 4     │ Human vs Dwarf  │ 0         │
+│ 54 │ 4     │ Human vs Orc    │ 0         │
+│ 55 │ 4     │ Human vs Goblin │ 1         │
+│ 56 │ 4     │ Orc vs Elf      │ 0.15      │
+│ 57 │ 4     │ Orc vs Dwarf    │ 0         │
+│ 58 │ 4     │ Orc vs Human    │ 1         │
+│ 59 │ 4     │ Orc vs Goblin   │ 0.9       │
+└────┴───────┴─────────────────┴───────────┘
+
+Model: BCDFHJKMN dominanceSpread=0.521
+┌───┬────────┬──────────────┬──────────────┬──────────────┐
+│   │ race   │ avgPointRate │ minPointRate │ maxPointRate │
+├───┼────────┼──────────────┼──────────────┼──────────────┤
+│ 0 │ Dwarf  │ 0.762        │ 0.05         │ 1            │
+│ 1 │ Orc    │ 0.61         │ 0            │ 1            │
+│ 2 │ Human  │ 0.447        │ 0            │ 1            │
+│ 3 │ Elf    │ 0.44         │ 0            │ 0.95         │
+│ 4 │ Goblin │ 0.241        │ 0            │ 0.98         │
+└───┴────────┴──────────────┴──────────────┴──────────────┘
+┌────┬───────┬─────────────────┬───────────┐
+│    │ level │ matchup         │ pointRate │
+├────┼───────┼─────────────────┼───────────┤
+│  0 │ 1     │ Dwarf vs Elf    │ 0.78      │
+│  1 │ 1     │ Dwarf vs Orc    │ 0.745     │
+│  2 │ 1     │ Dwarf vs Human  │ 0.535     │
+│  3 │ 1     │ Dwarf vs Goblin │ 0.99      │
+│  4 │ 1     │ Elf vs Dwarf    │ 0.22      │
+│  5 │ 1     │ Elf vs Orc      │ 0.21      │
+│  6 │ 1     │ Elf vs Human    │ 0         │
+│  7 │ 1     │ Elf vs Goblin   │ 0.02      │
+│  8 │ 1     │ Goblin vs Elf   │ 0.98      │
+│  9 │ 1     │ Goblin vs Dwarf │ 0.01      │
+│ 10 │ 1     │ Goblin vs Orc   │ 0.22      │
+│ 11 │ 1     │ Goblin vs Human │ 0         │
+│ 12 │ 1     │ Human vs Elf    │ 1         │
+│ 13 │ 1     │ Human vs Dwarf  │ 0.465     │
+│ 14 │ 1     │ Human vs Orc    │ 0.04      │
+│ 15 │ 1     │ Human vs Goblin │ 1         │
+│ 16 │ 1     │ Orc vs Elf      │ 0.79      │
+│ 17 │ 1     │ Orc vs Dwarf    │ 0.255     │
+│ 18 │ 1     │ Orc vs Human    │ 0.96      │
+│ 19 │ 1     │ Orc vs Goblin   │ 0.78      │
+│ 20 │ 2     │ Dwarf vs Elf    │ 0.2       │
+│ 21 │ 2     │ Dwarf vs Orc    │ 0.88      │
+│ 22 │ 2     │ Dwarf vs Human  │ 1         │
+│ 23 │ 2     │ Dwarf vs Goblin │ 0.965     │
+│ 24 │ 2     │ Elf vs Dwarf    │ 0.8       │
+│ 25 │ 2     │ Elf vs Orc      │ 0.46      │
+│ 26 │ 2     │ Elf vs Human    │ 0.66      │
+│ 27 │ 2     │ Elf vs Goblin   │ 0.03      │
+│ 28 │ 2     │ Goblin vs Elf   │ 0.97      │
+│ 29 │ 2     │ Goblin vs Dwarf │ 0.035     │
+│ 30 │ 2     │ Goblin vs Orc   │ 0.17      │
+│ 31 │ 2     │ Goblin vs Human │ 0         │
+│ 32 │ 2     │ Human vs Elf    │ 0.34      │
+│ 33 │ 2     │ Human vs Dwarf  │ 0         │
+│ 34 │ 2     │ Human vs Orc    │ 0         │
+│ 35 │ 2     │ Human vs Goblin │ 1         │
+│ 36 │ 2     │ Orc vs Elf      │ 0.54      │
+│ 37 │ 2     │ Orc vs Dwarf    │ 0.12      │
+│ 38 │ 2     │ Orc vs Human    │ 1         │
+│ 39 │ 2     │ Orc vs Goblin   │ 0.83      │
+│ 40 │ 4     │ Dwarf vs Elf    │ 0.05      │
+│ 41 │ 4     │ Dwarf vs Orc    │ 1         │
+│ 42 │ 4     │ Dwarf vs Human  │ 1         │
+│ 43 │ 4     │ Dwarf vs Goblin │ 0.995     │
+│ 44 │ 4     │ Elf vs Dwarf    │ 0.95      │
+│ 45 │ 4     │ Elf vs Orc      │ 0.85      │
+│ 46 │ 4     │ Elf vs Human    │ 0.485     │
+│ 47 │ 4     │ Elf vs Goblin   │ 0.6       │
+│ 48 │ 4     │ Goblin vs Elf   │ 0.4       │
+│ 49 │ 4     │ Goblin vs Dwarf │ 0.005     │
+│ 50 │ 4     │ Goblin vs Orc   │ 0.1       │
+│ 51 │ 4     │ Goblin vs Human │ 0         │
+│ 52 │ 4     │ Human vs Elf    │ 0.515     │
+│ 53 │ 4     │ Human vs Dwarf  │ 0         │
+│ 54 │ 4     │ Human vs Orc    │ 0         │
+│ 55 │ 4     │ Human vs Goblin │ 1         │
+│ 56 │ 4     │ Orc vs Elf      │ 0.15      │
+│ 57 │ 4     │ Orc vs Dwarf    │ 0         │
+│ 58 │ 4     │ Orc vs Human    │ 1         │
+│ 59 │ 4     │ Orc vs Goblin   │ 0.9       │
+└────┴───────┴─────────────────┴───────────┘
+
+Model: BCDFHJLMN dominanceSpread=0.521
+┌───┬────────┬──────────────┬──────────────┬──────────────┐
+│   │ race   │ avgPointRate │ minPointRate │ maxPointRate │
+├───┼────────┼──────────────┼──────────────┼──────────────┤
+│ 0 │ Dwarf  │ 0.762        │ 0.05         │ 1            │
+│ 1 │ Orc    │ 0.61         │ 0            │ 1            │
+│ 2 │ Human  │ 0.447        │ 0            │ 1            │
+│ 3 │ Elf    │ 0.44         │ 0            │ 0.95         │
+│ 4 │ Goblin │ 0.241        │ 0            │ 0.98         │
+└───┴────────┴──────────────┴──────────────┴──────────────┘
+┌────┬───────┬─────────────────┬───────────┐
+│    │ level │ matchup         │ pointRate │
+├────┼───────┼─────────────────┼───────────┤
+│  0 │ 1     │ Dwarf vs Elf    │ 0.78      │
+│  1 │ 1     │ Dwarf vs Orc    │ 0.745     │
+│  2 │ 1     │ Dwarf vs Human  │ 0.535     │
+│  3 │ 1     │ Dwarf vs Goblin │ 0.99      │
+│  4 │ 1     │ Elf vs Dwarf    │ 0.22      │
+│  5 │ 1     │ Elf vs Orc      │ 0.21      │
+│  6 │ 1     │ Elf vs Human    │ 0         │
+│  7 │ 1     │ Elf vs Goblin   │ 0.02      │
+│  8 │ 1     │ Goblin vs Elf   │ 0.98      │
+│  9 │ 1     │ Goblin vs Dwarf │ 0.01      │
+│ 10 │ 1     │ Goblin vs Orc   │ 0.22      │
+│ 11 │ 1     │ Goblin vs Human │ 0         │
+│ 12 │ 1     │ Human vs Elf    │ 1         │
+│ 13 │ 1     │ Human vs Dwarf  │ 0.465     │
+│ 14 │ 1     │ Human vs Orc    │ 0.04      │
+│ 15 │ 1     │ Human vs Goblin │ 1         │
+│ 16 │ 1     │ Orc vs Elf      │ 0.79      │
+│ 17 │ 1     │ Orc vs Dwarf    │ 0.255     │
+│ 18 │ 1     │ Orc vs Human    │ 0.96      │
+│ 19 │ 1     │ Orc vs Goblin   │ 0.78      │
+│ 20 │ 2     │ Dwarf vs Elf    │ 0.2       │
+│ 21 │ 2     │ Dwarf vs Orc    │ 0.88      │
+│ 22 │ 2     │ Dwarf vs Human  │ 1         │
+│ 23 │ 2     │ Dwarf vs Goblin │ 0.965     │
+│ 24 │ 2     │ Elf vs Dwarf    │ 0.8       │
+│ 25 │ 2     │ Elf vs Orc      │ 0.46      │
+│ 26 │ 2     │ Elf vs Human    │ 0.66      │
+│ 27 │ 2     │ Elf vs Goblin   │ 0.03      │
+│ 28 │ 2     │ Goblin vs Elf   │ 0.97      │
+│ 29 │ 2     │ Goblin vs Dwarf │ 0.035     │
+│ 30 │ 2     │ Goblin vs Orc   │ 0.17      │
+│ 31 │ 2     │ Goblin vs Human │ 0         │
+│ 32 │ 2     │ Human vs Elf    │ 0.34      │
+│ 33 │ 2     │ Human vs Dwarf  │ 0         │
+│ 34 │ 2     │ Human vs Orc    │ 0         │
+│ 35 │ 2     │ Human vs Goblin │ 1         │
+│ 36 │ 2     │ Orc vs Elf      │ 0.54      │
+│ 37 │ 2     │ Orc vs Dwarf    │ 0.12      │
+│ 38 │ 2     │ Orc vs Human    │ 1         │
+│ 39 │ 2     │ Orc vs Goblin   │ 0.83      │
+│ 40 │ 4     │ Dwarf vs Elf    │ 0.05      │
+│ 41 │ 4     │ Dwarf vs Orc    │ 1         │
+│ 42 │ 4     │ Dwarf vs Human  │ 1         │
+│ 43 │ 4     │ Dwarf vs Goblin │ 0.995     │
+│ 44 │ 4     │ Elf vs Dwarf    │ 0.95      │
+│ 45 │ 4     │ Elf vs Orc      │ 0.85      │
+│ 46 │ 4     │ Elf vs Human    │ 0.485     │
+│ 47 │ 4     │ Elf vs Goblin   │ 0.6       │
+│ 48 │ 4     │ Goblin vs Elf   │ 0.4       │
+│ 49 │ 4     │ Goblin vs Dwarf │ 0.005     │
+│ 50 │ 4     │ Goblin vs Orc   │ 0.1       │
+│ 51 │ 4     │ Goblin vs Human │ 0         │
+│ 52 │ 4     │ Human vs Elf    │ 0.515     │
+│ 53 │ 4     │ Human vs Dwarf  │ 0         │
+│ 54 │ 4     │ Human vs Orc    │ 0         │
+│ 55 │ 4     │ Human vs Goblin │ 1         │
+│ 56 │ 4     │ Orc vs Elf      │ 0.15      │
+│ 57 │ 4     │ Orc vs Dwarf    │ 0         │
+│ 58 │ 4     │ Orc vs Human    │ 1         │
+│ 59 │ 4     │ Orc vs Goblin   │ 0.9       │
+└────┴───────┴─────────────────┴───────────┘
+
+Model: ACDFHJKMN dominanceSpread=0.522
+┌───┬────────┬──────────────┬──────────────┬──────────────┐
+│   │ race   │ avgPointRate │ minPointRate │ maxPointRate │
+├───┼────────┼──────────────┼──────────────┼──────────────┤
+│ 0 │ Dwarf  │ 0.762        │ 0.05         │ 1            │
+│ 1 │ Orc    │ 0.61         │ 0            │ 1            │
+│ 2 │ Human  │ 0.453        │ 0            │ 1            │
+│ 3 │ Elf    │ 0.434        │ 0            │ 0.95         │
+│ 4 │ Goblin │ 0.241        │ 0            │ 0.98         │
+└───┴────────┴──────────────┴──────────────┴──────────────┘
+┌────┬───────┬─────────────────┬───────────┐
+│    │ level │ matchup         │ pointRate │
+├────┼───────┼─────────────────┼───────────┤
+│  0 │ 1     │ Dwarf vs Elf    │ 0.78      │
+│  1 │ 1     │ Dwarf vs Orc    │ 0.745     │
+│  2 │ 1     │ Dwarf vs Human  │ 0.535     │
+│  3 │ 1     │ Dwarf vs Goblin │ 1         │
+│  4 │ 1     │ Elf vs Dwarf    │ 0.22      │
+│  5 │ 1     │ Elf vs Orc      │ 0.21      │
+│  6 │ 1     │ Elf vs Human    │ 0         │
+│  7 │ 1     │ Elf vs Goblin   │ 0.02      │
+│  8 │ 1     │ Goblin vs Elf   │ 0.98      │
+│  9 │ 1     │ Goblin vs Dwarf │ 0         │
+│ 10 │ 1     │ Goblin vs Orc   │ 0.23      │
+│ 11 │ 1     │ Goblin vs Human │ 0         │
+│ 12 │ 1     │ Human vs Elf    │ 1         │
+│ 13 │ 1     │ Human vs Dwarf  │ 0.465     │
+│ 14 │ 1     │ Human vs Orc    │ 0.04      │
+│ 15 │ 1     │ Human vs Goblin │ 1         │
+│ 16 │ 1     │ Orc vs Elf      │ 0.79      │
+│ 17 │ 1     │ Orc vs Dwarf    │ 0.255     │
+│ 18 │ 1     │ Orc vs Human    │ 0.96      │
+│ 19 │ 1     │ Orc vs Goblin   │ 0.77      │
+│ 20 │ 2     │ Dwarf vs Elf    │ 0.2       │
+│ 21 │ 2     │ Dwarf vs Orc    │ 0.88      │
+│ 22 │ 2     │ Dwarf vs Human  │ 1         │
+│ 23 │ 2     │ Dwarf vs Goblin │ 0.965     │
+│ 24 │ 2     │ Elf vs Dwarf    │ 0.8       │
+│ 25 │ 2     │ Elf vs Orc      │ 0.46      │
+│ 26 │ 2     │ Elf vs Human    │ 0.66      │
+│ 27 │ 2     │ Elf vs Goblin   │ 0.03      │
+│ 28 │ 2     │ Goblin vs Elf   │ 0.97      │
+│ 29 │ 2     │ Goblin vs Dwarf │ 0.035     │
+│ 30 │ 2     │ Goblin vs Orc   │ 0.17      │
+│ 31 │ 2     │ Goblin vs Human │ 0         │
+│ 32 │ 2     │ Human vs Elf    │ 0.34      │
+│ 33 │ 2     │ Human vs Dwarf  │ 0         │
+│ 34 │ 2     │ Human vs Orc    │ 0         │
+│ 35 │ 2     │ Human vs Goblin │ 1         │
+│ 36 │ 2     │ Orc vs Elf      │ 0.54      │
+│ 37 │ 2     │ Orc vs Dwarf    │ 0.12      │
+│ 38 │ 2     │ Orc vs Human    │ 1         │
+│ 39 │ 2     │ Orc vs Goblin   │ 0.83      │
+│ 40 │ 4     │ Dwarf vs Elf    │ 0.05      │
+│ 41 │ 4     │ Dwarf vs Orc    │ 1         │
+│ 42 │ 4     │ Dwarf vs Human  │ 1         │
+│ 43 │ 4     │ Dwarf vs Goblin │ 0.995     │
+│ 44 │ 4     │ Elf vs Dwarf    │ 0.95      │
+│ 45 │ 4     │ Elf vs Orc      │ 0.85      │
+│ 46 │ 4     │ Elf vs Human    │ 0.41      │
+│ 47 │ 4     │ Elf vs Goblin   │ 0.6       │
+│ 48 │ 4     │ Goblin vs Elf   │ 0.4       │
+│ 49 │ 4     │ Goblin vs Dwarf │ 0.005     │
+│ 50 │ 4     │ Goblin vs Orc   │ 0.1       │
+│ 51 │ 4     │ Goblin vs Human │ 0         │
+│ 52 │ 4     │ Human vs Elf    │ 0.59      │
+│ 53 │ 4     │ Human vs Dwarf  │ 0         │
+│ 54 │ 4     │ Human vs Orc    │ 0         │
+│ 55 │ 4     │ Human vs Goblin │ 1         │
+│ 56 │ 4     │ Orc vs Elf      │ 0.15      │
+│ 57 │ 4     │ Orc vs Dwarf    │ 0         │
+│ 58 │ 4     │ Orc vs Human    │ 1         │
+│ 59 │ 4     │ Orc vs Goblin   │ 0.9       │
+└────┴───────┴─────────────────┴───────────┘
+
+Model: ACDFHJLMN dominanceSpread=0.522
+┌───┬────────┬──────────────┬──────────────┬──────────────┐
+│   │ race   │ avgPointRate │ minPointRate │ maxPointRate │
+├───┼────────┼──────────────┼──────────────┼──────────────┤
+│ 0 │ Dwarf  │ 0.762        │ 0.05         │ 1            │
+│ 1 │ Orc    │ 0.61         │ 0            │ 1            │
+│ 2 │ Human  │ 0.453        │ 0            │ 1            │
+│ 3 │ Elf    │ 0.434        │ 0            │ 0.95         │
+│ 4 │ Goblin │ 0.241        │ 0            │ 0.98         │
+└───┴────────┴──────────────┴──────────────┴──────────────┘
+┌────┬───────┬─────────────────┬───────────┐
+│    │ level │ matchup         │ pointRate │
+├────┼───────┼─────────────────┼───────────┤
+│  0 │ 1     │ Dwarf vs Elf    │ 0.78      │
+│  1 │ 1     │ Dwarf vs Orc    │ 0.745     │
+│  2 │ 1     │ Dwarf vs Human  │ 0.535     │
+│  3 │ 1     │ Dwarf vs Goblin │ 1         │
+│  4 │ 1     │ Elf vs Dwarf    │ 0.22      │
+│  5 │ 1     │ Elf vs Orc      │ 0.21      │
+│  6 │ 1     │ Elf vs Human    │ 0         │
+│  7 │ 1     │ Elf vs Goblin   │ 0.02      │
+│  8 │ 1     │ Goblin vs Elf   │ 0.98      │
+│  9 │ 1     │ Goblin vs Dwarf │ 0         │
+│ 10 │ 1     │ Goblin vs Orc   │ 0.23      │
+│ 11 │ 1     │ Goblin vs Human │ 0         │
+│ 12 │ 1     │ Human vs Elf    │ 1         │
+│ 13 │ 1     │ Human vs Dwarf  │ 0.465     │
+│ 14 │ 1     │ Human vs Orc    │ 0.04      │
+│ 15 │ 1     │ Human vs Goblin │ 1         │
+│ 16 │ 1     │ Orc vs Elf      │ 0.79      │
+│ 17 │ 1     │ Orc vs Dwarf    │ 0.255     │
+│ 18 │ 1     │ Orc vs Human    │ 0.96      │
+│ 19 │ 1     │ Orc vs Goblin   │ 0.77      │
+│ 20 │ 2     │ Dwarf vs Elf    │ 0.2       │
+│ 21 │ 2     │ Dwarf vs Orc    │ 0.88      │
+│ 22 │ 2     │ Dwarf vs Human  │ 1         │
+│ 23 │ 2     │ Dwarf vs Goblin │ 0.965     │
+│ 24 │ 2     │ Elf vs Dwarf    │ 0.8       │
+│ 25 │ 2     │ Elf vs Orc      │ 0.46      │
+│ 26 │ 2     │ Elf vs Human    │ 0.66      │
+│ 27 │ 2     │ Elf vs Goblin   │ 0.03      │
+│ 28 │ 2     │ Goblin vs Elf   │ 0.97      │
+│ 29 │ 2     │ Goblin vs Dwarf │ 0.035     │
+│ 30 │ 2     │ Goblin vs Orc   │ 0.17      │
+│ 31 │ 2     │ Goblin vs Human │ 0         │
+│ 32 │ 2     │ Human vs Elf    │ 0.34      │
+│ 33 │ 2     │ Human vs Dwarf  │ 0         │
+│ 34 │ 2     │ Human vs Orc    │ 0         │
+│ 35 │ 2     │ Human vs Goblin │ 1         │
+│ 36 │ 2     │ Orc vs Elf      │ 0.54      │
+│ 37 │ 2     │ Orc vs Dwarf    │ 0.12      │
+│ 38 │ 2     │ Orc vs Human    │ 1         │
+│ 39 │ 2     │ Orc vs Goblin   │ 0.83      │
+│ 40 │ 4     │ Dwarf vs Elf    │ 0.05      │
+│ 41 │ 4     │ Dwarf vs Orc    │ 1         │
+│ 42 │ 4     │ Dwarf vs Human  │ 1         │
+│ 43 │ 4     │ Dwarf vs Goblin │ 0.995     │
+│ 44 │ 4     │ Elf vs Dwarf    │ 0.95      │
+│ 45 │ 4     │ Elf vs Orc      │ 0.85      │
+│ 46 │ 4     │ Elf vs Human    │ 0.41      │
+│ 47 │ 4     │ Elf vs Goblin   │ 0.6       │
+│ 48 │ 4     │ Goblin vs Elf   │ 0.4       │
+│ 49 │ 4     │ Goblin vs Dwarf │ 0.005     │
+│ 50 │ 4     │ Goblin vs Orc   │ 0.1       │
+│ 51 │ 4     │ Goblin vs Human │ 0         │
+│ 52 │ 4     │ Human vs Elf    │ 0.59      │
+│ 53 │ 4     │ Human vs Dwarf  │ 0         │
+│ 54 │ 4     │ Human vs Orc    │ 0         │
+│ 55 │ 4     │ Human vs Goblin │ 1         │
+│ 56 │ 4     │ Orc vs Elf      │ 0.15      │
+│ 57 │ 4     │ Orc vs Dwarf    │ 0         │
+│ 58 │ 4     │ Orc vs Human    │ 1         │
+│ 59 │ 4     │ Orc vs Goblin   │ 0.9       │
+└────┴───────┴─────────────────┴───────────┘

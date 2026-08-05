@@ -25,7 +25,7 @@
 - Initiative is tick-based. In Combat Model 1, each active warrior adds Speed each tick, acts at 300 initiative, subtracts 300 after acting, keeps overflow, and can attack at most once per tick.
 - Same-tick action order is highest current initiative, then highest Speed, then random.
 - MVP target selection is random among living enemies; wounded warriors can defend; warriors do not die permanently; fatigue is not currently a mechanic.
-- Defense is flat reduction for MVP and may reduce damage to zero; there is no minimum damage floor.
+- Defense is flat reduction for MVP and may reduce damage to zero; there is no per-hit minimum damage floor, but every third landed hit against the same defender deals `1` armor-chip damage. Misses do not count.
 - Battles end when one side is defeated or after 100 combat actions as a provisional draw limit.
 - Battle logs should be text-first and support misses, zero-damage hits, full armor absorption, remaining HP, wins, losses, and ties.
 

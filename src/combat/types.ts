@@ -77,10 +77,11 @@ export interface RenderContext {
 
 export type LogEvent =
   | { type: "miss"; attackerName: string; defenderName: string }
-  | { type: "normal_hit"; attackerName: string; defenderName: string; damage: number; defenderHpLeft: number }
+  | { type: "normal_hit"; attackerName: string; defenderName: string; damage: number; defenderHpLeft: number; armorChipDamage?: number }
   | { type: "zero_damage"; attackerName: string; defenderName: string }
   | { type: "full_absorption"; attackerName: string; defenderName: string }
-  | { type: "hatred_hit"; attackerName: string; defenderName: string; damage: number; defenderHpLeft: number }
+  | { type: "armor_chip"; attackerName: string; defenderName: string; damage: number; defenderHpLeft: number; wasFullAbsorption: boolean }
+  | { type: "hatred_hit"; attackerName: string; defenderName: string; damage: number; defenderHpLeft: number; armorChipDamage?: number }
   | { type: "warrior_defeat"; warriorName: string }
   | { type: "battle_victory"; winnerLordName: string; loserLordName: string }
   | { type: "battle_loss"; loserLordName: string; winnerLordName: string }
@@ -93,6 +94,8 @@ export interface BattleMetrics {
   landedHits: number;
   zeroDamageHits: number;
   fullAbsorptions: number;
+  armorChipHits: number;
+  armorChipDamage: number;
   hatredHits: number;
   preventedActions: number;
   repeatedTurns: number;
@@ -136,6 +139,8 @@ export interface ScenarioAggregate {
   landedHitRate: number;
   zeroDamageRate: number;
   fullAbsorptionRate: number;
+  armorChipRate: number;
+  averageArmorChipDamage: number;
   hatredHitRate: number;
   averageDamagePerAction: number;
   averageDamagePerLandedHit: number;
