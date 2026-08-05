@@ -101,6 +101,7 @@ This document records decisions made during early design discussion.
 - Ticks are internal math only; combat events and battle log entries are produced by actions.
 - Battle logs should support misses, zero-damage hits, full armor absorption, remaining HP, wins, losses, and ties.
 - Combat formulas should remain somewhat hidden/old-school.
+- Current combat tuning uses `+25` hatred hit chance, `x1.25` hatred damage for percent hatred, defender Speed as `25%` evasion contribution, and flat Defense with no damage floor.
 
 ## MVP
 

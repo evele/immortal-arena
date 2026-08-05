@@ -14,6 +14,10 @@ import type {
 } from "./types.ts";
 
 const INITIATIVE_THRESHOLD = 300;
+const HATRED_HIT_CHANCE_BONUS = 25;
+const HATRED_DAMAGE_MULTIPLIER = 1.25;
+const HATRED_ADDITIVE_DAMAGE_RATE = 0.25;
+const DEFENDER_SPEED_EVASION_RATE = 0.25;
 
 function clamp(value: number, min: number, max: number): number {
   return Math.max(min, Math.min(max, value));
@@ -105,13 +109,16 @@ function selectTarget(attacker: BattleStateWarrior, warriors: BattleStateWarrior
 }
 
 function resolveHitChance(attacker: BattleStateWarrior, defender: BattleStateWarrior, model: CombatModel): number {
+  const hatredHitBonus = hatesRace(attacker.race, defender.race) ? HATRED_HIT_CHANCE_BONUS : 0;
+  const defenderEvasion = defender.stats.agility + defender.stats.speed * DEFENDER_SPEED_EVASION_RATE;
+
   if (model.hitResolution === "D") {
-    return clamp(60 + (attacker.stats.accuracy - defender.stats.agility) * 4, 10, 90);
+    return clamp(60 + (attacker.stats.accuracy - defenderEvasion) * 4 + hatredHitBonus, 10, 90);
   }
 
-  const total = attacker.stats.accuracy + defender.stats.agility;
+  const total = attacker.stats.accuracy + defenderEvasion;
   const rawChance = total === 0 ? 50 : (attacker.stats.accuracy / total) * 100;
-  return clamp(rawChance, 10, 90);
+  return clamp(rawChance + hatredHitBonus, 10, 90);
 }
 
 function rollDamage(attacker: BattleStateWarrior, model: CombatModel, rng: SeededRng): number {
@@ -131,11 +138,11 @@ function applyHatred(rolledDamage: number, attacker: BattleStateWarrior, defende
   }
 
   if (model.hatred === "I") {
-    return { adjustedDamage: Math.ceil(rolledDamage * 1.25), hatredApplied: true };
+    return { adjustedDamage: Math.ceil(rolledDamage * HATRED_DAMAGE_MULTIPLIER), hatredApplied: true };
   }
 
   return {
-    adjustedDamage: rolledDamage + Math.ceil(attacker.stats.damage * 0.25),
+    adjustedDamage: rolledDamage + Math.ceil(attacker.stats.damage * HATRED_ADDITIVE_DAMAGE_RATE),
     hatredApplied: true,
   };
 }

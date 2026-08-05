@@ -9,6 +9,7 @@
     "simulate:all": "bun run scripts/simulate-all-models.ts",
     "analyze:flags": "bun run scripts/analyze-balance-red-flags.ts",
     "analyze:hatred": "bun run scripts/analyze-hatred-cycle.ts",
+    "analyze:races": "bun run scripts/analyze-race-matchups.ts",
     "analyze:speed": "bun run scripts/analyze-late-game-speed.ts"
   }
 }

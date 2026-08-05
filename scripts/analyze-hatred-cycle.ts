@@ -1,4 +1,4 @@
-import { createWarriorFromTemplate, getWarriorTemplateForRaceAtTierIndex } from "../src/combat/catalog.ts";
+import { createWarriorFromTemplate, getWarriorTemplateForRaceAtExactLordLevel } from "../src/combat/catalog.ts";
 import { writeFile } from "../src/combat/export.ts";
 import { aggregateScenarioRuns, buildSeedList } from "../src/combat/metrics.ts";
 import { ALL_MODEL_CODES } from "../src/combat/models.ts";
@@ -20,7 +20,7 @@ interface HatredThresholds {
 }
 
 interface HatredMatchupRow {
-  tier: number;
+  lordLevel: number;
   favoredRace: Race;
   hatedRace: Race;
   favoredUnlockLevel: number;
@@ -36,7 +36,7 @@ interface HatredMatchupRow {
 
 interface HatredModelSummary {
   modelCode: string;
-  comparableTiers: number[];
+  comparableLordLevels: number[];
   matchupCount: number;
   averageFavoredPointRate: number;
   minFavoredPointRate: number;
@@ -98,26 +98,25 @@ function csvRow(values: Array<string | number>): string {
   return values.map((value) => escapeCsvValue(value)).join(",");
 }
 
-function buildComparableTiers(): number[] {
-  return [1, 2, 3, 4, 5, 6, 7, 8];
+function buildComparableLordLevels(): number[] {
+  return [1, 2, 4];
 }
 
-function buildDuelScenario(attackerRace: Race, defenderRace: Race, tier: number): ScenarioDefinition {
-  const attackerTemplate = getWarriorTemplateForRaceAtTierIndex(attackerRace, tier);
-  const defenderTemplate = getWarriorTemplateForRaceAtTierIndex(defenderRace, tier);
-  const lordLevel = Math.max(attackerTemplate.unlockLordLevel, defenderTemplate.unlockLordLevel);
+function buildDuelScenario(attackerRace: Race, defenderRace: Race, lordLevel: number): ScenarioDefinition {
+  const attackerTemplate = getWarriorTemplateForRaceAtExactLordLevel(attackerRace, lordLevel);
+  const defenderTemplate = getWarriorTemplateForRaceAtExactLordLevel(defenderRace, lordLevel);
 
   return {
-    id: `hatred-t${tier}-${attackerRace.toLowerCase()}-vs-${defenderRace.toLowerCase()}`,
-    description: `Hatred-cycle duel at comparable tier ${tier}: ${attackerTemplate.className} versus ${defenderTemplate.className}.`,
+    id: `hatred-l${lordLevel}-${attackerRace.toLowerCase()}-vs-${defenderRace.toLowerCase()}`,
+    description: `Hatred-cycle duel at lord level ${lordLevel}: ${attackerTemplate.className} versus ${defenderTemplate.className}.`,
     attacker: {
-      lordId: `lord-${attackerRace.toLowerCase()}-t${tier}`,
+      lordId: `lord-${attackerRace.toLowerCase()}-l${lordLevel}`,
       lordName: `Lord ${attackerRace}`,
       level: lordLevel,
       warriors: [createWarriorFromTemplate(attackerTemplate, "a1", attackerTemplate.className)],
     },
     defender: {
-      lordId: `lord-${defenderRace.toLowerCase()}-t${tier}`,
+      lordId: `lord-${defenderRace.toLowerCase()}-l${lordLevel}`,
       lordName: `Lord ${defenderRace}`,
       level: lordLevel,
       warriors: [createWarriorFromTemplate(defenderTemplate, "d1", defenderTemplate.className)],
@@ -164,26 +163,26 @@ const json = Boolean(args.json);
 const write = Boolean(args.write);
 const thresholds = buildThresholds(args);
 const seeds = buildSeedList(seedCount, seedStart);
-const comparableTiers = buildComparableTiers();
+const comparableLordLevels = buildComparableLordLevels();
 
 const summaries: HatredModelSummary[] = ALL_MODEL_CODES.map((modelCode) => {
   const details: HatredMatchupRow[] = [];
 
-  for (const tier of comparableTiers) {
+  for (const lordLevel of comparableLordLevels) {
     for (const edge of HATRED_EDGES) {
-      const forwardScenario = buildDuelScenario(edge.favored, edge.hated, tier);
-      const reverseScenario = buildDuelScenario(edge.hated, edge.favored, tier);
+      const forwardScenario = buildDuelScenario(edge.favored, edge.hated, lordLevel);
+      const reverseScenario = buildDuelScenario(edge.hated, edge.favored, lordLevel);
       const forward = aggregateScenarioRuns(forwardScenario, modelCode, seeds);
       const reverse = aggregateScenarioRuns(reverseScenario, modelCode, seeds);
 
-      const favoredTemplate = getWarriorTemplateForRaceAtTierIndex(edge.favored, tier);
-      const hatedTemplate = getWarriorTemplateForRaceAtTierIndex(edge.hated, tier);
+      const favoredTemplate = getWarriorTemplateForRaceAtExactLordLevel(edge.favored, lordLevel);
+      const hatedTemplate = getWarriorTemplateForRaceAtExactLordLevel(edge.hated, lordLevel);
       const favoredPoints = forward.attackerWins + reverse.defenderWins + 0.5 * (forward.draws + reverse.draws);
       const favoredPointRate = favoredPoints / (forward.runs + reverse.runs);
       const drawRate = (forward.draws + reverse.draws) / (forward.runs + reverse.runs);
 
       details.push({
-        tier,
+        lordLevel,
         favoredRace: edge.favored,
         hatedRace: edge.hated,
         favoredUnlockLevel: favoredTemplate.unlockLordLevel,
@@ -212,7 +211,7 @@ const summaries: HatredModelSummary[] = ALL_MODEL_CODES.map((modelCode) => {
 
   return {
     modelCode,
-    comparableTiers,
+    comparableLordLevels,
     matchupCount: details.length,
     averageFavoredPointRate,
     minFavoredPointRate,
@@ -233,7 +232,7 @@ if (write) {
     `simulation-results/${baseName}.json`,
     JSON.stringify(
       {
-        config: { seedCount, seedStart, thresholds, comparableTiers },
+        config: { seedCount, seedStart, thresholds, comparableLordLevels },
         summaries,
       },
       null,
@@ -244,11 +243,11 @@ if (write) {
 }
 
 if (json) {
-  console.log(JSON.stringify({ config: { seedCount, seedStart, thresholds, comparableTiers }, summaries }, null, 2));
+  console.log(JSON.stringify({ config: { seedCount, seedStart, thresholds, comparableLordLevels }, summaries }, null, 2));
 } else {
   console.log(`Hatred cycle analysis`);
   console.log(`seeds=${seedCount} start=${seedStart}`);
-  console.log(`comparableTiers=${comparableTiers.join(", ")}`);
+  console.log(`comparableLordLevels=${comparableLordLevels.join(", ")}`);
   console.log(`thresholds=${JSON.stringify(thresholds)}`);
   console.log("\nModel summary:");
   console.table(
@@ -269,7 +268,7 @@ if (json) {
         .slice()
         .sort((left, right) => left.favoredPointRate - right.favoredPointRate)
         .map((detail) => ({
-          tier: detail.tier,
+          lordLevel: detail.lordLevel,
           matchup: `${detail.favoredRace} > ${detail.hatedRace}`,
           favoredUnlockLevel: detail.favoredUnlockLevel,
           hatedUnlockLevel: detail.hatedUnlockLevel,

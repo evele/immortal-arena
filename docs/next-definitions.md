@@ -38,6 +38,9 @@ Target doc: `docs/warrior-catalog.md`.
 - Whether damage has variance.
 - How Defense produces reduced damage, `0 damage`, and full armor absorption log text.
 - Whether Accuracy only affects hit chance or can also create stronger/skilled hits.
+- Whether Stamina should become a seventh combat stat. If it is added, it should apply to all warriors through a common mechanic, with different classes/races varying by amount, consumption, or recovery rather than by special-case rules.
+- How to improve Goblin performance and reduce Dwarf dominance without directly changing warrior catalog stats.
+- Balance validation tables for exact unlock levels and grouped unlock bands such as `7/8/7/7/7`, `12/14/12/12/12`, `20/25/20/20/20`, `30/35/30/30/30`, and `45/55/45/50/45`.
 - Whether crits exist; default should be no unless explicitly added.
 - Required battle log vocabulary, including source-style `perished` as non-permanent defeat language.
 - Level-up stat growth and stat point assignment.

@@ -91,7 +91,9 @@ The game should use the original six warrior stats:
 - Agility.
 - Speed.
 
-No extra stats such as Luck, Morale, or Stamina should be added for now.
+No extra stats such as Luck or Morale should be added for now.
+
+Stamina is an open candidate stat for a later balance pass. If added, it should apply universally to all warriors rather than as a race-specific exception. Different warrior classes or races may have different Stamina values, consumption rates, or recovery rates, but the mechanic itself should be common and formula-driven.
 
 ## Stat Roles
 
@@ -106,6 +108,8 @@ Current direction:
 - Speed drives tick-based initiative and determines how often a warrior acts.
 
 Exact formulas are intentionally not finalized yet.
+
+The next combat-balance question is how to compensate Goblins and reduce Dwarf dominance without directly editing warrior catalog stats. Current simulations show Goblins remain weak in all-race grouped comparisons, while Dwarves overperform strongly in higher grouped unlock bands. Candidate fixes should preserve source race identity, avoid ad hoc race-only patches where possible, and be validated with exact-level and grouped-race simulation tables.
 
 Current hit-resolution candidates are documented in `combats/hit-resolution-linear.md` and `combats/hit-resolution-proportional.md`.
 
@@ -186,9 +190,9 @@ A future alternative, where the battle seed is split into separate RNG channels 
 
 The original racial hatred cycle should be preserved.
 
-For the MVP, racial hatred affects damage. When a warrior attacks a race it hates, the attack receives a damage bonus. Racial hatred does not affect hit chance in the current MVP direction.
+For the MVP tuning candidate, racial hatred affects both hit chance and damage. When a warrior attacks a race it hates, the attack receives a hit-chance bonus and successful hits receive a damage bonus.
 
-The exact damage bonus is not finalized yet.
+The current tested values are `+25` hit chance and `x1.25` damage for the percent-bonus hatred model.
 
 Current racial-hatred candidates are documented in `combats/racial-hatred-percent-bonus.md` and `combats/racial-hatred-base-additive.md`.
 

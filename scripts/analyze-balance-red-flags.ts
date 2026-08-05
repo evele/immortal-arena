@@ -1,5 +1,5 @@
 import { writeFile } from "../src/combat/export.ts";
-import { createWarriorFromTemplate, getWarriorTemplateForRaceAtTierIndex } from "../src/combat/catalog.ts";
+import { createWarriorFromTemplate, getWarriorTemplateForRaceAtExactLordLevel } from "../src/combat/catalog.ts";
 import { aggregateScenarioRuns, buildSeedList } from "../src/combat/metrics.ts";
 import { ALL_MODEL_CODES } from "../src/combat/models.ts";
 import { buildCatalogClassDuelScenario, getScenarioById } from "../src/combat/scenarios/index.ts";
@@ -167,26 +167,25 @@ function buildThresholds(args: Record<string, string | boolean>): RedFlagThresho
   };
 }
 
-function buildComparableHatredTiers(): number[] {
-  return [1, 2, 3, 4, 5, 6, 7, 8];
+function buildComparableHatredLordLevels(): number[] {
+  return [1, 2, 4];
 }
 
-function buildHatredScenario(attackerRace: Race, defenderRace: Race, tier: number): ScenarioDefinition {
-  const attackerTemplate = getWarriorTemplateForRaceAtTierIndex(attackerRace, tier);
-  const defenderTemplate = getWarriorTemplateForRaceAtTierIndex(defenderRace, tier);
-  const lordLevel = Math.max(attackerTemplate.unlockLordLevel, defenderTemplate.unlockLordLevel);
+function buildHatredScenario(attackerRace: Race, defenderRace: Race, lordLevel: number): ScenarioDefinition {
+  const attackerTemplate = getWarriorTemplateForRaceAtExactLordLevel(attackerRace, lordLevel);
+  const defenderTemplate = getWarriorTemplateForRaceAtExactLordLevel(defenderRace, lordLevel);
 
   return {
-    id: `flags-hatred-t${tier}-${attackerRace.toLowerCase()}-vs-${defenderRace.toLowerCase()}`,
-    description: `Hatred-cycle validation duel at tier ${tier}: ${attackerTemplate.className} versus ${defenderTemplate.className}.`,
+    id: `flags-hatred-l${lordLevel}-${attackerRace.toLowerCase()}-vs-${defenderRace.toLowerCase()}`,
+    description: `Hatred-cycle validation duel at lord level ${lordLevel}: ${attackerTemplate.className} versus ${defenderTemplate.className}.`,
     attacker: {
-      lordId: `flags-${attackerRace.toLowerCase()}-t${tier}`,
+      lordId: `flags-${attackerRace.toLowerCase()}-l${lordLevel}`,
       lordName: `Lord ${attackerRace}`,
       level: lordLevel,
       warriors: [createWarriorFromTemplate(attackerTemplate, "a1", attackerTemplate.className)],
     },
     defender: {
-      lordId: `flags-${defenderRace.toLowerCase()}-t${tier}`,
+      lordId: `flags-${defenderRace.toLowerCase()}-l${lordLevel}`,
       lordName: `Lord ${defenderRace}`,
       level: lordLevel,
       warriors: [createWarriorFromTemplate(defenderTemplate, "d1", defenderTemplate.className)],
@@ -199,14 +198,14 @@ function summarizeHatredCycle(
   seeds: number[],
   thresholds: RedFlagThresholds,
 ): HatredCycleSummary {
-  const comparableTiers = buildComparableHatredTiers();
+  const comparableLordLevels = buildComparableHatredLordLevels();
   const rates: number[] = [];
   let failedMatchups = 0;
 
-  for (const tier of comparableTiers) {
+  for (const lordLevel of comparableLordLevels) {
     for (const edge of HATRED_EDGES) {
-      const forward = aggregateScenarioRuns(buildHatredScenario(edge.favored, edge.hated, tier), modelCode as (typeof ALL_MODEL_CODES)[number], seeds);
-      const reverse = aggregateScenarioRuns(buildHatredScenario(edge.hated, edge.favored, tier), modelCode as (typeof ALL_MODEL_CODES)[number], seeds);
+      const forward = aggregateScenarioRuns(buildHatredScenario(edge.favored, edge.hated, lordLevel), modelCode as (typeof ALL_MODEL_CODES)[number], seeds);
+      const reverse = aggregateScenarioRuns(buildHatredScenario(edge.hated, edge.favored, lordLevel), modelCode as (typeof ALL_MODEL_CODES)[number], seeds);
       const favoredPoints = forward.attackerWins + reverse.defenderWins + 0.5 * (forward.draws + reverse.draws);
       const favoredPointRate = favoredPoints / (forward.runs + reverse.runs);
       rates.push(favoredPointRate);
