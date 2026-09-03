@@ -9,7 +9,7 @@ Candidate Model 1 for MVP damage roll.
 ## Formula
 
 ```text
-minRolledDamage = max(1, floor(Damage * 0.8))
+minRolledDamage = max(1, floor(Damage * 0.85))
 maxRolledDamage = max(minRolledDamage, ceil(Damage * 1.2))
 rolledDamage = randomInt(minRolledDamage, maxRolledDamage)
 ```
@@ -17,7 +17,7 @@ rolledDamage = randomInt(minRolledDamage, maxRolledDamage)
 ## Rules
 
 1. Resolve hit chance first.
-2. If the attack hits, build a symmetric damage band from `80%` to `120%` of the attacker's Damage stat.
+2. If the attack hits, build a damage band from `85%` to `120%` of the attacker's Damage stat.
 3. Round the lower bound down and the upper bound up.
 4. Enforce a minimum pre-Defense rolled damage of `1`.
 5. Roll seeded randomness once inside the inclusive range.

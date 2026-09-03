@@ -93,7 +93,7 @@ This document records decisions made during early design discussion.
 - Accuracy affects hit chance.
 - Agility helps avoid hits.
 - Defense reduces or absorbs incoming damage for the MVP.
-- There is no per-hit minimum damage floor for now; Defense can reduce an attack to zero damage.
+- Defense can fully absorb attacks when effective Defense is more than twice the incoming damage; otherwise near-threshold attacks deal at least `10%` of their incoming damage.
 - Every third landed hit against the same defender deals `1` armor-chip damage. Misses do not count.
 - Combat should use a tick-based initiative model driven by Speed.
 - Initiative uses direct accumulation. In Model 1, each tick, each active warrior adds Speed to initiative; at `300` initiative, the warrior acts and `300` is subtracted from initiative.
@@ -102,7 +102,7 @@ This document records decisions made during early design discussion.
 - Ticks are internal math only; combat events and battle log entries are produced by actions.
 - Battle logs should support misses, zero-damage hits, full armor absorption, remaining HP, wins, losses, and ties.
 - Combat formulas should remain somewhat hidden/old-school.
-- Current combat tuning uses `+25` hatred hit chance, `x1.25` hatred damage for percent hatred, defender Speed as `25%` evasion contribution, and flat Defense at `95%` effectiveness with no damage floor.
+- Current combat tuning uses `+25` hatred hit chance, `x1.25` hatred damage for percent hatred, defender Speed as `25%` evasion contribution, and `95%` effective Defense. Defense fully absorbs attacks above the two-to-one threshold and otherwise permits conditional `10%` armor pressure.
 
 ## MVP
 

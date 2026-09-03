@@ -102,7 +102,7 @@ Current direction:
 - HP determines how much damage a warrior can take before being defeated.
 - Damage contributes to how hard a warrior hits.
 - Defense reduces or absorbs incoming damage for the MVP. Current tuning applies Defense at `95%` effectiveness.
-- There is no per-hit minimum damage floor; Defense can reduce an attack to zero damage.
+- Defense can fully absorb attacks when effective Defense is more than twice the incoming damage; otherwise near-threshold attacks deal at least `10%` of their incoming damage.
 - To reward sustained pressure and avoid permanent armor locks, every third landed hit against the same defender deals `1` armor-chip damage. Misses do not count.
 - Accuracy increases chance to hit.
 - Agility reduces the chance of being hit.
@@ -120,9 +120,9 @@ Accuracy-based Defense penetration and armor-piercing critical hits were tested 
 
 For the MVP, Defense should reduce or absorb incoming Damage.
 
-There is no per-hit minimum damage floor. If Defense fully absorbs the incoming Damage, the attack can deal zero damage.
+Defense fully absorbs an attack when effective Defense is more than twice incoming Damage. Otherwise, near-threshold attacks deal at least `10%` of incoming Damage.
 
-Landed hits are tracked per defender. Every third landed hit against the same defender deals `1` armor-chip damage. Misses do not count. Attacks that already deal normal damage still count and receive the extra chip damage when they are the third landed hit. This gives high-Speed, low-Damage warriors a way to slowly wear down high-Defense warriors without removing armor absorption from the log vocabulary.
+Landed hits are tracked per defender. Every third landed hit against the same defender deals `1` armor-chip damage. Misses do not count. Attacks that already deal normal damage still count and receive the extra chip damage when they are the third landed hit. Conditional `10%` armor pressure and armor chip give high-Speed, low-Damage warriors ways to wear down high-Defense warriors without removing armor absorption from the log vocabulary.
 
 Original examples include both explicit `for 0 damage` results and full absorption messages such as `his armour absorbs the full blow`.
 

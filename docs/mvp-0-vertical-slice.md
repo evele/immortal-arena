@@ -75,7 +75,7 @@ MVP 0 uses the source-derived level 1 starter warriors from `docs/warrior-catalo
 - Race hatred cycle: Orc -> Human -> Goblin -> Elf -> Dwarf -> Orc.
 - Exact hit, damage, Defense, and racial hatred formulas are defined in `docs/stats-and-formulas.md`.
 - MVP 0 formulas should preserve the source-example behavior documented in `docs/combat-and-progression.md`.
-- There is no per-hit minimum damage floor, but every third landed hit against the same defender deals `1` armor-chip damage. Misses do not count.
+- Defense fully absorbs attacks when effective Defense is more than twice incoming damage; otherwise near-threshold attacks deal at least `10%` of incoming damage. Every third landed hit against the same defender also deals `1` armor-chip damage. Misses do not count.
 - Randomness must use the battle seed so a battle can be replayed deterministically.
 
 ## Battle Logs

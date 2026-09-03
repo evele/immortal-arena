@@ -126,7 +126,7 @@ function resolveHitChance(attacker: BattleStateWarrior, defender: BattleStateWar
 
 function rollDamage(attacker: BattleStateWarrior, model: CombatModel, rng: SeededRng): number {
   if (model.damageRoll === "F") {
-    const minRolledDamage = Math.max(1, Math.floor(attacker.stats.damage * 0.8));
+    const minRolledDamage = Math.max(1, Math.floor(attacker.stats.damage * 0.85));
     const maxRolledDamage = Math.max(minRolledDamage, Math.ceil(attacker.stats.damage * 1.2));
     return rng.nextInt(minRolledDamage, maxRolledDamage);
   }
@@ -151,7 +151,12 @@ function applyHatred(rolledDamage: number, attacker: BattleStateWarrior, defende
 }
 
 function applyDefense(adjustedDamage: number, defender: BattleStateWarrior): number {
-  return Math.max(0, adjustedDamage - defender.stats.defense * DEFENSE_EFFECTIVE_RATE);
+  const effectiveDefense = defender.stats.defense * DEFENSE_EFFECTIVE_RATE;
+  if (effectiveDefense > adjustedDamage * 2) {
+    return 0;
+  }
+
+  return Math.max(adjustedDamage - effectiveDefense, adjustedDamage * 0.1);
 }
 
 function buildOutcome(
@@ -304,7 +309,7 @@ export function simulateBattle(input: BattleInput, model: CombatModel): BattleRe
         const { adjustedDamage, hatredApplied } = applyHatred(rolledDamage, actor, target, model);
         const defendedDamage = applyDefense(adjustedDamage, target);
         let finalDamage = defendedDamage;
-        const fullyAbsorbed = defendedDamage === 0 && adjustedDamage < target.stats.defense;
+        const fullyAbsorbed = defendedDamage === 0;
         const armorChipApplied = incrementLandedHitCount(landedHitCounts, target.id) >= ARMOR_CHIP_LANDED_HITS;
 
         if (armorChipApplied) {
